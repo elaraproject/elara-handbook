@@ -25,11 +25,11 @@ jobs:
 
     - name: Build book TOC file 
       run: |
-        jupyter-book toc ./content
+        jupyter-book toc ./book
 
     - name: Build book HTML 
       run: |
-        jupyter-book build ./content
+        jupyter-book build ./book
 
     - name: Push _build/html to gh-pages
       run: |
