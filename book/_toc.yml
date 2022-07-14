@@ -8,3 +8,6 @@ parts:
   chapters:
   - file: about/overview
   - file: about/open-philosophy
+- caption: Knowledge Library
+  chapters:
+  - file: knowledge-library/general-relativity
