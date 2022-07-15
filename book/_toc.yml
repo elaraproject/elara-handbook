@@ -10,4 +10,5 @@ parts:
   - file: about/open-philosophy
 - caption: Knowledge Library
   chapters:
+  - file: knowledge-library/monovariable-calculus
   - file: knowledge-library/general-relativity
