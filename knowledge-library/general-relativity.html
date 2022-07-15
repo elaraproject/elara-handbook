@@ -1,0 +1,877 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>General Relativity &#8212; The Elara Handbook</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Monovariable Calculus" href="monovariable-calculus.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">The Elara Handbook</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    The Elara Handbook
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About Project Elara
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/open-philosophy.html">
+   Open Philosophy
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Knowledge Library
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="monovariable-calculus.html">
+   Monovariable Calculus
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   General Relativity
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/elaraproject/elara-handbook/master?urlpath=tree/book/knowledge-library/general-relativity.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/elaraproject/elara-handbook"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/elaraproject/elara-handbook/issues/new?title=Issue%20on%20page%20%2Fknowledge-library/general-relativity.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/knowledge-library/general-relativity.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-equivalence-principle">
+   The Equivalence Principle
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-spacetime-metric">
+   The Spacetime Metric
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spacelike-timelike-and-lightlike-intervals">
+     Spacelike, Timelike, and Lightlike Intervals
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-geodesic-equation">
+   The Geodesic Equation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deriving-the-einstein-field-equations">
+   Deriving the Einstein Field Equations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#todo">
+   TODO
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>General Relativity</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-equivalence-principle">
+   The Equivalence Principle
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-spacetime-metric">
+   The Spacetime Metric
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spacelike-timelike-and-lightlike-intervals">
+     Spacelike, Timelike, and Lightlike Intervals
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-geodesic-equation">
+   The Geodesic Equation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deriving-the-einstein-field-equations">
+   Deriving the Einstein Field Equations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#todo">
+   TODO
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="general-relativity">
+<h1>General Relativity<a class="headerlink" href="#general-relativity" title="Permalink to this headline">#</a></h1>
+<p><strong>General relativity</strong> is a theory of how gravity works. In General Relativity, gravity is not a force, but rather an effect caused by curved spacetime. This conclusion is based on two fundamental principles:</p>
+<ul class="simple">
+<li><p>The <strong>Equivalence Principle</strong>, which says that gravity is indistinguishable from the effect of an accelerating reference frame</p></li>
+<li><p>The <strong>Principle of Covariance</strong>, which says that all laws of physics should be in the same form in all reference frames</p></li>
+</ul>
+<p>The culminating breakthrough of General Relativity is summarized succinctly by the Einstein Field Equations:</p>
+<div class="math notranslate nohighlight">
+\[
+G_{\alpha \beta} = \frac{8\pi G}{c^4} T_{\alpha \beta}
+\]</div>
+<p>This deceptively simple tensor equation relates the curvature of spacetime to the distribution of matter and energy within it, giving rise to John Archibald Wheeler’s famous summary of General Relativity:</p>
+<blockquote>
+<div><p>“Spacetime tells matter how to move; matter tells spacetime how to curve”</p>
+</div></blockquote>
+<section id="the-equivalence-principle">
+<h2>The Equivalence Principle<a class="headerlink" href="#the-equivalence-principle" title="Permalink to this headline">#</a></h2>
+<p>Consider an observer inside a closed room. This room is accelerating upwards at a constant rate of <span class="math notranslate nohighlight">\(9.81\mathrm{\ m/s^2}\)</span>. The observer holds a 1-kilogram ball. What would happen if the observer would drop a ball?</p>
+<p>Well, we know that the room is under constant upwards acceleration, so when the observer releases the ball, the floor of the room will travel upwards towards it at <span class="math notranslate nohighlight">\(9.81\mathrm{\ m/s^2}\)</span>. However, to the observer, who is moving upwards <em>along with</em> the floor, it would look like everything is stationary, and the <em>ball</em> is the object that is falling down.</p>
+<p>If we use Newton’s second law of motion, we find that the force experienced by the ball would be given by:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec F_b = m \vec a
+\]</div>
+<p>Thus, the force would be:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec F_b = -9.81 N
+\]</div>
+<p>Now, consider another observer, inside another closed room. This room is placed on the surface of the Earth. The observer inside this second room drops another 1-kilogram ball. What would happen next?</p>
+<p>Well, the ball will experience the force of Earth’s gravity, causing it to fall downwards as well. If we use Newton’s law of universal gravitation, we find that the force experienced by the ball would be given by:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec F_b = -G\frac{M_1 M_2}{r^2}
+\]</div>
+<p>We can rearrange this equation to the form:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec F_b = \left(\frac{-GM_\oplus}{(r_\oplus)^2}\right) M_2
+\]</div>
+<p>Using our closest measurements of the mass of the Earth and its radius, we arrive at the result:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec F_b = -9.81 N
+\]</div>
+<p>Notice that this is the <strong>same result</strong> as our closed room moving upwards through space at <span class="math notranslate nohighlight">\(9.81\mathrm{\ m/s^2}\)</span>. The effect of gravity and of an accelerated reference frame is the same. But this is just a coincidence, right? Or is it…?</p>
+<p>Imagine you were in either the closed room in space or the closed room on Earth, but you weren’t told which one. Is there any way you could tell which room it was? No, it would be impossible to perform an experiment to tell the closed room in space from the closed room on Earth.</p>
+<p>So, gravity is <strong>indistinguishable</strong> from accelerated reference frames. This is the <strong>equivalence principle</strong>.</p>
+</section>
+<section id="the-spacetime-metric">
+<h2>The Spacetime Metric<a class="headerlink" href="#the-spacetime-metric" title="Permalink to this headline">#</a></h2>
+<p>To understand General Relativity, we must first be familiar with the idea of <strong>events</strong>.</p>
+<p>An event is <em>anything that happens</em>. This could be, “a spaceship flew through my window”. Yes, that is an event.</p>
+<p>We can describe the event by finding the position and time it occured, <em>relative</em> to a chosen reference frame:</p>
+<ul class="simple">
+<li><p>E.g. “a spaceship flew through my window at 5 meters left and 6 meters in front of my head, at 2 meters above sea level, at 2:30 pm, on January 15th, 2021”</p></li>
+<li><p>We have a x-coordinate (5 meters left of my head), a y-coordinate (6 meters in front of my head), a z-coordinate (2 meters above sea level), and a time coordinate (2:30 pm 1/15/21)</p></li>
+</ul>
+<p>To describe the distance between two events, we would need to find the time <em>and</em> space separating the two events. If we were purely finding the distance , we could use the Pythagorean formula:</p>
+<div class="math notranslate nohighlight">
+\[
+d^2 = x^2 + y^2 + z^2
+\]</div>
+<p>But there is another way to find this distance - taking the dot product of two vectors <span class="math notranslate nohighlight">\((x, y, z)\)</span>, each representing the position of one event. So we could then write the distance as:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+d^2 = \begin{bmatrix}x &amp; y &amp; z\end{bmatrix} \cdot \begin{bmatrix}x \\ y \\ z\end{bmatrix} = x^2 + y^2 + z^2
+\end{split}\]</div>
+<p>In non-Euclidean spaces, however, the dot product of two vectors is <em>not necessarily</em> the distance. So, it would be more accurate to say that the general distance is the dot product <em>multiplied</em> by some matrix; that is:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+d^2 = \begin{bmatrix}x &amp; y &amp; z\end{bmatrix} \begin{bmatrix}x \\ y \\ z\end{bmatrix} \begin{pmatrix}a &amp; b &amp; c \\ d &amp; e &amp; f \\ g &amp; h &amp; i\end{pmatrix}
+\end{split}\]</div>
+<p>In Euclidean space, this matrix is a <span class="math notranslate nohighlight">\(3 \times 3\)</span> matrix that doesn’t do anything - it is the identity matrix. So the distance would look like this:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+d^2 = \begin{bmatrix}x &amp; y &amp; z\end{bmatrix} \begin{bmatrix}x \\ y \\ z\end{bmatrix} \begin{pmatrix}1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1\end{pmatrix}
+\end{split}\]</div>
+<p>We call this matrix <span class="math notranslate nohighlight">\(\delta_{\alpha \beta}\)</span>, or the Euclidean metric, with <span class="math notranslate nohighlight">\(\alpha\)</span> representing its rows and <span class="math notranslate nohighlight">\(\beta\)</span> representing its columns respectively:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\delta_{\alpha \beta} = \begin{pmatrix}1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1\end{pmatrix} = \begin{pmatrix} \delta_{11} &amp; \delta_{12} &amp; \delta_{13} \\ \delta_{21} &amp; \delta_{22} &amp; \delta_{23} \\ \delta_{31} &amp; \delta_{32} &amp; \delta_{33} \end{pmatrix}
+\end{split}\]</div>
+<p>You might wonder why we like to multiply matrices to random vectors - it does seem pretty useless at the moment. However, this matrix becomes much more relevant once we add a time coordinate to the two vectors, which adds a 4th dimension. Now, our 4D vectors (4-vectors) encode both the position <em>and</em> time of each event.</p>
+<p>What units do we use to measure intervals of time, though? Well, we know that distance can be generally given by the product of velocity and time:</p>
+<div class="math notranslate nohighlight">
+\[
+v = \frac{x}{t}
+\]</div>
+<p>And a distance in time is no different. By rearranging the equation, we find that <span class="math notranslate nohighlight">\(x = vt\)</span>. We know that <span class="math notranslate nohighlight">\(c\)</span>, the speed of light, is constant for all observers, so by using <span class="math notranslate nohighlight">\(c\)</span> as our reference speed, we get <span class="math notranslate nohighlight">\(d = ct\)</span>. This means our units for distances in time and space are the same! Having the same units saves us a lot of headaches in physics.</p>
+<p>So now, we can fully describe both the space and time of an event with a 4-vector <span class="math notranslate nohighlight">\((ct, x, y, z)\)</span>. Taking the dot product of two 4-vectors gives us the distance in <em>spacetime</em>, just like the dot product of two vectors gives us the distance in Euclidean space. This is called the spacetime interval, and can be written as follows:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+d^2 = \begin{bmatrix}ct &amp; x &amp; y &amp; z\end{bmatrix} \begin{bmatrix}ct \\ x \\ y \\ z\end{bmatrix} \begin{pmatrix}-1 &amp; 0 &amp; 0 &amp;0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 1\end{pmatrix}
+\end{split}\]</div>
+<p>The matrix is now the metric of 4D flat spacetime, and we denote it with <span class="math notranslate nohighlight">\(\eta_{\alpha \beta}\)</span>, where again <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> represent the <span class="math notranslate nohighlight">\((\alpha, \beta)\)</span>-th entry of the matrix:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\eta_{\alpha\beta} = \begin{pmatrix}-1 &amp; 0 &amp; 0 &amp;0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 1\end{pmatrix} = \begin{pmatrix}\eta_{{00}}&amp; \eta_{{01}}&amp; \eta_{{02}}&amp; \eta_{{03}}\\\eta_{{10}}&amp; \eta_{{11}}&amp; \eta_{{12}}&amp; \eta_{{13}}\\\eta_{{20}}&amp; \eta_{{21}}&amp; \eta_{{22}}&amp; \eta_{{23}}\\\eta_{{30}}&amp; \eta_{{31}}&amp; \eta_{{32}}&amp; \eta_{{33}}\\\end{pmatrix}
+\end{split}\]</div>
+<blockquote>
+<div><p><strong>A note about really confusing metric notation:</strong> In General Relativity, it is customary to count time as the 0th dimension rather than the 4th dimension. This is why <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> range from 0 to 3 instead of 1 to 4 (as you ordinarily might expect)</p>
+</div></blockquote>
+<p>However, notice something unusual about the matrix now: it is no longer the identity matrix. Instead, <span class="math notranslate nohighlight">\(\eta_{00} = -1\)</span> (see second appendix for why). So, the metric tensor has a <em>signature</em> now - that of <span class="math notranslate nohighlight">\((- + + +)\)</span> along its diagonals. Note that sometimes, physicists will confusingly use a metric signature of <span class="math notranslate nohighlight">\((+---)\)</span>, which returns the same distance in spacetime. These two metric signatures are <em>functionally equivalent</em> because the metric tensor is symmetric; the only difference is your personal preference. I will stick with <span class="math notranslate nohighlight">\((- + + +)\)</span> for consistency here.</p>
+<p>Okay, enough with my rant about signatures. Remember that we wrote a distance in spacetime - a <em>spacetime interval</em> - using the dot product of two vectors, like this:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+d^2 = \begin{bmatrix}ct &amp; x &amp; y &amp; z\end{bmatrix} \begin{bmatrix}ct \\ x \\ y \\ z\end{bmatrix} \begin{pmatrix}-1 &amp; 0 &amp; 0 &amp;0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 1\end{pmatrix}
+\end{split}\]</div>
+<p>We can now simplify this into:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+d^2 = \begin{bmatrix}ct &amp; x &amp; y &amp; z\end{bmatrix} \begin{bmatrix}ct \\ x \\ y \\ z\end{bmatrix} \eta_{\alpha \beta}
+\end{split}\]</div>
+<p>Now, Einstein still thought this simplified form was a bit too annoying to look at. You see, he had studied under Hermann Minkowski, a professor that had a tendency to make him mad, so he decided to…depart from standard convention. He developed an alternative system of notation called (unsurprisingly) Einstein notation, which I’ll explain here because everything will make more sense once you know it.</p>
+<p>Take a look at one of our two (identical) vectors. Let’s call it <span class="math notranslate nohighlight">\(w\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec w = \begin{bmatrix}ct \\ x \\ y \\ z\end{bmatrix}
+\end{split}\]</div>
+<p>Instead of writing out each component of the vector (which might change depending on what coordinate system you use), we can more generally write the vector with <em>index notation</em>, like this:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec w = \begin{bmatrix}ct \\ x \\ y \\ z\end{bmatrix} = \begin{bmatrix}w^0 \\ w^1 \\ w^2 \\ w^3\end{bmatrix}
+\end{split}\]</div>
+<p>So now, we can decompose our vector <span class="math notranslate nohighlight">\(w\)</span> into this:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec w = w^0 + w^1 + w^2 + w^3
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\vec w = \sum_{i = 0}^3 w^i
+\]</div>
+<p>More generally, if our vector <span class="math notranslate nohighlight">\(w\)</span> had <span class="math notranslate nohighlight">\(n\)</span> components, then we would write it as:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec w = \sum_i^n w^i
+\]</div>
+<p>Einstein just decided that summation signs were too annoying to write, so he got rid of them and replace them with indices! So whenever you see a vector <span class="math notranslate nohighlight">\(w^i\)</span>, remember to think:</p>
+<div class="math notranslate nohighlight">
+\[
+w^i = \sum_i^n w^i
+\]</div>
+<blockquote>
+<div><p><strong>A note about notation (again):</strong> Using <span class="math notranslate nohighlight">\(i\)</span> here is arbritrary, you can use any letter you want for Einstein’s index notation.</p>
+</div></blockquote>
+<p>So let’s write our spacetime metric using Einstein notation:</p>
+<div class="math notranslate nohighlight">
+\[
+d^2 = \eta_{\alpha \beta} x^\alpha x^\beta
+\]</div>
+<p>In General Relativity, however, we have a final few changes to make. Since how distances are measured can change continuously - distances of space and time are relative, after all - we instead need to define the spacetime metric in terms of quantities that change, such as derivatives. So, replacing <span class="math notranslate nohighlight">\(d\)</span> with <span class="math notranslate nohighlight">\(s\)</span> to represent the invariant interval between two events, we can rewrite the spacetime metric again, arriving at:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+ds^2 = \eta_{\alpha \beta} dx^\alpha dx^\beta = \begin{bmatrix}cdt &amp; dx &amp; dy &amp; dz\end{bmatrix} \begin{bmatrix}cdt \\ dx \\ dy \\ dz\end{bmatrix} \begin{pmatrix}-1 &amp; 0 &amp; 0 &amp;0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 1\end{pmatrix}
+\end{split}\]</div>
+<p>Additionally, since the components of metric tensors can vary as spacetime is curved and distances change, we shouldn’t expect that the metric of spacetime will always be <span class="math notranslate nohighlight">\(\eta_{\alpha \beta}\)</span>; in fact, that would only be true for flat (uncurved) spacetime. So, we replace <span class="math notranslate nohighlight">\(\eta_{\alpha \beta}\)</span> with the more general form of the metric tensor <span class="math notranslate nohighlight">\(g_{\alpha \beta}\)</span>, which applies to all spacetime metrics. We finally arrive at the general metric tensor:</p>
+<div class="math notranslate nohighlight">
+\[
+ds^2 = g_{\alpha \beta} dx^\alpha dx^\beta
+\]</div>
+<p>This is the most common form of the spacetime metric you will see, and it is the form we will use going forward.</p>
+<section id="spacelike-timelike-and-lightlike-intervals">
+<h3>Spacelike, Timelike, and Lightlike Intervals<a class="headerlink" href="#spacelike-timelike-and-lightlike-intervals" title="Permalink to this headline">#</a></h3>
+<p>When finding the spacetime interval between two events, we can describe the interval using one of three terms:</p>
+<ul class="simple">
+<li><p>If the spacetime interval is <strong>positive</strong>, it is spacelike: the two events are separated by space</p></li>
+<li><p>If the spacetime interval is <strong>negative</strong>, it is timelike: the two events are separated by time</p></li>
+<li><p>If the spacetime interval is <strong>zero</strong>, it is lightlike: a beam of light could travel directly from one event to the other</p></li>
+</ul>
+</section>
+</section>
+<section id="the-geodesic-equation">
+<h2>The Geodesic Equation<a class="headerlink" href="#the-geodesic-equation" title="Permalink to this headline">#</a></h2>
+<p>We know from Newton’s first law of motion that an object in motion stays in motion at constant speed - that is, it undergoes no acceleration. In other terms:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{d^2x^\alpha}{d\tau^2} = 0
+\]</div>
+<p>Where:</p>
+<div class="math notranslate nohighlight">
+\[
+x^\alpha = x^1, x^2, x^3 ... \: x^n = x, y, z \: ... \: n
+\]</div>
+<p>This is why, for instance, a ball rolling along an infinitely long hallway will keep going in a path in the same direction - its velocity vector, and thus its directions, stays constant. In nice Euclidean space, we call this path a “straight line” - the effect of going ahead in the same direction forever.</p>
+<p>As we know, in Euclidean space, a straight line is the shortest path between two points, which we call a <em>geodesic</em>. We might be tempted to phrase Newton’s first law to say that “a particle in motion will travel along a straight line”. However, in non-Euclidean geometries, a geodesic is not necessarily a straight line. So, we must generalize Newton’s first law with modifications: <strong>a particle in motion will move along a geodesic</strong>.</p>
+<p>Now, let’s formulate this law mathematically. Let us imagine two points, <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, where a geodesic is the shortest path between them. Remember that the spacetime metric is given by:</p>
+<div class="math notranslate nohighlight">
+\[
+ds^2 = g_{\alpha \beta} dx^\alpha dx^\beta
+\]</div>
+<p>To make everything simpler, imagine that our test particle is a photon moving between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>. The distance between the two points (more correctly, the invariant interval between the points) is therefore a lightlike interval given by:</p>
+<div class="math notranslate nohighlight">
+\[
+ds^2 = -c^2 d\tau^2
+\]</div>
+<blockquote>
+<div><p><strong>Introducing geometrized units:</strong> In General Relativity, we often set <span class="math notranslate nohighlight">\(c = 1\)</span> and <span class="math notranslate nohighlight">\(G = 1\)</span> to make equations slightly easier to write. This is why you will see <span class="math notranslate nohighlight">\(c\)</span> and <span class="math notranslate nohighlight">\(G\)</span> occasionally “disappear” from equations. From this point on, we will use geometrized units whenever appropriate.</p>
+</div></blockquote>
+<p>We may simplify the previous equation to:</p>
+<div class="math notranslate nohighlight">
+\[
+ds^2 = -d\tau^2
+\]</div>
+<p>Integrating over the interval with respect to proper time gives us:</p>
+<div class="math notranslate nohighlight">
+\[
+\tau = \int_A^B \sqrt{-ds^2} = \int_A^B \sqrt{g_{\alpha \beta} dx^\alpha dx^\beta}
+\]</div>
+<p>To actually solve this integral, we can rewrite the path of our particle as a parametric function <span class="math notranslate nohighlight">\(x^\alpha =\alpha\mu(\sigma)\)</span>, where <span class="math notranslate nohighlight">\(\sigma=0\)</span> at point <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(\sigma = 1\)</span> at point B. Using this we can write:</p>
+<div class="math notranslate nohighlight">
+\[
+\tau = \int_0^1 \left(-g_{\alpha \beta} \frac{dx^\alpha}{d \sigma} \frac{dx^\beta}{d \sigma} \right)^{1/2}
+\]</div>
+<p>Where <span class="math notranslate nohighlight">\(L\)</span> is the Lagrangian:</p>
+<div class="math notranslate nohighlight">
+\[
+d \sigma = \int_0^1 L \left(\frac{dx^\alpha}{d\sigma}, x^\alpha\right) d\sigma
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+d \sigma = \int_0^1 \frac{d\tau}{d\sigma} \left(\frac{dx^\alpha}{d\sigma}, x^\alpha\right) d\sigma
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+L = \frac{d\tau}{d\sigma}
+\]</div>
+<p>The next step is to change the derivatives with respect to <span class="math notranslate nohighlight">\(\sigma\)</span> to derivatives with respect to <span class="math notranslate nohighlight">\(\tau\)</span>. Remember that:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{df}{d\sigma} = \frac{df}{d\tau} \frac{d\tau}{d\sigma} = L \frac{df}{d\tau}
+\]</div>
+<p>We may now use the Euler-Lagrange equations to find the action of the system. The Euler-Lagrange equations are given by:</p>
+<div class="math notranslate nohighlight">
+\[
+-\frac{d}{dx} \left(\frac{\partial L}{\partial f'}\right) + \frac{\partial L}{\partial f}  = 0
+\]</div>
+<p>In our case, with a “dummy index” <span class="math notranslate nohighlight">\(\gamma\)</span> (to avoid confusing it with <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> in the other terms) this becomes:</p>
+<div class="math notranslate nohighlight">
+\[
+-\frac{d}{d \sigma}\left(\frac{\partial L}{\partial\left(d x^{\gamma} / d \sigma\right)}\right)+\frac{\partial L}{\partial x^{\gamma}}=0
+\]</div>
+<p>We now simply need to compute each derivative term. First, the second term:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial L}{\partial x^{\gamma}} = -\frac{1}{2} L \frac{\partial g_{\alpha\beta}}{\partial x^\gamma} \frac{dx^\alpha}{d\sigma} \frac{dx^\beta}{d \sigma}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial L}{\partial x^{\gamma}} = -\frac{L}{2} \frac{\partial g_{\alpha\beta}}{\partial x^\gamma} \frac{dx^\alpha}{d\tau} \frac{dx^\beta}{d \tau}
+\]</div>
+<p>And now, the first term:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial L}{\partial\left(d x^{\gamma} / d \sigma\right)} = -\frac{1}{L} g_{\alpha \gamma} \frac{\alpha\mu}{d \sigma}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+-\frac{d}{d \sigma}\left(\frac{\partial L}{\partial\left(d x^{\gamma} / d \sigma\right)}\right)= \frac{d}{d\sigma} \left(\frac{1}{L} g_{\alpha \gamma} \frac{\alpha\mu}{d \sigma}\right)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+= L \frac{d}{d\tau} \left(g_{\alpha \gamma} \frac{dx^\alpha}{d \tau}\right)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+= L\left[g_{\alpha \gamma} \frac{d^2 x^\alpha}{d\tau^2} + \frac{dg_{\alpha \gamma}}{d\tau} \frac{dx^\alpha}{d \tau}\right]
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+= L\left[g_{\alpha \gamma} \frac{d^2 x^\alpha}{d\tau^2} + \frac{1}{2} \left(\frac{\partial g_{\alpha \gamma }}{\partial x^{\beta }}+\frac{\partial g_{\beta \gamma }}{\partial x^{\alpha }}\right)\frac{dx^{\alpha }}{d\tau }\frac{dx^{\beta }}{d\tau }\right]
+\]</div>
+<p>So our completed Euler-Langrage equation yields:</p>
+<div class="math notranslate nohighlight">
+\[
+L\left[g_{\alpha \gamma} \frac{d^2 x^\alpha}{d\tau^2} + \frac{1}{2} \left(\frac{\partial g_{\alpha \gamma }}{\partial x^{\beta }}+\frac{\partial g_{\beta \gamma }}{\partial x^{\alpha }}\right)\frac{dx^{\alpha }}{d\tau }\frac{dx^{\beta }}{d\tau }\right] -\frac{L}{2} \frac{\partial g_{\alpha\beta}}{\partial x^\gamma} \frac{dx^\alpha}{d\tau} \frac{dx^\beta}{d \tau} = 0
+\]</div>
+<p>Factoring out the Lagrangian and rearranging, we find that:</p>
+<div class="math notranslate nohighlight">
+\[
+g_{\alpha \gamma} \frac{d^2 x^\alpha}{d \tau^2} = -\frac{1}{2}\left[\frac{\partial g_{\alpha \gamma }}{\partial x^{\beta }}+\frac{\partial g_{\beta \gamma }}{\partial x^{\alpha }}-\frac{\partial g_{\alpha \beta }}{\partial x^{\gamma }}\right]\frac{dx^{\alpha }}{d\tau }\frac{dx^{\beta }}{d\tau }
+\]</div>
+<p>With a change of the dummy index to <span class="math notranslate nohighlight">\(\delta\)</span> to avoid confusion, we find that:</p>
+<div class="math notranslate nohighlight">
+\[
+g_{\alpha \gamma} \frac{d^2 x^\alpha}{d \tau^2} = -g_{\alpha \gamma} \Gamma^\alpha_{\delta \beta} \frac{dx^\delta}{d\tau} \frac{dx^\beta}{d\tau}
+\]</div>
+<p>Factoring out the metric, we finally arrive at the <strong>geodesic equation</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{d^2 x^\alpha}{d \tau^2} = -\Gamma^\alpha_{\delta \beta} \frac{dx^\delta}{d\tau} \frac{dx^\beta}{d\tau}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\Gamma^\alpha_{\delta \beta} = \frac{1}{2} g^{\alpha \gamma} \left[\frac{\partial g_{\gamma \delta}}{\partial x^{\beta }}+\frac{\partial g_{\beta \gamma }}{\partial x^{\alpha }}-\frac{\partial g_{\delta \beta }}{\partial x^{\gamma }}\right]
+\]</div>
+<p>Here, <span class="math notranslate nohighlight">\(g^{\alpha \gamma}\)</span> is the inverse of the metric.</p>
+<blockquote>
+<div><p><strong>A note on notation:</strong> In general relativity, we can let the letters we use for indices to be whatever we want, and the equations will still be consistent. For example, <span class="math notranslate nohighlight">\(g_{\alpha \beta} = g_{ij} = g_{\alpha \gamma} = g_{\mu \gamma}\)</span>. Because letters often change as we add terms to equations, we change them often (though it’s understandably confusing to get used to at first).</p>
+</div></blockquote>
+<p>With a bit of letter-changing again, we can put the geodesic equation into its most common form:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{d^2 x^\mu}{d \tau^2} + \Gamma^\mu_{\alpha \beta} \frac{dx^\alpha}{d\tau} \frac{dx^\beta}{d\tau} =0
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\Gamma^\mu_{\alpha \beta} = \frac{1}{2} g^{\mu \gamma} \left[\frac{\partial g_{\alpha \gamma}}{\partial x^{\beta }}+\frac{\partial g_{\beta \gamma }}{\partial x^{\mu }}-\frac{\partial g_{\alpha \beta }}{\partial x^{\gamma }}\right]
+\]</div>
+<p>Any path that obeys the geodesic equation in spacetime is a geodesic. Since spacetime can be curved, these geodesics are not straight lines. The curvature of spacetime - what we experience as gravity - causes distances to change. This causes the metric to change, which in turn affects the paths of particles.</p>
+</section>
+<section id="deriving-the-einstein-field-equations">
+<h2>Deriving the Einstein Field Equations<a class="headerlink" href="#deriving-the-einstein-field-equations" title="Permalink to this headline">#</a></h2>
+<p>In Newtonian gravity, the gravitational potential is described by Poisson’s equation:</p>
+<div class="math notranslate nohighlight">
+\[
+\nabla^2 \Phi = 4 \pi G \rho
+\]</div>
+<p>Where <span class="math notranslate nohighlight">\(\rho\)</span> is the density of the gravitating matter. Since General Relativity reduces to Newtonian gravity in a weak gravitational field, we would expect a relativistic formulation of gravity to look similar to the Poisson equation; the left-hand side would describe the gravitational potential, and the right-and side would describe the density of matter in spacetime.</p>
+<p>The relativistic analogue of <span class="math notranslate nohighlight">\(\rho\)</span> is the stress-energy tensor <span class="math notranslate nohighlight">\(T_{\mu \nu}\)</span>, which is a <span class="math notranslate nohighlight">\(4 \times 4\)</span> matrix (much like the metric tensor) that describes all the information about the gravitating matter and energy in spacetime.</p>
+<p><img alt="Stress-energy tensor" src="https://www.naturelovesmath.com/wp-content/uploads/2017/01/Stress-energy-tensor.png" /></p>
+<p>So a starting point for a relativistic formulation of gravity would look something like this:</p>
+<div class="math notranslate nohighlight">
+\[
+\nabla^2 \Phi = (4\pi G) \: k T_{\alpha \beta}
+\]</div>
+<p>Also, in a weak gravitational field, all the elements of the metric tensor disappear except for <span class="math notranslate nohighlight">\(g_{00}\)</span>, and from Poisson’s equation, we know that:</p>
+<div class="math notranslate nohighlight">
+\[
+g_{00} = 4 \pi G \rho \approx -(1 + 2 \phi)
+\]</div>
+<p>From there, we can find the proportionality constant for the right-hand side:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{8\pi G}{c^4} T_{\alpha \beta}
+\]</div>
+<p>On the left-hand side, we know that gravity is actually an effect of the curvature of spacetime, so we need some way of encoding this curvature. The Riemann tensor, which is defined with the Christoffel symbols, allows us to do so:</p>
+<div class="math notranslate nohighlight">
+\[
+{\displaystyle R^{\rho }{}_{\sigma \mu \nu }=\partial _{\mu }\Gamma ^{\rho }{}_{\nu \sigma }-\partial _{\nu }\Gamma ^{\rho }{}_{\mu \sigma }+\Gamma ^{\rho }{}_{\mu \lambda }\Gamma ^{\lambda }{}_{\nu \sigma }-\Gamma ^{\rho }{}_{\nu \lambda }\Gamma ^{\lambda }{}_{\mu \sigma }}
+\]</div>
+<p>The Einstein Tensor <span class="math notranslate nohighlight">\(G_{\alpha \beta}\)</span> is defined by the partial trace and trace of the partial trace of the Riemann tensor, given as follows:</p>
+<div class="math notranslate nohighlight">
+\[
+G_{\alpha \beta} = R_{\alpha \beta} - \frac{1}{2} R g_{\alpha \beta}
+\]</div>
+<p>The unique property of the Einstein Tensor is that, if we take its covariant derivative, it reduces down to the gravitational potential, satisfying Poisson’s equation for a weak graviational field:</p>
+<div class="math notranslate nohighlight">
+\[
+\nabla^2 G_{\alpha \beta} = \Phi
+\]</div>
+<p>With this in mind, we can finally put together the Einstein Field Equations:</p>
+<div class="math notranslate nohighlight">
+\[
+G_{\alpha \beta} = \frac{8\pi G}{c^4} T_{\alpha \beta}
+\]</div>
+<p>This simple, elegant equation is the apotheosis of general relativity, and it rightfully deserves its place as one of the most famous equations in all of physics.</p>
+</section>
+<section id="todo">
+<h2>TODO<a class="headerlink" href="#todo" title="Permalink to this headline">#</a></h2>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Add proper citations</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Continue adding to this</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./knowledge-library"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="monovariable-calculus.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Monovariable Calculus</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Jacky Song<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
