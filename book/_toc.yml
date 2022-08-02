@@ -11,4 +11,5 @@ parts:
 - caption: Knowledge Library
   chapters:
   - file: knowledge-library/monovariable-calculus
+  - file: knowledge-library/differential-geometry
   - file: knowledge-library/general-relativity
