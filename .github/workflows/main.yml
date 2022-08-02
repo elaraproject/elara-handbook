@@ -19,6 +19,9 @@ jobs:
     - name: Install Python dependencies
       run: |
         sudo apt-get install python3-pip
+        pip install numpy
+        pip install sympy
+        pip install matplotlib
         pip install jupyter-book
         pip install ghp-import
         PATH="${PATH}:${HOME}/.local/bin"
