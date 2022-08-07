@@ -8,6 +8,7 @@ parts:
   chapters:
   - file: about/overview
   - file: about/open-philosophy
+  - file: about/guiding-principles
 - caption: Knowledge Library
   chapters:
   - file: knowledge-library/monovariable-calculus
