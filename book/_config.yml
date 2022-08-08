@@ -25,3 +25,8 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+
+# No copyright (because public domain)
+sphinx:
+  config:
+    html_show_copyright: false
