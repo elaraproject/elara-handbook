@@ -10,8 +10,9 @@ The Elara Handbook is written in Markdown and Jupyter notebooks (with exception 
 
 ## Roadmap
 
-- [ ] Finish basic setup and github pages integration with CI
+- [x] Finish basic setup and github pages integration with CI
 - [ ] Knowledge library (mathematical fundamentals, physics, machine learning, Rust, etc.)
+- [ ] Proper citations
 - [ ] Narrative docs (tutorials, guides, etc.)
 - [ ] API documentation
 - [ ] Community resource docs (governance, design documents, contributing guidelines)
