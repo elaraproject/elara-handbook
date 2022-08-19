@@ -41,6 +41,7 @@ jobs:
 
     - name: Build PDF of book
       run: |
+        pip install github-release-retry
         pip install pyppeteer
         jupyter-book build book --builder pdfhtml
         github-release-retry \
