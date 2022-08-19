@@ -38,3 +38,14 @@ jobs:
         git config --global user.name "$GITHUB_ACTOR"
         git remote set-url origin "https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY"
         ghp-import ./book/_build/html -f -p -n
+
+    - name: Build PDF of book
+      run: |
+        pip install pyppeteer
+        jupyter-book build book --builder pdfhtml
+        github-release-retry \
+          --user elaraproject \
+          --repo elara-handbook \
+          --prerelease \
+          --body_string "Automatically generated from book sources via Github Actions" \
+          book/_build/pdf/book.pdf
