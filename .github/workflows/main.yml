@@ -44,6 +44,7 @@ jobs:
         pip install github-release-retry
         pip install pyppeteer
         jupyter-book build book --builder pdfhtml
+        GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}"
         github-release-retry \
           --user elaraproject \
           --repo elara-handbook \
