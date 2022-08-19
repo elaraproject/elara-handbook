@@ -2,6 +2,12 @@
 
 Welcome! You've reached Project Elara's open knowledge repository and documentation. Everything you'd ever need to learn, develop, or contribute to Project Elara can be found here!
 
+```{button-link} https://github.com/elaraproject/elara-handbook/releases
+:color: primary
+:shadow:
+Download book as PDF
+```
+
 ```{note}
 The handbook is actively developed and will not be complete for quite a while. Patience is appreciated!
 ```

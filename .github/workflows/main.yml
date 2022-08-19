@@ -40,16 +40,19 @@ jobs:
         ghp-import ./book/_build/html -f -p -n
 
     - name: Build PDF of book
+      run: |
+        pip install pyppeteer
+        jupyter-book build book --builder pdfhtml
+
+    - name: Upload book PDF to Github releases
       env:
         GITHUB_TOKEN: ${{ github.token }}
       run: |
         pip install github-release-retry
-        pip install pyppeteer
-        jupyter-book build book --builder pdfhtml
         github-release-retry \
           --user elaraproject \
           --repo elara-handbook \
-          --tag_name v0.0.0-$(git rev-parse HEAD | cut -c 1-8)-dev \
+          --tag_name v0.0.0-$(git rev-parse HEAD | cut -c 1-8) \
           --prerelease \
           --body_string "Automatically generated from book sources via Github Actions" \
           book/_build/pdf/book.pdf
