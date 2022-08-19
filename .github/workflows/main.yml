@@ -47,6 +47,7 @@ jobs:
         github-release-retry \
           --user elaraproject \
           --repo elara-handbook \
+          --tag_name v0.0.0-$(git rev-parse HEAD | cut -c 1-8)-dev \
           --prerelease \
           --body_string "Automatically generated from book sources via Github Actions" \
           book/_build/pdf/book.pdf
