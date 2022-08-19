@@ -1,0 +1,6 @@
+@media print {
+    /* Don't show unnecessary UI elements in print */
+    .bd-toc, .sd-btn {
+        visibility: hidden;
+    }
+}
