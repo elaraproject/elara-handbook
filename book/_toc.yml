@@ -13,6 +13,7 @@ parts:
   chapters:
   - file: knowledge-library/monovariable-calculus
   - file: knowledge-library/linear-algebra
+  - file: knowledge-library/classical-mechanics
   - file: knowledge-library/differential-geometry
   - file: knowledge-library/general-relativity
   - file: knowledge-library/alcubierre-metric-intro
