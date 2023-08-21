@@ -3,7 +3,7 @@
 
 title: The Elara Handbook
 author: Jacky Song
-logo: logo.png
+logo: logo_scaled.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
