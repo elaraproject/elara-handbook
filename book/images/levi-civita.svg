@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="33.766674mm"
-   height="10.841331mm"
-   viewBox="0 0 33.766674 10.841331"
+   width="129.77586mm"
+   height="41.666676mm"
+   viewBox="0 0 129.77586 41.666677"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.5067718"
-     inkscape:cx="19.578279"
-     inkscape:cy="17.255433"
+     inkscape:zoom="0.52217356"
+     inkscape:cx="154.1633"
+     inkscape:cy="137.88519"
      inkscape:window-width="1280"
      inkscape:window-height="456"
      inkscape:window-x="0"
@@ -78,75 +78,75 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-51.327638,-147.62397)">
+     transform="translate(-55.156042,-148.64757)">
     <text
        xml:space="preserve"
-       style="font-size:2.45505px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:0.773243"
-       x="55.057842"
-       y="154.47784"
+       style="font-size:12.2025px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:3.84332"
+       x="54.667942"
+       y="176.60452"
        id="text236"><tspan
          sodipodi:role="line"
          id="tspan234"
-         style="fill:#000000;stroke:none;stroke-width:0.773243"
-         x="55.057842"
-         y="154.47784">𝜖<tspan
-   style="font-size:1.59578px;baseline-shift:sub;stroke-width:0.773243"
+         style="fill:#000000;stroke:none;stroke-width:3.84332"
+         x="54.667942"
+         y="176.60452">𝜖<tspan
+   style="font-size:7.93162px;baseline-shift:sub;stroke-width:3.84332"
    id="tspan448">𝑖𝑗𝑘</tspan></tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.193311;stroke-dasharray:none;marker-end:url(#TriangleStart)"
-       d="m 59.086802,153.79508 h 2.977281"
+       style="fill:none;stroke:#000000;stroke-width:0.960832;stroke-dasharray:none;marker-end:url(#TriangleStart)"
+       d="M 74.693418,173.21091 H 89.491647"
        id="path513" />
     <text
        xml:space="preserve"
-       style="font-size:2.45505px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:0.773243"
-       x="64.320488"
-       y="152.35121"
+       style="font-size:12.2025px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:3.84332"
+       x="100.70685"
+       y="166.0343"
        id="text1290"><tspan
          sodipodi:role="line"
          id="tspan1288"
-         style="fill:#000000;stroke:none;stroke-width:0.773243"
-         x="64.320488"
-         y="152.35121">123</tspan></text>
+         style="fill:#000000;stroke:none;stroke-width:3.84332"
+         x="100.70685"
+         y="166.0343">123</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.193311;stroke-dasharray:none;marker-end:url(#marker1296)"
-       d="m 64.730825,149.92274 c 0,0 0.381883,-0.97294 1.685196,-0.97294 1.303312,0 1.42406,0.94276 1.42406,0.94276"
+       style="fill:none;stroke:#000000;stroke-width:0.960832;stroke-dasharray:none;marker-end:url(#marker1296)"
+       d="m 102.74637,153.96387 c 0,0 1.89811,-4.83588 8.37607,-4.83588 6.47796,0 7.07813,4.68589 7.07813,4.68589"
        id="path1292" />
     <text
        xml:space="preserve"
-       style="font-size:2.45505px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:0.773243"
-       x="64.320488"
-       y="157.21216"
+       style="font-size:12.2025px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:3.84332"
+       x="100.70685"
+       y="190.19508"
        id="text1359"><tspan
          sodipodi:role="line"
          id="tspan1357"
-         style="fill:#000000;stroke:none;stroke-width:0.773243"
-         x="64.320488"
-         y="157.21216">123</tspan></text>
+         style="fill:#000000;stroke:none;stroke-width:3.84332"
+         x="100.70685"
+         y="190.19508">123</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.193311;stroke-dasharray:none;marker-end:url(#marker1296)"
-       d="m 68.296688,154.78368 c 0,0 -0.381883,-0.97295 -1.685196,-0.97295 -1.303312,0 -1.42406,0.94277 -1.42406,0.94277"
+       style="fill:none;stroke:#000000;stroke-width:0.960832;stroke-dasharray:none;marker-end:url(#marker1296)"
+       d="m 120.47008,178.1246 c 0,0 -1.89811,-4.83593 -8.37607,-4.83593 -6.47796,0 -7.07812,4.68593 -7.07812,4.68593"
        id="path1361" />
     <text
        xml:space="preserve"
-       style="font-size:2.45505px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:0.193311;stroke-dasharray:none"
-       x="70.795982"
-       y="151.94165"
+       style="font-size:12.2025px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:0.960832;stroke-dasharray:none"
+       x="132.89253"
+       y="163.99867"
        id="text1369"><tspan
          sodipodi:role="line"
          id="tspan1367"
-         style="fill:#000000;stroke:none;stroke-width:0.193311"
-         x="70.795982"
-         y="151.94165">Cyclic</tspan></text>
+         style="fill:#000000;stroke:none;stroke-width:0.960832"
+         x="132.89253"
+         y="163.99867">Cyclic</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:2.45505px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:0.193311;stroke-dasharray:none"
-       x="70.795982"
-       y="156.64191"
+       style="font-size:12.2025px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:0.960832;stroke-dasharray:none"
+       x="132.89253"
+       y="187.36072"
        id="text1431"><tspan
          sodipodi:role="line"
          id="tspan1429"
-         style="fill:#000000;stroke:none;stroke-width:0.193311"
-         x="70.795982"
-         y="156.64191">Anticyclic</tspan></text>
+         style="fill:#000000;stroke:none;stroke-width:0.960832"
+         x="132.89253"
+         y="187.36072">Anticyclic</tspan></text>
   </g>
 </svg>
