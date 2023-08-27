@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="33.766674mm"
+   height="10.841331mm"
+   viewBox="0 0 33.766674 10.841331"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   sodipodi:docname="levi-civita.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.5067718"
+     inkscape:cx="19.578279"
+     inkscape:cy="17.255433"
+     inkscape:window-width="1280"
+     inkscape:window-height="456"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker1296"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1294" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleStart"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-51.327638,-147.62397)">
+    <text
+       xml:space="preserve"
+       style="font-size:2.45505px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:0.773243"
+       x="55.057842"
+       y="154.47784"
+       id="text236"><tspan
+         sodipodi:role="line"
+         id="tspan234"
+         style="fill:#000000;stroke:none;stroke-width:0.773243"
+         x="55.057842"
+         y="154.47784">𝜖<tspan
+   style="font-size:1.59578px;baseline-shift:sub;stroke-width:0.773243"
+   id="tspan448">𝑖𝑗𝑘</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.193311;stroke-dasharray:none;marker-end:url(#TriangleStart)"
+       d="m 59.086802,153.79508 h 2.977281"
+       id="path513" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.45505px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:0.773243"
+       x="64.320488"
+       y="152.35121"
+       id="text1290"><tspan
+         sodipodi:role="line"
+         id="tspan1288"
+         style="fill:#000000;stroke:none;stroke-width:0.773243"
+         x="64.320488"
+         y="152.35121">123</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.193311;stroke-dasharray:none;marker-end:url(#marker1296)"
+       d="m 64.730825,149.92274 c 0,0 0.381883,-0.97294 1.685196,-0.97294 1.303312,0 1.42406,0.94276 1.42406,0.94276"
+       id="path1292" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.45505px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:0.773243"
+       x="64.320488"
+       y="157.21216"
+       id="text1359"><tspan
+         sodipodi:role="line"
+         id="tspan1357"
+         style="fill:#000000;stroke:none;stroke-width:0.773243"
+         x="64.320488"
+         y="157.21216">123</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.193311;stroke-dasharray:none;marker-end:url(#marker1296)"
+       d="m 68.296688,154.78368 c 0,0 -0.381883,-0.97295 -1.685196,-0.97295 -1.303312,0 -1.42406,0.94277 -1.42406,0.94277"
+       id="path1361" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.45505px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:0.193311;stroke-dasharray:none"
+       x="70.795982"
+       y="151.94165"
+       id="text1369"><tspan
+         sodipodi:role="line"
+         id="tspan1367"
+         style="fill:#000000;stroke:none;stroke-width:0.193311"
+         x="70.795982"
+         y="151.94165">Cyclic</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.45505px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:0.193311;stroke-dasharray:none"
+       x="70.795982"
+       y="156.64191"
+       id="text1431"><tspan
+         sodipodi:role="line"
+         id="tspan1429"
+         style="fill:#000000;stroke:none;stroke-width:0.193311"
+         x="70.795982"
+         y="156.64191">Anticyclic</tspan></text>
+  </g>
+</svg>
