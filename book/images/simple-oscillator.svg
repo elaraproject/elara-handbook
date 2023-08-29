@@ -1,1 +1,83 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="710.128" height="409.088" viewBox="0 0 187.888 108.238"><g transform="translate(-48.922 -56.22)"><path d="M57.725 61.746h170.281M142.866 61.746l32.057 77.914" style="fill:#000;stroke:#000;stroke-width:.906288;stroke-dasharray:none"/><circle cx="177.699" cy="145.209" r="6.213" style="fill:none;stroke:#000;stroke-width:.906288;stroke-dasharray:none"/><path d="M142.866 61.746v96.162" style="fill:none;stroke:#000;stroke-width:.906288;stroke-dasharray:.906288,2.71886;stroke-dashoffset:0"/><text xml:space="preserve" x="147.19" y="100.818" style="font-size:10.5236px;font-family:&quot;Open Sans&quot;;-inkscape-font-specification:&quot;Open Sans&quot;;fill:#000;stroke:none;stroke-width:3.31454;stroke-dasharray:3.31454,9.94361;stroke-dashoffset:0"><tspan x="147.19" y="100.818" style="fill:#000;stroke:none;stroke-width:3.31454">θ</tspan></text><text xml:space="preserve" x="169.705" y="110.164" style="font-size:10.5236px;font-family:&quot;Open Sans&quot;;-inkscape-font-specification:&quot;Open Sans&quot;;fill:#000;stroke:none;stroke-width:3.31454;stroke-dasharray:3.31454,9.94361;stroke-dashoffset:0"><tspan x="169.705" y="110.164" style="fill:#000;stroke:none;stroke-width:3.31454">L</tspan></text><text xml:space="preserve" x="183.338" y="159.387" style="font-size:10.5236px;font-family:&quot;Open Sans&quot;;-inkscape-font-specification:&quot;Open Sans&quot;;fill:#000;stroke:none;stroke-width:3.31454;stroke-dasharray:3.31454,9.94361;stroke-dashoffset:0"><tspan x="183.338" y="159.387" style="fill:#000;stroke:none;stroke-width:3.31454">M</tspan></text></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1280"
+   height="720"
+   viewBox="0 0 338.66661 190.50023"
+   version="1.1"
+   id="svg152"
+   sodipodi:docname="simple-oscillator.svg"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs156" />
+  <sodipodi:namedview
+     id="namedview154"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.32506152"
+     inkscape:cx="459.91294"
+     inkscape:cy="326.09212"
+     inkscape:window-width="1280"
+     inkscape:window-height="656"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg152" />
+  <g
+     transform="matrix(1.7701493,0,0,1.7701493,-83.55996,-100.06803)"
+     id="g150">
+    <path
+       d="m 57.725,61.746 h 170.281 m -85.14,0 32.057,77.914"
+       style="fill:#000000;stroke:#000000;stroke-width:0.906288;stroke-dasharray:none"
+       id="path132" />
+    <circle
+       cx="177.69901"
+       cy="145.209"
+       r="6.2129998"
+       style="fill:none;stroke:#000000;stroke-width:0.906288;stroke-dasharray:none"
+       id="circle134" />
+    <path
+       d="m 142.866,61.746 v 96.162"
+       style="fill:none;stroke:#000000;stroke-width:0.906288;stroke-dasharray:0.906288, 2.71886;stroke-dashoffset:0"
+       id="path136" />
+    <text
+       xml:space="preserve"
+       x="147.19"
+       y="100.818"
+       style="font-size:10.5236px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:3.31454;stroke-dasharray:3.31454, 9.94361;stroke-dashoffset:0"
+       id="text140"><tspan
+         x="147.19"
+         y="100.818"
+         style="fill:#000000;stroke:none;stroke-width:3.31454"
+         id="tspan138">θ</tspan></text>
+    <text
+       xml:space="preserve"
+       x="169.705"
+       y="110.164"
+       style="font-size:10.5236px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:3.31454;stroke-dasharray:3.31454, 9.94361;stroke-dashoffset:0"
+       id="text144"><tspan
+         x="169.705"
+         y="110.164"
+         style="fill:#000000;stroke:none;stroke-width:3.31454"
+         id="tspan142">L</tspan></text>
+    <text
+       xml:space="preserve"
+       x="183.338"
+       y="159.38699"
+       style="font-size:10.5236px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:3.31454;stroke-dasharray:3.31454, 9.94361;stroke-dashoffset:0"
+       id="text148"><tspan
+         x="183.338"
+         y="159.38699"
+         style="fill:#000000;stroke:none;stroke-width:3.31454"
+         id="tspan146">M</tspan></text>
+  </g>
+</svg>
