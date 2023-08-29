@@ -31,7 +31,7 @@ jobs:
       run: |
         jupyter-book build ./book
 
-    - name: Push _build/html to gh-pages
+    - name: Push built book to gh-pages
       run: |
         sudo chown -R $(whoami):$(whoami) .
         git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
@@ -45,7 +45,7 @@ jobs:
                              texlive-fonts-extra \
                              texlive-xetex latexmk
         jupyter-book build book --builder pdflatex
-        zip -r build_output.zip book/_build
+        mv book/_build/latex/python.pdf book/_build/elara-handbook.pdf
 
     - name: Upload book PDF to Github releases
       env:
@@ -58,4 +58,4 @@ jobs:
           --tag_name v0.0.0-$(git rev-parse HEAD | cut -c 1-8) \
           --prerelease \
           --body_string "Automatically generated from book sources via Github Actions" \
-          build_output.zip
+          book/_build/elara-handbook.pdf
