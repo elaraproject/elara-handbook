@@ -21,7 +21,6 @@ jobs:
         sudo apt-get install python3-pip
         pip install numpy
         pip install sympy
-        pip install einsteinpy
         pip install matplotlib
         pip install jupyter-book
         pip install ghp-import
