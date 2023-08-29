@@ -44,10 +44,6 @@ jobs:
         sudo apt-get install texlive-latex-extra \
                              texlive-fonts-extra \
                              texlive-xetex latexmk
-        # Rescale the high-definition images down by half
-        # to prevent them from taking too much space
-        for file in book/images/raster/*.png; do convert "$file" -resize 50% "$file"; done
-        for file in book/images/*.png; do convert "$file" -resize 50% "$file"; done
         # Build actual book
         jupyter-book build book --builder pdflatex
         mv book/_build/latex/python.pdf book/_build/elara-handbook.pdf
