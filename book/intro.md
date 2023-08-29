@@ -10,10 +10,4 @@ This book is written using [Jupyterbook](https://jupyterbook.org/). You can view
 
 All material in the Elara Handbook is [dedicated to the public domain](https://github.com/elaraproject/elara-handbook/blob/main/LICENSE). You may freely use, redistribute, sell, copy, modify, and (most importantly of all!) learn from this book.
 
-
-
-```{button-link} https://github.com/elaraproject/elara-handbook/releases
-:color: primary
-:shadow:
-Download as PDF {octicon}`download`
-```
+For offline usage, the PDF version of this book can be downloaded from <https://github.com/elaraproject/elara-handbook/releases/latest>.
