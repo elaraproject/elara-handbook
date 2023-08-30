@@ -11,6 +11,7 @@ parts:
   - file: about/guiding-principles
 - caption: Knowledge Library
   chapters:
+  - file: knowledge-library/algebra
   - file: knowledge-library/monovariable-calculus
   - file: knowledge-library/linear-algebra
   - file: knowledge-library/multivariable-calculus
