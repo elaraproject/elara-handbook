@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1280"
+   height="720"
+   viewBox="0 0 338.66667 190.5"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="complex-plane.svg"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview150"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.56702626"
+     inkscape:cx="614.60998"
+     inkscape:cy="484.10456"
+     inkscape:window-width="1280"
+     inkscape:window-height="637"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="TriangleStart"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+  </defs>
+  <g
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.654375;stroke-dasharray:none;marker-start:url(#TriangleStart)"
+       d="M 95.699608,21.241375 V 169.25863"
+       id="path420" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.652715;stroke-dasharray:none;marker-start:url(#TriangleStart)"
+       d="M 243.29425,168.83602 H 96.026798"
+       id="path422" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.924104;stroke-dasharray:0.924104, 0.924104;stroke-dashoffset:0"
+       d="M 195.22942,168.83601 V 124.84642"
+       id="path424" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.924102;stroke-dasharray:0.924102, 0.924102;stroke-dashoffset:0"
+       d="M 195.22942,124.84642 H 95.699608"
+       id="path980" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.924102;stroke-dasharray:none;stroke-dashoffset:0"
+       d="M 95.699608,168.83601 195.22942,124.84642"
+       id="path982" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:0.924102;stroke-dasharray:none;stroke-dashoffset:0"
+       x="121.1981"
+       y="166.71692"
+       id="text1764"><tspan
+         id="tspan1762"
+         style="font-style:italic;font-size:11.2889px;fill:#000000;stroke:none;stroke-width:0.924104"
+         x="121.1981"
+         y="166.71692">θ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:0.924102;stroke-dasharray:none;stroke-dashoffset:0"
+       x="200.58334"
+       y="150.01128"
+       id="text1818"><tspan
+         id="tspan1816"
+         style="font-size:11.2889px;fill:#000000;stroke:none;stroke-width:0.924104"
+         x="200.58334"
+         y="150.01128">b</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:0.924102;stroke-dasharray:none;stroke-dashoffset:0"
+       x="141.62546"
+       y="117.01135"
+       id="text1822"><tspan
+         id="tspan1820"
+         style="font-size:11.2889px;fill:#000000;stroke:none;stroke-width:0.924104"
+         x="141.62546"
+         y="117.01135">a</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.28888895px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#000000;stroke:none;stroke-width:0.924102;stroke-dasharray:none;stroke-dashoffset:0"
+       x="138.90044"
+       y="143.46275"
+       id="text1826"><tspan
+         id="tspan1824"
+         style="fill:#000000;stroke:none;stroke-width:0.924104;font-size:11.28888895px"
+         x="138.90044"
+         y="143.46275">r</tspan></text>
+  </g>
+</svg>
