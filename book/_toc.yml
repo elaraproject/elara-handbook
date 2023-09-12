@@ -9,6 +9,7 @@ parts:
   - file: about/overview
   - file: about/open-philosophy
   - file: about/guiding-principles
+  - file: about/docs-organization
 - caption: Knowledge Library
   chapters:
   - file: knowledge-library/algebra
