@@ -31,3 +31,5 @@ A partial list of other resources consulted include:
 - <http://web.mit.edu/edbert/GR/gr1.pdf>
 - <https://www.athabascau.ca/math-site/documents/math-site-mathematics-of-tensors-introduction.pdf>
 - <https://www.numerade.com/ask/question/proof-of-euler-formula-the-standard-proof-for-euler-formnula-cos-isin-0-uses-the-taylor-series-of-e-cos-and-sin-_-this-problem-walks-you-through-an-alternate-proof-using-ideas-from-different-52748/>
+- <http://people.uncw.edu/hermanr/GR/geodesic.pdf>
+- <https://www1.maths.leeds.ac.uk/~serguei/teaching/gr.pdf>
