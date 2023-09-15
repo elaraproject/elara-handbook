@@ -23,6 +23,9 @@ parts:
   - file: knowledge-library/alcubierre-metric-intro
   - file: knowledge-library/complex-analysis
   - file: knowledge-library/quantum-mechanics
+- caption: Ecosystem
+  chapters:
+  - file: ecosystem/covenant
 - caption: Appendix
   chapters:
   - file: appendix/acknowledgements
