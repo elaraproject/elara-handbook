@@ -1,9 +1,13 @@
 # Covenant of Project Elära
 
 We, the members of the Project Elära community,
+
 Recognizing the inviolable dignity of all peoples,
+
 Affirming the equal rights of peoples of all ages, of all backgrounds, in all their similarities and differences,
-Envisioning a community whose highest duty is to respect, support, and provide for its members,
+
+Envisioning a community whose highest duty is to respect, support, and provide for its people,
+
 Hereby declare, solemnly affirm, and proclaim this **Convenant of Project Elära**.
 
 ## Section 1: Fundamental Rights
