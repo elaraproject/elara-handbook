@@ -1,13 +1,9 @@
 # Covenant of Project Elära
 
 We, the members of the Project Elära community,
-
 Recognizing the inviolable dignity of all peoples,
-
 Affirming the equal rights of peoples of all ages, of all backgrounds, in all their similarities and differences,
-
 Envisioning a community whose highest duty is to respect, support, and provide for its members,
-
 Hereby declare, solemnly affirm, and proclaim this **Convenant of Project Elära**.
 
 ## Section 1: Fundamental Rights
@@ -126,7 +122,7 @@ The Covenant Council shall have the power to determine all disputes within the c
 
 ### Article 2
 
-The Covenant Council shall be composed of eleven members, chosen by sortition from the entire community. Each council member shall serve one term of ten years. Council members are required to not be associated with a political party or organization, nor to have acted contrary to the principles of the Covenant.
+The Covenant Council shall be composed of eleven members, chosen by random sortition from a pool of applicants. Each council member shall serve one term of ten years, and will be excluded from future applications. Council members are required to not be associated with a political party or organization, nor to have acted contrary to the principles of the Covenant.
 
 The Covenant Council may pass any ruling on each case with the approval of six of its members.
 
