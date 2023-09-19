@@ -28,6 +28,7 @@ parts:
   - file: developer-hub/design-philosophy
 - caption: Ecosystem
   chapters:
+  - file: ecosystem/guide-to-governance
   - file: ecosystem/covenant
 - caption: Appendix
   chapters:
