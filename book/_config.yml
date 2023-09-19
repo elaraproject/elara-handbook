@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: The Elara Handbook
-author: Jacky Song
+author: The Project Elära contributors
 logo: elara-logo.svg
 
 # Force re-execution of notebooks on each build.
