@@ -30,6 +30,7 @@ parts:
   chapters:
   - file: ecosystem/guide-to-governance
   - file: ecosystem/covenant
+  - file: ecosystem/community-vision
 - caption: Appendix
   chapters:
   - file: appendix/acknowledgements
