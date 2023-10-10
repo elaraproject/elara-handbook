@@ -17,7 +17,8 @@ parts:
   - file: knowledge-library/linear-algebra
   - file: knowledge-library/multivariable-calculus
   - file: knowledge-library/differential-equations
-  - file: knowledge-library/classical-mechanics
+  - file: knowledge-library/classical-mechanics-1
+  - file: knowledge-library/classical-mechanics-2
   - file: knowledge-library/differential-geometry
   - file: knowledge-library/special-relativity
   - file: knowledge-library/general-relativity-1
