@@ -21,9 +21,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="0.1992993"
-     inkscape:cx="-72.754895"
-     inkscape:cy="336.17779"
+     inkscape:zoom="0.28232651"
+     inkscape:cx="706.62864"
+     inkscape:cy="464.00176"
      inkscape:window-width="1280"
      inkscape:window-height="456"
      inkscape:window-x="0"
@@ -122,7 +122,7 @@
        x="217.78499"
        y="56.058029"
        style="fill:#000080;stroke:none;stroke-width:3.33015"
-       id="tspan165">b(y)</tspan></text>
+       id="tspan165">b(x, y)</tspan></text>
   <path
      d="M 162.20567,131.72461 217.54528,78.758338"
      style="fill:#000080;stroke:#000080;stroke-width:1.57035;stroke-dasharray:1.57035, 1.57035;stroke-dashoffset:0"
@@ -180,5 +180,5 @@
        x="239.39145"
        y="88.027168"
        style="fill:#ff6600;stroke:none;stroke-width:3.33015"
-       id="tspan191">a(x)</tspan></text>
+       id="tspan191">a(x, y)</tspan></text>
 </svg>
