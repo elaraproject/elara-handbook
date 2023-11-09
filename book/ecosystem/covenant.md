@@ -50,6 +50,10 @@ All members of the Project Elära community have the inalienable right to knowle
 
 ### Article 9
 
+All members of the Project Elära community have the inalienable right to live in harmonious coexistence with each other. The community will be fully tolerant of all customs, traditions, and ways of life that respect basic human rights. However, the community will not tolerate any intolerance. Any intolerant member of the community will be warned and monitored on the first offense, and expelled from the community on the second offense.
+
+### Article 10
+
 The Project Elära community must use all means necessary to defend Section 1 of the Covenant. Any person or group of persons that has the aim of removing or withholding any of these fundamental rights, or abolishing the democratic and open character of the community, will be immediately and permanently banned from participating in the community.
 
 ## Section 2: Executive
