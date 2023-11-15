@@ -124,23 +124,23 @@ The Senate is the only authority that may pass and vote on laws, outside of emer
 
 ### Article 1
 
-The judicial power shall be vested in a Covenant Council of Project Elära.
+The judicial power shall be vested in a Judicial Council of Project Elära.
 
-The Covenant Council shall have the power to determine all disputes within the community, and to review all laws and actions of the legislature and executive against the Covenant.
+The Judicial Council shall have the power to determine all disputes within the community, and to review all laws and actions of the legislature and executive against the Covenant.
 
 ### Article 2
 
-The Covenant Council shall be composed of eleven members, chosen by random sortition from a pool of applicants. Each council member shall serve one term of ten years, and will be excluded from future applications. Council members are required to not be associated with a political party or organization, nor to have acted contrary to the principles of the Covenant.
+The Judicial Council shall be composed of eleven members, chosen by random sortition from a pool of applicants. Each council member shall serve one term of ten years, and will be excluded from future applications. Council members are required to not be associated with a political party or organization, nor to have acted contrary to the principles of the Covenant.
 
-The Covenant Council may pass any ruling on each case with the approval of six of its members.
+The Judicial Council may pass any ruling on each case with the approval of six of its members.
 
 ### Article 3
 
-All laws passed by the Senate of Project Elära must undergo review against the Covenant by the Covenant Council.
+All laws passed by the Senate of Project Elära must undergo review against the Covenant by the Judicial Council.
 
 ### Article 4
 
-The Covenant Council reserves the right to remove any holder of office within the community upon the determination of any act in violation of the Covenant.
+The Judicial Council reserves the right to remove any holder of office within the community, including the Steward, upon the determination of any act in violation of the Covenant.
 
 ## Section 4
 
