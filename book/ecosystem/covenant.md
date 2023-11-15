@@ -130,7 +130,7 @@ The Judicial Council shall have the power to determine all disputes within the c
 
 ### Article 2
 
-The Judicial Council shall be composed of eleven members, chosen by random sortition from a pool of applicants. Each council member shall serve one term of ten years, and will be excluded from future applications. Council members are required to not be associated with a political party or organization, nor to have acted contrary to the principles of the Covenant.
+The Judicial Council shall be composed of eleven judges, chosen by random sortition from a pool of applicants to the position. Each judge shall serve one term of two years, and will be excluded from future applications. Council members are required to not be associated with a political party or organization, nor to have acted contrary to the principles of the Covenant.
 
 The Judicial Council may pass any ruling on each case with the approval of six of its members.
 
