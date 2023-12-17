@@ -1,4 +1,4 @@
-# Covenant of Project Elära
+# Guide to governance
 
 We, the members of the Project Elära community,
 
@@ -17,6 +17,8 @@ Hereby declare, solemnly affirm, and proclaim this **Convenant of Project Elära
 All human beings are born with dignity and share a common conscience.
 
 Upholding the universal principles of fairness, equality, justice, and respect for human dignity is the ultimate aim and responsibility of all communities.
+
+The representative government of the Project Elära community is the Varyë. The Varyë is to be the sole legitimate government of the community.
 
 This article may not be altered nor removed by the Project Elära community.
 
@@ -60,9 +62,7 @@ The Project Elära community must use all means necessary to defend Section 1 of
 
 ### Article 1
 
-The executive power of the community shall be vested in a Steward of Project Elära, who shall be an elected leader and the head of the community.
-
-The Steward shall be freely elected by the members of the community, and shall lead in accordance and with the guidance of the community.
+The executive power of the Varyë shall be vested in a Steward of Project Elära, who shall be the head of the community, and shall lead in accordance and with the guidance of the community.
 
 ### Article 2
 
@@ -76,37 +76,49 @@ To be the unifying figure of the community;
 
 To represent the community at national and international events;
 
-To enforce the laws of the community;
+To carry out and enforce the laws of the community;
 
-To establish qualifications for community positions;
+To supervise officials who are delegated responsibilities;
 
-To direct the operations of Project Elära and regulate the respective departments of the project, in accordance with the laws of the community;
+To mediate disputes within the community;
 
-To remove any elected official who has violated the Covenant, acted in abuse of their powers and responsibilities, or failed in their duties;
+To direct the operations of Project Elära, in accordance with the laws of the community;
+
+To remove any official who has violated the Covenant, acted in abuse of their powers and responsibilities, or failed in their duties;
 
 To secure the welfare and maintain the rights and freedoms of the entire community.
 
 ### Article 4
 
-The Steward shall be elected by universal suffrage of all members of the community every ten years. 
+The Steward shall be chosen by a 12-member jury once every ten years, and exactly 5 years into the term of the current Steward. The jury's members are to be chosen randomly from the entire community, not including those currently holding public office in the Varyë.
 
-Any community member may stand for election as Steward. Members of the community may vote for multiple candidates. All candidates who gain an absolute majority of the first vote will proceed to the second vote, in which the candidate who gains the most votes shall assume office as the Steward of Project Elära.
+Nominations for acts of extraordinary bravery, integrity, selflessness, and sacrifice will be sent to the jury for evaluation. Any member of the community can nominate any other person, with the exception of themselves. The jury is asked to review all nominations and select one nominee whose actions are most distinguished.
+
+Once a nominee is selected, they are informed that they have been selected as the next Steward. They will then be apprenticed to the current Steward until the end of the current Steward's term, during which the current Steward will pass on their knowledge to the incoming Steward.
 
 Upon assuming office, the Steward shall take the following oath:
 
 "I swear (or affirm) that I will, to the best of my abilities, carry out the duties of the Steward of Project Elära, and preserve, protect, and defend the Covenant of Project Elära."
 
-They shall hold their office for ten years, and may not be re-elected.
+They shall hold their office for ten years, and may not serve again.
 
 ### Article 5
 
-The Steward may not pass or veto legislation, except during emergency circumstances, where they may pass or veto legislation for a maximum duration of six months. The Steward may declare a state of emergency a maximum of twice within their term.
+All laws passed by the Senate of Project Elära must undergo review against the Covenant by the Steward. If the Steward determines any law passed to be unconstitutional, the law will not go into effect.
+
+### Article 6
+
+The Steward may not pass legislation, except during emergency circumstances, where they may pass legislation for a maximum duration of six months. The Steward may declare a state of emergency a maximum of twice within their term.
+
+### Article 7
+
+A 2/3 majority vote of the community is sufficient to remove the Steward from office.
 
 ## Section 3: Legislature
 
 ### Article 1
 
-The legislative power of the community shall be vested in a Senate of Project Elära.
+The legislative power of the Varyë shall be vested in a Senate of Project Elära.
 
 ### Article 2
 
@@ -114,35 +126,17 @@ The Senate of Project Elära shall be directly elected by the community, through
 
 ### Article 3
 
-Any member of the community may apply to be a Senator, and may hold the office if they receive an absolute majority of votes. Members of the community may vote for multiple Senators.
+Any member of the community may apply to be a Senator, and may hold office if they receive an absolute majority of votes, that is, the support of greater than half of the electorate. Members of the community may vote for multiple candidates, no candidates, or a single candidate. If no candidate attains an absolute majority of votes, elections are repeated until an absolute majority is achieved.
 
 ### Article 3
 
-The Senate is the only authority that may pass and vote on laws, outside of emergency circumstances. Laws may be proposed by any member of the Commandian Senate, and may be passed with the approval of an absolute majority of Senators. Amendments to the Covenant may be passed with a 2/3 majority in the Senate.
-
-## Section 3: Judiciary
-
-### Article 1
-
-The judicial power shall be vested in a Judicial Council of Project Elära.
-
-The Judicial Council shall have the power to determine all disputes within the community, and to review all laws and actions of the legislature and executive against the Covenant.
-
-### Article 2
-
-The Judicial Council shall be composed of eleven judges, chosen by random sortition from a pool of applicants to the position. Each judge shall serve one term of two years, and will be excluded from future applications. Council members are required to not be associated with a political party or organization, nor to have acted contrary to the principles of the Covenant.
-
-The Judicial Council may pass any ruling on each case with the approval of six of its members.
-
-### Article 3
-
-All laws passed by the Senate of Project Elära must undergo review against the Covenant by the Judicial Council.
+The Senate is the only authority that may pass and vote on laws, outside of emergency circumstances. Laws may be proposed by any member of the Senate, and may be passed with the approval of an absolute majority of Senators. Amendments to the Covenant may be passed with a 4/5 majority vote in the Senate.
 
 ### Article 4
 
-The Judicial Council reserves the right to remove any holder of office within the community, including the Steward, upon the determination of any act in violation of the Covenant.
+A Senator may be removed from office by a 2/3 majority vote of the Senate or an equal majority by a referendum of the community, whichever is greater.
 
-## Section 4
+## Section 3
 
 The Convenant of Project Elära shall have supremacy over all laws of the community.
 
