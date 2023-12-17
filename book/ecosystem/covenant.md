@@ -1,4 +1,4 @@
-# Guide to governance
+# Covenant of Project Elara
 
 We, the members of the Project Elära community,
 
