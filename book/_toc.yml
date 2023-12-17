@@ -10,6 +10,7 @@ parts:
   - file: about/open-philosophy
   - file: about/guiding-principles
   - file: about/docs-organization
+  - file: about/using-handbook.md
 - caption: Knowledge Library
   chapters:
   - file: knowledge-library/algebra
