@@ -8,16 +8,20 @@ on:
       - main
       - test-gh-actions # GH actions test branch
 
+permissions:
+  id-token: write
+  pages: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Set up Python
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v5
       with:
-        python-version: 3.7 
+        python-version: 3.10.15
     - name: Install Python dependencies
       run: |
         sudo apt-get install python3-pip
@@ -33,13 +37,13 @@ jobs:
         jupyter-book build ./book
 
     - name: Push built book HTML as artifact
-      uses: actions/upload-pages-artifact@v2
+      uses: actions/upload-pages-artifact@v3
       with:
         path: "book/_build/html"
 
     - name: Deploy book HTML to Github Pages
       id: deployment
-      uses: actions/deploy-pages@v2
+      uses: actions/deploy-pages@v4
 
     - name: Build PDF of book
       run: |
