@@ -1,10 +1,12 @@
-# Source: https://github.com/choldgraf/deploy_configurations/blob/master/.github/workflows/main.yml
+# Modified from: https://github.com/choldgraf/deploy_configurations/blob/master/.github/workflows/main.yml
+# Note: lint with https://rhysd.github.io/actionlint/
 name: Publish JupyterBook to GitHub Pages
 
 on: 
   push: # trigger build only when push to master
     branches:
       - main
+      - test-gh-actions # GH actions test branch
 
 jobs:
   build:
@@ -30,13 +32,14 @@ jobs:
       run: |
         jupyter-book build ./book
 
-    - name: Push built book to gh-pages
-      run: |
-        sudo chown -R $(whoami):$(whoami) .
-        git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
-        git config --global user.name "$GITHUB_ACTOR"
-        git remote set-url origin "https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY"
-        ghp-import ./book/_build/html -f -p -n
+    - name: Push built book HTML as artifact
+      uses: actions/upload-pages-artifact@v2
+      with:
+        path: "book/_build/html"
+
+    - name: Deploy book HTML to Github Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
 
     - name: Build PDF of book
       run: |
