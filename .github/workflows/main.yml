@@ -57,7 +57,8 @@ jobs:
         # Build actual book
         jupyter-book build book --builder pdflatex
         echo $(pwd)
-        mv _build/latex/elara-handbook.pdf _build/elara-handbook.pdf
+        ls $(pwd)/_build/latex
+        mv book/_build/latex/*.pdf _build/elara-handbook.pdf
 
     - name: Upload book PDF to Github releases
       env:
