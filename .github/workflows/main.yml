@@ -57,8 +57,8 @@ jobs:
         # Build actual book
         jupyter-book build book --builder pdflatex
         echo $(pwd)
-        ls -R $(pwd)
-        mv book/_build/latex/elara-handbook.pdf _build/elara-handbook.pdf
+        # ls -R $(pwd)
+        mv ./book/_build/latex/elara-handbook.pdf ./book/elara-handbook.pdf
 
     - name: Upload book PDF to Github releases
       env:
@@ -71,4 +71,4 @@ jobs:
           --tag_name v0.0.0-$(git rev-parse HEAD | cut -c 1-8) \
           --prerelease \
           --body_string "Automatically generated from book sources via Github Actions" \
-          _build/elara-handbook.pdf
+          ./book/elara-handbook.pdf
