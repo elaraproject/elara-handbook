@@ -56,7 +56,8 @@ jobs:
         sudo apt install libpng-dev libjpeg-dev libtiff-dev imagemagick
         # Build actual book
         jupyter-book build book --builder pdflatex
-        mv book/_build/latex/elara-handbook.pdf book/_build/elara-handbook.pdf
+        echo $(pwd)
+        mv _build/latex/elara-handbook.pdf _build/elara-handbook.pdf
 
     - name: Upload book PDF to Github releases
       env:
@@ -69,4 +70,4 @@ jobs:
           --tag_name v0.0.0-$(git rev-parse HEAD | cut -c 1-8) \
           --prerelease \
           --body_string "Automatically generated from book sources via Github Actions" \
-          book/_build/elara-handbook.pdf
+          _build/elara-handbook.pdf
