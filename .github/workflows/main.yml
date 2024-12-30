@@ -37,7 +37,7 @@ jobs:
         jupyter-book build ./book
 
     - name: Push built book HTML as artifact
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-pages-artifact@v3                                                                                                                                                                                                                                                                                                                                                                                                                                     
       with:
         path: "book/_build/html"
 
@@ -48,9 +48,12 @@ jobs:
     - name: Build PDF of book
       run: |
         sudo apt-get update
+        # TeX tools
         sudo apt-get install texlive-latex-extra \
                              texlive-fonts-extra \
                              texlive-xetex latexmk
+        # Image tools
+        sudo apt install libpng-dev libjpeg-dev libtiff-dev imagemagick
         # Build actual book
         jupyter-book build book --builder pdflatex
         mv book/_build/latex/python.pdf book/_build/elara-handbook.pdf
