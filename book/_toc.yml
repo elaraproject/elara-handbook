@@ -7,38 +7,40 @@ parts:
 - caption: The basics
   chapters:
     - file: beginner-intro
+    - file: basics/about/index.md
       sections:
-      - file: basics/overview
-      - file: basics/open-philosophy
-      - file: basics/guiding-principles
-      - file: basics/docs-organization
-      - file: basics/using-handbook.md
+      - file: basics/about/overview
+      - file: basics/about/open-philosophy
+      - file: basics/about/guiding-principles
+      - file: basics/about/docs-organization
+      - file: basics/about/using-handbook.md
     - file: math-phys-intro
       sections:
-      - file: basics/algebra
-      - file: basics/monovariable-calculus
-      - file: basics/linear-algebra
-      - file: basics/multivariable-calculus
-      - file: basics/differential-equations
-      - file: basics/classical-mechanics-1
-      - file: basics/classical-mechanics-2
+      - file: basics/intro-math/algebra
+      - file: basics/intro-math/intro-calculus
+      - file: basics/intro-math/linear-algebra
+      - file: basics/intro-math/multivariable-calculus
+      - file: basics/intro-math/differential-equations
+      - file: basics/intro-phys/classical-mechanics-1
+      - file: basics/intro-phys/classical-mechanics-2
 - caption: The specifics
   chapters:
+    - file: mathematical-physics
+      - file: specifics/mathematical-physics/tensor-analysis
+      - file: specifics/mathematical-physics/quantum-math-prep
     - file: modern-physics
       sections:
-      - file: specifics/tensor-analysis
-      - file: specifics/quantum-math-prep
-      - file: specifics/quantum-mechanics
+      - file: specifics/modern-phys-foundations/quantum-mechanics
 - caption: The expert's guide
   chapters:
     - file: advanced-physics
       sections:
-      - file: developer-hub/design-philosophy
-      - file: expert-guide/special-relativity
-      - file: expert-guide/general-relativity-1
-      - file: expert-guide/general-relativity-2
-      - file: expert-guide/general-relativity-3
-      - file: expert-guide/alcubierre-metric-intro
+      - file: expert-guide/developer/design-philosophy
+      - file: expert-guide/advanced-phys/special-relativity
+      - file: expert-guide/advanced-phys/general-relativity-1
+      - file: expert-guide/advanced-phys/general-relativity-2
+      - file: expert-guide/advanced-phys/general-relativity-3
+      - file: expert-guide/theoretical-research/alcubierre-metric-intro
 - caption: The administrator's guide
   chapters:
   - file: admin/guide-to-governance
