@@ -11,8 +11,7 @@ kernelspec:
   name: python3
 ---
 
-# Linear Algebra
-
+# Vectors and matrices
 
 A vector is a list of items (usually numbers), which represent coordinates in a certain coordinate system. For example, the vector $(4, 2)$ is a line that moves 4 in the x-direction, and 2 in the y-direction. We draw vectors as arrows in space.
 
