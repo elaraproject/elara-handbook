@@ -4,38 +4,47 @@
 format: jb-book
 root: intro
 parts:
-- caption: About Project Elara
+- caption: The basics
   chapters:
-  - file: about/overview
-  - file: about/open-philosophy
-  - file: about/guiding-principles
-  - file: about/docs-organization
-  - file: about/using-handbook.md
-- caption: Knowledge Library
+    - file: beginner-intro
+      sections:
+      - file: basics/overview
+      - file: basics/open-philosophy
+      - file: basics/guiding-principles
+      - file: basics/docs-organization
+      - file: basics/using-handbook.md
+    - file: math-phys-intro
+      sections:
+      - file: basics/algebra
+      - file: basics/monovariable-calculus
+      - file: basics/linear-algebra
+      - file: basics/multivariable-calculus
+      - file: basics/differential-equations
+      - file: basics/classical-mechanics-1
+      - file: basics/classical-mechanics-2
+- caption: The specifics
   chapters:
-  - file: knowledge-library/algebra
-  - file: knowledge-library/monovariable-calculus
-  - file: knowledge-library/linear-algebra
-  - file: knowledge-library/multivariable-calculus
-  - file: knowledge-library/differential-equations
-  - file: knowledge-library/classical-mechanics-1
-  - file: knowledge-library/classical-mechanics-2
-  - file: knowledge-library/differential-geometry
-  - file: knowledge-library/special-relativity
-  - file: knowledge-library/general-relativity-1
-  - file: knowledge-library/general-relativity-2
-  - file: knowledge-library/general-relativity-3
-  - file: knowledge-library/alcubierre-metric-intro
-  - file: knowledge-library/complex-analysis
-  - file: knowledge-library/quantum-mechanics
-- caption: Developer Hub
+    - file: modern-physics
+      sections:
+      - file: specifics/tensor-analysis
+      - file: specifics/quantum-math-prep
+      - file: specifics/quantum-mechanics
+- caption: The expert's guide
   chapters:
-  - file: developer-hub/design-philosophy
-- caption: Ecosystem
+    - file: advanced-physics
+      sections:
+      - file: developer-hub/design-philosophy
+      - file: expert-guide/special-relativity
+      - file: expert-guide/general-relativity-1
+      - file: expert-guide/general-relativity-2
+      - file: expert-guide/general-relativity-3
+      - file: expert-guide/alcubierre-metric-intro
+- caption: The administrator's guide
   chapters:
-  - file: ecosystem/guide-to-governance
-  - file: ecosystem/covenant
-  - file: ecosystem/community-vision
+  - file: admin/guide-to-governance
+  - file: admin/covenant
+  - file: admin/community-vision
+- caption: Supplementary materials
 - caption: Appendix
   chapters:
   - file: appendix/acknowledgements
