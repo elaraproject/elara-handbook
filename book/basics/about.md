@@ -1,4 +1,4 @@
-# Overview
+# Project Elara Overview
 
 Project Elära is an open effort to advance research towards scientific breakthroughs that will make the world a better place. Ultimately, the project aims to achieve high-speed interstellar travel, create a near-infinite energy source, remove humanity's dependence on fossil fuels, and ensure a life worthy of human dignity for all humanity.
 

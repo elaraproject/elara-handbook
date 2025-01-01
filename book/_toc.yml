@@ -6,47 +6,61 @@ root: intro
 parts:
 - caption: The basics
   chapters:
-    - file: beginner-intro
-    - file: basics/about/index.md
+    - file: basics/index.md
+    - file: basics/about.md
       sections:
-      - file: basics/about/overview
       - file: basics/about/open-philosophy
       - file: basics/about/guiding-principles
       - file: basics/about/docs-organization
-      - file: basics/about/using-handbook.md
-    - file: math-phys-intro
+      - file: basics/about/using-handbook
+    - file: basics/intro-math.md
       sections:
       - file: basics/intro-math/algebra
       - file: basics/intro-math/intro-calculus
       - file: basics/intro-math/vectors-and-matrices
       - file: basics/intro-math/multivariable-calculus
       - file: basics/intro-math/differential-equations
+    - file: basics/intro-phys.md
+      sections:
       - file: basics/intro-phys/classical-mechanics-1
       - file: basics/intro-phys/classical-mechanics-2
+
 - caption: The specifics
   chapters:
-    - file: mathematical-physics
+    - file: specifics/index.md
+    - file: specifics/mathematical-physics.md
+      sections:
       - file: specifics/mathematical-physics/tensor-analysis
       - file: specifics/mathematical-physics/quantum-math-prep
-    - file: modern-physics
+    - file: specifics/modern-phys-foundations.md
       sections:
-      - file: specifics/modern-phys-foundations/quantum-mechanics
+      - file: specifics/modern-phys-foundations/quantum-mechanics.md
 - caption: The expert's guide
   chapters:
-    - file: advanced-physics
+    - file: expert-guide/index.md
+    - file: expert-guide/computational-phys.md
+      sections:
+      - file: expert-guide/computational-phys/intro-computational-phys
+    - file: expert-guide/developer.md
       sections:
       - file: expert-guide/developer/design-philosophy
+    - file: expert-guide/advanced-phys.md
+      sections:
       - file: expert-guide/advanced-phys/special-relativity
       - file: expert-guide/advanced-phys/general-relativity-1
       - file: expert-guide/advanced-phys/general-relativity-2
       - file: expert-guide/advanced-phys/general-relativity-3
+    - file: expert-guide/theoretical-research.md
+      sections:
       - file: expert-guide/theoretical-research/alcubierre-metric-intro
+
 - caption: The administrator's guide
   chapters:
   - file: admin/guide-to-governance
   - file: admin/covenant
   - file: admin/community-vision
-- caption: Supplementary materials
+
 - caption: Appendix
   chapters:
+  - file: appendix/credits
   - file: appendix/acknowledgements

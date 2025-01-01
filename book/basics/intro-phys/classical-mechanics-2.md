@@ -498,6 +498,8 @@ $$
 These can be solved analytically, but for the sake of simplicity here they will be solved using a numerical differential equation solver:
 
 ```{code-cell} ipython3
+import matplotlib.pyplot as plt
+import numpy as np
 from scipy.integrate import solve_ivp
 ```
 

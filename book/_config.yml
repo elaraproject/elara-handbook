@@ -7,8 +7,8 @@ logo: elara-logo.svg
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
-execute:
-  execute_notebooks: force
+# execute:
+#   execute_notebooks: force
 
 # Add a bibtex file so that we can create citations
 # (will add in later once we have citations)
