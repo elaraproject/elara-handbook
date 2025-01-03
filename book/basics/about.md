@@ -1,6 +1,8 @@
-# Project Elara Overview
+# Project Elara overview
 
-Project Elära is an open effort to advance research towards scientific breakthroughs that will make the world a better place. Ultimately, the project aims to achieve high-speed interstellar travel, create a near-infinite energy source, remove humanity's dependence on fossil fuels, and ensure a life worthy of human dignity for all humanity.
+Project Elära is an open effort to advance research that we hope will make a better future possible. We have a research program covering a wide variety of current and anticipated areas: space power swarms, high-speed interplanetary travel, non-invasive laser-based medical treatment, atmospheric power beaming to remote locations, and more. 
+
+Further, we are keen to participate in research partnerships and collaborations to extend our research programs further, in which we freely exchange our knowledge and expertise. We have hopes of forming strong alliances and bringing together teams from around the world to collaborate in realizing what may seem impossible and building a future worthy of our future generations.
 
 > “We choose to go to the Moon in this decade and do the other things, not because they are easy, but because they are hard.”
 > 
@@ -8,17 +10,17 @@ Project Elära is an open effort to advance research towards scientific breakthr
 
 ## A tourist's guide to the project
 
-Project Elära currently advances research into two main areas: spacetime metric engineering and black hole superradiance reactors.
+We are (for now) a small research organization based at Rensselaer Polytechnic institute, which has conducted research for the past 3 years. We work to push frontiers in science and engineering and make world-changing technologies possible.
 
-For realizing faster-than-light travel, the project will develop a new machine-learning assisted approach to predicting Alcubierre-like spacetime metrics, based on existing research on the Alcubierre metric. For realizing black hole energy generation, the project will develop superradiance reactors that extract energy from artificial rotating black holes. Finally, the project will aim to create a comprehensive set of orbital construction technologies necessary for both superluminal interstellar spacecraft and superradiance reactors. More areas of research will be added in the future by members of the project, including research into climate change mitigation technologies and quantum communication.
+Our primary focus is on **space power swarms**, which collect energy from our Sun from space and beam it back to Earth. When fully-realized, this technology would generate power at an order of magnitude above nearly any means of power generation we could conceive of, even above nuclear fission and fussion. Further, the same technology used in space power swarms could be carried over to a multitude of other applications, including **interplanetary and interstellar spaceflight**, as well as **humanitarian technologies** here on Earth. It could even pave the way for highly-advanced technologies that are likely centuries away, including spacetime metric engineering and black hole reactors (the reasons for why will become apparent later on in this Handbook). Further, the entire project is dedicated to the public domain, with no copyright or patent or any fees, allowing others to build on our work. We are committed into ensuring it will remain free and openly-accessible forever.
 
-This project is meant to be a thousand-year project, built through the work of countless generations of researchers and scientists. The entire project is dedicated to the public domain, with no copyright or patent, and will remain free and openly-accessible forever.
+We realize that working on research this ambitious is not possible to complete within any short time frame, especially for an organization determined to share its technologies for free. For this reason, this project is meant to be a project built on the work of countless researchers and scientists, likely worldwide and across many generations. We hope that our vision of a hopeful future inspires solidarity and unity that will act as a positive force against cynicism and division around the world.
 
-## What is Elära?
+## What is Elara?
 
-In the Commandúléan language, _elära_ is the word for hope. And Project Elära ultimately serves to create the future all of us hope for - one where the world will forever be at peace and there will be plenty for all.
+In a constructed language, _elära_ (anglicized: _elara_) is the word for *hope*. And Project Elara ultimately serves to create the future all of us hope for - one where the world will forever be at peace, where all human beings are guaranteed lives of dignity.
 
-Project Elära is a choice to have hope, despite knowing of the impossible odds. It represents the best of us, the good we can accomplish when we put our efforts towards the good of all humankind.
+Project Elara is a choice to have hope, despite knowing of the (nearly-) impossible odds. We hope that it can represent the best of us, the good we can accomplish when we put our efforts towards the good of all humankind.
 
 > “Never doubt that a small group of thoughtful, committed people can change the world. Indeed, it is the only thing that ever has.”  
 > 
