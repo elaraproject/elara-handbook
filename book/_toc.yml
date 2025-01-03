@@ -11,8 +11,8 @@ parts:
       sections:
       - file: basics/about/open-philosophy
       - file: basics/about/guiding-principles
-      - file: basics/about/docs-organization
-      - file: basics/about/using-handbook
+      - file: basics/about/organization
+      - file: basics/about/handbook-purpose
     - file: basics/intro-math.md
       sections:
       - file: basics/intro-math/algebra
