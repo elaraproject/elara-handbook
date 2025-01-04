@@ -1,8 +1,3 @@
 # Introduction
 
 Whether you've come from the last two chapters looking for more, or simply want a challenge, this section is a comprehensive guide to prepare the theoretical foundations for, and then introduce, Project Elara's most advanced research. We will cover advanced computational physics, theoretical physics, and theoretical research. In addition, for developers looking to work on Project Elara, we will also extensively cover the architecture and design of Project Elara's software and codebase.
-
-## Section table of contents
-
-```{tableofcontents}
-```
