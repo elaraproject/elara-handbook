@@ -1,6 +1,6 @@
 # The Elara Handbook
 
-**Welcome to Project Elara!** Project Elara is a mission driven by a team of committed scientists, engineers, and talented people, working across many different fields, to pass down a better world to our future generations. 
+**Welcome to Project Elara!** Project Elara is a mission of a team of committed scientists, engineers, and talented people, working across many different fields, to pass down a better world to our future generations.
 
 ## Who we are
 
@@ -9,7 +9,7 @@ We choose to believe in the power of **hope** and we work so that our future des
 These are indeed lofty goals, and we realize that even trying to do so at all is hardly simple. Therefore, we work as a team, across nations and across generations, to accomplish this mission together. To advance, share, and preserve our collective knowledge and expertise, and to build on each other's work, we have put together this book. It is not simply an encylopedia, an open research repository, a wiki, a work of technical documentation, a manifesto of thought, a developer log, a book on software, a textbook, or a manual; it is _all of these_. Everything you'd ever need to learn, develop, or contribute to Project Elara can be found here. And we dedicate this book to not only the ones dear to us, but also to the world.
 
 ```{note}
-The handbook is actively developed and in some sense it will never be "complete", as it is a continuous work with no singular author and will only grow with time. If you find any errors, please report them to us at <https://github.com/elaraproject/elara-handbook/issues>. Thank you very much!
+The handbook is actively developed and in some sense it will never be "complete", as it is a continuous work with no singular author and will only grow with time. Information within this handbook can update rapidly. If you find any errors or problems, please report them to us at <https://github.com/elaraproject/elara-handbook/issues>. Thank you very much!
 ```
 
 ## The newcomer's guide
@@ -33,6 +33,13 @@ Wanting to edit and add to the Handbook? This book is written using [Jupyterbook
 ```sh
 git clone https://github.com/elaraproject/elara-handbook
 cd elara-handbook
+```
+
+To build the book locally, ensure you have Jupyterbook installed, then, with a terminal open to the **root directory of the repository**, run:
+
+```sh
+# You MUST run this in the ROOT of the Git repo
+jupyter-book build book/
 ```
 
 Then you can start writing! We recommend using a markdown editor like [Obsidian](https://obsidian.md/) which makes editing _much_ more convenient, but this is not strictly necessary. Simply follow the below instructions:
