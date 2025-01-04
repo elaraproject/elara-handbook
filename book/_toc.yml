@@ -28,6 +28,7 @@ parts:
 - caption: The specifics
   chapters:
     - file: specifics/index.md
+    - file: specifics/lagrange-hamiltonian-mech.md
     - file: specifics/mathematical-physics.md
       sections:
       - file: specifics/mathematical-physics/tensor-analysis
