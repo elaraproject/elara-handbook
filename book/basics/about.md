@@ -18,7 +18,7 @@ We realize that working on research this ambitious is not possible to complete w
 
 ## What is Elara?
 
-In a constructed language, _elära_ (anglicized: _elara_) is the word for *hope*. And Project Elara ultimately serves to create the future all of us hope for - one where the world will forever be at peace, where all human beings are guaranteed lives of dignity.
+In a constructed language devised by the Project's founder, _elära_ (anglicized: _elara_) is the word for *hope*. And Project Elara ultimately serves to create the future all of us hope for - one where the world will forever be at peace, where all human beings are guaranteed lives of dignity.
 
 Project Elara is a choice to have hope, despite knowing of the (nearly-) impossible odds. We hope that it can represent the best of us, the good we can accomplish when we put our efforts towards the good of all humankind.
 
