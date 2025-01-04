@@ -11,7 +11,7 @@ kernelspec:
   name: python3
 ---
 
-# Classical mechanics, Part 1
+# Newtonian mechanics
 
 
 > "The important thing is to never stop questioning."
@@ -263,7 +263,7 @@ Of all of Newton's laws, it is the second that is the most typically helpful.
 To utilize Newton's 2nd law, we often like to draw free-body diagrams to illustrate all the forces on an object. Forces that are in the positive direction (usually up and right) are positive, and forces in the negative direction (usually down and left) are negative. For instance, consider a free-falling object, influenced only by the downward force of gravity:
 
 
-```{image} ../images/raster/fbd-gravity.png
+```{image} img/fbd-gravity.png
 :alt: Free body diagram single force
 :width: 400px
 :align: center
@@ -328,14 +328,14 @@ A more difficult example is with the following system, where $F_T$ is the tensio
 ```{image} https://upload.wikimedia.org/wikipedia/commons/c/cb/Atwood.svg
 :alt: Atwood's machine diagram
 :width: 400px
-:algin: center
+:align: center
 ```
 
 
 Here, to draw a free-body diagram, we "unwrap" and stretch out the system, then draw 2 separate free-body diagrams for each sub-system:
 
 
-```{image} ../images/raster/fbd-atwoods.png
+```{image} img/fbd-atwoods.png
 :alt: Free body diagram muliple force
 :width: 400px
 :align: center
@@ -719,18 +719,26 @@ $$
 \phi = \frac{GM}{r}
 $$
 
+```{note}
+This applies for all $r > R$ for a spherical gravitating body (e.g. planet) of radius $R$, that is, _outside_ the spherical body. Inside the spherical body, the gravitational potential is given by $\phi = -\dfrac{GM}{2R^3}(3R^2 - r^2)$.
+```
+
 
 A visualization of the gravitational potential is shown below:
 
 ```{code-cell} ipython3
+def gravitational_potential(r, radius=1.5, G=1, M=0.5):
+	# slightly more complex than
+	# the formula to accomodate
+	# r < R where R is radius of body
+	return np.where(r > radius, -G*M/r, -((G*M)/(2*radius**3))*(3*radius**2 - r**2))
+
 def calc_div_grav():
     %matplotlib inline
-    G = 1
-    M = 1
-    radii = np.linspace(0.4, 7, 50)
+    radii = np.linspace(0, 7, 50)
     thetas = np.linspace(0, 2 * np.pi, 50)
     R, T = np.meshgrid(radii, thetas)
-    Phi = -(G * M)/(R)
+    Phi = gravitational_potential(R)
     
     # convert r, theta coordinates to
     # cartesian x, y coordinates
@@ -738,9 +746,9 @@ def calc_div_grav():
     
     f = plt.figure(figsize=(7, 7))
     ax = f.add_subplot(projection="3d")
+    ax.set_zlim(-0.75, 0.15)
     # Set the angle of the camera
     ax.view_init(25, -45)
-    ax.set_zlim(-3, 3)
     
     # Colormap
     cmap = LinearSegmentedColormap.from_list("", ["#D54C90", "#A37DF8", "#B3E6FF"])
@@ -750,7 +758,7 @@ def calc_div_grav():
                     cstride=2,
                     rstride=2,
                     edgecolors="black")
-    plt.title("Gravitational potential field $\Phi$")
+    plt.title(r"Gravitational potential field $\Phi$")
     plt.grid()
     plt.rcParams["figure.autolayout"] 
     plt.show()
@@ -768,7 +776,7 @@ $$
 $$
 
 
-That means that at each point in the potential field, an object of mass $m$ will have a gravitational potential energy of $\phi m$ relative to infinity.
+That means that at each point in the potential field, an object of mass $m$ will have a gravitational potential energy of $U=\phi m$ relative to infinity.
 
 
 The divergence of the gravitational field is given by:
