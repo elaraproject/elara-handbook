@@ -11,7 +11,7 @@ kernelspec:
   name: python3
 ---
 
-# Monovariable Calculus
+# Introduction to calculus
 
 
 > Calculus is the most powerful weapon of thought yet devised by the wit of man.
@@ -94,7 +94,7 @@ However, the slope equation only works for straight lines. How, then, could we f
 Well, we can first take advantage of the fact that if you zoom _really_ close in to a curve, it looks like a straight line:
 
 
-```{image} ../images/Calculus-curve-zoom.jpg
+```{image} img/Calculus-curve-zoom.jpg
 :alt: Zooming into a curve
 :width: 600px
 :align: center
@@ -107,7 +107,7 @@ _Notice how, as we zoom into the curve, the curve looks more and more like a str
 The **derivative** is a function that tells you the slope of another function at _any_ point. You can think of it as an "upgraded" version of the slope formula. We find the derivative by taking two points, $(x, f(x))$ and $((x + a), f(x+a))$, and calculating the slope from them:
 
 
-```{image} ../images/Derivative-illustration.png
+```{image} img/Derivative-illustration.png
 :alt: Illustration of the derivative
 :width: 400px
 :align: center

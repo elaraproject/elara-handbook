@@ -943,5 +943,5 @@ Summation is very useful for shortening long formulas. For example, the **binomi
 
 
 $$
-(a + b)^n = \sum_{i = 0}^n = \frac{n!}{(n - i)! i!} a^{n - i} b^i
+(a + b)^n = \sum_{i = 0}^n \frac{n!}{(n - i)! i!} a^{n - i} b^i
 $$

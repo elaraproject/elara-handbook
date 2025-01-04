@@ -114,7 +114,7 @@ $$
 If you were travelling along a mountain, you would notice something interesting. Let's assume you take two journeys across the mountain, measuring the height of the mountain as you go. If you walk strictly from east to west of the mountain, you find that the rate of change of the height is given by a specific function $a(x)$. If you then change directions and walk strictly from north to south of the mountain, then you find that the rate of change of the height is given by a _different_ specific function $b(y)$. Clearly these two rates of change are different.
 
 
-```{image} ../images/raster/partial-derivatives.png
+```{image} img/partial-derivatives.png
 :alt: Partial derivatives diagram
 :width: 500px
 :align: center
