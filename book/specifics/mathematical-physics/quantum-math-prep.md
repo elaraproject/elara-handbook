@@ -11,7 +11,7 @@ kernelspec:
   name: python3
 ---
 
-# Complex numbers
+# Mathematics for Quantum Mechanics
 
 
 > "Life is complex sometimes"
