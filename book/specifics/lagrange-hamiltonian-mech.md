@@ -11,7 +11,7 @@ kernelspec:
   name: python3
 ---
 
-# Classical mechanics, Part 2
+# Lagrangian and Hamiltonian mechanics
 
 
 Newton's laws and conservation of energy are two approaches to solving for the equations of motion of an object. We can make Newtonian mechanics more elegant by extending them to fields and potentials. But ultimately, Newtonian mechanics is still cumbersome to use. Here is an alternate, more beautiful approach - Lagrangian mechanics.
@@ -813,9 +813,17 @@ $$
 
 Which reproduces the Newtonian result!
 
+### Hamiltonian mechanics
+
+### Noether's theorem
+
+
 
 ### Lagrangians to the stars
 
+```{note}
+This section is _optional_ and discusses advanced physics, so by all means read on if interested, but otherwise feel free to skip this part!
+```
 
 The Lagrangian formulation of classical mechanics is so powerful, precisely because it relies on a differential equation that can be generalized. Beyond classical mechanics, the Lagrangian isn't always necessarily $\mathcal{L} = K - U$, but the Euler-Lagrange equations still hold true, and so does the principle of stationary action. Thus, just defining a Lagrangian can describe entire theories, as the Euler-Lagrange equations yield the equations of methods for each theory, from which every other result of the theory can be derived. This is the power of Lagrangian mechanics.
 
