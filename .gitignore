@@ -11,3 +11,6 @@ __pycache__*/
 *.cache
 *.pdb
 *.tmp
+
+# Markdown editor files
+.obsidian/
