@@ -81,7 +81,7 @@ Complex numbers can be added, subtracted, multiplied and divided just like real 
 But what makes complex numbers so...different? Perhaps one way of thinking about them is that they are two-dimensional numbers. Yes, you heard that right, not two dimensional _vectors_ - two dimensional _numbers_. We can draw out complex numbers by plotting their real part on the x-axis and imaginary part on the y-axis, to get the **complex plane**:
 
 
-```{image} ../images/raster/complex-plane.png
+```{image} img/complex-plane.png
 :alt: Illustration of the complex plane
 :width: 400px
 :align: center
