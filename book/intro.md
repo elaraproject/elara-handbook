@@ -26,6 +26,15 @@ Fourth, if you are a **developer and just want to work on code**, we recommend r
 
 We are so grateful for each and every one of our members, and everyone's contributions, **no matter how small**, will be added to the "Contributions" portion at the end of the book. Your work brings us one step closer to changing the world for the better.
 
+### FAQs
+
+- I don't understand the code within the Handbook. What is it there for?
+	- Many pages in the Handbook contain **inline code** that does scientific calculations, generates graphs and plots, or solves particular equations. You **do not** need to understand them, but we will go over programming within the Handbook so that the code makes more sense.
+- Why is there so much incomplete/misplaced/undecipherable content?
+	- We are a small team and though we want to produce documentation and work of the highest quality, our time constraints mean that the Handbook does have sections that seem out of place or are far too rushed. The Handbook is a work-in-progress and we _highly encourage_ reporting any issues you find to our issues tracker at <https://github.com/elaraproject/elara-handbook/issues>.
+- Do I have to read through everything? This seems like a lot and I'm not sure I can read this much.
+	- No, you **don't** have to read any more than you feel comfortable with! It's okay to skip sections or read only a small portion of the Handbook. We wrote this Handbook to be comprehensive because (among other reasons) we wanted to explain everything possible so that someone reading wouldn't get lost when we explain our research. But there is no need to learn everything or read it all!
+
 ## The developer's guide
 
 [Skip past developer section](#license)
