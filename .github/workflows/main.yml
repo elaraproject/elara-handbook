@@ -46,7 +46,7 @@ jobs:
       id: deployment
       uses: actions/deploy-pages@v4
 
-    - name: Build PDF of book
+    - name: Install PDF build dependencies
       run: |
         sudo apt-get update
         # TeX tools
@@ -54,11 +54,13 @@ jobs:
                              texlive-fonts-extra \
                              texlive-xetex latexmk
         # Image tools
-        sudo apt install libpng-dev libjpeg-dev libtiff-dev imagemagick
-        # Build actual book
+        sudo apt-get install libpng-dev libjpeg-dev libtiff-dev imagemagick
+        # SVG processing tools
+        sudo apt-get install inkscape
+
+    - name: Build PDF of book
+      run: |
         jupyter-book build book --builder pdflatex
-        echo $(pwd)
-        # ls -R $(pwd)
         mv ./book/_build/latex/elara-handbook.pdf ./book/elara-handbook.pdf
 
     - name: Upload book PDF to Github releases
