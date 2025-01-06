@@ -557,7 +557,7 @@ We can use "in" to check if a key is in a dict:
 "name" in our_ages_dict
 ```
 
-## Using external libraries
+## Next steps
 
 While the abilities of Python with just its standard library are already extensive, the real power of Python is its ease of using _external_ libraries. There exists a Python library for almost anything, and you can browse through them on https://pypi.org/, the official site for Python libraries. Many Python libraries are so extensively used that they have become industry-standard and you will rarely find a research publication that involve some sort of computational science that _don't_ use them. 
 
