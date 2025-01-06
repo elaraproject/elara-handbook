@@ -50,7 +50,8 @@ jobs:
       run: |
         sudo apt-get update
         # TeX tools
-        sudo apt-get install texlive-latex-extra \
+        sudo apt-get install texlive-latex-base \
+                             texlive-latex-extra \
                              texlive-fonts-extra \
                              texlive-xetex latexmk
         # Image tools
