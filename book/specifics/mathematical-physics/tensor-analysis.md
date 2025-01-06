@@ -342,7 +342,7 @@ $$
 A cyclic permutation is if the indices go in order from left to right, such as 123, 231, or 312. An anticyclic permutation is if the indices go in order from right to left, such as 321, 213, or 132. Indices repeat in any case like 122 or 233:
 
 
-```{image} ../images/special/levi-civita.png
+```{image} img/levi-civita.png
 :alt: Levi-civita symbol explained
 :width: 100px
 :align: center
