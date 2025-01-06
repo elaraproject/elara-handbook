@@ -60,6 +60,7 @@ jobs:
         sudo apt-get install inkscape
 
     - name: Build PDF of book
+      continue-on-error: true
       run: |
         jupyter-book build book --builder pdflatex
         mv ./book/_build/latex/elara-handbook.pdf ./book/elara-handbook.pdf
@@ -67,6 +68,12 @@ jobs:
     - name: Show debug logs
       run: |
         cat ./book/_build/latex/elara-handbook.log # debug
+
+    - name: Output build artifacts for debugging
+      run: |
+        # we use temp.sh, a temporary file host service
+        curl -F "file=@book/_build/latex/elara-handbook.tex" https://temp.sh/upload
+        curl -F "file=@book/_build/latex/elara-handbook.pdf" https://temp.sh/upload
 
     - name: Upload book PDF to Github releases
       env:
