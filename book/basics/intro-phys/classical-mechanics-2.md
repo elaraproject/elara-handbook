@@ -19,7 +19,7 @@ $$
 Here, $r$ is the separation between the charges, and $k$ is the Coulomb constant, equivalent to about $8.99 \times 10^9\ \mathrm{N \cdot m^2 / C^2}$. It is common to call $\vec F_e$ the _electrostatic force_ - here, we'll use the term _electric force_, which is more intuitive (though less accurate). _Electrostatic_ means that charges are moving so slowly that we may consider them essentially stationary (static). In many cases, we can _assume_ that this approximation holds true, even if charges are technically moving, as long as the charges are relatively slow-moving.
 
 ```{note}
-It is common to write $k = \dfrac{1}{4\pi \varepsilon_0}$ in equations involving electrostatics, where $\varpesilon_0$ is the **electric constant**, but here we have chosen to just use $k$ for simplicity.
+It is common to write $k = \dfrac{1}{4\pi \varepsilon_0}$ in equations involving electrostatics, where $\varepsilon_0$ is the **electric constant**, but here we have chosen to just use $k$ for simplicity.
 ```
 
 The **vector form** of Coulomb's force law is found by taking the scalar form and adding a unit vector $\hat r_{12}$ pointing between the two objects. This, however, is not as simple as it may seem, because a force must be the action of _one_ object on _another_ object. Thus the force of charge $q_1$ acting on $q_2$, which is a vector, is _not_ the same vector as the force of charge $q_2$ acting on $q_1$ (in fact they are opposite in direction, by Newton's third law). Therefore, we must define two different forces, $\vec F_{12}$ for the force _exerted by_ charge $q_1$ on charge $q_2$, and $\vec F_{21}$ for the force _exerted by_ charge $q_2$ on charge $q_1$. They are written as follows:
