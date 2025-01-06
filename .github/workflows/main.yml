@@ -63,6 +63,10 @@ jobs:
         jupyter-book build book --builder pdflatex
         mv ./book/_build/latex/elara-handbook.pdf ./book/elara-handbook.pdf
 
+    - name: Show debug logs
+      run: |
+        cat ./book/_build/latex/elara-handbook.log # debug
+
     - name: Upload book PDF to Github releases
       env:
         GITHUB_TOKEN: ${{ github.token }}
