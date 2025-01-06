@@ -13,8 +13,7 @@ kernelspec:
 
 # Tensor Calculus
 
-
-General relativity is written in the language of tensors and differential geometry, both known for their difficulty. This is hopefully a gentler guide to both topics, one that preserves the essense of their mathematical beauty without baffling the mind.
+As we move into more advanced physics, vector calculus quickly becomes insufficient, and vector notation becomes incredibly inelegant and hard to work with. We need a new type of mathematical object to describe vector-like quantities in these theories - **tensors**. Fluid mechanics, advanced electrodynamics, and many numerical methods for partial differential equations *all* use tensors. General relativity is famously written in the language of differential geometry, known for its difficulty, and uses tensors near-exclusively. This is hopefully a gentler guide to tensors, one that preserves the essense of their mathematical beauty without baffling the mind.
 
 ```{code-cell} ipython3
 import sympy as sp
