@@ -39,7 +39,7 @@ S = \int_{t_1}^{t_2} \mathcal{L}(x, \dot x)~dt
 $$
 
 
-The **principle of stationary action** is one of the most fundamental and profound laws of physics, and states that for any given system, the action is stationary. What does stationary mean? Recall the idea of stationary _points_ in calculus - which include minima and maxima. For the action to be stationary, that means the Lagrangian must be a stationary _function_, which are analogous to stationary points, just for the action, which is a function of functions.
+The **principle of stationary action** states that for any given system, the action is stationary. What does stationary mean? Recall the idea of stationary _points_ in calculus - which include minima and maxima. For the action to be stationary, that means the Lagrangian must be a stationary _function_, which are analogous to stationary points, just for the action, which is a function of functions.
 
 
 But what form does that Lagrangian have to take to obey the principle of stationary action? The short answer is that it must obey the following equation, known as the **Euler-Lagrange equation**:  
@@ -50,8 +50,9 @@ $$
 $$
 
 
-We will derive this differential equation in the following section - if this section is too math-heavy, feel free to skip this section.
+This is one of the most fundamental and profound equations of physics. We will derive this differential equation in the following section - if this section is too math-heavy, feel free to skip this section.
 
+## The Euler-Lagrange equation
 
 To begin our derivation, we first go back to single-variable calculus, where we are often told to find the stationary points - such as the maxima or minima - of a function. Both maxima and minima are called **stationary points** - points where the derivative of a function is zero. But what exactly defines a stationary point? Let's take a step back first. We know that the derivative is defined as the limit as $\epsilon \to 0$ of:
 
@@ -276,11 +277,14 @@ $$
 \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot q_i} - \frac{\partial \mathcal{L}}{\partial q_i} = \frac{\partial W}{\partial q_i}
 $$
 
+## Applying Lagrangian mechanics
+
+Having examined the fundamental theory behind Lagrangian mechanics, we will now look at a few examples of increasing difficulty, to illustrate its usefulness and mathematical elegance.
 
 ### Using Lagrangian mechanics to solve the harmonic oscillator
 
 
-```{image} ../images/raster/simple-oscillator.png
+```{image} img/simple-oscillator.png
 :alt: Simple oscillator
 :width: 400px
 :align: center
@@ -554,7 +558,7 @@ As it can be seen, the orbit is a ellipse, and we have arrived at this result us
 We will now tackle a problem that would be very difficult to solve using Newton's laws, but much easier with Lagrangian mechanics. Here we have a system as follows:
 
 
-```{image} ../images/raster/double-pendulum.png
+```{image} img/double-pendulum.png
 :alt: Double pendulum diagram
 :width: 400px
 :align: center
@@ -760,7 +764,7 @@ $$
 These equations are completely unsolvable analytically, but they can be solved numerically to yield the position of a double pendulum with time.
 
 
-### Langrangian to Newtonian mechanics
+## Langrangian to Newtonian mechanics
 
 
 Let's see how we can recover Newton's 2nd law from the Euler-Lagrange equation. Remember that the equation (in the case of one-dimenional motion along the $x$ axis) is given by:
@@ -813,19 +817,17 @@ $$
 
 Which reproduces the Newtonian result!
 
-### Hamiltonian mechanics
+## Hamiltonian mechanics
 
-### Noether's theorem
+## Noether's theorem
 
-
-
-### Lagrangians to the stars
+## Lagrangians to the stars
 
 ```{note}
 This section is _optional_ and discusses advanced physics, so by all means read on if interested, but otherwise feel free to skip this part!
 ```
 
-The Lagrangian formulation of classical mechanics is so powerful, precisely because it relies on a differential equation that can be generalized. Beyond classical mechanics, the Lagrangian isn't always necessarily $\mathcal{L} = K - U$, but the Euler-Lagrange equations still hold true, and so does the principle of stationary action. Thus, just defining a Lagrangian can describe entire theories, as the Euler-Lagrange equations yield the equations of methods for each theory, from which every other result of the theory can be derived. This is the power of Lagrangian mechanics.
+The Lagrangian formulation of classical mechanics is so powerful, precisely because it relies on a differential equation that can be generalized. Beyond classical mechanics, the Lagrangian isn't always necessarily $\mathcal{L} = K - U$, but the Euler-Lagrange equations still hold true, and so does the principle of stationary action. Thus, a theory can be written _as a Lagrangian_, as the Euler-Lagrange equations yield the equations of motion for each theory, on which the rest of the theory is built on! *This* is the reason behind learning Lagrangian mechanics.
 
 
 We will end with one final thought - one of the most successful theories in all of physics, the **Standard model** of particle physics, is encapsulated in one compact Lagrangian:
