@@ -555,6 +555,9 @@ $$
 \iiint_E f(x, y, z) dV = \int_{x_0}^{x_1} \int_{y_0}^{y_1} \int_{z_0}^{z_1} f(x, y, z) \, dz \, dy \, dx
 $$
 
+```{note}
+In physical applications, when double and triple integrals are integrated over space, a triple integral is often called a _volume integral_ and a double integral is often called an _area integral_. We will be using this terminology from this point on.
+```
 
 ## Line integrals
 
@@ -703,6 +706,23 @@ $$
 \iint \limits_{\Sigma_{\text{closed}}} \vec B \cdot d\vec S = 0
 $$
 
+## An aside on integral notation
+
+The multivariable integrals we have encountered have a variety of different notations, and it is easy to get confused and think that different notations of the same type of integral are actually different types of integral.
+
+To show what we're talking about, consider a _volume_ integral:
+
+$$
+\iiint \rho\, dV = \iiint \rho(x, y, z)\, dx\,dy\, dz
+$$
+
+This integral could _also_ be written as $\displaystyle \int \rho\, dV$ or (in some texts) $\displaystyle \int \rho\, d^3 x$ or even $\displaystyle \int \rho\, dv$. These notations are _completely equivalent_. The three-integral-sign notation is just for conceptual clarity; it reminds you that we are integrating over 3 dimensions when explicitly evaluating the volume integral. The same applies for area integrals - you can write it with one or two integral signs, both are equivalent.
+
+Similarly, it is common to write surface integrals using just a _single_ integral sign, e.g. as $\displaystyle \int \mathbf{F} \cdot d\mathbf{S}$ or $\displaystyle \oint \mathbf{F} \cdot d\mathbf{S}$ for a closed surface integral. It is *also* common to write $\displaystyle \iint \mathbf{F} \cdot d\mathbf{A}$ or $\displaystyle \iint \mathbf{F} \cdot d\mathbf{a}$, "a" for (surface) "area". The difference is only notational; there is no true difference between these different ways of writing the same surface integral. In addition, using $\vec F$ or $d\vec A$ is also perfectly acceptable. It simply matters that a surface vector is notated with the _integrand_ and the _differential (surface) element_ as **both vectors**.
+
+The same goes for line integrals. Scalar line integrals are often just written $\displaystyle \int f(x, y, z)\, ds$, with our notation $\displaystyle \int_C f\, ds$ to illustrate that the line integral is over a particular curve, or $\displaystyle \oint_C f ds$ to illustrate that the line integral is over a *closed* curve. Vector line integrals are variously notated $\displaystyle \int \mathbf{F} \cdot d\mathbf{s}$ or $\displaystyle \int \mathbf{F} \cdot d\mathbf{r}$, and their equivalents using $\vec F$ and $d\vec s$ or $d\vec r$, with $\displaystyle \oint \mathbf{F} \cdot d\mathbf{s}$ or $\displaystyle \oint \mathbf{F} \cdot d\mathbf{r}$ used for the closed curve equivalents.
+
+The takeaway from this aside is that _notation is not consistent_ and this is a fact to be aware of when exploring external resources. The idea is to be familiar with a wide variety of different vector calculus notations, so that you don't get mystified when seeing a new and unconventional notation.
 
 ## Vector calculus theorems
 
