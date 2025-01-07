@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: The Elara Handbook
-author: The Project Elära contributors
+author: The Project Elara contributors
 logo: elara-logo.svg
 
 # Force re-execution of notebooks on each build.
@@ -34,3 +34,5 @@ latex:
 sphinx:
   config:
     html_show_copyright: false
+    # on print, show inline links as footnotes
+    latex_show_urls: "footnote"
