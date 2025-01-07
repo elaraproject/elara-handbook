@@ -60,7 +60,7 @@ parts:
 - caption: The administrator's guide
   chapters:
   - file: admin/guide-to-governance
-  - file: admin/covenant
+  - file: admin/charter
   - file: admin/community-vision
 
 - caption: Appendix
