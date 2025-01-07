@@ -71,6 +71,9 @@ jobs:
         make
 
     - name: Show debug logs and return to repo root
+      continue-on-error: true
+      run: |
+        echo $(pwd)
         # show debug logs
         cat elara-handbook.log # debug
         # move built book out of build folder
