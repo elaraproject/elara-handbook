@@ -62,17 +62,29 @@ jobs:
     - name: Build PDF of book
       continue-on-error: true
       run: |
-        jupyter-book build book --builder pdflatex
-        mv ./book/_build/latex/elara-handbook.pdf ./book/elara-handbook.pdf
+        jupyter-book build book --builder latex
+        # patch output latex
+        python ./book/patch.py
+        # build pdf (sphinx creates a makefile for us)
+        cd ./book/_build/latex/
+        make
+        # move built book out of build folder
+        mv elara-handbook.pdf ../../elara-handbook.pdf
 
     - name: Show debug logs
       run: |
-        cat ./book/_build/latex/elara-handbook.log # debug
+        cat elara-handbook.log # debug
 
     - name: Output build artifacts for debugging
       run: |
+        # go back to root of repo
+        cd ../../../
         # we use temp.sh, a temporary file host service
+        echo "PDF build log"
+        curl -F "file=@book/_build/latex/elara-handbook.log" https://temp.sh/upload
+        echo "TeX generated (may be incomplete)"
         curl -F "file=@book/_build/latex/elara-handbook.tex" https://temp.sh/upload
+        echo "PDF generated (may be incomplete)"
         curl -F "file=@book/_build/latex/elara-handbook.pdf" https://temp.sh/upload
 
     - name: Upload book PDF to Github releases
