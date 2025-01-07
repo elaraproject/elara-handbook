@@ -34,6 +34,10 @@ We are so grateful for each and every one of our members, and everyone's contrib
 	- We are a small team and though we want to produce documentation and work of the highest quality, our time constraints mean that the Handbook does have sections that seem out of place or are far too rushed. The Handbook is a work-in-progress and we _highly encourage_ reporting any issues you find to our issues tracker at <https://github.com/elaraproject/elara-handbook/issues>.
 - Do I have to read through everything? This seems like a lot and I'm not sure I can read this much.
 	- No, you **don't** have to read any more than you feel comfortable with! It's okay to skip sections or read only a small portion of the Handbook. We wrote this Handbook to be comprehensive because (among other reasons) we wanted to explain everything possible so that someone reading wouldn't get lost when we explain our research. But there is no need to learn everything or read it all!
+- I'm reading the PDF version of the Elara Handbook and I notice a bunch of stuff that doesn't look like it should be there or weirdly-formatted stuff. What's that about?
+	- The web version of the Elara Handbook is the primary version (for now) and it includes internal links and HTML content that doesn't always translate super well to PDFs. While we try to make the two compatible, we unfortunately haven't had the time to look over _everything_. Again, we encourage you to report issues you find to our issue tracker (the link is given above).
+- The chapter numbers in the PDF don't line up to the web version or the titles in the Handbook, why is that?
+	- Our PDF generator tool works in a way that doesn't distinguish between actual _chapters_ and introductory pages. We are trying to figure out a way to solve this issue, but it will take some time, and again, please report this issue (and any similar ones) so we know which places need fixing.
 
 ## The developer's guide
 
