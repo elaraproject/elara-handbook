@@ -240,8 +240,10 @@ How do we _compute_ the magnetic field though? As with before, there are several
 
 $$
 \begin{align*}
-&\displaystyle \oint \mathbf{B} \cdot d\mathbf{A} = 0,& &\text{(integral form)} \\
-&\nabla \cdot \mathbf{B} = 0,& &\text{(differential form)} \\
+\begin{cases}
+\displaystyle \oint \mathbf{B} \cdot d\mathbf{A} = 0,& \text{(integral form)} \\
+\nabla \cdot \mathbf{B} = 0,& \text{(differential form)} \\
+\end{cases}
 \end{align*}
 $$
 
