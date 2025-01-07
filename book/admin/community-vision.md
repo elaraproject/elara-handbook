@@ -13,7 +13,7 @@ We will explore each of these facets of a good community in detail in this chapt
 
 ## Welcoming
 
-We want a community that reflects the diversity of all humanity, and allows everyone to have a voice and feel valued. Thus, we must stress that this community must be an **entirely** non-judgemental, non-competitive, and non-elitist place, where everyone is free to share their ideas without intimidation. We will treat everyone as a human being and we will do everything we can to give everyone a sense of belonging here. This means we will, in accordance with the Covenant, not accept any harrassment and hate, nor tolerate any individuals or groups whose aim is to harrass, abuse, or harm anyone in any way.
+We want a community that reflects the diversity of all humanity, and allows everyone to have a voice and feel valued. Thus, we must stress that this community must be an **entirely** non-judgemental, non-competitive, and non-elitist place, where everyone is free to share their ideas without intimidation. We will treat everyone as a human being and we will do everything we can to give everyone a sense of belonging here. This means we will, in accordance with the Charter, not accept any harrassment and hate, nor tolerate any individuals or groups whose aim is to harrass, abuse, or harm anyone in any way.
 
 ## Kind
 
@@ -33,4 +33,4 @@ We want everyone to encourage and inspire others. It doesn't have to be much, bu
 
 ## Safe
 
-No community can be a true community without its members feeling safe, and thus, we will take every measure to protect the community. It goes without saying that threatening, hostile, or intentionally hurtful acts will not be tolerated in the community. We ask that if any members have disagreements, they settle their differences through the Covenant Council rather than taking direct action themselves. If anyone feels unsafe in the community, they are free to anonymously speak to any of the members of the Varyë, and we will make sure to secure the community.
+No community can be a true community without its members feeling safe, and thus, we will take every measure to protect the community. It goes without saying that threatening, hostile, or intentionally hurtful acts will not be tolerated in the community. We ask that if any members have disagreements, they settle their differences through the Charter Council rather than taking direct action themselves. If anyone feels unsafe in the community, they are free to anonymously speak to any of the members of the Varyë, and we will make sure to secure the community.

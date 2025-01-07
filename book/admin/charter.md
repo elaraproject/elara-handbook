@@ -1,143 +1,31 @@
-# Covenant of Project Elara
+# Charter of Project Elara
 
-We, the members of the Project Elära community,
+```{note}
+This Charter is _provisional_ at the moment and will only come into force after ratification. In the meantime, changes _are_ likely to be made to the Charter.
+```
 
-Recognizing the inviolable dignity of all peoples,
+The members of Project Elara, endeavoring to create a more beautiful and just world, in which the entire human family may live together in peace and fellowship, institute this Charter among ourselves, to guide us in our pursuit of this mission, until such a time comes when it may come into force.
 
-Affirming the equal rights of peoples of all ages, of all backgrounds, in all their similarities and differences,
+1.1 All members of Project Elara (henceforth referred to simply as "the community") are free, equal, and have inviolable dignity. They have the responsibility to treat each other as equals and to act with conscience towards one another. There shall be no disparity in the treatment of any member in the community on any grounds. Any attempts to discriminate against any member of the community on the basis of identity, show favoritism, or deny equal protection under the Charter is unacceptable and will be subject to consequences. This article is **not to be removed, amended, or abridged for any reason**, and cannot be changed by a consensus or majority decision.
 
-Envisioning a community whose highest duty is to respect, support, and provide for its people,
+1.2 Members have the freedom to hold and express their opinions, or to openly express a disagreement with another's opinions, in a **respectful** manner. They also have the freedom to criticize, in public or in private, and to do so without retaliation, when this is done in **good faith**.
 
-Hereby declare, solemnly affirm, and proclaim this **Convenant of Project Elära**.
+1.3 Members are to be treated with fairness and are guaranteed protection from harassment, intimidation, abuse, and assaults on themselves and their well-being. Every member of the community has an obligation to come to the defense of another when a member has been subject to such attacks, and to render reasonable support and solidarity. To fail to do so is subject to immediate review of wrongdoing and possible repercussions.
 
-## Section 1: Fundamental Rights
+1.4 If a member has been suspected of wrongdoing, the member will be temporarily **stripped of their position** and **placed in quarantine** from the rest of the community. An open board of review will be established to examine the wrongdoing. A member cannot be subject to arbitrary accusations or baseless attacks on their honor and reputation, that attempts to circumvent this review process, or exact retribution. If a member is found _responsible_ of wrongdoing, the quarantine may be **extended indefinitely** while the member's behavior is monitored and continuously reviewed. In the most serious of cases, the member may be permanently and irrevocably expelled.
 
-### Article 1
+1.5 Any board of review that does not abide by the standards and procedure set out in the Charter, or is found to be biased, corrupt, or inept, will result in the accused member absolved and an immediate review of the accuser and board of review. If found of complicity or miscarriage of due process, all members involved will be immediately stripped of their positions. In addition, any member of the community may request a re-review on the behalf of another, should they disagree with the outcome of a review of wrongdoing. If such a re-review finds that the accused member did not commit the wrongdoing in question, the accused member will be absolved.
 
-All human beings are born with dignity and share a common conscience.
+1.6 The Charter takes precedence over all acts and decisions made in the Project, and may not be violated for **any** reason. If any member of the Project suspects a violation of the Charter, a report and investigation is to be started immediately, and a remedy to the violation promptly issued. As a last resort, members of the Project have an obligation to resist violation of the Charter and restore its provisions by any methods necessary.
 
-Upholding the universal principles of fairness, equality, justice, and respect for human dignity is the ultimate aim and responsibility of all communities.
+1.7 Membership may be acquired by taking a pledge to protect, defend, and abide by the Charter, in the individual's own words, in oral or written form. This must be followed by a public statement to the same within a reasonable timeframe. After attaining membership, the individual is granted an official role within the Project. Full members are bound to their pledge and have full responsibility for their actions.
 
-The representative government of the Project Elära community is the Varyë. The Varyë is to be the sole legitimate government of the community.
+1.8 Non-members of the Project may work alongside the Project and receive **participant status**, without being required to join the Project, unless a consensus in the Project decides against their admittance on fair grounds. Non-members must be treated with respect within the Project and receive rightful credit for their work. Non-members, however, do not have the same obligations as members do, and may choose to leave the Project at any time.
 
-This article may not be altered nor removed by the Project Elära community.
+1.9 Positions of leadership within the Project are given only to volunteers who have taken the pledge to the Charter. Before attaining a position of leadership, volunteers must spend a period of no less than five years carrying out duties delegated to them by the incumbent leadership and by the community at large. A member may serve for a maximum of ten years in a leadership role, and **may not serve again**.
 
-### Article 2
+1.10 The Project may never be dissolved. Any attempt to rescind the Charter, dismantle the Project, or take away its independence will be treated as an attack on the Project, and all members of the Project are obligated to oppose any such action.
 
-All members of the Project Elära community have an inalienable right to liberty. Their freedom may not be abridged, for any reason, unless they use their freedom to infringe upon another's freedom or violate another's dignity.
+1.11 The enactment of this Charter is sufficient by a community consensus. From that point on, it will be considered in full force.
 
-### Article 3
-
-All members of the Project Elära community have the inalienable right to freely hold and express their opinions, in private, in public, and in association with others within the community. They are guaranteed the freedom to seek, receive, and impart thoughts, opinions, and ideas, through any form of media, and without interference.
-
-### Article 4
-
-All members of the Project Elära community have the inalienable right to equality, inclusion, and accomodation within the community. They are guaranteed a safe, just, and humane environment in which to collaborate, create, and contribute. They are also entitled to equal protection against any form of discrimmination or cruel, unkind, and degrading treatment.
-
-### Article 5
-
-All members of the Project Elära community have the inalienable right to adequate recourse in the violation of their fundamental rights. This includes the right to voice their concerns privately or publicly to an independent and impartial panel. They are also guaranteed protection from retaliation, shame, or to be punished for any act they did not commit.
-
-### Article 6
-
-All members of the Project Elära community have the inalienable right to security, privacy, and peace. They are guaranteed protection from unwanted interference in their personal lives. They are also guaranteed the right to protection from acts of abuse and harrassment.
-
-### Article 7
-
-All members of the Project Elära community have the inalienable right to take part in the governance of the community. They are guaranteed equal access to positions within the community and to free, fair, and periodic elections by which they may participate in governance. They are also guaranteed the right to request access to any information held by their elected representatives, and to petition their elected representatives through peaceful means.
-
-### Article 8
-
-All members of the Project Elära community have the inalienable right to knowledge and learning. The community's educational resources shall be universally free and equally accessible, and shall aim to not only further scientific knowledge, but also promote understanding and friendship between all members of the community.
-
-### Article 9
-
-All members of the Project Elära community have the inalienable right to live in harmonious coexistence with each other. The community will be fully tolerant of all customs, traditions, and ways of life that respect basic human rights. However, the community will not tolerate any intolerance. Any intolerant member of the community will be warned and monitored on the first offense, and expelled from the community on the second offense.
-
-### Article 10
-
-The Project Elära community must use all means necessary to defend Section 1 of the Covenant. Any person or group of persons that has the aim of removing or withholding any of these fundamental rights, or abolishing the democratic and open character of the community, will be immediately and permanently banned from participating in the community.
-
-## Section 2: Executive
-
-### Article 1
-
-The executive power of the Varyë shall be vested in a Steward of Project Elära, who shall be the head of the community, and shall lead in accordance and with the guidance of the community.
-
-### Article 2
-
-The Steward must be independent of any political allegiance or association. They must act with impartiality and renounce any past affiliations to any political group upon taking office.
-
-### Article 3
-
-The Steward's duties and responsibilities are as follows:
-
-To be the unifying figure of the community;
-
-To represent the community at national and international events;
-
-To carry out and enforce the laws of the community;
-
-To supervise officials who are delegated responsibilities;
-
-To mediate disputes within the community;
-
-To direct the operations of Project Elära, in accordance with the laws of the community;
-
-To remove any official who has violated the Covenant, acted in abuse of their powers and responsibilities, or failed in their duties;
-
-To secure the welfare and maintain the rights and freedoms of the entire community.
-
-### Article 4
-
-The Steward shall be chosen by a 12-member jury once every ten years, and exactly 5 years into the term of the current Steward. The jury's members are to be chosen randomly from the entire community, not including those currently holding public office in the Varyë.
-
-Nominations for acts of extraordinary bravery, integrity, selflessness, and sacrifice will be sent to the jury for evaluation. Any member of the community can nominate any other person, with the exception of themselves. The jury is asked to review all nominations and select one nominee whose actions are most distinguished.
-
-Once a nominee is selected, they are informed that they have been selected as the next Steward. They will then be apprenticed to the current Steward until the end of the current Steward's term, during which the current Steward will pass on their knowledge to the incoming Steward.
-
-Upon assuming office, the Steward shall take the following oath:
-
-"I swear (or affirm) that I will, to the best of my abilities, carry out the duties of the Steward of Project Elära, and preserve, protect, and defend the Covenant of Project Elära."
-
-They shall hold their office for ten years, and may not serve again.
-
-### Article 5
-
-All laws passed by the Senate of Project Elära must undergo review against the Covenant by the Steward. If the Steward determines any law passed to be unconstitutional, the law will not go into effect.
-
-### Article 6
-
-The Steward may not pass legislation, except during emergency circumstances, where they may pass legislation for a maximum duration of six months. The Steward may declare a state of emergency a maximum of twice within their term.
-
-### Article 7
-
-A 2/3 majority vote of the community is sufficient to remove the Steward from office.
-
-## Section 3: Legislature
-
-### Article 1
-
-The legislative power of the Varyë shall be vested in a Senate of Project Elära.
-
-### Article 2
-
-The Senate of Project Elära shall be directly elected by the community, through free, secret, and universal suffrage, with votes receiving equal representation. Each Senator shall serve for terms of two years each.
-
-### Article 3
-
-Any member of the community may apply to be a Senator, and may hold office if they receive an absolute majority of votes, that is, the support of greater than half of the electorate. Members of the community may vote for multiple candidates, no candidates, or a single candidate. If no candidate attains an absolute majority of votes, elections are repeated until an absolute majority is achieved.
-
-### Article 3
-
-The Senate is the only authority that may pass and vote on laws, outside of emergency circumstances. Laws may be proposed by any member of the Senate, and may be passed with the approval of an absolute majority of Senators. Amendments to the Covenant may be passed with a 4/5 majority vote in the Senate.
-
-### Article 4
-
-A Senator may be removed from office by a 2/3 majority vote of the Senate or an equal majority by a referendum of the community, whichever is greater.
-
-## Section 3
-
-The Convenant of Project Elära shall have supremacy over all laws of the community.
-
-The approval of four-fifths of the community shall be sufficient for the ratification of this present Covenant and its entry into force.
+1.12 We declare upon ratification that the Charter binds us in perpetuity and take it upon ourselves to realize it to the fullest measure.
