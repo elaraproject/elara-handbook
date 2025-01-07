@@ -67,18 +67,18 @@ jobs:
         python ./book/patch.py
         # build pdf (sphinx creates a makefile for us)
         cd ./book/_build/latex/
+        echo "Entered LaTeX folder, preparing to build PDF"
         make
+        # show debug logs
+        cat elara-handbook.log # debug
         # move built book out of build folder
         mv elara-handbook.pdf ../../elara-handbook.pdf
-
-    - name: Show debug logs
-      run: |
-        cat elara-handbook.log # debug
 
     - name: Output build artifacts for debugging
       run: |
         # go back to root of repo
         cd ../../../
+        pwd
         # we use temp.sh, a temporary file host service
         echo "PDF build log"
         curl -F "file=@book/_build/latex/elara-handbook.log" https://temp.sh/upload
