@@ -75,8 +75,6 @@ jobs:
         cat elara-handbook.log # debug
         # move built book out of build folder
         mv elara-handbook.pdf ../../elara-handbook.pdf
-        # go to repo root
-        cd ../../../
 
     - name: Output build artifacts for debugging
       run: |
