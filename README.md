@@ -20,10 +20,4 @@ All issues will documented and put on https://github.com/elaraproject/elara-hand
 
 ## Roadmap
 
-- [x] Finish basic setup and github pages integration with CI
-- [x] Knowledge library (mathematical fundamentals, physics, machine learning, Rust, etc.)
-- [ ] Proper citations
-- [x] Narrative docs (tutorials, guides, etc.)
-- [ ] API documentation
-- [x] Community resource docs (governance, design documents, contributing guidelines)
-- [ ] Translations w/ weblate
+See relevant tasks in https://github.com/orgs/elaraproject/projects
