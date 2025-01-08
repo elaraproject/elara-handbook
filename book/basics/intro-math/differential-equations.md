@@ -49,6 +49,40 @@ Here, $u = u(x, t)$, and is the function describing the wave. The interpretation
 
 Differential equations that only involve single-variable functions are called **ordinary differential equations** (ODEs), while those that involve multivariable functions (and their partial derivatives) are called **partial differential equation** (PDEs).
 
+### Initial-value and boundary-value problems
+
+We are interested in solving differential equations to be able to perform further mathematical analysis of the physics of a given system. There are a myriad number of ways to solve differential equations, and we will cover just a few in the following sections. In general, however, finding an _exact_ solution to a particular system cannot be done with knowledge of just the differential equation; typically, _some_ data must be provided before a solution can be found. 
+
+In the case of ODEs in the form $\dfrac{dy}{dt} = f(t, y)$, this data is called the _initial condition_, the state of $y(t)$ at $t = 0$.  Some physical examples of initial conditions are the initial velocity or initial position. We often denote such an initial condition $y_0$. Once we know that, we can calculate the values of $y$ that the differential equation predicts for all future times $t$.  The combination of an ODE and an initial value is known as an **initial-value problem (IVP)**.
+
+**Boundary-value problems** can be thought of as an extension of initial value problems to partial differential equations (PDEs). Unlike initial counditions, boundary value problems usually specify the _function_ that the solution to the PDE takes at the boundaries. Such functions are called _boundary conditions_ (BCs). A physical example may be some water sloshing in a water tank; a PDE may be solved to find the function describing the distribution of water within the tank. The boundary condition would then be the height of the water at the walls of the tank.
+
+The three main types of boundary conditions are Dirichlet, Neumann, and Robin. You can mix and use different boundary conditions together, especially for boundary-value problems that have different types of boundaries, but individually they are generally in one of these forms:
+
+| Type of BC | Example mathematical form                  |
+| ---------- | ------------------------------------------ |
+| Dirichlet  | $y = f$                                    |
+| Neumann    | $\frac{\partial y}{\partial x} = f$        |
+| Robin      | $Ay + B \frac{\partial y}{\partial x} = f$ |
+| Cauchy     | Combination of Dirichlet and Neumann       |
+
+#### Physical significance of different types of boundary conditions
+
+The physical intepretation of a Dirichlet boundary condition is that the physical quantity is fixed or constrained at the boundary, that is, it takes a specific constant value. In the special case where $u = 0$ at the boundary, the physical quantity vanishes at the boundary.
+
+Meanwhile, the physical interpretation of a Neumann boundary condition is that the physical quantity is kept within the boundary. This corresponds to insulating or reflecting boundaries that prevent the physical quantity from flowing or radiating outwards.
+
+Robin boundary conditions have more flexible physical interpretations. One specific type of robin boundaries is an _open_ boundary. The physical interpretation of an open boundary condition is that the physical quantity is allowed to flow undisturbed outwards beyond the boundary. This corresponds to boundaries that allow for outward radiation or free propagation through them. It is a specific type of Robin boundary condition.
+
+```{admonition} Some supplementary information
+Boundary conditions generally do not involve specifying more than the value(s) of the first partial derivatives and the function at the boundaries. This is because the majority of PDEs that govern the universe don't have any higher derivatives of higher than second-order. The main equations we will be solving are either first-order or second-order.
+```
+
+#### Solving initial- and boundary-value problems
+
+Initial-value problems can be solved by hand in some cases, but for cases where they cannot be solved by hand, computational methods can be used to solve them numerically (this results in an approximate solution). We will explore how to do so in the numerical methods section in Chapter 3. In addition, there exist online calculators that numerically solve differential equations: see Bluffton University's [free tool at this link](https://homepages.bluffton.edu/~nesterd/apps/slopefields.html) for solving IVPs.
+
+Boundary-value problems can be solved by hand in vastly fewer cases, and even when a solution is possible to find by hand, many simplifying assumptions must be used. For this reason, numerical methods are required for the majority of boundary-value problems. Again, we will explore this further in Chapter 3, but for those interested, the web app  [Visual PDE](https://visualpde.com/) provides an easy-to-use graphical interface for solving PDEs numerically. We recommend you try it out!
 
 ## Solving differential equations
 
@@ -152,7 +186,9 @@ y = C_2 e^{kx}
 $$
 
 
-This is called the **general solution** to the exponential growth equation, because $C_2$ can be any number, and so this general solution encodes all possible solutions each with their own value of $C_2$. To actually solve it for a value, we need an **initial value**. For instance, we may be told that $y(0) = 1$. If we plug that in:
+This is called the **general solution** to the exponential growth equation, because $C_2$ can be any number, and so this general solution encodes all possible solutions each with their own value of $C_2$. 
+
+To actually solve it for a value, we need an **initial value**. For instance, we may be told that $y(0) = 1$. If we plug that in:
 
 
 $$
@@ -172,6 +208,7 @@ $$
 y = e^{kx}
 $$
 
+We have now solved the **initial value problem** - finding the solution to the differential equation given the provided initial condition.
 
 Note that $C_2$ was the same number as $y(0)$. Therefore, we have a new interpretation of $C_2$ - note that $C_2$ is the **initial value** of a function, so $C_2 = y_0$, and we can rewrite the general solution as:
 
