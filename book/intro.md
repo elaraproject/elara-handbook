@@ -39,7 +39,7 @@ We are so grateful for each and every one of our members, and everyone's contrib
 - The chapter numbers in the PDF don't line up to the web version or the titles in the Handbook, why is that?
 	- Our PDF generator tool works in a way that doesn't distinguish between actual _chapters_ and introductory pages. We are trying to figure out a way to solve this issue, but it will take some time, and again, please report this issue (and any similar ones) so we know which places need fixing.
 
-## The developer's guide
+## Quickstart for developers
 
 [Skip past developer section](#license)
 
@@ -63,6 +63,10 @@ Then you can start writing! We recommend using a markdown editor like [Obsidian]
 - Copy a template from the `templates/` folder in the repository root and copy it into one of the directories (e.g. `basics/`, `specifics/`, etc.)
 - Then rename it to a suitable name and add the filename to `_toc.yml` located in the repository root in the appropriate section
 - You can now start editing! Remember to commit and open a pull request on github (github provides automated tools for this on its website) so we can add in your changes!
+
+```{note}
+For developers working **on Windows**, it is _highly recommended_ to configure Git to automatically handle line-endings via `git config --global core.autocrlf true` before editing anything. See [this article here](https://www.aleksandrhovhannisyan.com/blog/crlf-vs-lf-normalizing-line-endings-in-git/) which explains why it is necessary.
+```
 
 All material in the Elara Handbook is dedicated to the public domain. You may freely use, redistribute (free or for a fee), copy, modify, and (most importantly of all) learn from this book. Just be aware that this book cannot be copyrighted, patented, or claimed as your own work (as it is inherently in the public domain). You may also make proprietary modifications to this book and/or its included source code and sell it, use this book commercially, or include this book as part of a product. We, however, do not encourage the practice, as it is fundamentally against our values, and we would hope that if you derive profit from this book, you contribute some part of your profits to helping Project Elara and its mission.
 
