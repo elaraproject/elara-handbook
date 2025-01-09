@@ -108,9 +108,33 @@ $$
 \end{align*}
 $$
 
-Where $\hat r' = \dfrac{\vec r - \vec r'}{|\vec r - \vec r'|}$ is the unit vector pointing from a point $\vec r'$ within the charge-containing region to $\vec r$. All the primes in the integral (e.g. $\vec r', \hat r', dV'$) refer to points _within_ the charge-containing region, as we integrate over every point within that region. This is (understandably) rather tedious to solve and often can only be solved by computer.
+Where $\hat r' = \dfrac{\vec r - \vec r'}{|\vec r - \vec r'|}$ is the unit vector pointing from a point $\vec r'$ within the charge-containing region to $\vec r$. All the primes in the integral (e.g. $\vec r', \hat r', dV'$) refer to points _within_ the charge-containing region, as we integrate over every point within that region. This is **the integral form of Coulomb's law** for the electric field, and does give the right expression for the electric field, at least when the electrostatic approximation holds. It is (understandably) rather tedious to solve and often can only be solved by computer.
 
-This is **Coulomb's law for the electric field** and does give the right expression for the electric field, at least when the electrostatic approximation holds. But there is a more _elegant_ way of computing the electric field. Suppose we analyze an bounded region of space around an electric field. For instance, this could be the spherical region around a point charge, as shown in the figure below:
+Note that the integral form of Coulomb's law has three specific cases depending on whether the charge density is a _linear_ charge density $\lambda(x)$, _surface_ charge density $\sigma(x, y)$, or _volume_ charge density $\rho(x, y, z)$.
+
+For linear charge distributions, we have $dq' = \lambda ds'$ where $ds'$ is the line element of the linear charge distribution to integrate over (e.g. charged rod, loop of wire, etc.) so the integral becomes a line integral over the endpoints $a, b$ of the linear charge distribution (e.g. between ends of wire, 360 degrees around a circular loop, etc.):
+
+$$
+\vec E(\vec r) = \int_a^b \dfrac{k\lambda ds'}{|\vec r - \vec r'|^3} (\vec r - \vec r')
+$$
+
+For surface charge distributions (e.g. plane of charge, disk of charge, etc.) we have $dq' = \sigma dA' = \sigma dx' dy'$ where $dA'$ is the surface element of the surface charge distribution to integrate over. Therefore, Coulomb's law becomes a surface integral over every patch of charge $dq'$ across every patch of surface $dA'$:
+
+$$
+\vec E(\vec r) = \iint \limits_\mathrm{surface} k\dfrac{\sigma dA'}{|\vec r - \vec r'|^3} (\vec r - \vec r') = \iint \limits_\mathrm{surface} k\dfrac{\sigma dx'dy'}{|\vec r - \vec r'|^3} (\vec r - \vec r')
+$$
+
+For volume charge distributions (e.g. solid sphere of charge, shell of charge, block of charge), we have $dq' = \rho dV' = \rho dx' dy' dz'$ where $dV'$ is the volume element of the volume charge distribution to integrate over. Therefore, Coulomb's law becomes volume integral over every infinitesimal volume $dV'$ containing charge $dq'$:
+
+$$
+\vec E(\vec r) = k\iiint \limits_\mathrm{volume} \dfrac{\rho dV'}{|\vec r - \vec r'|^3} (\vec r - \vec r') = k\iiint \limits_\mathrm{volume} \dfrac{\rho\, dx'dy'dz'}{|\vec r - \vec r'|^3} (\vec r - \vec r')
+$$
+
+```{note}
+It is important to remember that in all cases of applying Coulomb's law, the integrals are _always_ done **with respect to the primed coordinates**. That is, we integrate over $x', y', z'$, _not_ $x, y, z$. Each point $(x', y', z')$ represents a point _within the charge distribution_, and we integrate over all the points within the charge distribution to be able to find the total electric field.
+```
+
+But there is a more _elegant_ way of computing the electric field. Suppose we analyze an bounded region of space around an electric field. For instance, this could be the spherical region around a point charge, as shown in the figure below:
 
 ![Spherical region around point charge](https://study.com/cimages/multimages/16/point_charge_example255946289342482603.png)
 
