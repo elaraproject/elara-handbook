@@ -38,6 +38,9 @@ parts:
     - file: specifics/modern-phys-foundations.md
       sections:
       - file: specifics/modern-phys-foundations/quantum-mechanics.md
+    - file:  specifics/research-guide.md
+      sections:
+      - file: specifics/research-guide/intro-to-research.md
 - caption: The expert's guide
   chapters:
     - file: expert-guide/index.md
