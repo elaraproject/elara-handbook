@@ -10,28 +10,19 @@ kernelspec:
   language: python
   name: python3
 ---
-
 # Lagrangian and Hamiltonian mechanics
-
 
 Newton's laws and conservation of energy are two approaches to solving for the equations of motion of an object. We can make Newtonian mechanics more elegant by extending them to fields and potentials. But ultimately, Newtonian mechanics is still cumbersome to use. Here is an alternate, more beautiful approach - Lagrangian mechanics.
 
-
 ## Lagrangian Mechanics
 
-
 The **Lagrangian** is the difference of an object's kinetic and potential energies, and is denoted by:
-
 
 $$
 \mathcal{L(x, \dot x)} = K(\dot x) - U(x)
 $$
 
-
-Note that the dots are used for the time derivatives - that is, $\dot x = \frac{dx}{dt}$.
-
-
-The **action** is the time integral of the Lagrangian:
+Note that the dots are used for the time derivatives - that is, $\dot x = \frac{dx}{dt}$. The **action** is a fundamental quantity of all physical systems and is given by the time integral of the Lagrangian:
 
 
 $$
@@ -39,8 +30,7 @@ S = \int_{t_1}^{t_2} \mathcal{L}(x, \dot x)~dt
 $$
 
 
-The **principle of stationary action** states that for any given system, the action is stationary. What does stationary mean? Recall the idea of stationary _points_ in calculus - which include minima and maxima. For the action to be stationary, that means the Lagrangian must be a stationary _function_, which are analogous to stationary points, just for the action, which is a function of functions.
-
+The **principle of stationary action** states that for any given system, the action is stationary. What does stationary mean? Recall the idea of stationary _points_ in calculus - which include minima and maxima. For the action to be stationary, that means the Lagrangian must be a stationary _function_, which are analogous to stationary points, just for the action, which is a function of functions (what we call a _functional_, which we'll go more in-depth with later).
 
 But what form does that Lagrangian have to take to obey the principle of stationary action? The short answer is that it must obey the following equation, known as the **Euler-Lagrange equation**:  
 
@@ -49,226 +39,241 @@ $$
 \frac{\partial \mathcal{L}}{\partial x} - \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot x} = 0
 $$
 
+where again, $\dot x = \dfrac{dx}{dt}$ is the velocity. This is one of the most fundamental and profound equations of physics, and works for any particle's Lagrangian (particle, remember, can be a big object like a planet or star, it is a generic term in physics). Once you write down the Euler-Lagrange equation, you just need to take the derivatives of the Lagrangian and substitute to get the equations of motion (the differential equations you use to solve for the trajectory of the particle). Applying it, at least conceptually, is fairly simple.
 
-This is one of the most fundamental and profound equations of physics. We will derive this differential equation in the following section - if this section is too math-heavy, feel free to skip this section.
+But to gain a deeper understanding of _why_ this equation works, we must first dive into the theory of **functionals** and **variational calculus**. If this section is too math-heavy, feel free to skip this section - it's not required for applying the Euler-Lagrange equation. But for those that want the step-by-step derivation - let's dive in!
 
-## The Euler-Lagrange equation
+## Functionals
 
-To begin our derivation, we first go back to single-variable calculus, where we are often told to find the stationary points - such as the maxima or minima - of a function. Both maxima and minima are called **stationary points** - points where the derivative of a function is zero. But what exactly defines a stationary point? Let's take a step back first. We know that the derivative is defined as the limit as $\epsilon \to 0$ of:
+A **functional** is a function that takes in _other_ functions as input. In contrast to a function $f$ which takes in a real number $x$ and outputs $f(x)$, a functional $\mathcal{L}$ takes in a function $y(x)$ and outputs $\mathcal{L}(y(x), y'(x), x)$.
 
+The derivative appearing in $\mathcal{L}(y, y', x)$ and the mention of the word "calculus" suggests that functionals are based in **differential operators**, such as derivatives and integrals. Indeed, this is the case - a great number of functionals are in fact integrals.
 
-$$
-f'(x) = \frac{f(x + \epsilon) - f(x)}{\epsilon}
-$$
-
-
-We can rearrange that equation to form:
-
+Consider, for instance, a functional that appears - under a different name - in a first introduction to calculus. This is the functional expression for the **arc length**:
 
 $$
-f(x + \epsilon) = f(x) + \epsilon f'(x)
+S = \int_a^b \sqrt{1 + {y'}^2}\, dx
 $$
 
-
-For a point to be stationary, we know that $f'(x)$ must be zero. Thus:
-
+While an introductory treatment of calculus may simply give this formula with the provided function $y$ and its derivative $y'$, the calculus of variations would consider this formula a **functional** of an _arbitrary_ function $f$ in the form:
 
 $$
-f(x + \epsilon) = f(x)
+S(y, y', x) = \int_a^b \sqrt{1 + {y'}^2}\, dx
 $$
 
+The calculus of variations is concerned with **optimizing** functionals to find their stationary points. In many cases, we want to obtain the _minimum_ or _maximum_ of a funtional, but remember that stationary points are more general and can include things like saddle points and other points of inflection (i.e. points around which the second derivative changes sign).
 
-which means that at a stationary point, the function remains the same so long as you remain within a small distance $\epsilon$ away from the point. We denote a new notation, $\delta$, which we call the **variation**, and which we define as:
+In our case, we want to figure out _which path_ $y(x)$ is the _shortest distance_ between points $x = a$ and $x = b$. Translated to mathematical terms, we can say that we want to _optimize_ $S(y, y', x)$ for the function $y(x)$ that minimizes $S$. But how do we do so? The answer requires a fair bit of explaining, so this is a section to be read through slowly.
 
+## The general functional optimization problem
 
-$$
-\delta f = f(x + \epsilon) - f(x)
-$$
-
-
-Normally, since $f(x + \epsilon) = f(x) + \epsilon f'(x)$, it would be true that:
-
+Consider a general functional $S(f, f', q)$ where the functional $S$ is a function of $f(q)$, $f'(q)$, and $q$. Here, $f(q)$ is a parametric function of one parameter $q$ - we will explore specific cases of $f(q)$ later (hint: one of these will be the _position_ function $x(t)$ which is a parametric function where the parameter is $t$). Our functional $S(f, f', q)$ is given by:
 
 $$
-\delta f = [f(x) + \epsilon f'(x)] - f(x) = \epsilon f'(x)
+S(f, f', q) = \int_{q_1}^{q_2} \mathcal{L}(f, f', q)\, dq
 $$
 
+All of this is certainly very abstract, so let us examine what it all means. $S$ is a **functional**, meaning that it takes some function $f(q)$ and outputs a number. The precise thing it _does_, in this case, is to integrate any *composite function* of $f$, its derivative $f'(q)$, and its input $q$, between two points in the domain of $f$. For notational clarity, we call this composite function of $f$, $f'$, and $q$ as $\mathcal{L}(f, f', q)$. As we are taking the integral of the composite function, this results in a number, since definite integrals return a number. So to sum it all up, $S$ is a functional, that, given any function $f(q)$ - whatever the function may be - returns the definite integral of any possible composite function of $f$, its derivative $f'$, and its input $q$.
 
-But because $f(x + \epsilon) = f(x)$ at a _stationary_ point, $f(x + \epsilon) - f(x) = 0$, so at any stationary point, it is true that:
-
+We want to find the function $f$ that minimizes or maximizes $S$. This means we want to find a function for which $S$ does not change with respect to $f$ (similar to how the derivative is zero at a critical point in normal calculus). To find this optimal function, let us vary $S$ by adding a function $\eta(q)$ multiplied by a tiny number $\varepsilon$ to $f$ between $q_1$ and $q_2$ - this represents adding a tiny shift, also called a _variation_, to $S$. Our particular shift is such that $\eta(q_1) = \eta(q_2) = 0$, meaning that $\eta(q)$ vanishes at the endpoints, since we want this variation to only be between $q_1$ and $q_2$ (and nowhere outside of that range). We then have:
 
 $$
-\delta f = 0
+S(f + \varepsilon \eta, f' + \varepsilon \eta', q) = \int_{q_1}^{q_2} \mathcal{L}(f + \varepsilon \eta, f' + \varepsilon \eta', q)\, dq
 $$
 
+Our next step is to find the _amount_ of change $\delta S$ between $S(f, f', q)$ and $S(f + \varepsilon \eta, f' + \varepsilon \eta', q)$. As a first step, we want to compute $\mathcal{L}(f + \varepsilon \eta, f' + \varepsilon \eta', q)$, as that will allow us to compute $S(f + \varepsilon \eta, f' + \varepsilon \eta', q)$, which we need in order to calculate $\delta S$.
+
+> We use $\delta S$ instead of $dS$ or $\partial S$ as (1) $\delta S$ is specifically for functionals and (2) the latter two symbols already have (multiple) reserved uses and we don't want to muddle up the notation and make the meanings unclear.
+
+Recall how, in single-variable calculus, we can express a small shift $y(x + h)$ in a function $y(x)$  for some tiny number $h$ by:
+
+$$
+y(x + h) = y(x) +  y'(x) h
+$$
+
+This idea can be generalized to multivariable calculus, where we can express a small shift in a function $f(x + \sigma, y + \lambda)$ in a function $f(x, y)$ by:
+
+$$
+f(x + \sigma, y + \lambda) = f(x, y) + \dfrac{\partial f}{\partial x} \sigma + \dfrac{\partial f}{\partial y} \lambda
+$$
+
+In a similar way, in the calculus of variations, we can write:
+
+$$
+\begin{align*}
+\mathcal{L}(f + \varepsilon \eta, f' + \varepsilon \eta', q) &= \mathcal{L}(f, f', q) + \dfrac{\partial \mathcal{L}}{\partial f}\eta\,\varepsilon + \dfrac{\partial \mathcal{L}}{\partial f'}\eta' \varepsilon \\
+&=\mathcal{L}(f, f', q) + \left(\dfrac{\partial \mathcal{L}}{\partial f}\eta\, + \dfrac{\partial \mathcal{L}}{\partial f'}\dfrac{d\eta}{dq}\right)\varepsilon
+\end{align*}
+$$
+
+Now, by substitution, we can find $S(f + \varepsilon \eta, f' + \varepsilon \eta', q)$:
+
+$$
+\begin{align*}
+S(f + \varepsilon \eta, f' + \varepsilon \eta', q) &= \int_{q_1}^{q_2} \mathcal{L}(f + \varepsilon \eta, f' + \varepsilon \eta', q)\, dq \\
+&=\int_{q_1}^{q_2} \left[\mathcal{L}(f, f', q) + \left(\dfrac{\partial \mathcal{L}}{\partial f}\eta\, + \dfrac{\partial \mathcal{L}}{\partial f'}\dfrac{d\eta}{dq}\right)\varepsilon\right]d q
+\end{align*}
+$$
+
+We may find the _change in $S$_, which we will call $\delta S$, by subtracting $S(f, f', q)$ from the left-hand side:
+
+$$
+\begin{align*}
+\delta S &= S(f + \varepsilon \eta, f' + \varepsilon \eta', q) - S(f, f', q) \\
+&=\int_{q_1}^{q_2} \left[\mathcal{L}(f, f', q) + \left(\dfrac{\partial \mathcal{L}}{\partial f}\eta\, + \dfrac{\partial \mathcal{L}}{\partial f'}\dfrac{d\eta}{dq}\right)\varepsilon\right]d q - \int_{q_1}^{q_2} \mathcal{L}(f, f', q)\, dq \\
+&= \int_{q_1}^{q_2}\left(\dfrac{\partial \mathcal{L}}{\partial f}\eta\, + \dfrac{\partial \mathcal{L}}{\partial f'}\dfrac{d\eta}{dq}\right)\varepsilon\,dt
+\end{align*}
+$$
+
+In the limit as $\varepsilon \to 0$, we would expect that $\delta S = 0$, as the function that maximizes (or minimizes) $S$, again, is the function for which $S$ **does not change with respect to $f$**. In formal language, this is called the process of _varying_ $S$ by a _variation_ $\varepsilon$, and then demanding that $\displaystyle \lim_{\varepsilon \to 0} \delta S = 0$. This is why this form of calculus is called _the calculus of variations_ or _variational calculus_. By setting $\delta S = 0$ we have:
+
+$$
+\int_{q_1}^{q_2}\left(\dfrac{\partial \mathcal{L}}{\partial f}\eta\, + \dfrac{\partial \mathcal{L}}{\partial f'}\dfrac{d\eta}{dq}\right)\varepsilon\,dt = 0
+$$
+
+We would, however, prefer some way to get rid of the added function $\eta(q)$ to obtain an equation that doesn't depend on $\eta$. We can do this by explicitly performing the above integral. First, we split the sum into two parts for mathematical convenience for the following steps:
+
+$$
+\int_{q_1}^{q_2}\left(\dfrac{\partial \mathcal{L}}{\partial f}\eta\, + \dfrac{\partial \mathcal{L}}{\partial f'}\dfrac{d\eta}{dq}\right)\varepsilon\,dt = \int_{q_1}^{q_2}\dfrac{\partial \mathcal{L}}{\partial f} \eta\,\varepsilon\, dt + \int_{q_1}^{q_2} \dfrac{\partial \mathcal{L}}{\partial f'}\dfrac{d\eta}{dq}\varepsilon\ dt
+$$
+
+We now simplify the second term in the integral by performing **integration by parts** to evaluate the integral. Recall that the integration by parts formula is as follows:
+
+$$
+\int_a^b u dv = uv \bigg|_a^b - \int_a^b v du
+$$
+
+If we let $u = \dfrac{\partial \mathcal{L}}{\partial f'}\varepsilon$ and $dv = \dfrac{d\eta}{dq}$, then $v = \displaystyle \int \dfrac{d\eta}{dq} dq = \eta(q)$ and $du = \dfrac{d}{dq} \left(\dfrac{\partial \mathcal{L}}{\partial f'}\right)\varepsilon$. By substituting these in (we keep the first term there and don't evaluate, we only perform integration by parts on the second term) we have:
+
+$$
+\begin{align*}
+\underbrace{\int_{q_1}^{q_2} \dfrac{\partial \mathcal{L}}{\partial f} \eta\,\varepsilon\, dt}_\text{no need to evaluate} &+ \underbrace{\int_{q_1}^{q_2} \dfrac{\partial \mathcal{L}}{\partial f'}\dfrac{d\eta}{dq}\varepsilon\ dt}_\text{integrate by parts} \\
+&= \int_{q_1}^{q_2}\dfrac{\partial \mathcal{L}}{\partial f}\eta\, \varepsilon\, dt + 
+\underbrace{\left[\dfrac{\partial \mathcal{L}}{\partial f'} \eta\,\varepsilon\bigg|_{q_1}^{q_2} -
+\int_{q_1}^{q_2}\eta\dfrac{d}{dq} \left(\dfrac{\partial \mathcal{L}}{\partial f'}\right)\varepsilon \, dt\right]}_\text{result of integration by parts}
+\end{align*}
+$$
+
+But recall from earlier that we defined $\eta(q)$ such that $\eta(q_2) = \eta(q_1) = 0$, meaning that the $\dfrac{\partial \mathcal{L}}{\partial f'} \eta\,\varepsilon\bigg|_{q_1}^{q_2}$ term goes to zero. Therfore, we are only left with:
+
+$$
+\begin{align*}
+\int_{q_1}^{q_2}\dfrac{\partial \mathcal{L}}{\partial f} \eta\,\varepsilon\, dt &+ 
+\cancel{\dfrac{\partial \mathcal{L}}{\partial f'} \eta\,\varepsilon\bigg|_{q_1}^{q_2}} -
+\int_{q_1}^{q_2}\eta\dfrac{d}{dq} \left(\dfrac{\partial \mathcal{L}}{\partial f'}\right)\varepsilon \, dt \\
+&= \int_{q_1}^{q_2}\dfrac{\partial \mathcal{L}}{\partial f}\eta\, \varepsilon\, dt - \int_{q_1}^{q_2}\eta\dfrac{d}{dq} \left(\dfrac{\partial \mathcal{L}}{\partial f'}\right)\varepsilon \, dt \\
+&= \int_{q_1}^{q_2}\left[\dfrac{\partial \mathcal{L}}{\partial f} \eta\,\varepsilon - \dfrac{d}{dq}\left(\dfrac{\partial \mathcal{L}}{\partial f'}\right)\eta\,\varepsilon\right] \, dt \\
+\end{align*}
+$$
+
+Where in the last term we re-joined the sum of the integrals (which will make the next steps much easier). We know that the integral quantity we derived in the last step must be equal to zero, given that $\delta S = 0$ is our fundamental requirement for finding the stationary points (minima, maxima, etc.) of functionals. Therefore we have:
+
+$$
+\begin{align*}
+\int_{q_1}^{q_2}&\left[\dfrac{\partial \mathcal{L}}{\partial f} \eta\,\varepsilon\, - \dfrac{d}{dq}\left(\dfrac{\partial \mathcal{L}}{\partial f'}\right)\eta\,\varepsilon\right] \, dt \\
+&= \int_{q_1}^{q_2}\left[\dfrac{\partial \mathcal{L}}{\partial f}  - \dfrac{d}{dq}\left(\dfrac{\partial \mathcal{L}}{\partial f'}\right)\right] \eta\,\varepsilon\, \, dt \\
+&= 0
+\end{align*}
+$$
+
+Where we factored the common terms out of the integral in the last step. But since our integral is zero, by the **fundamental lemma of the calculus of variations**, our integrand _must_ be zero as well, and resultingly our quantity in the squared brackets must _also_ be zero. That is:
+
+$$
+\int_{q_1}^{q_2}\left[\dfrac{\partial \mathcal{L}}{\partial f}  - \dfrac{d}{dq}\left(\dfrac{\partial \mathcal{L}}{\partial f'}\right)\right] \eta\,\varepsilon\, \, dt = 0 \quad\Rightarrow \quad \dfrac{\partial \mathcal{L}}{\partial f}  - \dfrac{d}{dq}\left(\dfrac{\partial \mathcal{L}}{\partial f'}\right) = 0
+$$
+
+The last result is the general form of the **Euler-Lagrange equation** for our functional $S$. Since our functional is a very general functional, the Euler-Lagrange equation applies to a huge set of functionals - indeed, _all_ functionals in the form $S[f(q), f'(q), q]$ (it is customary to use squared brackets when writing out the functional in its full form, but for our short form $S(f, f', q)$ it is permissible to simply use parentheses). Thus, it is an extremely crucial and useful equation, so let us write it down one more time:
+
+$$
+\dfrac{\partial \mathcal{L}}{\partial f}  - \dfrac{d}{dq}\left(\dfrac{\partial \mathcal{L}}{\partial f'}\right) = 0
+$$
+
+### Application of the Euler-Lagrange equation to arc length
+
+Now, let us return to our example of the arc length functional:
+
+$$
+S(y, y', x) = \int_a^b \sqrt{1 + {y'}^2}\, dx
+$$
+
+We want to find $y(x)$ that minimizes this functional, and for this we can use the Euler-Lagrange equation. In this case, $f = y(x)$, $f' = y'$, and $\mathcal{L} = \sqrt{1 + y'^2}$, so the Euler-Lagrange equation for this particular functional reads:
+
+$$
+\dfrac{\partial \mathcal{L}}{\partial y}  - \dfrac{d}{dx}\left(\dfrac{\partial \mathcal{L}}{\partial y'}\right) = 0
+$$
+
+We may now compute the derivatives (which is much-simplified by the fact that $\mathcal{L} = \sqrt{1 + y'^2}$ _does not depend on $y$_, but we must be careful to remember that $\dfrac{d}{dx} f(y') = f'(y')y''$ due to the chain rule):
+
+$$
+\begin{align*}
+\dfrac{\partial \mathcal{L}}{\partial y} &= 0 \\
+\dfrac{\partial \mathcal{L}}{\partial y'} &= \dfrac{1}{2} \dfrac{2y'}{\sqrt{1 + y'^2}} = \dfrac{y'}{\sqrt{1 + y'^2}} = y'(1 + y'^2)^{-1/2} \\
+\dfrac{d}{dx} \dfrac{\partial \mathcal{L}}{\partial y'^2}&= y''(1 + y'^2)^{-1/2} + \left(-\frac{1}{2}\right)(1 + y'^2)^{-3/2}(2y')y'' \\
+&=y''(1 + y'^2)^{-1/2} -y'(1 + y'^2)^{-3/2}y'' \\
+&= y''[(1 + y'^2)^{-1/2}  - (1 + y'^2)^{-3/2}]
+\end{align*}
+$$
+
+Thus, substituting into the Euler-Lagrange equation, we have:
+
+$$
+\begin{align*}
+\dfrac{\partial \mathcal{L}}{\partial y}  - \dfrac{d}{dx}\left(\dfrac{\partial \mathcal{L}}{\partial y'}\right) &= -y''[(1 + y'^2)^{-1/2}  - (1 + y'^2)^{-3/2}] \\
+&=y''[(1 + y'^2)^{-3/2}-(1 + y'^2)^{-1/2}] \\ &=0
+\end{align*}
+$$
 
 ```{note}
-$\delta f = \epsilon f'(x)$ is still true at a stationary point, but since $f'(x) = 0$ at a stationary point, $\delta f = \epsilon \cdot 0 = 0$. So you can arrive at the result $\delta f = 0$ at all stationary points using either method.
+The differentiation is indeed quite a bit tedious, and we could've used computer algebra systems to take the derivatives for us to speed up this process. We will cover computer algebra systems in depth in Chapter 2.
 ```
 
-
-Now, we return to the action:
-
+While this may look very complicated, remember that the quantity in the square brackets is zero:
 
 $$
-S = \int \limits_a^b \mathcal{L}(x, \dot x)~dt
+\begin{align*}
+&y''[(1 + y'^2)^{-3/2}-(1 + y'^2)^{-1/2}] = 0 \\
+&\Rightarrow y''[(1 + y'^2)^{-3/2}-(1 + y'^2)^{-1/2}] = 0 \\
+&\Rightarrow y'' = 0
+\end{align*}
 $$
 
-
-We demand that the action must be stationary:
-
+ This becomes a differential equation that is straightforward to integrate:
 
 $$
-\delta S = 0
+\begin{align*}
+&y'' = 0 \\ 
+&y' = \int y'' dx = \int 0 \, dx = b = \text{const.} \\
+&y = \int y' dx  = \int b  \, dx = m x + b
+\end{align*}
 $$
 
+Where $m, b$ are constants. This is simply an equation of a straight line! By applying the calculus of variations, we have therefore shown that the _shortest path between two points $a, b$_ - in functional terms, the path that minimizes the arc length - is a **straight line**. It may seem to be an obvious result, but _proving it_ required quite a bit of calculus!
 
-Which also means that:
+Note that the one restriction we must place on this result is that we assume $S = \displaystyle \int \sqrt{1 + y'^2}\, dx$ is the _right equation_ for the arc length. For regular Euclidean space, this is always the right equation, and Euclidean space is what we'll work with 99% of the time. But in higher dimensions, and especially in non-Euclidean geometries, the arc length equation is no longer the correct equation for the arc length. We must then use differential geometry to construct the right equation for the arc length. But that is a topic we will cover in Chapter 3.
 
+## The Euler-Lagrange equation in physics
 
-$$
-\int \limits_a^b \delta \mathcal{L}(x, \dot x)~dt = 0
-$$
-
-
-Recall that in the single-variable case, we have:
-
-
-$$
-\delta f = \epsilon f'(x)
-$$
-
-
-In the multivariable case, the derivative is replaced by partial derivatives. So we can rewrite the variation of $\mathcal{L}$ as:
-
-
-$$
-\int \limits_a^b \delta \mathcal{L}(x, \dot x)~dt = \int \limits_a^b \epsilon \frac{\partial \mathcal{L}}{\partial x} + \dot \epsilon \frac{\partial \mathcal{L}}{\partial \dot x}~dt
-$$
-
-
-We can split apart this integral to get:
-
-
-$$
-\int \limits_a^b \epsilon \frac{\partial \mathcal{L}}{\partial x}~dt + \int \limits_a^b \frac{\partial \mathcal{L}}{\partial \dot x} \frac{d\epsilon}{dt}~dt
-$$
-
-
-We now can use integration by parts on the second integral. Set:
-
-
-$$
-u = \frac{\partial \mathcal{L}}{\partial \dot x}
-$$
-
-$$
-dv = \frac{d\epsilon}{dt}
-$$
-
-$$
-v = \epsilon
-$$
-
-
-Therefore:
-
-
-$$
-du = \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot x} dt
-$$
-
-$$
-v = \int dv = \epsilon
-$$
-
-
-And using the integration by parts formula:
-
-
-$$
-\int \limits_a^b  u~dv = uv \bigg |_a^b - \int \limits_a^b  v~du
-$$
-
-
-The second term becomes:
-
-
-$$
-\epsilon \frac{\partial \mathcal{L}}{\partial \dot x} \bigg |_a^b - \int \limits_a^b \epsilon \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot x}~dt
-$$
-
-
-But remember, since we are evaluating at a stationary function (not stationary point, stationary function, as the action is a function of functions), all the derivatives of $\mathcal{L}$ go to zero, so $\epsilon \frac{\partial \mathcal{L}}{\partial \dot x} \bigg |_a^b$ is zero and can be cancelled out. Therefore, the second term is just:
-
-
-$$
-- \int \limits_a^b \epsilon \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot x}~dt
-$$
-
-
-Let's put the second term and the first term back together:
-
-
-$$
-\int \limits_a^b \epsilon \frac{\partial \mathcal{L}}{\partial x}~dt - \int \limits_a^b \epsilon \frac{d}{dt}\frac{\partial \mathcal{L}}{\partial \dot x}~dt
-$$
-
-
-Since they are with respect to the same variable, we can recombine these two integrals:
-
-
-$$
-\int \limits_a^b \epsilon \frac{\partial \mathcal{L}}{\partial x}~dt - \epsilon \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot x}~dt
-$$
-
-
-And we can factor out the epsilon:
-
-
-$$
-\int \limits_a^b \left(\frac{\partial \mathcal{L}}{\partial x} - \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot x} \right) \epsilon~dt
-$$
-
-
-But remember, $\delta S = 0$, so:
-
-
-$$
-\int \limits_a^b \left(\frac{\partial \mathcal{L}}{\partial x} - \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot x} \right) \epsilon~dt = 0
-$$
-
-
-And the only way for the equation to be true is if:
-
+In physics, we consider a specific case of the Euler-Lagrange equation, where (as mentioned at the beginning) $q = t$ is the time, $f = x(t)$ is the position, and $f' = \dot x = \dfrac{dx}{dt}$ is the velocity. Therefore, the Euler-Lagrange equation, in its common form used in physics (specifically, Lagrangian mechanics), becomes:
 
 $$
 \frac{\partial \mathcal{L}}{\partial x} - \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot x} = 0
 $$
 
-
-This is the **Euler-Lagrange equation**, and it can be used to solve for the equations of motion as long as the Lagrangian is known.
-
-
-Note that for a more general set of coordinate systems, where the system is not one-dimensional motion along the $x$ axis, the Euler-Lagrange equation takes the form:
-
+Again, the Euler-Lagrange equation can be used to solve for the equations of motion as long as the Lagrangian is known. Note that for a more general set of coordinate systems, where the system is not one-dimensional motion along the $x$ axis, there is an Euler-Lagrange equation that applies to each coordinate, each of which takes the following form:
 
 $$
 \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot q_i} - \frac{\partial \mathcal{L}}{\partial q_i} = 0
 $$
 
+where $q_i$ stands in for the particular coordinate, so $q_i$ can be any one of $x, y, z$ when working in Cartesian coordinates, or any one of $r, \theta, \phi$ when working in spherical coordinates. And in the specific case when we are interested in solving for the motion of a system of objects, and not just of one individual object, it should be noted that the kinetic and potential energies are those of the **system** - that is, the sum of the kinetic and potential energies of every object in the system:
 
-And specifically when we are interested in solving for the motion of a system, and not just of one individual object, it should be noted that the kinetic and potential energies are those of the **system** - that is, the sum of the kinetic and potential energies of every object in the system:
-
-
-$$
-K = \sum_i K_i = K_1 + K_2 + K_3 + \dots + K_n
-$$
 
 $$
-U = \sum_i U_i = U_1 + U_2 + U_3 + \dots + U_n
+\begin{align*}
+K &= \sum_i K_i = K_1 + K_2 + K_3 + \dots + K_n \\
+U &= \sum_i U_i = U_1 + U_2 + U_3 + \dots + U_n
+\end{align*}
 $$
-
 
 Note that the Euler-Lagrange equations apply primarily to closed systems, i.e. systems with no external force acting on them. If there is an external applied force on the system that does work $W$, then the Euler-Lagrange equations become:
 
