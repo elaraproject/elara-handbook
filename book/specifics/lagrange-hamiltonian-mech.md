@@ -826,29 +826,65 @@ Which reproduces the Newtonian result!
 
 ## Noether's theorem
 
-## Lagrangians to the stars
+## Field Lagrangians
+
+Besides working with particles and their trajectories, we are also often interested in _fields_ in physics, such as the electromagnetic or gravitational fields. To find the differential equations that describe these fields, we need an Euler-Lagrange equation for _fields_ rather than particles.
+
+Let us consider a generic field $\varphi(\mathbf{r}, t)$. For reasons that will be elaborated in more detailed in the special and general relativity sections (we will give a rough outline for why in a note further down this section), it is conventional to group the space and time components in one vector $\mathbf{X}$ which has four components, one of time and three of space, and where $c$ is the speed of light:
+
+$$
+\mathbf{X} = (ct, \mathbf{r}) =
+\begin{bmatrix}
+ct \\ x \\ y \\ z
+\end{bmatrix}
+$$
+
+It is also convention to group the time derivative and gradient operators together, which we call the **four-gradient** and denote $\partial_\mathbf{X}$:
+
+$$
+\partial_\mathbf{X} = \left(-\dfrac{1}{c}, \nabla\right) = \left\langle-\dfrac{1}{c}, \dfrac{\partial}{\partial x}, \dfrac{\partial}{\partial y}, \dfrac{\partial}{\partial z}\right\rangle
+$$
+
+```{note} Note for the advanced reader
+In special and general relativity, we call $\mathbf{X}$ the **four-position** and we write it in tensor notation as $x^\mu$, and we call $\partial_\mathbf{X}$ the **four-gradient** and we write it similarly in tensor notation as $\partial_\mu$. The reason we need these four-component vectors (and vector derivatives) is that in the theories of relativity, four-dimensional _spacetime_ becomes of fundamental importance whereas space and time are reduced to perspective-dependent aspects of spacetime.
+
+We will cover more on tensors in this chapter, but knowing tensors is _not_ required for our (rough) treatment of Lagrangians in field theory. We will proceed with simply the four-position and four-gradient written in vector form.
+```
+
+With these new vectors we may write the field as $\varphi(\mathbf{X})$. The action for the field is given by:
+
+$$
+S[\varphi, \partial_\mathbf{X} \varphi, \mathbf{X}]
+= \int_\Omega \mathcal{L(\varphi, \partial_\mathbf{X}\varphi, \mathbf{X})} d^4 x
+$$
+
+Where $\mathcal{L}$ is our _field Lagrangian_, $d^4 x = dVdt$ is an infinitesimal portion of space and time, and $\Omega$ is the domain of all space and all times. We will not repeat the _full_ derivation of the Euler-Lagrange equation, but the steps are very similar to what we have already seen with the single-object Lagrangian case. The result is the **Euler-Lagrange equation for fields**, which takes the form:
+
+$$
+\dfrac{\partial \mathcal{L}}{\partial \varphi} -
+\dfrac{\partial}{\partial\mathbf{X}} \left(\dfrac{\partial \mathcal{L}}{\partial(\partial_\mathbf{X} \varphi)}\right) = 0
+$$
+
+### Lagrangians to the stars
 
 ```{note}
 This section is _optional_ and discusses advanced physics, so by all means read on if interested, but otherwise feel free to skip this part!
 ```
 
-The Lagrangian formulation of classical mechanics is so powerful, precisely because it relies on a differential equation that can be generalized. Beyond classical mechanics, the Lagrangian isn't always necessarily $\mathcal{L} = K - U$, but the Euler-Lagrange equations still hold true, and so does the principle of stationary action. Thus, a theory can be written _as a Lagrangian_, as the Euler-Lagrange equations yield the equations of motion for each theory, on which the rest of the theory is built on! *This* is the reason behind learning Lagrangian mechanics.
+The Lagrangian formulation of classical mechanics is so powerful, precisely because it relies on a differential equation that can be generalized. Beyond classical mechanics, the Lagrangian isn't always necessarily $\mathcal{L} = K - U$, but the Euler-Lagrange equations still hold true, and so does the principle of stationary action. Thus, a theory - including those that involve fields - can be written _as a Lagrangian_, as the Euler-Lagrange equations yield the equations of motion for each theory, on which the rest of the theory is built on! *This* is the reason behind learning Lagrangian mechanics.
 
-
-We will end with one final thought - one of the most successful theories in all of physics, the **Standard model** of particle physics, is encapsulated in one compact Lagrangian:
-
-
-$$
-\mathcal{L} = -\frac{1}{4} F_{\mu \nu} F^{\mu \nu} + i \overline \psi \gamma_\beta D^\beta + h.c. + \psi_i y_{ij} \psi_j \phi + h.c. + |D_\mu \phi |^2 - V(\phi)
-$$
-
-
-And one of the most mathematically beautiful theories, in fact one we will see very soon, **General Relativity**, is described in another compact Lagrangian:
+We will end with one final thought - one of the most successful theories in all of physics, the **Standard model** of particle physics (which is a _quantum field theory_), is encapsulated in one compact Lagrangian:
 
 
 $$
-\mathcal{L} = \frac{1}{2\kappa} R \sqrt{-g}~ ~d^4 x
+\mathcal{L}_\mathrm{SM} = -\frac{1}{4} F_{\mu \nu} F^{\mu \nu} + i \overline \psi \gamma_\beta D^\beta + h.c. + \psi_i y_{ij} \psi_j \phi + h.c. + |D_\mu \phi |^2 - V(\phi)
 $$
 
+
+And one of the most mathematically beautiful theories, in fact one we will see very soon, **General Relativity** (which is a _classical field theory_ for gravity), is described in another compact Lagrangian:
+
+$$
+\mathcal{L}_\mathrm{GR} = \frac{1}{2\kappa} R \sqrt{-g} + \mathcal{L}_\mathrm{matter}
+$$
 
 Who knew that Lagrangians could take us deep into the hearts of atoms, and to the furthest stars...? :)
