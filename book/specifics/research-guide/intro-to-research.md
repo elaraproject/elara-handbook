@@ -1,4 +1,4 @@
-# Introduction to Elara's research
+# Introduction to our research
 
 Project Elara is not a single research project; it is a collection of multiple research projects managed under the umbrella of the same organization, which also leads its research alliances and conducts its partnerships. However, the priority research project conducted by Project Elara is its **universal power initiative**. This research focuses on the technologies crucial to building a system of power collection and distribution designed to endure for centuries and provide free (or nearly free), universal, and abundant energy to all corners of the globe.
 

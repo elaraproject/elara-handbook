@@ -5,3 +5,6 @@ sympy
 jupytext
 scipy
 astropy
+itur
+findiff
+scikit-learn
