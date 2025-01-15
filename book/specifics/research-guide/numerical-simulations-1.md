@@ -42,7 +42,9 @@ plt.rcParams["mathtext.fontset"] = "stix" # use STIX fonts (install from https:/
 
 ## Finite element analysis
 
-FENiCs code here.
+```{warning}
+**This section is not yet complete.** FENiCs code will be added here to demonstrate the finite element simulations at some point.
+```
 
 ## Scalar-valued validation test
 
@@ -59,7 +61,9 @@ This is the exact same as the finite element formulation which we will keep for 
 
 ```{code-cell} ipython3
 k = 3.0
-squaren = 120
+# this has to be set to a low number or else the generated mesh
+# might take up too much memory and crashing Python
+squaren = 30
 shape = (squaren, squaren)
 
 x = np.linspace(0, 1, squaren)
@@ -675,7 +679,7 @@ $$
 # have to flatten arrays to make this work
 def interpolation_func(X, a=1, b=1, c=1, d=1, g=1, h=1, m=1, n=1, r=1):
     u_raw, v_raw = X
-    squaren = 120 # change based on the value of squaren globally
+    squaren = n # change based on the value of squaren globally
     x = u_raw
     y = v_raw
     out = a*x**3 + b*y**3 + c*x**2*y**2 + d*x**2 + g*y**2 + h*x*y + m*x + n*x + r
@@ -913,17 +917,17 @@ np.stack((transform_u, transform_v)).shape
 ```
 
 ```{code-cell} ipython3
-# TODO FIX: make sure this is 120 elements
-trainY = np.stack((transform_u, transform_v)).reshape(240, -1).T
+# TODO FIX: make sure this is n elements
+trainY = np.stack((transform_u, transform_v)).reshape(2 * squaren, -1).T
 ```
 
 ```{code-cell} ipython3
 trainY.shape
 ```
 
-This is not as straightforward a process as it first seems due to the fact that scikit-learn only accepts 2D data for labels or for features at max. So what we will do is to reshape our $2 \times 120 \times 120$ array (because $E_u$ and $E_v$ each have $120 \times 120$ elements) to $(240, 120)$, essentially slicing each $120 \times 120$ array row-wise. The first 120 rows of the resulting array belowing to $E_u$ and the next 120 rows belong to $E_v$, and each of the rows has 120 elements. We then transpose, so the shape becomes $(240, 120) \to (120, 240)$ to be able to get our labels to have the same shape across the first component as the features.
+This is not as straightforward a process as it first seems due to the fact that scikit-learn only accepts 2D data for labels or for features at max. So what we will do is to reshape our $2 \times n \times n$ array (because $E_u$ and $E_v$ each have $n \times n$ elements) to $(2n, n)$, essentially slicing each $n \times n$ array row-wise. The first n rows of the resulting array belowing to $E_u$ and the next n rows belong to $E_v$, and each of the rows has n elements. We then transpose, so the shape becomes $(2n, n) \to (n, 2n)$ to be able to get our labels to have the same shape across the first component as the features.
 
-To turn the predicted results from the neural net back into a usable form, we transpose the prediction array $(120, 240) \to (240, 120)$ and then split the 240 rows themselves into 2 sets of 120 rows. This means the final shape is $(2, 120, 120)$, i.e. two $120 \times 120$ arrays, which we can then plot with `imshow` in matplotlib.
+To turn the predicted results from the neural net back into a usable form, we transpose the prediction array $(n, 2n) \to (2n, n)$ and then split the 2n rows themselves into 2 sets of n rows. This means the final shape is $(2, n, n)$, i.e. two $n \times n$ arrays, which we can then plot with `imshow` in matplotlib.
 
 ```{code-cell} ipython3
 processed_trainX.shape
@@ -938,7 +942,7 @@ As a validation that our reshaping the array results in a valid result, we can r
 ```{code-cell} ipython3
 def prediction_to_grid(predictY):
     # converts the output of the NN
-    # to two 120 x 120 grids for each
+    # to two (n x n) grids for each
     # of the two components of E
     # (E_u and E_v)
     # TODO this
@@ -978,7 +982,7 @@ plt.colorbar()
 plt.show()
 ```
 
-And upon inspection we can immediately see why. If we take a look at our raw labels we see a bunch of discontinuities at the border where the two $120 \times 120$ arrays meet:
+And upon inspection we can immediately see why. If we take a look at our raw labels we see a bunch of discontinuities at the border where the two $n \times n$ arrays meet:
 
 ```{code-cell} ipython3
 plt.title("Raw labels")
@@ -988,7 +992,7 @@ plt.show()
 
 This is absolutely not what we want. So instead, just as with the interpolation method it might be a much better idea to train _two_ separate neural networks, one for $E_u$ and one for $E_v$, so that the solutions are smooth and continuous which are much easier for neural networks to work with.
 
-In addition, we want to directly map from a vector of $[(u_1, v_1), (u_2, v_2), (u_3, v_3), \dots (u_n, v_n)]$ of shape $(120, 2)$, to an output of shape $(120, 120)$ for each of the neural networks. It may be the case that mapping from the meshgrid versions of $(u, v)$ leads to the banding behavior.
+In addition, we want to directly map from a vector of $[(u_1, v_1), (u_2, v_2), (u_3, v_3), \dots (u_n, v_n)]$ of shape $(n, 2)$, to an output of shape $(n, n)$ for each of the neural networks. It may be the case that mapping from the meshgrid versions of $(u, v)$ leads to the banding behavior.
 
 ```{code-cell} ipython3
 class NNInterpolation:
