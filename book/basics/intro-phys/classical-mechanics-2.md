@@ -131,7 +131,7 @@ $$
 $$
 
 ```{note}
-It is important to remember that in all cases of applying Coulomb's law, the integrals are _always_ done **with respect to the primed coordinates**. That is, we integrate over $x', y', z'$, _not_ $x, y, z$. Each point $(x', y', z')$ represents a point _within the charge distribution_, and we integrate over the contribution to the electric field from all the points within the charge distribution to be able to find the total electric field.
+It is important to remember that in all cases of applying Coulomb's law, the integrals are _always_ done **with respect to the primed coordinates**. That is, we integrate over $x', y', z'$, _not_ $x, y, z$. Each point $(x', y', z')$ represents a point _within the charge distribution_, and we integrate over the contribution to the electric field from all the points within the charge distribution to be able to find the total electric field. In fact, you should consider any $x$, $y$, or $z$ appearing in the integral as **constants**, as we integrate over $x', y', z'$ instead of $x, y, z$.
 ```
 
 It is common to say that applying Coulomb's law is finding the electric field by _brute-force_, understandably, given its tediousness. But there is a more _elegant_ way of computing the electric field. Suppose we analyze an bounded region of space around an electric field. For instance, this could be the spherical region around a point charge, as shown in the figure below:
