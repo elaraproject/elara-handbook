@@ -129,6 +129,26 @@ $$
 \vec E(\vec r) = \int \limits_\mathrm{line} k\dfrac{\lambda(\vec r') dr'}{|\vec r - \vec r'|^3} (\vec r - \vec r')
 $$
 
+Again, we may choose to work in component form by writing $\vec E = E_x \hat i + E_y \hat j + E_z \hat k$, for which we have:
+
+$$
+\begin{align*}
+E_x(x, y, z) &= \int \limits_\mathrm{line} k \dfrac{\lambda(x', y', z')(x - x')}{[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}} dr' \\
+E_y(x, y, z) &= \int \limits_\mathrm{line} k \dfrac{\lambda(x', y', z')(y - y')}{[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}} dr' \\
+E_x(x, y, z) &= \int \limits_\mathrm{line} k \dfrac{\lambda(x', y', z')(z - z')}{[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}} dr'
+\end{align*}
+$$
+
+Note that $\lambda(x', y', z')$ describes the charge density _along a line of charge_, **not** at every point in space. It may be more *helpful* to think of $x', y', z'$ as the _parametric curve_ given by:
+
+$$
+\begin{cases} x' = f(s) \\ y' = g(s) \\ z' = h(s) \end{cases}
+$$
+
+where $s$ is a parameter. Parametrization is _not_ needed for actually doing calculations in the integral; this is just a way of building intuition.
+
+Given its level of complexity, the component form of Coulomb's law for the electric field is only good for situations where the (possibly curved) line of charge is aligned along one axis, or when doing computer-based calculations. It, however, illustrates several easy-to-miss aspects about Coulomb's law. First, all three components of the electric field are integrated over the _same_ region. This means that, for instance, if we consider a line of charge purely along the $x$-axis, then $E_x, E_y, E_z$ are **all integrated** over $\lambda(x')dx'$, even though they are components of the electric field along different directions. Second, the magnitude of the displacement vector is _the same_ regardless of whether we compute $E_x$, $E_y$, or $E_z$. This is why each of the integrals has the same $[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}$ term in the denomination, even though they are different components of the electric field. While we will now examine charge distributions that are not along a line (or curve), these two properties will still hold.
+
 For surface charge distributions (e.g. plane of charge, disk of charge, etc.) we have $dq' = \sigma(\vec r') dA' = \sigma dx' dy'$ where $dA'$ is the surface element of the surface charge distribution to integrate over. Therefore, Coulomb's law becomes a surface integral over every patch of charge $dq'$ across every patch of surface $dA'$:
 
 $$
