@@ -104,11 +104,22 @@ $$
 \begin{align*}
 \vec E(\vec r) &= \int \dfrac{k\, dq'}{|\vec r - \vec r'|^2} \hat r' \\
 &= \int \dfrac{k\, dq'}{|\vec r - \vec r'|^2} \dfrac{\vec r - \vec r'}{|\vec r - \vec r'|} \\
-&= k\int \dfrac{\vec r - \vec r'}{|\vec r - \vec r'|^3} \rho(\vec r')\, dV'
+&= k\int \dfrac{\vec r - \vec r'}{|\vec r - \vec r'|^3} \rho(\vec r')\, dV' \\
 \end{align*}
 $$
 
-Where $\hat r' = \dfrac{\vec r - \vec r'}{|\vec r - \vec r'|}$ is the unit vector pointing from a point $\vec r' = (x', y', z')$ within the charge-containing region to point $\vec r = (x, y, z)$. All the primes in the integral (e.g. $\vec r', \hat r', dV'$) indicate points _within_ the charge-containing region, as we integrate over every point within that region, whereas all the unprimed coordinates (e.g. $\vec r$) indicate a point in space (which can be outside the charge-containing region). This is **the integral form of Coulomb's law** for the electric field, and does give the right expression for the electric field, at least when the electrostatic approximation holds. It is (understandably) rather tedious to solve and often can only be solved by computer.
+Where $\hat r' = \dfrac{\vec r - \vec r'}{|\vec r - \vec r'|}$ is the unit vector pointing from a point $\vec r' = (x', y', z')$ within the charge-containing region to point $\vec r = (x, y, z)$. All the primes in the integral (e.g. $\vec r', \hat r', dV'$) indicate points _within_ the charge-containing region, as we integrate over every point within that region, whereas all the unprimed coordinates (e.g. $\vec r$) indicate a point in space (which can be outside the charge-containing region).  We may _also_ write this explicitly in Cartesian coordinates as follows:
+
+$$
+\begin{align*}
+\vec E(x, y, z) &= E_x \hat i + E_y \hat j + E_z \hat k \\
+E_x(x, y, z) &= k\int \dfrac{\rho(x', y', z')(x - x')]}{[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}} d x' dy' dz' \\
+E_y(x, y, z) &= k\int \dfrac{\rho(x', y', z')(y - y')]}{[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}} d x' dy' dz' \\
+E_z(x, y, z) &= k\int \dfrac{\rho(x', y', z')(z - z')]}{[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}} d x' dy' dz'
+\end{align*}
+$$
+
+This is **the integral form of Coulomb's law** for the electric field, and does give the right expression for the electric field, at least when the electrostatic approximation holds. It is (understandably) rather tedious to solve and often can only be solved by computer.
 
 Note that the integral form of Coulomb's law has three specific cases depending on whether the charge density is a _linear_ charge density $\lambda(\vec r')$, _surface_ charge density $\sigma(\vec r')$, or _volume_ charge density $\rho(\vec r')$.
 
