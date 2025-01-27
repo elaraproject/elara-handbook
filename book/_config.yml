@@ -33,6 +33,15 @@ latex:
 # No copyright (because public domain)
 sphinx:
   config:
+    latex_engine: "xelatex" # use a modern TeX engine
     html_show_copyright: false
     # on print, show inline links as footnotes
     latex_show_urls: "footnote"
+    latex_show_pagerefs: True
+    latex_logo: logo.png
+    # add some LaTeX packages that Mathjax supports
+    # but vanilla TeX doesn't
+    latex_elements:
+        preamble: |
+            \usepackage{cancel}
+            \usepackage{physics}
