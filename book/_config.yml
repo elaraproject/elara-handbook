@@ -44,4 +44,7 @@ sphinx:
     latex_elements:
         preamble: |
             \usepackage{cancel}
-            \usepackage[pdftex]{graphicx} % for avoiding various image issues
+            % for image support
+            \usepackage[dvipdfm]{graphicx}
+            % see: https://tex.stackexchange.com/questions/17734/cannot-determine-size-of-graphic
+            \usepackage{bmpsize}
