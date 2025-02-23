@@ -33,7 +33,7 @@ latex:
 # No copyright (because public domain)
 sphinx:
   config:
-    latex_engine: "xelatex" # use a modern TeX engine
+    latex_engine: "pdflatex" # for better image support
     html_show_copyright: false
     # on print, show inline links as footnotes
     latex_show_urls: "footnote"
@@ -44,7 +44,5 @@ sphinx:
     latex_elements:
         preamble: |
             \usepackage{cancel}
-            % for image support
-            \usepackage[xetex]{graphicx}
-            % see: https://tex.stackexchange.com/questions/17734/cannot-determine-size-of-graphic
-            % \usepackage{bmpsize}
+            % required for images
+            \usepackage{graphicx}
