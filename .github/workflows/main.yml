@@ -67,12 +67,9 @@ jobs:
         # build pdf (sphinx creates a makefile for us)
         cd ./book/_build/latex/
         echo "Entered LaTeX folder, preparing to build PDF"
-        # patch makefile to strictly enforce use of pdflatex
-        # because for some reason(??) sphinx still produces
-        # a latex file that uses xelatex
-        sed -i -e 's/PDFLATEX = xelatex/PDFLATEX = pdflatex/g' Makefile
-        sed -i -e 's/xelatex/pdflatex/g' Makefile
-        make
+        # call latexmk directly instead of using the complicated
+        # auto-generated makefile which is error-prone
+        latexmk -pdf 'elara-handbook.tex'
         echo "PDF build successful, uploading artifacts now"
 
     # Output build artifacts for debugging
