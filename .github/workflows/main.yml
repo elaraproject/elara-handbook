@@ -64,12 +64,14 @@ jobs:
         jupyter-book build book --builder latex
         # patch output latex
         python ./book/patch.py
+        # setup latexmk config
+        cp ./book/latexmkrc $HOME/.latexmkrc
         # build pdf (sphinx creates a makefile for us)
         cd ./book/_build/latex/
         echo "Entered LaTeX folder, preparing to build PDF"
-        # call pdflatex directly instead of using the complicated
+        # don't use the complicated
         # auto-generated makefile which is error-prone
-        pdflatex 'elara-handbook.tex'
+        latexmk -pdf 'elara-handbook.tex'
         echo "PDF build successful, uploading artifacts now"
 
     # Output build artifacts for debugging
