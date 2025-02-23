@@ -51,6 +51,11 @@ jobs:
                              texlive-latex-extra \
                              texlive-fonts-extra \
                              texlive-xetex latexmk
+        # Additional needed TeX packages
+        tlmgr install physics
+        tlmgr install cancel
+        tlmgr install mathtools
+        tlmgr install mhchem
         # Image tools
         sudo apt-get install libpng-dev libjpeg-dev libtiff-dev imagemagick
         # SVG processing tools
