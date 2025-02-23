@@ -44,4 +44,4 @@ sphinx:
     latex_elements:
         preamble: |
             \usepackage{cancel}
-            \usepackage{graphicx} % for avoiding various image issues
+            \usepackage[pdftex]{graphicx} % for avoiding various image issues
