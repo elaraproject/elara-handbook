@@ -67,9 +67,9 @@ jobs:
         # build pdf (sphinx creates a makefile for us)
         cd ./book/_build/latex/
         echo "Entered LaTeX folder, preparing to build PDF"
-        # call latexmk directly instead of using the complicated
+        # call pdflatex directly instead of using the complicated
         # auto-generated makefile which is error-prone
-        latexmk -pdf 'elara-handbook.tex'
+        pdflatex 'elara-handbook.tex'
         echo "PDF build successful, uploading artifacts now"
 
     # Output build artifacts for debugging
