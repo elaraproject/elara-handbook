@@ -45,4 +45,3 @@ sphinx:
         preamble: |
             \usepackage{cancel}
             \usepackage{physics}
-            \usepackage{mhchem}
