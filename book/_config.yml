@@ -45,6 +45,6 @@ sphinx:
         preamble: |
             \usepackage{cancel}
             % for image support
-            \usepackage[dvipdfm]{graphicx}
+            \usepackage[xetex]{graphicx}
             % see: https://tex.stackexchange.com/questions/17734/cannot-determine-size-of-graphic
-            \usepackage{bmpsize}
+            % \usepackage{bmpsize}
