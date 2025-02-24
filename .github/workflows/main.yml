@@ -71,7 +71,9 @@ jobs:
         echo "Entered LaTeX folder, preparing to build PDF"
         # don't use the complicated
         # auto-generated makefile which is error-prone
-        latexmk -pdf 'elara-handbook.tex'
+        # the -dvi- option turns off DVI generation
+        # which can cause that sort of problems
+        latexmk -pdf -dvi- 'elara-handbook.tex'
         echo "PDF build successful, uploading artifacts now"
 
     # Output build artifacts for debugging
