@@ -1,3 +1,6 @@
+# strictly enforce PDF mode
+$pdf_mode = 1;
+
 # convert images to eps format to avoid image errors
 # code from: https://github.com/e-dschungel/latexmk-config/blob/master/latexmkrc
 add_cus_dep('gif', 'eps', 0, 'gif2eps');
