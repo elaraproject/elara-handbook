@@ -42,7 +42,8 @@ sphinx:
     # add some LaTeX packages that Mathjax supports
     # but vanilla TeX doesn't
     latex_elements:
-        preamble: |
-            \usepackage{cancel}
-            % required for images
-            \usepackage{graphicx}
+      # load these before preamble
+      extrapackages: |
+          % required for images
+          \usepackage{graphicx}
+          \usepackage{cancel}
