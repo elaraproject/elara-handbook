@@ -1,9 +1,9 @@
 # Theoretical physics
 
-As well as its main work, Project Elara also conducts far-future research into speculative theoretical concepts, including the following:
+As well as its main work on space-based energy research, Project Elara also conducts theoretical physics research (on a much smaller scale). While the applications of our work in this area are far from the realm of possibility in the present, we hope it will be useful for our descendants in the far future. In this spirit, we hope to pass on our knowledge to the benefit of all those that will come after us, and explore concepts and ideas - even those that are speculative, or might turn out to be dead ends - that can advance our knowledge of science and hopefully bring benefit to humanity. Some of the speculative theoretical concepts we study include the following:
 
-- Laser perturbation of the quantum vacuum for the production of exotic matter
-- Artificial black holes and harnessing black hole energy through (a) black hole space swarms and (b) superradiance reactors
+- Laser perturbation of the quantum vacuum for the production of exotic matter for artificial applications
+- Creating a kugelblitz (artificial black hole) and harnessing black hole energy through (a) black hole energy collection swarms and (b) superradiance reactors
 - Spacetime metric engineering including warp drives (and variations thereof), wormholes, and other forms of gravitational engineering
 - Numerical relativity and adjacent applications of neural networks
 
