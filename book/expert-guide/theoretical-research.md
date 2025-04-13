@@ -1,6 +1,6 @@
 # Theoretical research overview
 
-In our theoretical work, we study the very cutting-edge of physics and probe it in the most extreme conditions, in the hopes that we may find ways to apply what we find into useful applications.
+In our theoretical work, we study the very cutting-edge of physics, and physics under the most extreme conditions, in the hopes that they may lead to technologies that can be built by future generations.
 
 ## Our work in high-energy physics
 
