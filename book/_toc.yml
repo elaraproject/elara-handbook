@@ -38,6 +38,8 @@ parts:
     - file: specifics/modern-phys-foundations.md
       sections:
       - file: specifics/modern-phys-foundations/quantum-mechanics.md
+      - file: specifics/modern-phys-foundations/quantum-mechanics-2.md
+      - file: specifics/modern-phys-foundations/quantum-mechanics-3.md
     - file: specifics/research-guide.md
       sections:
       - file: specifics/research-guide/intro-to-research.md
@@ -63,6 +65,7 @@ parts:
       - file: expert-guide/advanced-phys/general-relativity-1
       - file: expert-guide/advanced-phys/general-relativity-2
       - file: expert-guide/advanced-phys/general-relativity-3
+      - file: expert-guide/advanced-phys/quantum-field-theory-1
     - file: expert-guide/theoretical-research.md
       sections:
       - file: expert-guide/theoretical-research/alcubierre-metric-intro
