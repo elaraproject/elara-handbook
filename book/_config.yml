@@ -36,3 +36,7 @@ sphinx:
     html_show_copyright: false
     # on print, show inline links as footnotes
     latex_show_urls: "footnote"
+
+# cache executation artifacts
+execute:
+  execute_notebooks: cache
