@@ -1,1 +1,7 @@
-# Modern physics
+# Quantum mechanics and modern physics
+
+Up to this point, we have only discussed **classical mechanics**. Classical mechanics comprises physics as it was before the turn of the 20th century. By that point, physicists have already figured out (or at least had a good understanding of) many important areas of physics, such as mechanics, electrodynamics, and gravitation. But when they tried to apply their existing theories to the study of the atom (and matter on a microscopic scale in general), their predictions were wildly off.
+
+So a new theory of physics was developed - one radically different from classical mechanics. This is the famous theory of **quantum mechanics**, and while it explained - brilliantly, in fact - the inner workings of atoms and the fundamental building blocks of matter, it leaves many questions unanswered, much to the disdain of physicists. The hopes of the physicists who wanted to create a theory of physics to explain _all_ observered phenomena were dashed.
+
+For our purposes, however, we will discuss quantum mechanics because of its importance in describing a variety of complex phenommena that are relevant to the Project's technologies. We hope that the following sections can break down the famously-intimidating theory of quantum mechanics into something much more comprehensible, and by the end, you will be left with a solid understanding of quantum physics.

@@ -11,7 +11,7 @@ kernelspec:
   name: python3
 ---
 
-# Quantum mechanics
+# Quantum mechanics, Part 1
 
 > "When you change the way you look at things, the things you look at change."
 >
