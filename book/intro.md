@@ -12,6 +12,11 @@ These are indeed lofty goals, and we realize that even trying to do so at all is
 The handbook is actively developed and in some sense it will never be "complete", as it is a continuous work with no singular author and will only grow with time. Information within this handbook can update rapidly. If you find any errors or problems, please report them to us at <https://github.com/elaraproject/elara-handbook/issues>. Thank you very much!
 ```
 
+```{admonition} Found any inaccuracies in our Handbook?
+:class: tip
+Please let us know so that we can improve the Handbook! Just file a report at our issues tracker at <https://github.com/elaraproject/elara-handbook/issues> and we will fix it once we can.
+```
+
 ## The newcomer's guide
 
 If you're new to the Project, we are very very glad to have you join us! Reading the Elara Handbook is the recommended way to quickly get up to speed with the Project. That said, we understand that reading technical documentation can easily be quite confusing, so we have organized the Handbook to be as easy as possible to get started, and to require **minimal prerequisite knowledge and background** to read.
