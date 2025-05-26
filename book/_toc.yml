@@ -40,15 +40,15 @@ parts:
       - file: specifics/modern-phys-foundations/quantum-mechanics.md
       - file: specifics/modern-phys-foundations/quantum-mechanics-2.md
       - file: specifics/modern-phys-foundations/quantum-mechanics-3.md
+    - file: specifics/laser-physics.md
+    - file: specifics/antenna-analysis.md
+    - file: specifics/gravity-orbital-mech.md
     - file: specifics/research-guide.md
       sections:
       - file: specifics/research-guide/intro-to-research.md
       - file: specifics/research-guide/system-design.md
-      - file: specifics/research-guide/gravity-orbital-mech.md
       - file: specifics/research-guide/optical-parameters.md
       - file: specifics/research-guide/atmosphere-attenuation-calc.md
-      - file: specifics/research-guide/laser-physics.md
-      - file: specifics/research-guide/antenna-analysis.md
       - file: specifics/research-guide/numerical-simulations-1.md
 - caption: The expert's guide
   chapters:
