@@ -12,7 +12,7 @@ We recommend [Obsidian](https://obsidian.md) for editing the markdown source. Op
 
 ## Licensing
 
-The Elara Handbook is dual-licensed under the [Creative Commons CC0 1.0 Universal License](Creative Commons CC0 1.0 Universal) as well as [The Unlicense](https://unlicense.org/) as it contains both textual content and source code. Whichever is more permissive in a given jurisdiction will be regarded as the license to be applied across the whole work.
+The Elara Handbook is dual-licensed under the [Creative Commons CC0 1.0 Universal License](https://creativecommons.org/publicdomain/zero/1.0/legalcode.en) as well as [The Unlicense](https://unlicense.org/) as it contains both textual content and source code. Whichever is more permissive in a given jurisdiction will be regarded as the license to be applied across the whole work.
 
 ## Development
 
