@@ -234,10 +234,10 @@ $$
 The angular frequency of the vibrations, $\omega$, can be found through $\omega = \sqrt{k/\mu}$ where $\mu$ is the reduced mass of the molecule and $k$ is its force constant. Let us compute the vibrational transitions of carbon dioxide, which, although not strictly speaking a _diatomic_ molecule, can be somewhat treated as such. The reduced mass of the triatomic carbon dioxide molecule is given by[^5]:
 
 $$
-\mu = \dfrac{2m_\ce{C} m_\ce{O} + m_\ce{O}^2}{2 m_\ce{C} + m_\ce{O}} \approx \unit{2.567E-27 kg}
+\mu = \dfrac{2m_{\ce{C}} m_{\ce{O}} + m_{\ce{O}}^2}{2 m_{\ce{C}} + m_{\ce{O}}} \approx \unit{2.567E-27 kg}
 $$
 
-Where $m_\ce{C}$ is the mass of the carbon atom and similarly $m_\ce{O}$ is the mass of the oxygen atom. The force constant of $\ce{CO2}$ is approximately $\unit{1680 N/m}$[^4] and thus $\omega \approx \unit{251.47 THz}$. Substituting these values, we find that the spectral lines are given by:
+Where $m_{\ce{C}}$ is the mass of the carbon atom and similarly $m_{\ce{O}}$ is the mass of the oxygen atom. The force constant of $\ce{CO2}$ is approximately $\unit{1680 N/m}$[^4] and thus $\omega \approx \unit{251.47 THz}$. Substituting these values, we find that the spectral lines are given by:
 
 | Transition                   | Spectral line | Spectrum       |
 | ---------------------------- | ------------- | -------------- |
@@ -285,7 +285,7 @@ def Hamiltonian(psi, x, y, z, mu=None, eps=1E-5):
 Let us now consider a case of a system that does not possess an analytic solution - the helium atom. Since a (neutral) helium atom is composed of two electrons around a nucleus, the atomic Hamiltonian (we ignore spin, vibrational, and rotational degrees of freedom) becomes:
 
 $$
-\hat H_\ce{He} = \underbrace{-\dfrac{\hbar^2}{2m}(\nabla_1^2 + \nabla_2^2)}_\text{electron kinetic energy} -\underbrace{\dfrac{Z}{4\pi \varepsilon_0}\left(\dfrac{e^2}{r_1} + \dfrac{e^2}{r_2}\right)}_\text{nucleus-electron attraction} + \underbrace{\dfrac{1}{4\pi \varepsilon_0}\dfrac{e^2}{|r_2 - r_1|}}_\text{electron-electron repulsion}
+\hat H_{\ce{He}} = \underbrace{-\dfrac{\hbar^2}{2m}(\nabla_1^2 + \nabla_2^2)}_\text{electron kinetic energy} -\underbrace{\dfrac{Z}{4\pi \varepsilon_0}\left(\dfrac{e^2}{r_1} + \dfrac{e^2}{r_2}\right)}_\text{nucleus-electron attraction} + \underbrace{\dfrac{1}{4\pi \varepsilon_0}\dfrac{e^2}{|r_2 - r_1|}}_\text{electron-electron repulsion}
 $$
 
 Where here we assumed that the nucleus moves so slowly that we can effectively consider it non-moving (as with the solution to the hydrogen atom). The third term (interaction term between different electrons) means that the solution to the helium atom _cannot_ be written as a linear superposition of the solutions of the hydrogen atom.
