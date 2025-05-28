@@ -49,6 +49,8 @@ sphinx:
         \usepackage{siunitx}
         % for figures/image captions
         \usepackage[font=small,labelfont=bf]{caption}
+        \usepackage[dvipdfm]{graphicx}
+        \usepackage{bmpsize}
 
 # cache executation artifacts
 execute:
