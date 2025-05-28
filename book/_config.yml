@@ -49,6 +49,8 @@ sphinx:
         \usepackage{siunitx}
         % for figures/image captions
         \usepackage[font=small,labelfont=bf]{caption}
+  extra_extensions:
+    - "sphinx.ext.imgconverter"
 
 # cache executation artifacts
 execute:
