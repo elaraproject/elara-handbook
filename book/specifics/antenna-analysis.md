@@ -78,7 +78,12 @@ $$
 
 Here's a plot of the radiation pattern, courtesy of [Comprod](https://comprodcom.com/), a seller of antennas and other digital equipment, notice they use decibels otherwise the gain would be extreme and be almost entirely directed towards the direction the parabolic antenna is facing:
 
-![A plot of the directional radiation pattern of a parabolic antenna](https://comprodcom.com/wp-content/uploads/2016/05/965-70BR-Antenna-Pattern.png)
+```{figure} https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Sidelobes_en.svg/768px-Sidelobes_en.svg.png
+:alt: A plot of the directional radiation pattern of a parabolic antenna
+:width: 600px
+
+Source: [Wikipedia](https://commons.wikimedia.org/wiki/File:Sidelobes_en.svg)
+```
 
 The crucial parameter to successful power transfer is to maximize the gain in the direction of reception for the ground-based receiver station antennas. This involves two things:
 

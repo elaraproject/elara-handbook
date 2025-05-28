@@ -42,7 +42,9 @@ There are also a few other "transitions" of note beyond the ones we have listed 
 | Spin-flip transition, caused by nuclear spin                                  | [Hyperfine splitting](https://en.wikipedia.org/wiki/Hyperfine_structure)                           |
 | Electronic, between "new" energy levels caused by quantum vacuum fluctuations | [Lamb shift](https://en.wikipedia.org/wiki/Lamb_shift) (both predicted by quantum electrodynamics) |
 
-> **Note:** The majority of these results can be found by solving the relativistic **Dirac equation**, which is more accurate than the Schrödinger equation, with a perturbed potential known as the [Uehling potential](https://en.wikipedia.org/wiki/Uehling_potential) that captures the contribution of quantum electrodynamics. They can also be found through advanced density-functional theory techniques.
+```{note}
+The majority of these results can be found by solving the relativistic **Dirac equation**, which is more accurate than the Schrödinger equation, with a perturbed potential known as the [Uehling potential](https://en.wikipedia.org/wiki/Uehling_potential) that captures the contribution of quantum electrodynamics. They can also be found through advanced density-functional theory techniques.
+```
 
 #### Vibrational spectra
 
