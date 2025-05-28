@@ -10,48 +10,50 @@ Talk about free electron lasers vs traditional lasers. Also mention gyrotrons as
 
 We encountered and briefly discussed the phenomenon of **stimulated emission** that underlies lasers, but let us review the topic again to gain greater familiarity for the heavy quantum theory that follows.
 
-Remember that **stimulated emission** is one of two modes of light emission (the emission of photons, i.e. quanta of light). The other, more "conventional" way that atoms emit photons is the process of **spontaneous emission**. This is a three-step process[^1]:
+Remember that **stimulated emission** is one of two modes of light emission (the emission of photons, the quantum particle associated with light). The other, more "conventional" way that atoms emit photons is the process of **spontaneous emission**. This is a three-step process[^1]:
 
-1. An atom absorbs a photon, raising its electron(s) into an upper state with energy $E_2$
-2. The electron(s) then decay back to the lower state (or any other lower energy state), which has energy $E_1$. 
-3. A new photon is released in the process, with energy $E_\text{photon} = E_2 - E_1$
+1. An atom absorbs a photon, and is excited to a higher-energy state with energy $E_2$
+2. The atom then decays to a lower-energy state, which has energy $E_1$. 
+3. A new photon is released in the process, with energy $E_\text{photon} = E_2 - E_1$ and wavelength $\lambda = hc/E_\text{photon}$
 
-Spontaneous emission is how most "light" (which includes UV, infrared, microwave, radio wave, etc.) in the universe is produced, from starlight to incandescent lightbulbs[^2]. It has two important characteristics:
+Spontaneous emission is how most light (which includes UV, infrared, microwave, radio wave, etc.) in the universe is produced, from starlight to incandescent lightbulbs[^2]. It has several important characteristics:
 
 - The decay from the upper state to the lower state happens _spontaneously_, without anything to trigger it.[^3] 
 - Although the decay rate (probability of a decay) _can_ be predicted, _when_ exactly the decay occurs is **random**.
-- The photons that are emitted from the decay travel in random directions and may not have the same frequency as the photon that was initially absorbed.
+- The photons that are emitted from the decay travel in random directions and their polarization, frequency, and wavelength cannot be predicted in advance
 
-Unfortunately, spontaneous emission is not helpful for building a laser, because the photon absorbed and the photon emitted may be completely different. Thus the light is not **monochromatic** (monochromatic means that the light is of _only one frequency_), but rather, spread across a wide range of frequencies, and the emitted photons travel away in random directions[^4], meaning that the light is not **collimated** (collimated means that the light comes in parallel rays and forms a tight beam). These two undesirable results defeat the point of a laser (where we want to produce light of a _single frequency_ (i.e. single color) in a tight, one-directional beam).
+Spontaneous emission is not helpful for building a laser, because there is no way to pre-determine the characteristics of the photon to be emitted. Thus, spontaneously-emitted light is not **monochromatic** (monochromatic means that the light is of _only one frequency_), but rather, spread across a wide range of frequencies, and the emitted photons travel away in random directions[^4], meaning that the light is not **collimated** and cannot form a tight beam. These two undesirable results defeat the point of a laser, where we want to produce light of a _single frequency_ in a tightly-focused beam.
 
-But there exists an _alternative_ means of light emission, known as **spontaneous emission**. Spontaneous emission is also a multi-step process, but with different steps:
+But there exists an _alternative_ means of light emission, known as **stimulated emission**. Stimulated emission is also a multi-step process, but with different steps:
 
-1. An atom is excited by some external energy source. Typically (but not always) this is an applied electromagnetic field. The external energy source raises the atom's electron(s) into an upper state with energy $E_2 = E_1 + hf$, where $f$ is the frequency of the applied EM field
-2. The already-excited atom absorbs a photon with energy $hf$, where $f$ is the frequency of the incident photon
-3. The electron(s) then decay back to the lower state (or any other lower energy state), which has energy $E_1$.
-4. _Two_ identical photons are released in the process, each with energy $hf$
+1. An atom is excited by some external energy source (this can be in the form of electric, electromagnetic/light, chemical, thermal or even nuclear energy). The energy source raises the atom into a higher-energy state with energy $E_2 = E_1 + \Delta E$.
+2. The already-excited atom absorbs a photon that _also_ has energy $\Delta E$
+3. The atom then decays down to a lower-energy state, which has energy $E_1$.
+4. _Two_ identical photons are released in the process, each with energy $E_\text{photon} = E_2 - E_1 = \Delta E$ and thus wavelength $\lambda = hc/E_\text{photon}$
+
+> **Note:** Typically (but not always), the energy source is an applied electromagnetic field that supplies energy in the form of electromagnetic waves. In that case, then $\Delta E = hf$, where $f$ is the frequency of the electromagnetic waves. What this means is that you can use light as an energy source for a laser! In fact, you can use _another laser_ as an energy source for a laser!
 
 Crucially, stimulated emission is _different_ from spontaneous emission in the following ways:
 
-- The atom is already in an upper state even before a photon strikes the atom, due to the applied electromagnetic field
+- The atom is already in an upper state even **before** a photon strikes the atom, due to the external energy source
 - This means that _two_ photons are emitted from the decay, unlike in spontaneous emission, where only a single photon is released
-- The two emitted photons are _identical_, with the same frequency and direction
+- The two emitted photons are _identical_, with the same predictable frequency and direction
 
-We call this process _stimulated_ emission due to the fact that this entire process is _stimulated_ due to the applied electromagnetic field. Since the atom absorbs one photon and emits two photons, the two outgoing photons can then strike _two_ new atoms, which _each_ emit two photons, which is four photons total. This doubling process continues, as four photons becomes eight photons becomes sixteen photons, causing a continuous chain reaction. Even better, the resulting light produced is **monochromatic** and in the **same direction**, which are fantastic for building lasers!
+We call this process _stimulated_ emission due to the fact that this entire process is _stimulated_ due to the energy source. Since the atom emits two photons, the two outgoing photons can then strike _two_ new atoms, which _each_ emit two photons, which is four photons total. This doubling process continues, as four photons becomes eight photons becomes sixteen photons, causing a continuous chain reaction. Even better, the resulting light produced is **monochromatic** and in the **same direction**, which are fantastic for building lasers!
 
 ## Operating principles of lasers
 
-After our conceptual review, let us reformulate what we know about light emission and absorption in a more rigorous, mathematical way. Again, we know from the quantum model of the hydrogen atom that electrons can have different states. As each state is an eigenstate of the Hamiltonian, the (non-degenerate) states also have different energies. If an atom absorbs a photon, for instance, the atom can jump from its lower state, which we write as $|1\rangle$, to a higher-energy upper state $|2\rangle$. Meanwhile, an atom can also decay to its lower state by emitting a photon, with the difference in the energies $E_2 - E_1$ between the upper state and the lower state being the energy of this photon. While atoms, in general, have a multitude of states (and more than one upper state), this two-state approximation is good enough for a lot of theoretical analysis. A diagram of the two-state atomic system is shown below:
+After our conceptual review, let us reformulate what we know about light emission and absorption in a more rigorous, mathematical way. Again, we know from the quantum model of the hydrogen atom that electrons can have different states. As each state is an eigenstate of the Hamiltonian, different states (usually) have different energies. If an atom absorbs a photon, for instance, the atom can jump from its lower-energy state, which we write as $|1\rangle$, to a higher-energy upper state, which we write as $|2\rangle$. Meanwhile, an atom can also decay to its lower state by emitting a photon, with the difference in the energies $E_2 - E_1$ between the upper state and the lower state being the energy of this photon. While atoms, in general, have a multitude of states (and more than one upper state), this two-state approximation is good enough for a lot of theoretical analysis. A diagram of the two-state atomic system is shown below:
 
 ![A graphic of an electron dropping energy by emitting a photon](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Spontaneousemission.svg/596px-Spontaneousemission.svg.png)
 
-Precisely _when_ the decay happens is random, and it may occur spontaneously (i.e. without anything external causing it), so we call it **spontaneous emission**. We do know, however, that this process follows a probabilistic law, first derived by Einstein in 1916. Let us assume we are studying a certain group of electrons. Let $N_2(t)$ be the expected number of electrons in a higher energy state $|2\rangle$. Over time, these electrons will spontaneously decay to a lower energy state $|1\rangle$, such that $N_2(t)$ follows the differential equation:
+Whether the photon is emitted via stimulated emission or spontaneous emission, precisely _when_ the decay happens is random. We do know, however, that this process follows a probabilistic law, first derived by Einstein in 1916. Let us assume we are studying a certain group of atoms. Let $N_2(t)$ be the expected number of atoms in a higher energy state $|2\rangle$. Over time, these electrons will spontaneously decay to a lower energy state $|1\rangle$, such that $N_2(t)$ follows the differential equation:
 
 $$
 \frac{dN_2}{dt} = -A_{21} N_2
 $$
 
-Where $A_{21}$ is called the Einstein A coefficient, and is approximately the probability that an electron will decay from $|2\rangle \to |1\rangle$ per unit time. Remember, this is probabilistic, as in $N_2(t)$ is the _expected_ number of electrons in the upper state, as in, it is _most likely_ that at time $t$ there are $N_2$ electrons that are in the upper state $|2\rangle$. This differential equation is just an exponential decay whose solution is:
+Where $A_{21}$ is called the Einstein A coefficient, and is approximately the probability that an atom will decay from $|2\rangle \to |1\rangle$ per unit time. Remember, this is probabilistic, as in $N_2(t)$ is the _expected_ number of electrons in the upper state, as in, it is _most likely_ that at time $t$ there are $N_2$ electrons that are in the upper state $|2\rangle$. This differential equation is just an exponential decay whose solution is:
 
 $$
 N(t) = N_0 e^{-A_{21}t}
@@ -91,7 +93,7 @@ In a laser, light is fundamentally quantized - that is the prerequisite that all
 
 ## Theoretical analysis
 
-**Lasers** are devices that rely on *stimulated emission* to emit light - in fact, LASER is an acronym for "_light amplification by stimulated emission of radiation_". This is in contrast with lightbulbs, stars, or blackbody radiators, which which operate by either stimulated emission or absorption. A laser relies on creating the optimal conditions for spontaneous emission to occur.
+**Lasers** are devices that rely on *stimulated emission* to emit light - in fact, LASER is an acronym for "_light amplification by stimulated emission of radiation_". This is in contrast with lightbulbs, stars, or blackbody radiators, which operate by either stimulated emission or absorption. A laser relies on creating the optimal conditions for spontaneous emission to occur.
 
 Quantum mechanically-speaking, a laser can be classified as a multi-state system that undergoes transitions between its states. This requires more advanced methods compared to time-independent systems, which do not have transitions between states, and therefore have constant probabilities to be in each of their possible states . To analyze lasers, we must use **time-dependent perturbation theory**, where the probabilities of each state _are_ dependent on time. But before we go into time-dependent perturbation theory, let us review the quantum mechanics background required to understand it.
 
@@ -146,7 +148,7 @@ Consider a two-state laser whose gain medium is pumped by an external electromag
 
 Specifically, we consider a specific type of transition called a [umbrella inversion](https://en.wikipedia.org/wiki/Pyramidal_inversion). This transition happens when the nitrogen atom in ammonia transitions from being at the "right" of the molecule to the "left". We can model this as a potential $V(x)$ with two minima, representing each of the two states:
 
-![A diagram showcasing the potential separating the two states of ammonia, with the second state being the rightward-facing nitrogen state, and the first state being the leftward-facing nitrogen state](https://chem.libretexts.org/@api/deki/files/186224/Screen_Shot_2019-05-13_at_1.39.25_PM.png?revision=1)
+![A diagram showcasing the potential separating the two states of ammonia, with the second state being the rightward-facing nitrogen state, and the first state being the leftward-facing nitrogen state](https://chem.libretexts.org/@api/deki/files/186224/Screen_Shot_2019-05-13_at_1.39.25_PM.png)
 
 _Diagram courtesy of [LibreTexts](https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Quantum_Tutorials_(Rioux)/04%3A_Spectroscopy/4.04%3A_The_Ammonia_Inversion_and_the_Maser)_
 
@@ -274,7 +276,9 @@ $$
 + c_2 \langle \psi_1| \hat H_1(t)|\psi_2\rangle \right]e^{-i(E_2 - E_1) t/\hbar}
 $$
 
-> **Note:** if it is unfamiliar, recall that $\dfrac{1}{i} = -i$
+```{note}
+If it is unfamiliar, recall that $\dfrac{1}{i} = -i$
+```
 
 Repeating the same process, only multiplying by $\langle \psi_2|$ rather than $\langle \psi_1|$, gives us an ODE for $c_2$:
 
@@ -338,7 +342,9 @@ $$
 c_1(t) = -\dfrac{i}{\hbar} \int_0^t \langle \psi_1 | \hat H_1| \psi_2 \rangle e^{i(E_2 - E_1) t'/\hbar} \, dt'
 $$
 
-> **Note:** This expansion is a _first-order_ expansion, but in theory we can expand to any arbitrary order. The in-depth study of solving time-dependent quantum systems (systems that have some sort of time-dependent Hamiltonian) is known as _time-dependent perturbation theory_; this is just a very introductory treatment.
+```{note}
+This expansion is a _first-order_ expansion, but in theory we can expand to any arbitrary order. The in-depth study of solving time-dependent quantum systems (systems that have some sort of time-dependent Hamiltonian) is known as _time-dependent perturbation theory_; this is just a very introductory treatment.
+```
 
 If we substitute our applied EM field Hamiltonian, which has $\hat H_1(t) = -qE_0 z \cos \omega t$, then the solution (once you perform the integral) is:
 
@@ -360,7 +366,9 @@ $$
 P_{21}(t) = \dfrac{2u_E}{\varepsilon_0 \hbar^2}|q\langle \psi_1|z|\psi_2\rangle|^2\dfrac{\sin^2[(\omega_0 - \omega)t /2]}{(\omega_0 - \omega)^2}
 $$
 
-> **Reminder:** If we know the wavefunction representation of $|\psi_1\rangle, |\psi_2\rangle$, then the inner product becomes an integral, so we have $\langle \psi_1|z|\psi_2\rangle = \displaystyle \int\psi_1^*(\mathbf{r}) z\, \psi_2(\mathbf{r})\, dV$.
+```{admonition} Reminder
+If we know the wavefunction representation of $|\psi_1\rangle, |\psi_2\rangle$, then the inner product becomes an integral, so we have $\langle \psi_1|z|\psi_2\rangle = \displaystyle \int\psi_1^*(\mathbf{r}) z\, \psi_2(\mathbf{r})\, dV$.
+```
 
 We should add one more caveat: this is for a **monochromatic** applied electric field with a strict _linear polarization_. In practice, an applied electric field would be composed of many different frequencies, and would be a mix of different polarizations (for example, sunlight ranges from 300 to 2500 nm and is certainly unpolarized by the time it reaches Earth)[^8]. In that case, instead of a single energy density, we instead have a _spectral energy density_ $\rho(\nu)$, which gives the electromagnetic energy density at frequency $\nu$. Recall again that Planck's law of blackbody radiation tells us that this can be approximated by:
 
@@ -430,7 +438,9 @@ $$
 \tau = \dfrac{1}{\Gamma_{fi}}
 $$
 
-> **An important note:** What is the density of states, $\rho(E)$? It is just the **number of states per unit energy**. We know that a quantum system has multiple states, and that a system can be in different states depending on the total energy of the system. The density of states is important in measuring the **change in the total number of states** of the system, $\Delta N$, when there is a change in the energy, via $\Delta N = \rho(E) \Delta E$. This means that if you increase (or decrease) the energy by an amount $\Delta E$, the density of states tells you that the corresponding change in the number of states is $\Delta N$. In the continuous limit, this becomes $dN = \rho(E) dE$, or $\rho(E) = \frac{dN}{dE}$, at which point physical intuition can fail, but the math stays the same. Note that in some applications, it is customary to write the density of states averaged over the _total volume_, that is, $\rho(E) = \frac{1}{V} \frac{dN}{dE}$, but in Fermi's golden rule we use the form $\rho(E) = \frac{dN}{dE}$.
+```{important}
+What is the density of states, $\rho(E)$? It is just the **number of states per unit energy**. We know that a quantum system has multiple states, and that a system can be in different states depending on the total energy of the system. The density of states is important in measuring the **change in the total number of states** of the system, $\Delta N$, when there is a change in the energy, via $\Delta N = \rho(E) \Delta E$. This means that if you increase (or decrease) the energy by an amount $\Delta E$, the density of states tells you that the corresponding change in the number of states is $\Delta N$. In the continuous limit, this becomes $dN = \rho(E) dE$, or $\rho(E) = \frac{dN}{dE}$, at which point physical intuition can fail, but the math stays the same. Note that in some applications, it is customary to write the density of states averaged over the _total volume_, that is, $\rho(E) = \frac{1}{V} \frac{dN}{dE}$, but in Fermi's golden rule we use the form $\rho(E) = \frac{dN}{dE}$.
+```
 
 Using the transition rate, one may then find the following differential equation relating the population $N_i$ of state $|i\rangle$ with the population $N_f$ of the state $|f\rangle$, which are simply the exponential decay/growth equations, _assuming_ that there are no other transitions than the transition $|i\rangle \to |f\rangle$:
 
@@ -443,99 +453,23 @@ $$
 
 This looks very similar to the laser rate equations for a two-level system! And indeed, that is correct! In our case of lasers, $\Gamma_{fi}$ is $A_{21}$, the Einstein A coefficient, and therefore $\tau = 1/\Gamma_{fi} = 1/A_{21}$ is the lifetime of the upper state. Our entire process of finding $c_1(t)$ and $c_2(t)$ and calculating the transition probability $P_{21}$ could have been avoided, had we used Fermi's golden rule directly. It is a _very_ powerful tool to use when doing calculations.
 
-## Laser mechanics
+### The characteristics of laser light
 
-Up to this point, we have covered the following principles of how lasers work:
+At the very start of our discussion of lasers, we noted that lasers produce light with very specific characteristics:
 
-- A laser requires some sort of power source (usually an applied EM field) to bring the atoms (or ions or molecules, etc.) in some material to an upper (higher-energy) state (we call this **laser pumping**)
-- Once the laser is in this state, any incident photons lead to the emission of two more photons
-- The two photons start a chain reaction that leads to the exponential emission of monochromatic, coherent, strongly-directional light (or other form of EM radiation)
+- **Monochromatic light**: The light is of one frequency (or essentially one frequency)
+- **Directionality**: The laser beam travels in one direction and can be focused tightly
+- **Amplification:** The emission of one photon triggers the emission of two more, starting a chain reaction that leads to a cascade of light, and making it possible to create powerful beams of light
 
-We now introduce some technical terminology. A laser is typically composed of an energy source as well as a (nearly) completely-sealed cavity, filled with some material, called the laser cavity (or _optical cavity_). The material is known as the **gain medium** or **lasing medium**[^9]; the atoms of the gain medium are excited by the energy source and emit light. Gain media (_media_ is plural of _medium_) can be anything from a solid (e.g. crystalline solid), liquid solution (e.g. organic dyes), or gas (e.g. hydrogen/argon/carbon dioxide gas)[^6]. The gain media is then pumped with energy from the laser's power source; typically, this is either a strong electric current, a very, very bright light (which is an EM field, since light is an EM wave), or another laser (which, again, is also an EM field). 
+With all we've learned, we can now answer the question of _why_ laser light has these properties. First, the reason why light from a laser is only of one frequency comes directly from the stimulated emission process. Remember that since stimulated emission always produces two **identical** photons, which have identical frequencies. Since those two photons go on to trigger the emission of *two more* identical photons each (so four photons total), we have a chain reaction that continues, doubling the number of photons each time. This means that eventually, (nearly) all the photons in the optical cavity will be produced by stimulated emission, and they will be identical to each other, giving laser light its characteristic monochromaticity. However, this is only possible because lasers maintain a _population inversion_, since stimulated emission is only favored when the upper state has a higher population than the lower state. Normal light sources do not maintain a population inversion, so *spontaneous emission* dominates over stimulated emission, and as a result, their light is spread over a range of frequencies and is not monochromatic.
 
-To keep as many of the atoms as possible in the upper state, which is necessary for stimulated emission, the laser cavity has mirrors at its ends, which reflect the light back and forth throughout the material, continuously re-injecting energy back through the gain medium. When more than 50% of the atoms within the gain medium are in their upper state[^7], we say that a **population inversion** has occured. At this point, stimulated emission takes over, causing the chain reaction that leads to a rapid emission of more and more photons. One end of the laser cavity is a semi-transparent mirror[^10] that is designed to let a small fraction of the light through, while the rest of the light reflects off to continue the stimulated emission process inside the cavity. This mirror is often called an **output coupler**. The light that makes it through the output coupler forms the characteristic beam that emerges from one end of the laser.
+Second, the reason why laser light exhibits strong directionality is due to the mirrors in the laser's optical cavity. We'll first start by giving a more intuitive but less rigorous explanation. Imagine a photon that is emitted by stimulated emission, inside the optical cavity: if the photon's direction is not exactly normal (90 degrees) to the mirror, it will reflect off the mirror at an angle, causing it to eventually hit the walls of the optical cavity, where it is absorbed and can no longer be reflected. Only photons *normal* to the mirror can get reflected again at the mirror on the other side, where they can continue travelling through the optical cavity.
 
-The four main components of a laser - power source, gain medium, laser (optical) cavity, and output coupler[^11] - are each complex topics in and of themselves, and especially for high-performance lasers, each requires meticulous design and engineering. Lasers fine-tuned to specific tasks often have different requirements for the type of beam, wavelength/frequency, and power efficiency of the laser. Hence, we will discuss lasers in _much greater depth_ in the following sections.
-
-### Lasing transitions and the gain medium
-
-When designing a laser, we first want to consider the material composition of the gain medium. The gain medium could be composed of elemental atoms, ions, molecules (like the ammonia molecule used in the ammonia maser), crystals, semiconductors, or even a combination of different materials. For this reason, we will use the generic term "quantum system" to represent the atomic/molecular/ionic/etc. constituents of the laser's gain medium, instead of specific terms like "atom" or "molecule".
-
-#### Finding the states
-
-First, we want to identify all the states of the quantum system. This is done by solving for the states of the quantum system with the _time-independent part_ of the Hamiltonian. Just as we showed earlier in performing our calculations for the ammonia maser, if we let the total Hamiltonian of the system be $\hat H = \hat H_0 + \hat H_1(t)$, where $\hat H_0$ is the time-independent portion and $\hat H_1(t)$ is the time-dependent portion, then the states $|\psi_n\rangle$ of the system are found by solving the time-dependent Schrödinger equation:
-
-$$
-\hat H_0|\psi_n\rangle = E|\psi_n\rangle
-$$
-
-Depending on the system's complexity, an analytical solution may be possible to find (for instance, in the case of the hydrogen atom) or be impossible to find (for instance, in the case of all multi-electron atoms). This step therefore may often require using approximations or numerical methods to calculate the states and find the energy eigenvalues, from which we may obtain the emission spectrum (all the wavelengths the system can emit light).
-
-#### Selection rules
-
-Next, we want to find the _possible transitions_ between different energy states. This involves the selection rules. A selection rule defines which transitions between states are possible and which transitions are impossible in a quantum multi-state system. A transition between two states $|\psi_m\rangle \to |\psi_n\rangle$ is said to be **allowed** _if_ the quantity $\langle \psi_m |\mathbf{r} |\psi_n\rangle$, called the _matrix element_, satisfies:
-
-$$
-\langle \psi_m |\mathbf{r} |\psi_n\rangle \neq 0
-$$
-
-However, if $\langle \psi_m |\mathbf{r} |\psi_n\rangle = 0$, a transition is said to be **forbidden**. For instance, the states of the hydrogen atom, which are parametrized by three quantum numbers ($n$, $m$, and $\ell$) and which we write as $|\psi_{m, n, \ell}\rangle$, satisfy the following selection rules:
-
-$$
-\begin{align*}
-\langle\psi_{m, n, \ell}|\mathbf{r}|\psi_{m', n', \ell'}\rangle = \begin{cases}
-\text{nonzero}, & m' =m \text{ and } l' = l \pm 1, \\
-0, & \text{otherwise}
-\end{cases}
-\end{align*}
-$$
-
-In theory, we must compute the matrix element $\langle \psi_m |\mathbf{r} |\psi_n\rangle$ for all the possible combinations of states $|\psi_m\rangle$ and $|\psi_n\rangle$ to find all possible transitions; in practice, if the states of a quantum system already satisfy certain orthogonality relations, we can quickly tell which matrix elements are zero, and therefore which transitions are allowed or forbidden.
-
-#### Identifying transitions
-
-Next, we need to sort through all the allowed transitions to identify the _ideal transitions_.
-Atoms usually have many different possible radiative transitions (also called _decay modes_, "radiative" means that the transition leads to a photon being emitted), so we want to find the _best decay modes_. A decay mode is ideal when all the below conditions are satified[^12]:
-
-1. The transition wavelength of the decay mode corresponds with the desired wavelength of the laser light. For instance, you would look for transition wavelengths between 780nm-2500nm if your target wavelength for the laser is in the near-infrared range.
-2. It should be easy to create a population inversion. In practical terms, it means that the transition rate (probability of a transition per unit time) of stimulated emission should be much higher than the transition rate of spontaneous emission in the system.
-3. The upper state in the decay mode should have a generally long lifetime $\tau$, so that the quantum system maintains a higher population in the upper state compared to the lower state (which again is what leads to a stable population inversion)
-4. The lower state in the decay mode should be quickly depopulated by some mechanism[^13], so that the quantum system always maintains as low a population as possible in its lower state. This depopulation mechanism should be non-radiative (meaning it doesn't involve releasing a photon), instead causing the lower state to decay by some other means, like the [emission of a phonon](https://www.rp-photonics.com/multi_phonon_transitions.html) (a type of structural vibration) for solid gain media.
-5. The decay mode can lead to another decay, meaning that the system in the lower state can decay to an even lower state. This requires that the lifetime of the lower state is not too long, and that it has allowed transitions (by the selection rules) with a high transition probability to decay to another state. Multiple decays allows building _multi-level_ lasers, which have many advantages over two-level lasers (lasers that use a transition from only one upper state to the ground/lower state)
-
-Nearly all of these conditions can be checked against with (tedious) calculations. The transition wavelength comes from calculating the energy eigenvalues associated with each of the states of the system. Using the energy eigenvalue expression $E_j = \langle \psi_j |\hat H|\psi_j\rangle$, which we learned from the section on the matrix representation of operators, we can write the transition wavelength for a transition from upper state $|\psi_m\rangle$ to lower state $|\psi_n\rangle$ as follows:
-
-$$
-\lambda_{mn} = \dfrac{hc}{|E_m - E_n|} = \dfrac{hc}{\left|\langle \psi_m|\hat H_0|\psi_m\rangle - \langle \psi_n|\hat H_0|\psi_n\rangle\right|}
-$$
-
-From calculating all possible transition wavelengths for the allowed transitions, we can build up the **spectrum** of the system, giving all the wavelengths of light that the system can (theoretically) emit. We need to then filter the transitions by our other conditions. The transition rates $\Gamma_{fi}$ for stimulated and spontaneous emission can be calculated using Fermi's golden rule the same method we outlined for the ammonia maser, from which we may easily obtain the lifetime $\tau$ of the upper state with $\tau = 1/\Gamma_{fi}$, as we mentioned earlier. Multi-level decays can be checked with the selection rules' matrix elements $\langle \psi_m |\mathbf{r} |\psi_n\rangle$ as well as further computation of transition rates.
-
-#### Identifying materials
-
-In the case of **optically-pumped lasers** (and masers), we also need the gain medium to absorb light strongly around the chosen laser wavelength. This is not an issue for lasers that use atoms of a single element as their gain medium, as those have identical emission and absorption spectra. This _is_ an issue for lasers that use a mixture of different atomic species or molecules (_species_ means the same as "type"), and especially for solid-state lasers that use a combination of solids (usually crystals) with ions of a different element packed into their crystal lattice. In such materials, one of the species is typically the one that absorbs light and quickly decays to a lower energy state, triggering additional decays in the next species. For solid-state lasers in particular, the species responsible for light absorption is typically the solid, which (again) is typically a crystal such as $\ce{Y3Al5O12}$ (yttrium aluminum garnet) or $\ce{LiYF4}$ (yttrium lithium fluoride).
-
-### Three and four-level systems
-
-The ammonia maser, which we've been analyzing, is a _two-level laser_. Unfortunately, it is not a very practical laser, and emits miniscule amounts of power in its microwave beam. This is all to do with the fact that it operates as a **two-state system**, where we have only one upper and one lower state.
-
-In a two-state system, any atom (or ion or molecule) that decays from the upper state must necessarily increase the population of the lower state. But a laser operates by achieving a population inversion, where the upper state has a greater population than the lower state, so we need to constantly boost the atoms back into the upper state using our pump source. This _can_ theoretically be done, but uses a lot of energy. A good analogy, which we borrow here from the textbook _Physical Chemistry_ from Libretexts[^14], is reversing the flow of water in a waterfall; while possible, it is incredibly energy-consuming and inefficient.
-
-Any form of pumping can only establish a _thermal equilbrium_ between the two states, where the population $N_2$ of the upper state and the population $N_1$ of the lower state are equal, that is, $N_1 = N_2$. Thus, $N_2/N_1 = 1$, which cannot create a population inversion, since a population inversion is created (by definition) when the population of a upper state $N_j$ and the population of a lower state $N_i$ satisfies $N_j/N_i > 1$. The ammonia maser gets around this issue by not using a pump source at all; it uses an electric field to separate ammonia molecules that happen to naturally be in the higher-energy state from those of the lower-energy state, using the fact that they have different angular momenta. Unfortunately, it also means that it outputs very little power. We can also get around this issue by running the laser in _pulses_, so that there is not enough time for thermal equilibrium to develop, and we can immediately pump more energy after each pulse to raise the population of the upper level. But it is **impossible** to make a pumped two-level laser (or maser) operating continuously - you either need to give up continuous operation and make the laser pulsed, or give up pumping and end up with a very weak laser/maser beam.
-
-So it should come as no surprise that almost all lasers are either three-level lasers or four-level lasers. The most efficient lasers, particularly for continuous operation, are four-level lasers.
+The more complicated but also more rigorous explanation comes in the form of the wave nature of light. Light is an electromagnetic wave, and electromagnetic waves exhibit _interference_: when two waves are added together, if they have a different phase, they will interfere with each other. An electromagnetic wave that propagates along the optical axis (normal to the mirror) and another wave propagating at an angle to the optical axis would have a different phase, because two waves travelling over different distances will always have a phase difference proportional to the difference in the distances. Normally, we don't notice this, because light travels so fast (it can travel around the Earth in 1/6th of a second!) that any phase shift is far beyond anywhere we could see. But in the closed optical cavity of a laser, surrounded by reflecting mirrors, small differences in phase  add up as the electromagnetic waves reflect back-and-forth between the mirrors, quickly (in fact near-instantly) building up to the point that _constructive interference_ leads to the waves along the optical axis to add up, and _destructive interference_ leads to the waves that are at an angle to be cancelled out. This means we're just left with waves travelling parallel to the optical axis, giving us a highly-directional, straight beam, whose power is concentrated along the direction of the beam.
 
 [^1]: https://www.rp-photonics.com/spontaneous_emission.html
 [^2]: https://ecampus.matc.edu/mihalj/scitech/unit5/incandescence/incandescence.htm
 [^3]: Technically speaking, the emission of a photon from the state transition (decay from the upper state to a lower state) _doesn't_ happen completely on its own. The quantum electrodynamical vacuum is what mediates the transition and thereby the release of a photon, but that is an advanced topic we'll cover in the expert guide
 [^4]: https://physics.stackexchange.com/questions/338038/why-laser-is-a-collimated-parallel-beam?rq=1
 [^5]: https://www.britannica.com/technology/ammonia-maser
-[^6]: https://en.wikipedia.org/wiki/List_of_laser_types
-[^7]: https://en.wikipedia.org/wiki/Stimulated_emission#Optical_amplification
 [^8]: https://www.sciencedirect.com/topics/physics-and-astronomy/solar-spectra
-[^9]: https://en.wikipedia.org/wiki/Optical_cavity
-[^10]: https://en.wikipedia.org/wiki/Output_coupler
-[^11]: https://commons.wikimedia.org/wiki/File:Laser.svg
-[^12]: From RP Photonics Encylclopedia, https://www.rp-photonics.com/laser_transitions.html
-[^13]: From RP Photonics Encylclopedia, https://www.rp-photonics.com/lower_state_lifetime.html
-[^14]: _Physical Chemistry_, Libretexts, [Chapter 15.3](https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/15%3A_Lasers_Laser_Spectroscopy_and_Photochemistry/15.03%3A_A_Two-Level_System_Cannot_Achieve_a_Population_Inversion)
