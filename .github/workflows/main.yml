@@ -50,6 +50,7 @@ jobs:
         sudo apt-get install texlive-latex-base \
                              texlive-latex-extra \
                              texlive-fonts-extra \
+                             texlive-latex-recommended \
                              texlive-science \
                              texlive-xetex latexmk
         # Image tools

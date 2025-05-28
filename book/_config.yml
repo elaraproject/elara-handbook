@@ -31,6 +31,7 @@ latex:
 # No copyright (because public domain)
 sphinx:
   config:
+    latex_engine: xelatex
     html_show_copyright: false
     # on print, show inline links as footnotes
     latex_show_urls: "footnote"
@@ -44,7 +45,10 @@ sphinx:
         \usepackage{cancel}
         % better font
         \usepackage[T1]{fontenc}
-        \usepackage{libertine}
+        \usepackage{fontspec}
+        \setmainfont[Mapping=tex-text]{Linux Libertine O}
+        \setsansfont[Mapping=tex-text]{Lato}
+        \setmonofont[Mapping=tex-text, Scale=0.8]{Source Code Pro}
         % units
         \usepackage{siunitx}
         % for figures/image captions
