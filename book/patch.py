@@ -10,6 +10,7 @@ Arguments:
 	--preview: perform a dry run that only shows result after
 	\t   patching without modifying any files, if
 	\t   not specified it writes to the build TeX file
+	--verbose: show the patching results
 
 Running patch script...
 Warning: Make sure you have the LaTeX source already built,
@@ -40,6 +41,11 @@ def end_equation_regex(environment: str):
 	return r"\\end{" + environment + r".?}.\\end{split}.\\end{equation.?}"
 
 def patch_environment(source_text: str, environment_name: str):
+	# this script doesn't support `aligned` environment
+	if "aligned" in source_text:
+		print("ERROR: You have equations using the `aligned` environment,")
+		print("which is not supported by the patch script. Exiting...")
+		exit(1)
 	# first replace \begin{...}
 	first_regex = begin_equation_regex(environment_name)
 	# for reasons I don't understand you need to escape \begin
@@ -71,7 +77,6 @@ def patch_environment(source_text: str, environment_name: str):
 
 working_dir = os.path.dirname(os.path.abspath(__file__))
 tex_source_path = os.path.join(working_dir, "_build/latex/elara-handbook.tex")
-print(tex_source_path)
 # tex_source_path = os.path.join(working_dir, "../debug/test-regex-replace.tex")
 
 print(f"Found script directory {working_dir}")
@@ -94,8 +99,9 @@ for env in ENVIRONMENTS:
     tex_source = patch_environment(tex_source, env)
 
 if len(sys.argv) > 1:
-	if sys.argv[1] == "--preview":
+	if "--verbose" in sys.argv:
 		print("Output:\n", tex_source)
+	if "--preview" in sys.argv:
 		exit()
 
 # write to file if not preview mode
