@@ -204,7 +204,7 @@ $$
 \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}
 $$
 
-Taking the curl of $\mathbf{E}$ is highly nontrivial; however, luckily, we have a very nice identity that $\nabla \times \mathbf{A} = \hat{\mathbf{A}} \times \nabla A$ where $A = \|\mathbf{A}\|$, the proof is in the appendix and is very involved and was partially the result of countless hours on board an airplane spent doing math because I am a weird person. Be aware that $\hat{\mathbf{E}} \neq \hat{\mathbf{n}}$, the unit vector of the electric field is **not** the same thing as the normal vector in the argument of the complex exponential! The electric field has $\hat{\mathbf{E}} = \mathbf{E}/E = \mathbf{E}_0 / E_0$ , remember the unit vector doesn't care about magnitude, only direction, so these two are equivalent. The $\hat{\mathbf{n}}$ in the argument of the complex exponential is the direction of _propagation_ of the wave, but $\hat{\mathbf{E}}$ is the unit vector, i.e. the direction that the _electric field is aligned_. These are not the same thing because electromagnetic fields are **transverse**; the electric field oscillates up and down, but the wave moves forward. 
+Taking the curl of $\mathbf{E}$ is highly nontrivial; however, luckily, we have a very nice identity that $\nabla \times \mathbf{A} = \hat{\mathbf{A}} \times \nabla A$ where $A = \|\mathbf{A}\|$, the proof is in the appendix and is very involved and was partially the result of countless hours on board an airplane spent doing math because I am a weird person. Be aware that $\hat{\mathbf{E}} \neq \hat{\mathbf{n}}$, the unit vector of the electric field is **not** the same thing as the normal vector in the argument of the complex exponential! The electric field has $\hat{\mathbf{E}} = \mathbf{E}/E = \mathbf{E}_0 / E_0$ , remember the unit vector doesn't care about magnitude, only direction, so these two are equivalent. The $\hat{\mathbf{n}}$ in the argument of the complex exponential is the direction of _propagation_ of the wave, but $\hat{\mathbf{E}}$ is the unit vector, i.e. the direction that the _electric field is align*_. These are not the same thing because electromagnetic fields are **transverse**; the electric field oscillates up and down, but the wave moves forward. 
 
 With that distinction out of the way, we can resume the calculations. The magnitude of $\mathbf{E}$ is:
 
@@ -221,12 +221,12 @@ $$
 Which can be found by simply taking the gradient component-by-component, and then rearranging them into a vector. Applying the previously-mentioned identity $\nabla \times \mathbf{A} = \hat{\mathbf{A}} \times \nabla A$ results in:
 
 $$
-\begin{aligned}
+\begin{align*}
 \nabla \times \mathbf{E} &= \frac{\mathbf{E}_0}{E_0} \times ik\hat{\mathbf{n}}E_0e^{ik(\hat{\mathbf{n}} \cdot \mathbf{r} - ct)} \\
 &= \mathbf{E}_0 \times ik \hat{\mathbf{n}} E_0e^{ik(\hat{\mathbf{n}} \cdot \mathbf{r} - ct)} \\
 &= -ik\hat{\mathbf{n}} \times E_0e^{ik(\hat{\mathbf{n}} \cdot \mathbf{r} - ct)} \\
 &= -ik \hat{\mathbf{n}} \times \mathbf{E}
-\end{aligned}
+\end{align*}
 $$
 
 Where we used the property of cross products that $\mathbf{A} \times \mathbf{B} = -\mathbf{B} \times \mathbf{A}$, and the fact that the cross product is linear so we can simply pull out the constant factors.
@@ -240,12 +240,12 @@ $$
 Which we simply integrate with respect to time to obtain the magnetic field:
 
 $$
-\begin{aligned}
+\begin{align*}
 \mathbf{B} &= -\int -ik \hat{\mathbf{n}} \times \mathbf{E}~dt \\
 &= ik \int \hat{\mathbf{n}} \times\mathbf{E}_0 e^{ik(\hat{\mathbf{n}} \cdot \mathbf{r} - ct)} \\
 &= \frac{ik}{ikc} \hat{\mathbf{n}} \times\mathbf{E}_0 e^{ik(\hat{\mathbf{n}} \cdot \mathbf{r} - ct)} \\
 &= \frac{1}{c} \hat{\mathbf{n}} \times \mathbf{E}
-\end{aligned}
+\end{align*}
 $$
 
 Or written explicitly, the magnetic field is given by:

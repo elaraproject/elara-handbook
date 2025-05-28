@@ -17,7 +17,7 @@ in a _build/ folder, otherwise the script won't be able to work!
 """
 
 # LaTeX environments to patch
-ENVIRONMENTS = ["align", "gather", "matrix", "aligned", "equation"]
+ENVIRONMENTS = ["align", "gather", "matrix", "equation"]
 
 # Newlines can be \n or \r or \r\n
 # so we need to match all of them

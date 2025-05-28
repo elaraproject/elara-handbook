@@ -147,7 +147,7 @@ $$
 
 where $s$ is a parameter. Parametrization is _not_ needed for actually doing calculations in the integral; this is just a way of building intuition.
 
-Given its level of complexity, the component form of Coulomb's law for the electric field is only good for situations where the (possibly curved) line of charge is aligned along one axis, or when doing computer-based calculations. It, however, illustrates several easy-to-miss aspects about Coulomb's law. First, all three components of the electric field are integrated over the _same_ region. This means that, for instance, if we consider a line of charge purely along the $x$-axis, then $E_x, E_y, E_z$ are **all integrated** over $\lambda(x')dx'$, even though they are components of the electric field along different directions. Second, the magnitude of the displacement vector is _the same_ regardless of whether we compute $E_x$, $E_y$, or $E_z$. This is why each of the integrals has the same $[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}$ term in the denomination, even though they are different components of the electric field. While we will now examine charge distributions that are not along a line (or curve), these two properties will still hold.
+Given its level of complexity, the component form of Coulomb's law for the electric field is only good for situations where the (possibly curved) line of charge is align* along one axis, or when doing computer-based calculations. It, however, illustrates several easy-to-miss aspects about Coulomb's law. First, all three components of the electric field are integrated over the _same_ region. This means that, for instance, if we consider a line of charge purely along the $x$-axis, then $E_x, E_y, E_z$ are **all integrated** over $\lambda(x')dx'$, even though they are components of the electric field along different directions. Second, the magnitude of the displacement vector is _the same_ regardless of whether we compute $E_x$, $E_y$, or $E_z$. This is why each of the integrals has the same $[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}$ term in the denomination, even though they are different components of the electric field. While we will now examine charge distributions that are not along a line (or curve), these two properties will still hold.
 
 For surface charge distributions (e.g. plane of charge, disk of charge, etc.) we have $dq' = \sigma(\vec r') dA' = \sigma dx' dy'$ where $dA'$ is the surface element of the surface charge distribution to integrate over. Therefore, Coulomb's law becomes a surface integral over every patch of charge $dq'$ across every patch of surface $dA'$:
 
@@ -364,12 +364,12 @@ $$
 These equations are also often appear in integral form, in which they are given as:
 
 $$
-\begin{aligned}
+\begin{align*}
 \oint \limits_\mathrm{surface} \mathbf{E} \cdot d\mathbf{A} &= 4\pi k Q_\mathrm{total}\\
 \oint \limits_\mathrm{surface} \mathbf{B} \cdot d\mathbf{A} &= 0 \\
 \oint \limits_\mathrm{loop} \mathbf{E} \cdot \vec{d\ell} &= -\frac{\partial}{\partial t} \int_\mathrm{surface} \mathbf{B} \cdot d\mathbf{A} \\
 \oint \limits_\mathrm{loop} \mathbf{B} \cdot \vec{d\ell} &= \mu_0 I + \frac{1}{c^2} \frac{\partial}{\partial t} \int_\mathrm{surface} \mathbf{E} \cdot d\mathbf{A}
-\end{aligned}
+\end{align*}
 $$
 
 The Maxwell equations show a surprising fact: oscillating electric fields can actually _induce_ magnetic fields, and oscillating magnetic fields can actually _induce_ electric fields. So rather than two separate phenomena, electricity and magnetism are actually interrelated phenomena, caused by the interplay of electric and magnetic fields. Thus, we often group electricity and magnetism together as **electromagnetism**, and speak of an _electromagnetic field_ as the combination of the electric and magnetic components of the field.
@@ -420,10 +420,10 @@ For more detailed information about Maxwell's equations, we recommend reading [A
 When only simulating electromagnetic waves radiating within space, and not the source currents or charges, Maxwell's equations can be simplified by setting $\rho = \mathbf{J} = 0$, resulting in two wave equations:
 
 $$
-\begin{aligned}
+\begin{align*}
 \frac{\partial^2 \mathbf{E}}{\partial t^2} &= c^2 \nabla^2 \mathbf{E} \\
 \frac{\partial^2 \mathbf{B}}{\partial t^2} &= c^2 \nabla^2 \mathbf{B}
-\end{aligned}
+\end{align*}
 $$
 
 Where $c^2 = \frac{1}{\mu_0 \varepsilon_0}$ and $c$ is the speed of light. These are called the _electromagnetic wave equations_ because their solutions are very similar to classical wave solutions to the generalized wave equation, such as solutions describing sound waves or the waves formed by a vibrating string. But these waves are special - their speed of propagation is the speed of light. That is to say, the electromagnetic wave equations **describe light**, and their solutions describe all forms of light, from visible light in all its colors to X-rays to gamma rays to the microwaves and radio waves that carry global communications and internet.
