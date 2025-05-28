@@ -40,7 +40,7 @@ sphinx:
     latex_elements:
       preamble: |-
         \usepackage{amsmath}
-        \usepackage{mhchem}
+        \usepackage[version=4]{mhchem}
         \usepackage{cancel}
         % better font
         \usepackage[T1]{fontenc}
