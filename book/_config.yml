@@ -40,8 +40,10 @@ sphinx:
     latex_elements:
       preamble: |-
         \usepackage{amsmath}
+        \usepackage{mhchem}
         \usepackage{cancel}
         % better font
+        \usepackage[T1]{fontenc}
         \usepackage{libertine}
         % for figures/image captions
         \usepackage[font=small,labelfont=bf]{caption}
