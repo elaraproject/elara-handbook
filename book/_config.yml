@@ -34,6 +34,17 @@ sphinx:
     html_show_copyright: false
     # on print, show inline links as footnotes
     latex_show_urls: "footnote"
+    # we load additional packages in the preamble
+    # that are not in sphinx's latex output
+    #  by default
+    latex_elements:
+      preamble: |-
+        \usepackage{amsmath}
+        \usepackage{cancel}
+        % better font
+        \usepackage{libertine}
+        % for figures/image captions
+        \usepackage[font=small,labelfont=bf]{caption}
 
 # cache executation artifacts
 execute:
