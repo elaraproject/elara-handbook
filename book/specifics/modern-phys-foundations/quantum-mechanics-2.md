@@ -234,10 +234,10 @@ $$
 The angular frequency of the vibrations, $\omega$, can be found through $\omega = \sqrt{k/\mu}$ where $\mu$ is the reduced mass of the molecule and $k$ is its force constant. Let us compute the vibrational transitions of carbon dioxide, which, although not strictly speaking a _diatomic_ molecule, can be somewhat treated as such. The reduced mass of the triatomic carbon dioxide molecule is given by[^5]:
 
 $$
-\mu = \dfrac{2m_\ce{C} m_\ce{O} + m_\ce{O}^2}{2 m_\ce{C} + m_\ce{O}} \approx \pu{2.567E-27 kg}
+\mu = \dfrac{2m_\ce{C} m_\ce{O} + m_\ce{O}^2}{2 m_\ce{C} + m_\ce{O}} \approx \unit{2.567E-27 kg}
 $$
 
-Where $m_\ce{C}$ is the mass of the carbon atom and similarly $m_\ce{O}$ is the mass of the oxygen atom. The force constant of $\ce{CO2}$ is approximately $\pu{1680 N/m}$[^4] and thus $\omega \approx \pu{251.47 THz}$. Substituting these values, we find that the spectral lines are given by:
+Where $m_\ce{C}$ is the mass of the carbon atom and similarly $m_\ce{O}$ is the mass of the oxygen atom. The force constant of $\ce{CO2}$ is approximately $\unit{1680 N/m}$[^4] and thus $\omega \approx \unit{251.47 THz}$. Substituting these values, we find that the spectral lines are given by:
 
 | Transition                   | Spectral line | Spectrum       |
 | ---------------------------- | ------------- | -------------- |

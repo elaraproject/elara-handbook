@@ -128,7 +128,7 @@ $$
 We find that in many cases, the values of $E_n$ take very specific values: such states are known as _bound states_ as they arise when a system is situated within a potential well (such as a Coulomb potential or harmonic potential well). In the well-known case of hydrogen, $E_n$ takes the values:
 
 $$
-E_n = \dfrac{\pu{-13.6 eV}}{n^2}
+E_n = \dfrac{\unit{-13.6 eV}}{n^2}
 $$
 
 The emission and absorption spectra of hydrogen are based off its values of $E_n$. This is because the energy absorbed or emitted by a hydrogen atom must be equal to the *energy difference* $\Delta E$ between two energy levels. This happens when an electron in a hydrogen atom (or molecule) "jumps" between two orbitals - this can either happen because the atom is excited by an absorbed photon, or an electron releases a photon via either spontaneous or stimulated emission. The energy levels of hydrogen are the simplest of all atoms, but even still, they are diverse:

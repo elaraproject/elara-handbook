@@ -45,6 +45,8 @@ sphinx:
         % better font
         \usepackage[T1]{fontenc}
         \usepackage{libertine}
+        % units
+        \usepackage{siunitx}
         % for figures/image captions
         \usepackage[font=small,labelfont=bf]{caption}
 
