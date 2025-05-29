@@ -55,6 +55,8 @@ jobs:
                              texlive-xetex latexmk
         # Image tools
         sudo apt-get install libpng-dev libjpeg-dev libtiff-dev imagemagick
+        # Extra fonts
+        sudo tlmgr install sourcecodepro
         # Update font cache
         sudo fc-cache -fv
         # Debug only
