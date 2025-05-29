@@ -49,7 +49,6 @@ jobs:
         # TeX tools
         sudo apt-get install texlive-latex-base \
                              texlive-latex-extra \
-                             texlive-xetex \
                              texlive-fonts-extra \
                              texlive-latex-recommended \
                              texlive-science \
