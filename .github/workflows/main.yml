@@ -55,8 +55,11 @@ jobs:
                              texlive-xetex latexmk
         # Image tools
         sudo apt-get install libpng-dev libjpeg-dev libtiff-dev imagemagick
-        # SVG processing tools
-        sudo apt-get install inkscape
+        # Update font cache
+        sudo fc-cache -fv
+        # Debug only
+        echo "Checking for Source Code Pro..."
+        fc-list
 
     - name: Build PDF of book
       continue-on-error: true
