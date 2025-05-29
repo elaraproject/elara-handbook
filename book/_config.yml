@@ -44,7 +44,6 @@ sphinx:
         \usepackage[version=4]{mhchem}
         \usepackage{cancel}
         % better font
-        \usepackage[T1]{fontenc}
         \usepackage{fontspec}
         \setmainfont[Mapping=tex-text]{Linux Libertine O}
         \setsansfont[Mapping=tex-text]{Lato}
