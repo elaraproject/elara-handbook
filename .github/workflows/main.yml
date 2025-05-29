@@ -56,9 +56,9 @@ jobs:
         # Image tools
         sudo apt-get install libpng-dev libjpeg-dev libtiff-dev imagemagick
         # Extra fonts
-        git clone https://github.com/adobe-fonts/source-code-pro.git
-        sudo cp source-code-pro/OTF/*.otf /usr/share/fonts/truetype
-        sudo cp source-code-pro/TTF/*.otf /usr/share/fonts/opentype
+        git clone https://github.com/adobe-fonts/source-code-pro.git source-code-pro
+        sudo cp ./source-code-pro/OTF/*.otf /usr/share/fonts/truetype
+        sudo cp ./source-code-pro/TTF/*.ttf /usr/share/fonts/opentype
         # Update font cache
         sudo fc-cache -fv
         # Debug only
