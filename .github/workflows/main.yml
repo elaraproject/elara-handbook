@@ -56,19 +56,25 @@ jobs:
         # Image tools
         sudo apt-get install libpng-dev libjpeg-dev libtiff-dev imagemagick
         # Extra fonts
-        sudo tlmgr install sourcecodepro
+        git clone https://github.com/adobe-fonts/source-code-pro.git
+        sudo cp source-code-pro/OTF/*.otf /usr/share/fonts/truetype
+        sudo cp source-code-pro/TTF/*.otf /usr/share/fonts/opentype
         # Update font cache
         sudo fc-cache -fv
         # Debug only
         echo "Checking for Source Code Pro..."
         fc-list
 
-    - name: Build PDF of book
+    - name: Build book LaTeX
       continue-on-error: true
       run: |
         jupyter-book build book --builder latex
         # patch output latex
         python ./book/patch.py
+
+    - name: Build PDF of book
+      continue-on-error: true
+      run: |
         # build pdf (sphinx creates a makefile for us)
         cd ./book/_build/latex/
         echo "Entered LaTeX folder, preparing to build PDF"
