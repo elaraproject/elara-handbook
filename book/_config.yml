@@ -47,7 +47,7 @@ sphinx:
         \usepackage{fontspec}
         \setmainfont[Mapping=tex-text]{Linux Libertine O}
         \setsansfont[Mapping=tex-text]{Lato}
-        \setmonofont[Mapping=tex-text, Scale=0.8]{Source Code Pro}
+        \setmonofont[Mapping=tex-text, Scale=0.8]{SourceCodePro}
         % units
         \usepackage{siunitx}
         % for figures/image captions
