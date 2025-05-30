@@ -48,13 +48,14 @@ sphinx:
         \usepackage{fontspec}
         \setmainfont[Mapping=tex-text]{Linux Libertine O}
         \setsansfont[Mapping=tex-text]{Lato}
-        \setmonofont[Mapping=tex-text, Scale=0.8]{SourceCodePro}
+        \setmonofont[Mapping=tex-text, Scale=0.8]{Source Code Pro}
         % units
         \usepackage{siunitx}
         % for figures/image captions
         \usepackage[font=small,labelfont=bf]{caption}
   extra_extensions:
-    - "sphinx.ext.imgconverter"
+    # maybe eventually switch to sphinxcontrib.rsvgconverter?
+    - "sphinxcontrib.inkscapeconverter"
 
 # cache executation artifacts
 execute:
