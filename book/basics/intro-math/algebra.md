@@ -1,5 +1,6 @@
 ---
 jupytext:
+  formats: md:myst
   text_representation:
     extension: .md
     format_name: myst
@@ -9,6 +10,11 @@ kernelspec:
   display_name: Python 3 (ipykernel)
   language: python
   name: python3
+mystnb:
+  remove_code_source: true
+  remove_code_outputs: false
+  render_image_options:
+    align: center
 ---
 
 # Algebra
@@ -17,7 +23,6 @@ kernelspec:
 We will begin by going through a review of basic algebra. If seems too easy, feel free to skip to the next section; otherwise, continue here.
 
 We will assume you know what negative numbers and fractions are, and how to do basic arithmetic. If not, review at <https://www.khanacademy.org/math/pre-algebra>.
-
 
 ## The fundamentals of algebra
 
@@ -438,11 +443,16 @@ For example, if we want to plot the value $x = 1, y = 3$, then $(x, y) = (1, 3)$
 ```{code-cell} ipython3
 import matplotlib.pyplot as plt
 import numpy as np
+# matplotlib-specific customizations
+%matplotlib inline
+%config InlineBackend.figure_format = 'svg'
+plt.rcParams["font.family"] = "serif"
+plt.rcParams['mathtext.fontset'] = 'stix'
 ```
 
 ```{code-cell} ipython3
 plt.plot(1, 3, "ro")
-plt.title("The point (1, 3)")
+plt.title("The point $(1, 3)$")
 plt.xlim(0, 4)
 plt.ylim(0, 4)
 plt.show()
@@ -477,7 +487,7 @@ We can visualize this table of values by plotting it as $(x, y)$ pairs, where $y
 ```{code-cell} ipython3
 x = np.linspace(0, 5)
 plt.plot(x, 2 * x)
-plt.title("f(x) = 2x")
+plt.title("$f(x) = 2x$")
 plt.show()
 ```
 
@@ -521,7 +531,7 @@ The absolute value function $f(x) = |x|$ takes in any negative or positive value
 ```{code-cell} ipython3
 x = np.linspace(-5, 5)
 plt.plot(x, np.abs(x))
-plt.title("f(x) = |x|")
+plt.title("$f(x) = |x|$")
 plt.show()
 ```
 
@@ -639,7 +649,7 @@ x = np.linspace(0, 2 * np.pi)
 ax.plot(x, np.sin(x))
 ax.set_ylim(-1, 1)
 ax.grid(True)
-ax.set_title("f(x) = sin(x)")
+ax.set_title(r"$f(x) = \sin(x)$")
 ax.xaxis.set_major_formatter(FuncFormatter(
    lambda val,pos: '{:.0g}$\pi$'.format(val/np.pi) if val !=0 else '0'
 ))
@@ -675,9 +685,9 @@ x = np.linspace(0, 2 * np.pi)
 ax.plot(x, np.cos(x))
 ax.set_ylim(-1, 1)
 ax.grid(True)
-ax.set_title("f(x) = cos(x)")
+ax.set_title("$f(x) = \cos(x)$")
 ax.xaxis.set_major_formatter(FuncFormatter(
-   lambda val,pos: '{:.0g}$\pi$'.format(val/np.pi) if val !=0 else '0'
+   lambda val,pos: '{:.0g}'.format(val/np.pi) + r"$\pi$" if val !=0 else '0'
 ))
 ax.xaxis.set_major_locator(MultipleLocator(base=np.pi))
 
@@ -700,7 +710,7 @@ y[y < -tol] = np.nan
 ax.plot(x, y)
 ax.grid(True)
 ax.set_ylim(-10, 10)
-ax.set_title("f(x) = tan(x)")
+ax.set_title(r"$f(x) = \tan(x)$")
 ax.xaxis.set_major_formatter(FuncFormatter(
    lambda val,pos: '{:.0g}$\pi$'.format(val/np.pi) if val !=0 else '0'
 ))

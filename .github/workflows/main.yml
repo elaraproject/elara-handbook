@@ -60,6 +60,7 @@ jobs:
         git clone https://github.com/adobe-fonts/source-code-pro.git source-code-pro
         sudo cp ./source-code-pro/OTF/*.otf /usr/share/fonts/truetype
         sudo cp ./source-code-pro/TTF/*.ttf /usr/share/fonts/opentype
+        sudo apt-get install fonts-stix
         # Update font cache
         sudo fc-cache -fv
         # Debug only
