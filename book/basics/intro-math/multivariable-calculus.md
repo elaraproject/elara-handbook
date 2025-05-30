@@ -1,5 +1,6 @@
 ---
 jupytext:
+  formats: md:myst
   text_representation:
     extension: .md
     format_name: myst
@@ -9,6 +10,11 @@ kernelspec:
   display_name: Python 3 (ipykernel)
   language: python
   name: python3
+mystnb:
+  remove_code_source: true
+  remove_code_outputs: false
+  render_image_options:
+    align: center
 ---
 
 # Multivariable calculus
@@ -45,6 +51,10 @@ Note that $x^2 + y^2 = \sin^2 (t) + \cos^2 (t) = 1$, so this is the parametric e
 import sympy as sp
 import numpy as np
 import matplotlib.pyplot as plt
+%matplotlib inline
+plt.rcParams["font.family"] = "serif"
+plt.rcParams['mathtext.fontset'] = 'stix'
+plt.rcParams["axes.grid"] = True
 from sympy.plotting.plot import *
 sp.init_printing()
 ```
@@ -191,17 +201,13 @@ $$
 For instance, we could calculate the partial derivative of $f(x, y) = 2x^2 y$ with respect to $x$. Let's say that $x(t) = 3t^5 + 5$ and $y(t) = 7 \sqrt{t}$. We can then calculate our derivative with respect to $t$ like so:
 
 $$
-\frac{df}{dt} =
+\begin{align}
+\frac{df}{dt} &=
 \frac{\partial (2x^2 y)}{\partial x} \frac{d (3t^5 + 5)}{dt} +
-\frac{\partial (2x^2 y)}{\partial y} \frac{d (7 \sqrt{t})}{dt}
-$$
-
-$$
-\frac{df}{dt} = 4xy \cdot 15t^4 + \frac{2x^2}{2 \sqrt{t}}
-$$
-
-$$
-\frac{df}{dt} = \frac{x \left(60 t^{\frac{9}{2}} y + x\right)}{\sqrt{t}}
+\frac{\partial (2x^2 y)}{\partial y} \frac{d (7 \sqrt{t})}{dt} \\
+&= 4xy \cdot 15t^4 + \frac{2x^2}{2 \sqrt{t}} \\
+&= \frac{x \left(60 t^{\frac{9}{2}} y + x\right)}{\sqrt{t}}
+\end{align}
 $$
 
 
@@ -423,15 +429,11 @@ We cannot take the gradient of a vector field. However, there are two other oper
 
 
 $$
-\mathrm{grad}\: (f) = \nabla f
-$$
-
-$$
-\mathrm{div}\: (f) = \nabla \cdot f
-$$
-
-$$
-\mathrm{curl}\: (f) = \nabla \times f
+\begin{align}
+\mathrm{grad}\: (f) &= \nabla f \\
+\mathrm{div}\: (f) &= \nabla \cdot f \\
+\mathrm{curl}\: (f) &= \nabla \times f
+\end{align}
 $$
 
 
@@ -473,7 +475,7 @@ $$
 
 
 ```{note}
-Note that the center term of the curl using the normal cross product formula is actually $-\left(\frac{\partial F_z}{\partial x} - \frac{\partial F_x}{\partial z}\right)$, which we just distributed the negative sign to get $\frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x}$
+Notice that the center term of the curl using the normal cross product formula is actually $-\left(\frac{\partial F_z}{\partial x} - \frac{\partial F_x}{\partial z}\right)$, which we just distributed the negative sign to get $\frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x}$
 ```
 
 
@@ -598,11 +600,10 @@ To do this, we must parameterize $C$ with two parametric equations:
 
 
 $$
-x(t) = 1 + 3t
-$$
-
-$$
-y(t) = 2 + 5t
+\begin{align}
+x(t) &= 1 + 3t \\
+y(t) &= 2 + 5t
+\end{align}
 $$
 
 
@@ -610,11 +611,10 @@ This means that at $t = 0$, $C = (1, 2)$, and at $t = 1$, $C = (4, 7)$. We now t
 
 
 $$
-\frac{dx}{dt} = 3
-$$
-
-$$
-\frac{dy}{dt} = 5
+\begin{align}
+\frac{dx}{dt} &= 3
+\frac{dy}{dt} &= 5
+\end{align}
 $$
 
 
