@@ -447,6 +447,7 @@ import numpy as np
 %matplotlib inline
 plt.rcParams["font.family"] = "serif"
 plt.rcParams['mathtext.fontset'] = 'stix'
+plt.rcParams["axes.grid"] = True
 ```
 
 ```{code-cell} ipython3
@@ -567,11 +568,10 @@ The second measurement system is called radians, where one full circle is $2\pi$
 
 
 $$
-1 \mathrm{\ radian} = 1^\circ \cdot \left(\frac{\pi}{180}\right)
-$$
-
-$$
-1^\circ = 1 \mathrm{\ radian} \cdot \left(\frac{\pi}{180}\right)
+\begin{align}
+1 \mathrm{\ radian} &= 1^\circ \cdot \left(\frac{\pi}{180}\right)
+1^\circ &= 1 \mathrm{\ radian} \cdot \left(\frac{\pi}{180}\right)
+\end{align}
 $$
 
 
@@ -583,8 +583,10 @@ Trigonometry is the study of **right-angled triangles** - triangles that have on
 
 The longest side of a right-angled triangle is called the **hypotenuse**. The **opposite** side is the the side that, well, is _opposite_ the angle $\theta$. Finally, the **adjacent** side is the side between the right angle and the angle $\theta$.
 
-
-![Right angled triangles diagram](https://www.onlinemathlearning.com/image-files/trigonometry-hypotenuse-opposite-adjacent.png)
+```{figure} https://www.onlinemathlearning.com/image-files/trigonometry-hypotenuse-opposite-adjacent.png
+:alt: Right angled triangles diagram
+:width: 300
+```
 
 
 But wait, doesn't a triangle have three angles? Yes, that is true, and so the choice of which angle you call $\theta$ doesn't matter. You can define either one of the two other angles (the non-right-angle angles) as your $\theta$ angle, you just have to stick with one angle in your calculations.
@@ -605,15 +607,11 @@ Trigonometric functions are oscillating functions that form a constant repeating
 
 
 $$
-\sin \theta = \frac{\mathrm{opposite}}{\mathrm{adjacent}}
-$$
-
-$$
-\cos \theta = \frac{\mathrm{adjacent}}{\mathrm{hypotenuse}}
-$$
-
-$$
-\tan \theta = \frac{\mathrm{opposite}}{\mathrm{hypotenuse}} = \frac{\sin \theta}{\cos \theta}
+\begin{align}
+\sin \theta &= \frac{\mathrm{opposite}}{\mathrm{adjacent}} \\
+\cos \theta &= \frac{\mathrm{adjacent}}{\mathrm{hypotenuse}} \\
+\tan \theta &= \frac{\mathrm{opposite}}{\mathrm{hypotenuse}} = \frac{\sin \theta}{\cos \theta}
+\end{align}
 $$
 
 
@@ -621,15 +619,11 @@ The _reciprocal trigonometric functions_ are the normal trig functions but "flip
 
 
 $$
-\csc \theta = \frac{1}{\sin}
-$$
-
-$$
-\sec \theta = \frac{1}{\cos}
-$$
-
-$$
+\begin{align}
+\csc \theta = \frac{1}{\sin} \\
+\sec \theta = \frac{1}{\cos} \\
 \cot \theta = \frac{1}{\tan}
+\end{align}
 $$
 
 
@@ -650,7 +644,7 @@ ax.set_ylim(-1, 1)
 ax.grid(True)
 ax.set_title(r"$f(x) = \sin(x)$")
 ax.xaxis.set_major_formatter(FuncFormatter(
-   lambda val,pos: '{:.0g}$\pi$'.format(val/np.pi) if val !=0 else '0'
+   lambda val, pos: f"{val/np.pi:.0g}" + r"$\pi$" if val !=0 else '0'
 ))
 ax.xaxis.set_major_locator(MultipleLocator(base=np.pi))
 
@@ -661,15 +655,11 @@ The values of $f(x) = \sin(x)$ can be deduced by reading off the graph:
 
 
 $$
-\sin(0) = 0
-$$
-
-$$
-\sin(\pi / 2) = \sin (3\pi / 2) = 1
-$$
-
-$$
-\sin(\pi) = \sin(2\pi) = 0
+\begin{align}
+\sin(0) &= 0
+\sin(\pi / 2) &= \sin (3\pi / 2) = 1
+\sin(\pi) &= \sin(2\pi) = 0
+\end{align}
 $$
 
 
@@ -684,9 +674,9 @@ x = np.linspace(0, 2 * np.pi)
 ax.plot(x, np.cos(x))
 ax.set_ylim(-1, 1)
 ax.grid(True)
-ax.set_title("$f(x) = \cos(x)$")
+ax.set_title(r"$f(x) = \cos(x)$")
 ax.xaxis.set_major_formatter(FuncFormatter(
-   lambda val,pos: '{:.0g}'.format(val/np.pi) + r"$\pi$" if val !=0 else '0'
+   lambda val, pos: f'{val/np.pi:.0g}' + r"$\pi$" if val !=0 else '0'
 ))
 ax.xaxis.set_major_locator(MultipleLocator(base=np.pi))
 
@@ -711,7 +701,7 @@ ax.grid(True)
 ax.set_ylim(-10, 10)
 ax.set_title(r"$f(x) = \tan(x)$")
 ax.xaxis.set_major_formatter(FuncFormatter(
-   lambda val,pos: '{:.0g}$\pi$'.format(val/np.pi) if val !=0 else '0'
+   lambda val, pos: f'{val/np.pi:.0g}' + r"$\pi$" if val !=0 else '0'
 ))
 ax.xaxis.set_major_locator(MultipleLocator(base=np.pi))
 
@@ -757,22 +747,12 @@ The same goes for 4 equal numbers that multiply to form a number, 5, 6, and so o
 
 
 $$
-\sqrt{1} = 1
-$$
-
-
-$$
-\sqrt{0} = 0
-$$
-
-
-$$
-\sqrt{a} \times \sqrt{a} = a
-$$
-
-
-$$
-\sqrt{ab} = \sqrt{a} \times \sqrt{b}
+\begin{align}
+\sqrt{1} &= 1 \\
+\sqrt{0} &= 0 \\
+\sqrt{a} \times \sqrt{a} &= a \\
+\sqrt{ab} &= \sqrt{a} \times \sqrt{b}
+\end{align}
 $$
 
 
@@ -786,37 +766,15 @@ Exponents are every time we multiply one number by itself a certain number of ti
 
 
 $$
-1^a = 1
-$$
-
-
-$$
-0^a = 0
-$$
-
-
-$$
-a^0 = 1
-$$
-
-
-$$
-a^1 = a
-$$
-
-
-$$
-a^m + a^n = a^{(m + n)}
-$$
-
-
-$$
-a^m \div a^n = a^{(m - n)}
-$$
-
-
-$$
-(a^b)^c = a^{(b \times c)}
+\begin{align}
+1^a &= 1 \\
+0^a &= 0 \\
+a^0 &= 1 \\
+a^1 &= a \\
+a^m + a^n &= a^{(m + n)} \\
+a^m / a^n &= a^{(m - n)} \\
+(a^b)^c &= a^{(b \times c)}
+\end{align}
 $$
 
 
@@ -824,12 +782,10 @@ Fractional exponents are the same as a radical:
 
 
 $$
-a^{\frac{1}{2}} = \sqrt{a}
-$$
-
-
-$$
-a^{\frac{1}{3}} = \sqrt[3]{a}
+\begin{align}
+a^{\frac{1}{2}} &= \sqrt{a} \\
+a^{\frac{1}{3}} &= \sqrt[3]{a}
+\end{align}
 $$
 
 
@@ -866,12 +822,10 @@ where $b^y = x$. To remember this mapping between exponential functions, you can
 
 
 $$
-\ln x = \log_e x
-$$
-
-
-$$
-\log x = \log_{10} x
+\begin{align}
+\ln x &= \log_e x
+\log x &= \log_{10} x
+\end{align}
 $$
 
 
@@ -889,23 +843,17 @@ Just as with exponents, logarithms follow certain rules:
 
 
 $$
-\log_b (xy) = \log_b x + \log_b y
+\begin{align}
+\log_b (xy) &= \log_b x + \log_b y \\
+\log_b (x^n) &= n \log_b x \\
+\log_b \left(\frac{x}{y}\right) &= \log_b x - \log_b y \\
+\log_b x &= \frac{\ln x}{\ln b}
+\end{align}
 $$
 
-$$
-\log_b (x^n) = n \log_b x
-$$
-
-$$
-\log_b \left(\frac{x}{y}\right) = \log_b x - \log_b y
-$$
-
-$$
-\log_b x = \frac{\ln x}{\ln b}
-$$
-
+```{important}
 Be careful! Note that $(\log_b x)^r \neq r \log_b x$!!!
-
+```
 
 ## Factorials
 
