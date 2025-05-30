@@ -53,6 +53,8 @@ sphinx:
         \usepackage{siunitx}
         % for figures/image captions
         \usepackage[font=small,labelfont=bf]{caption}
+        % set default image size
+        \setkeys{Gin}{width=.5}
   extra_extensions:
     # maybe eventually switch to sphinxcontrib.rsvgconverter?
     - "sphinxcontrib.inkscapeconverter"
