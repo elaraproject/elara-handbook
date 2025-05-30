@@ -1,16 +1,3 @@
----
-jupytext:
-  text_representation:
-    extension: .md
-    format_name: myst
-    format_version: 0.13
-    jupytext_version: 1.16.6
-kernelspec:
-  display_name: Python 3 (ipykernel)
-  language: python
-  name: python3
----
-
 # Introduction to calculus
 
 
@@ -109,7 +96,7 @@ The **derivative** is a function that tells you the slope of another function at
 
 ```{image} img/Derivative-illustration.png
 :alt: Illustration of the derivative
-:width: 400px
+:width: 200px
 :align: center
 ```
 
