@@ -9,6 +9,18 @@ kernelspec:
   display_name: Python 3 (ipykernel)
   language: python
   name: python3
+mystnb:
+  # whether to show source code
+  remove_code_source: false
+  # whether to show Jupyter outputs
+  remove_code_outputs: false
+  # make sure images are
+  # center-aligned by default
+  render_image_options:
+    align: center
+  # whether to show linenumbers
+  # in source code
+  number_source_lines: true
 ---
 
 # Your title
