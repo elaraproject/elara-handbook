@@ -445,7 +445,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 # matplotlib-specific customizations
 %matplotlib inline
-%config InlineBackend.figure_format = 'svg'
 plt.rcParams["font.family"] = "serif"
 plt.rcParams['mathtext.fontset'] = 'stix'
 ```
