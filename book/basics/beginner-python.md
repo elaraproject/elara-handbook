@@ -9,6 +9,8 @@ kernelspec:
   display_name: Python 3 (ipykernel)
   language: python
   name: python3
+mystnb:
+	number_source_lines: true
 ---
 
 # Programming with Python

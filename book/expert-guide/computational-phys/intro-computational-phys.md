@@ -9,6 +9,12 @@ kernelspec:
   display_name: Python 3 (ipykernel)
   language: python
   name: python3
+mystnb:
+  remove_code_source: false
+  remove_code_outputs: false
+  render_image_options:
+    align: center
+  number_source_lines: true
 ---
 
 # Introduction to computational physics
