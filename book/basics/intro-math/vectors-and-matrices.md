@@ -538,7 +538,7 @@ We can use matrices to transform vectors as well, using a modified version of ma
 
 
 $$
-\begin{align*}
+\begin{align}
   A \vec x=
   \left[
     \begin{array}{cccc}
@@ -565,7 +565,7 @@ $$
       a_{m1}x_1+a_{m2}x_2 + \cdots + a_{mn} x_n\\
     \end{array}
   \right].
-\end{align*}
+\end{align}
 $$
 
 

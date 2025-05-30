@@ -26,13 +26,13 @@ $$
 Now, the eigenstates $|\psi_n\rangle$ can theoretically be expressed in _any_ basis, but we typically choose to use a **complete orthonormal basis**. Such bases include Fourier series as well as the Legendre, Laguerre, and Hermite polynomials. The specific basis doesn't matter; it simply matters that a complete and orthonormal basis satisfies $\langle  \psi_m | \psi_n \rangle = \delta_{mn}$. Therefore, we have $\langle \psi_m | E_n | \psi_n \rangle = E_n \langle \psi_m |\psi_n\rangle$ (since $E_n$ is a constant and can be factored out of the expression). Given that we have an orthonormal basis, $E_n \langle \psi_m |\psi_n\rangle$ is only nonzero when $m = n$, in which case we have $E_n \langle \psi_n |\psi_n \rangle = E_n$, and thus:
 
 $$
-\begin{align*}
+\begin{align}
 \langle \psi_m | \hat H |\psi_n\rangle &= \langle \psi_m | E_n |\psi_n\rangle \\
 &= E_n \langle \psi_m | \psi_n \rangle  \\
 &= E_n\, \delta_{mn}  \\
 \langle \psi_m | \hat H |\psi_n\rangle &= E_n \delta_{mn} \quad (\text{zero if } m \neq n) \\
 \langle \psi_n | \hat H |\psi_n\rangle &= E_n  \\
-\end{align*}
+\end{align}
 $$
 
 Thus, to find $E_n$, we "only" need to calculate $\langle \psi_n | \hat H |\psi_n\rangle$, which can also be written in terms of the Schrödinger formalism as:
@@ -63,10 +63,10 @@ $$
 This is a diagonal matrix - so one might wonder, why bother writing this when each side can just be written as a vector multiplied by an identity matrix? The reason is that if we *don't* know the eigenstates, we can always choose to expand our quantum state $|\Psi\rangle$ in some other complete and orthonormal basis instead, which we will refer to as $|\phi_n\rangle$ (since we can always choose any basis to write out our state-vector). As both bases are complete and orthogonal, we can then express a state in our new basis $|\phi_n\rangle$ in terms of our eigenstate basis $|\psi_n\rangle$ as a linear sum:
 
 $$
-\begin{align*}
+\begin{align}
 |\phi_n\rangle &= \sum_k a_{nk} |\psi_k \rangle \\
 &= a_{n1} |\psi_1\rangle + a_{n2} |\psi_2 \rangle + a_{n3}|\psi_3\rangle + \dots + a_{nk} |\psi_k\rangle
-\end{align*}
+\end{align}
 $$
 
 Where all the $a_{nk}$'s are constant coefficients. We can write this in matrix form as:
@@ -90,12 +90,12 @@ $$
 We can extract out the components of $A_{nk}$ using another orthogonality argument. If we take the components of our new basis $|\phi_n\rangle$, then multiply by a bra $\langle \psi_j|$, then we have:
 
 $$
-\begin{align*}
+\begin{align}
 |\phi_n\rangle &= \sum_k A_{nk} |\psi_k \rangle \\
 |\phi_n\rangle \langle \psi_j | &= \langle \psi_j| \sum_k A_{nk} |\psi_k \rangle \\
 &=  \sum_k A_{nk} \langle \psi_j| \psi_k\rangle \\
 &= A_{nk} \delta_{jk}
-\end{align*}
+\end{align}
 $$
 
 Where $\langle \psi_j |\psi_k\rangle = \delta_{jk}$ since our bases are othogonal. The only case were $\langle \psi_j | \phi_n \rangle = A_{nk} \delta_{jk}$ does _not_ vanish is when $j = k$ and therefore we have:
@@ -107,33 +107,33 @@ $$
 Thus we have $A_{nk} = |\phi_n\rangle \langle \psi_k|$. We may also derive an expression for the _inverse_, i.e. $A^{-1}$. Recall that the inverse of $A$ must satisfy $A A^{-1} = I$ where $I$ is the identity matrix. We recall that the identity matrix is given by $I = \displaystyle \sum_n |\phi_n \rangle \langle \phi_n |$. Then, we have:
 
 $$
-\begin{align*}
+\begin{align}
 A A^{-1} &= I \\
 |\phi_n\rangle \langle \psi_k| A^{-1} &= \sum_i |\phi_i \rangle \langle \phi_i | \\
-\end{align*}
+\end{align}
 $$
 
 Now, if we take the inner product of both  sides with the ket $|\psi_k\rangle$, then:
 
 $$
-\begin{align*}
+\begin{align}
 |\psi_k\rangle \bigg( |\phi_n\rangle \langle \psi_k| \bigg) A^{-1} &= |\psi_k\rangle \sum_i |\phi_i \rangle \langle \phi_i | \\
 \bigg( |\phi_n\rangle \langle \psi_k| \bigg)|\psi_k\rangle  A^{-1} &= \left(\sum_i |\phi_i \rangle \langle \phi_i |\right)|\psi_k\rangle \\
 |\phi_n\rangle \langle \psi_k|\psi_k\rangle  A^{-1} &= \sum_i |\phi_i \rangle \langle \phi_i |\psi_k\rangle \\
 |\phi_n\rangle \cancel{\langle \psi_k|\psi_k\rangle}  A^{-1} &= \sum_i |\phi_i \rangle \langle \phi_i |\psi_k\rangle \\
 |\phi_n\rangle A^{-1} &= \sum_i |\phi_i \rangle \langle \phi_i |\psi_k\rangle \\
-\end{align*}
+\end{align}
 $$
 
 Where we were able to swap the order of the inner product since the inner product is commutative, and we were able to pull the $|\psi_k\rangle$ into the sum since the sum does not sum over the index $k$ (so $|\psi_k\rangle$ can essentially be treated as a constant in the sum).  Now if we take the inner product with the bra $\langle \phi_n|$ we have:
 
 $$
-\begin{align*}
+\begin{align}
 \langle \phi_n|\phi_n\rangle A^{-1} &= \langle \phi_n|\sum_i |\phi_i \rangle \langle \phi_i |\psi_k\rangle \\
 \cancel{\langle \phi_n|\phi_n\rangle} A^{-1} &= |\psi_k\rangle\underbrace{\langle \phi_n|\sum_i |\phi_i \rangle}_{= \delta_{n i}} \langle \phi_i | \\
 A^{-1} &= |\psi_k\rangle\delta_{ni}\langle \phi_i\rangle \\
 A^{-1} &= |\psi_k\rangle \langle \phi_n|
-\end{align*}
+\end{align}
 $$
 
 Where again, since $|\psi_k\rangle$ is not summed over, we were able to pull it out of the sum, and we used orthogonality to collapse the sum into a single term.
@@ -141,7 +141,7 @@ Where again, since $|\psi_k\rangle$ is not summed over, we were able to pull it 
 Having computed $A$ and $A^{-1}$, we will now show that our transformation of basis actually leads to a very nice expression for the matrix representation of the Hamiltonian. The Hamiltonian in our new basis, which we write as $\hat{\mathscr{H}}$, is given by $\hat{\mathscr{H}} = A \hat H A^{-1}$ (this is a standard result of linear algebra). If we then substitute our expressions for $A$ and $A^{-1}$, we have: 
 
 $$
-\begin{align*}
+\begin{align}
 \hat{\mathscr{H}} &= A \hat H A^{-1} \\
 &= |\phi_n\rangle \langle \psi_k | \hat H |\psi_k\rangle \langle \phi_n| \\
 |\phi_n \rangle \hat{\mathscr{H}} &= |\phi_n \rangle\bigg(|\phi_n\rangle \langle \psi_k| \hat H |\psi_k\rangle \langle \phi_n |\bigg) \\
@@ -150,7 +150,7 @@ $$
 \langle \phi_n |\phi_n \rangle \hat{\mathscr{H}} &= \langle \phi_n |\phi_n\rangle \langle \psi_k| \hat H |\psi_k\rangle \\
 \cancel{\langle \phi_n |\phi_n \rangle} \hat{\mathscr{H}} &= \cancel{\langle \phi_n |\phi_n\rangle} \langle \psi_k| \hat H |\psi_k\rangle \\
 \hat{\mathscr{H}} &= \langle \psi_k| \hat H |\psi_k\rangle \\ &= E_k
-\end{align*}
+\end{align}
 $$
 
 > Here, $E_k$ should technically be written $E_k \cdot I$, i.e. $E_k$ is a matrix with the energy eigenvalues along its diagonal and zero everywhere else.
@@ -191,11 +191,11 @@ $$
 We will now need to pick a basis to be able to obtain its matrix representation. In theory, when we don't know the precise eigenstates of the matrix, any set of basis functions would do (as long as they are complete and orthogonal) - but luckily for us, we already know the eigenstates of the Hamiltonian. So for demonstrative purposes, it is easiest to choose the basis of the eigenstates of the Hamiltonian, which we can write as $|\psi_1\rangle, |\psi_2\rangle, |\psi_3\rangle, \dots, |\psi_n\rangle$. Then, we have $E_n = \langle \psi_n | \hat H |\psi_n\rangle$. But recall that in the example of the quantum harmonic oscillator, $\hat H |\psi_n\rangle = \hbar \omega \left(n + \dfrac{1}{2}\right) |\psi_n\rangle$. Thus, $\langle \psi_n | \hat H | \psi_n\rangle$ is given by:
 
 $$
-\begin{align*}
+\begin{align}
 \langle \psi_n |\hat H | \psi_n\rangle &= \langle \psi_n|\hbar \omega \left(n + \dfrac{1}{2}\right) |\psi_n\rangle \\
 &= \hbar \omega \left(n + \dfrac{1}{2}\right) \langle \psi_n|\psi_n\rangle \\
 &= \hbar \omega \left(n + \dfrac{1}{2}\right) \delta_{nn}
-\end{align*}
+\end{align}
 $$
 
 Thus our resulting energy matrix becomes[^3]:
@@ -219,10 +219,10 @@ $$
 Let us now show that even though this matrix representation method for the quantum harmonic oscillator is a "toy model", it can still predict real-world results. The transition energy $\Delta E$ from our result is the difference between energy levels $n_1, n_2$, and thus:
 
 $$
-\begin{align*}
+\begin{align}
 \Delta E &= \left(n_2 + \dfrac{1}{2}\right)\hbar \omega - \left(n_1 + \dfrac{1}{2}\right)\hbar \omega \\
 &= (n_2 - n_1) \hbar \omega
-\end{align*}
+\end{align}
 $$
 
 From which we may derive the spectral lines for various different transitions, given that $\Delta E = hc/\lambda$, with:

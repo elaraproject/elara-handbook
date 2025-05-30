@@ -68,32 +68,32 @@ Over a straight-line distance $D$ along the axis of propagation, the deviation (
 Given that we want a beam with minimal divergence - in fact, this would almost certainly be the most precise laser ever built - we can use the small-angle approximation $\tan \theta \approx \theta$ as $\theta$ _must_ be very small. Therefore, we have:
 
 $$
-\begin{align*}
+\begin{align}
 B &= A + 2D \tan \theta \\
 &\approx A + 2D \theta \\
 &= A + \dfrac{4D\lambda}{n\pi A} \Rightarrow \\
 B(A) &= A + \dfrac{4D\lambda}{n\pi A}
-\end{align*}
+\end{align}
 $$
 
 We want to find the value of $A$ such that the beam size at the receiver is minimized. This is a calculus-based calculation - we need to find the points at which $\dfrac{dB}{dA} = 0$. Taking the derivative with respect to $A$, we have:
 
 $$
-\begin{align*}
+\begin{align}
 \dfrac{dB}{dA} &= \dfrac{d}{dA}\left[A + \dfrac{4D \lambda}{n\pi A}\right] \\
 &=1 -\dfrac{4D\lambda}{n\pi A^2} \\
-\end{align*}
+\end{align}
 $$
 
 And setting this equal to zero, we have:
 
 $$
-\begin{gather*}
+\begin{gather}
 1 -\dfrac{4D\lambda}{n\pi A^2} = 0 \\
 1 =\dfrac{4D\lambda}{n\pi A^2} \\
 A^2 = \dfrac{4D\lambda}{n\pi} \\
 A = \sqrt{\dfrac{4D\lambda}{n\pi}}
-\end{gather*}
+\end{gather}
 $$
 
 We previously discussed that we intended to use a wavelength of $\lambda = \unit{3.75cm}$ for optimal space-to-ground transmission, and here, $D$ is the distance to geosynchronous orbit, which is roughly 37,000 km. Thus, when evaluated, this corresponds with an *ideal* aperture size of approximately 1.3 km. The corresponding beam size on the ground, calculated by $A + \dfrac{4D\lambda}{n\pi A}$, is close to 2.7 km (this is the _minimal beam size_ within our range of microwave frequencies). If we were to use the slightly shorter (and thus slightly more lossy) wavelength of $\lambda = \unit{3 cm}$, at the very edge of our wavelength range, the numbers come out to be 1.2 km for the aperture and 2.4 km for the beam size, respectively.
@@ -129,21 +129,21 @@ $$
 Where $I_\odot = \unit{1361 W/m^2}$ is the mean solar irradiance (the average intensity of sunlight at Earth orbit). To solve for the aperture width $A$ that would satisfy our power density limit, we can substitute in the expression for $B$ into the expression for $A_\mathrm{cs}$, resulting in a quadratic equation:
 
 $$
-\begin{gather*}
+\begin{gather}
 A_\mathrm{cs} = \dfrac{P_T}{I_0} = \pi \left(\dfrac{B}{2}\right)^2 \\
 B = 2\sqrt{\dfrac{P_T}{I_0\pi}} \\
 A + \dfrac{4D\lambda}{n\pi A}= 2\sqrt{\dfrac{P_T}{I_0\pi}} \\
 A^2 + \dfrac{4D\lambda}{n\pi}= 2A\sqrt{\dfrac{P_T}{I_0\pi}} \\
 A^2 -2A\sqrt{\dfrac{P_T}{I_0\pi}}+ \dfrac{4D\lambda}{n\pi}= 0 \\
-\end{gather*}
+\end{gather}
 $$
 
 We may solve the quadratic equation by applying the quadratic formula, and thus we have (after some simplifying):
 
 $$
-\begin{align*}
+\begin{align}
 A \leq A_0,& A_0 = \sqrt{\dfrac{P_T}{I_0\pi}} - \sqrt{\dfrac{P_T}{I_0\pi}- \dfrac{4 D \lambda}{n\pi}}
-\end{align*}
+\end{align}
 $$
 
 > Here we use the smaller of the two roots because the larger root is nonsensical (it approaches impossibly large numbers for large $P_T$)

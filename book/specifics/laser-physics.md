@@ -118,13 +118,13 @@ $$
 Where each $|\psi_n\rangle$ individually satisfies the time-independent Schrödinger equation equation:
 
 $$
-\begin{align*}
+\begin{align}
 \hat H|\psi_1\rangle &= E_1 |\psi_1\rangle \\
 \hat H|\psi_2\rangle &= E_2 |\psi_2 \rangle \\
 \vdots &\quad \vdots \\
 \hat H|\psi_{n-1}\rangle &= E_{n-1} |\psi_{n-1} \rangle \\
 \hat H|\psi_n\rangle &= E_n |\psi_n \rangle
-\end{align*}
+\end{align}
 $$
 
 We find that in many cases, the values of $E_n$ take very specific values: such states are known as _bound states_ as they arise when a system is situated within a potential well (such as a Coulomb potential or harmonic potential well). In the well-known case of hydrogen, $E_n$ takes the values:
@@ -161,10 +161,10 @@ $$
 where $|1\rangle, |2\rangle$ are eigenstates of the system's Hamiltonian assuming no transitions (which we will call $\hat H_0$):
 
 $$
-\begin{align*}
+\begin{align}
 \hat H |1\rangle = E_1 |1\rangle \\
 \hat H |2\rangle = E_2 |2\rangle
-\end{align*}
+\end{align}
 $$
 
 Now, this is only the case if transitions are forbidden (which is a requirement of time independence) - but we know that transitions between the lower state and upper states do certainly exist. Therefore, we must add time-dependence to the system, which means $c_1, c_2$ must become functions of time $c_1(t), c_2(t)$:
@@ -180,10 +180,10 @@ Let us now examine how to formulate what we have described using the theoretical
 Consider an applied electromagnetic field $\mathbf{E} = E_0 \cos (\omega t) \hat k$, where $\omega \equiv 2\pi f$ and $f$ is the frequency of the field. This is a classic (idealized) solution to Maxwell's equations of electromagnetism. The Hamiltonian must then include both the "standard" Hamiltonian $\hat H_0 = \hat p^2 / 2m + V(\mathbf{r})$ as well as the contribution from the electromagnetic field $\hat H_1(t) = -qE_0 z \cos \omega t$, which has a dependence on time due to the EM field. Thus the complete Hamiltonian is given by:
 
 $$
-\begin{align*}
+\begin{align}
 \hat H &= \hat H_0 + \hat H_1(t) \\
 &= \hat H_0 - qE_0 z \cos \omega t
-\end{align*}
+\end{align}
 $$
 
 The inclusion of the external EM field Hamiltonian is **crucial**. Recall how we previously saw that an applied EM field raises an atom's electrons to an upper state, allowing stimulated emission to occur. The $\hat H_1(t)$ term in the Hamiltonian, also called a **perturbation term**, expresses this fact.
@@ -203,70 +203,70 @@ $$
 Where once again, remember that $c_1, c_2$ are both functions of time. We now aim to solve for $c_1(t)$ and $c_2(t)$, the transition amplitudes. To do so, we plug $|\Psi(t)\rangle$ into the Schrödinger equation $i\hbar \dfrac{\partial}{\partial t} |\Psi(t)\rangle = \hat H |\Psi(t)\rangle$, where, remember, $\hat H = \hat H_0 + \hat H_1(t)$. The resulting expression is rather long:
 
 $$
-\begin{gather*}
+\begin{gather}
 c_1(t)\hat H_0 |\psi_1\rangle e^{-iE_1 t/\hbar} + c_2(t) \hat H_0|\psi_2\rangle e^{-iE_2t/\hbar} + c_1(t) \hat H_1(t)|\psi_1\rangle e^{-iE_1 t/\hbar} \\
 + c_2(t) \hat H_1(t)|\psi_2\rangle e^{-iE_2 t/\hbar} = i\hbar\bigg[\dfrac{dc_1}{dt}|\psi_1\rangle e^{-iE_1 t/\hbar} + \dfrac{dc_2}{dt}|\psi_2\rangle e^{-iE_2 t/\hbar} \\
 - \dfrac{iE_1}{\hbar} c_1(t) |\psi_1\rangle e^{-iE_1t/\hbar} - \dfrac{iE_2}{\hbar} c_2(t)|\psi_2\rangle e^{-iE_2 t/\hbar} \bigg]
-\end{gather*}
+\end{gather}
 $$
 
 Which we can slightly simplify (by expanding the brackets) to:
 
 $$
-\begin{gather*}
+\begin{gather}
 c_1(t)\hat H_0 |\psi_1\rangle e^{-iE_1 t/\hbar} + c_2(t) \hat H_0|\psi_2\rangle e^{-iE_2t/\hbar} + c_1(t) \hat H_1(t)|\psi_1\rangle e^{-iE_1 t/\hbar} \\
 + c_2(t) \hat H_1(t)|\psi_2\rangle e^{-iE_2 t/\hbar} = i\hbar\left[\dfrac{dc_1}{dt}|\psi_1\rangle e^{-iE_1 t/\hbar} + \dfrac{dc_2}{dt}|\psi_2\rangle e^{-iE_2 t/\hbar}\right] \\
 \cancel{-i\hbar \dfrac{iE_1}{\hbar}}^{E_1} c_1(t) |\psi_1\rangle e^{-iE_1t/\hbar} - \cancel{i\hbar\dfrac{iE_2}{\hbar}}^{E_2} c_2(t)|\psi_2\rangle e^{-iE_2 t/\hbar}
-\end{gather*}
+\end{gather}
 $$
 
 But recall that since $|\psi_1\rangle, |\psi_2\rangle$ are eigenstates of $\hat H_0$, they satisfy:
 
 $$
-\begin{align*}
+\begin{align}
 \hat H_0 |\psi_1\rangle = E_1 |\psi_1\rangle \\
 \hat H_0 |\psi_2\rangle = E_2 |\psi_2\rangle 
-\end{align*}
+\end{align}
 $$
 
 So, substituting in, we find that the terms actually cancel quite nicely:
 
 $$
-\begin{gather*}
+\begin{gather}
 \cancel{c_1(t)\hat H_0 |\psi_1\rangle e^{-iE_1 t/\hbar}} + \cancel{c_2(t) \hat H_0|\psi_2\rangle e^{-iE_2t/\hbar}} + c_1(t) \hat H_1(t)|\psi_1\rangle e^{-iE_1 t/\hbar} \\
 + c_2(t) \hat H_1(t)|\psi_2\rangle e^{-iE_2 t/\hbar} = i\hbar\left[\dfrac{dc_1}{dt}|\psi_1\rangle e^{-iE_1 t/\hbar} + \dfrac{dc_2}{dt}|\psi_2\rangle e^{-iE_2 t/\hbar}\right] \\
  \cancel{c_1(t) E_1|\psi_1\rangle e^{-iE_1t/\hbar}} + \cancel{c_2(t) E_2 |\psi_2\rangle e^{-iE_2 t/\hbar}}
-\end{gather*}
+\end{gather}
 $$
 
 Meaning that we are left with simply:
 
 $$
-\begin{align*}
+\begin{align}
 c_1 \hat H_1(t)|\psi_1\rangle e^{-iE_1 t/\hbar}
 &+ c_2 \hat H_1(t)|\psi_2\rangle e^{-iE_2 t/\hbar} \\
 &\qquad= i\hbar\left[\dfrac{dc_1}{dt}|\psi_1\rangle e^{-iE_1 t/\hbar} + \dfrac{dc_2}{dt}|\psi_2\rangle e^{-iE_2 t/\hbar}\right]
-\end{align*}
+\end{align}
 $$
 
 Where again $c_1 = c_1(t)$ and $c_2 = c_2(t)$. Since the eigenstates are orthonormal and thus obey $\langle \psi_i | \psi_j \rangle = \delta_{ij}$, if we multiply by $\langle \psi_1|$ on all sides, we would have:
 
 $$
-\begin{align*}
+\begin{align}
 c_1 \langle\psi_1|\hat H_1(t)|\psi_1\rangle e^{-iE_1 t/\hbar}
 &+ c_2 \langle\psi_1|\hat H_1(t)|\psi_2\rangle e^{-iE_2 t/\hbar} \\
 &\qquad= i\hbar\left[\dfrac{dc_1}{dt}\cancel{\langle\psi_1|\psi_1\rangle}^1 e^{-iE_1 t/\hbar} + \dfrac{dc_2}{dt}\cancel{\langle\psi_1|\psi_2\rangle}^0 e^{-iE_2 t/\hbar}\right]
-\end{align*}
+\end{align}
 $$
 
 Which reduces to:
 
 $$
-\begin{align*}
+\begin{align}
 c_1 \langle \psi_1| \hat H_1(t)|\psi_1\rangle e^{-iE_1 t/\hbar}
 &+ c_2 \langle \psi_1| \hat H_1(t)|\psi_2\rangle e^{-iE_2 t/\hbar}\\
 &\qquad= i\hbar\dfrac{dc_1}{dt} e^{-iE_1 t/\hbar}
-\end{align*}
+\end{align}
 $$
 
 We can do some rearranging (dividing by $i\hbar$ and multiplying by $e^{i E_1 t/\hbar}$ on both sides) to get $\dfrac{dc_1}{dt}$ on one side, leaving us with an ODE for $c_1$:
@@ -307,9 +307,9 @@ $$
 Let us assume that at time $t = 0$, the atom is in its upper state $|\psi_2\rangle$ with energy $E_2$. Thus the initial condition would be 100% probability of the $|\psi_2\rangle$ state and 0% probability of the $|\psi_1\rangle$ state:
 
 $$
-\begin{align*}
+\begin{align}
 c_1(0) = 0, & c_2(0) = 1
-\end{align*}
+\end{align}
 $$
 
 We want to solve for $c_1(t)$, which will give us the probabilities of the atom decaying to the lower state at some future time $t$ (remember, even in stimulated emission, the decay time is random, only the _probability_ of a decay is predictable). The differential equations are indeed quite intimidating to solve. There are, however, some steps we can use to simplify. First, the diagonals of the matrix are often zero; see [this physical argument on Physics SE](https://physics.stackexchange.com/questions/117368/vanishing-diagonal-matrix-elements-of-pertubation) which explains why, which reduces each of the ODEs by one term, so that we "only" have: 
@@ -329,11 +329,11 @@ $$
 We can then make use of a _perturbative expansion_. Let's first _assume_ that $\dot c_1, \dot c_2$ are small, meaning that transition between the states (including decays) happen relatively infrequently. If the transition rates are small enough, we can assume that $\dot c_2 \approx 0$. If this is the case, then $c_2(t) \approx c_2(0) = 1$. If we substitute this value of $c_2$ into the top ODE of the matrix system (the ODE for $\dot c_1$, we have:
 
 $$
-\begin{align*}
+\begin{align}
 \dfrac{dc_1}{dt} &= -\dfrac{i}{\hbar}c_2\langle \psi_1 | \hat H_1 |\psi_2 \rangle e^{i(E_2 - E_1) t/\hbar} \\
 &\approx -\dfrac{i}{\hbar}(1)\langle \psi_1 | \hat H_1 |\psi_2 \rangle e^{i(E_2 - E_1) t/\hbar} \\
 &\Rightarrow \dfrac{dc_1}{dt} = -\dfrac{i}{\hbar}\langle \psi_1 | \hat H_1 |\psi_2 \rangle e^{i(E_2 - E_1) t/\hbar}
-\end{align*}
+\end{align}
 $$
 
 With this simplification, the ODE becomes solvable - the solution is:
@@ -349,9 +349,9 @@ This expansion is a _first-order_ expansion, but in theory we can expand to any 
 If we substitute our applied EM field Hamiltonian, which has $\hat H_1(t) = -qE_0 z \cos \omega t$, then the solution (once you perform the integral) is:
 
 $$
-\begin{align*}
+\begin{align}
 c_1(t) = \dfrac{i }{\hbar} qE_0\langle \psi_1|z|\psi_2\rangle\dfrac{\sin[(\omega_0 - \omega)t/2]}{\omega_0 - \omega}e^{i(\omega_0 - \omega)t/2}, \quad \omega_0 = \dfrac{E_2 - E_1}{\hbar}
-\end{align*}
+\end{align}
 $$
 
 Taking the squared norm of $c_1$ yields the _probability_ of the transition from the upper state to the lower state, which we will denote $P_{21}$:
@@ -392,10 +392,10 @@ $$
 And the Einstein coefficients in the rate equations are given by:
 
 $$
-\begin{align*}
+\begin{align}
 A_{21} &= \dfrac{\hbar \omega_0^3}{\pi^2 c^3}B_{21}, \\
 B_{21} &= \dfrac{\pi}{3\varepsilon_0 \hbar^2}|q\langle \psi_2 | \mathbf{r} |\psi_1\rangle|^2
-\end{align*}
+\end{align}
 $$
 
 From which we may solve the rate equations that govern the population of the $|\psi_1\rangle$ and $|\psi_2\rangle$ states, which, as a reminder, are given by:
@@ -445,10 +445,10 @@ What is the density of states, $\rho(E)$? It is just the **number of states per 
 Using the transition rate, one may then find the following differential equation relating the population $N_i$ of state $|i\rangle$ with the population $N_f$ of the state $|f\rangle$, which are simply the exponential decay/growth equations, _assuming_ that there are no other transitions than the transition $|i\rangle \to |f\rangle$:
 
 $$
-\begin{align*}
+\begin{align}
 \dfrac{dN_i}{dt} &= -\Gamma_{fi} N_i \\
 \dfrac{dN_f}{dt} &= \Gamma_{fi} N_f
-\end{align*}
+\end{align}
 $$
 
 This looks very similar to the laser rate equations for a two-level system! And indeed, that is correct! In our case of lasers, $\Gamma_{fi}$ is $A_{21}$, the Einstein A coefficient, and therefore $\tau = 1/\Gamma_{fi} = 1/A_{21}$ is the lifetime of the upper state. Our entire process of finding $c_1(t)$ and $c_2(t)$ and calculating the transition probability $P_{21}$ could have been avoided, had we used Fermi's golden rule directly. It is a _very_ powerful tool to use when doing calculations.

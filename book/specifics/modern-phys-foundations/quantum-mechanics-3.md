@@ -79,23 +79,23 @@ $$
 For reasons we will cover later, rotational transitions must be between energy eigenstates of $\Delta j = \pm 1$, that is, _only_ between two adjacent energy levels. To find the transition wavelengths, we must calculate the energy difference $\Delta E$ between $E_{j + 1}$ and $E_j$ energy levels:
 
 $$
-\begin{gather*}
+\begin{gather}
 E_j = Cj(j+1) \\
 E_{j + 1} = C(j + 1)(j + 2) \\
 \Delta E = E_{j + 1} - E_j = 2C(j + 1) \\
-\end{gather*}
+\end{gather}
 $$
 
 Thus, for a rotational transition between energy levels $j' \to j$, where $j' = j + 1$, we have:
 
 $$
-\begin{align*}
+\begin{align}
 \Delta E = &\dfrac{hc}{\lambda} = 2Cj' \\
 \dfrac{1}{\lambda} &= \dfrac{2C}{hc} j' \\
 &= \dfrac{\hbar^2}{2I}\dfrac{2}{hc} j' \\
 &= \dfrac{h^2}{4\pi^2 hIc} j' \\
 &= \dfrac{h}{4\pi^2 Ic} j', \quad j' = 1, 2, 3, \dots
-\end{align*}
+\end{align}
 $$
 
 Where, remember, $j'$ is the total angular momentum quantum number of the _upper_ energy level, and $j$ is that of the _lower_ energy level. In the literature, the expression for the reciprocal of the wavelength is more commonly expressed in terms of a molecular constant $B$, defined as:

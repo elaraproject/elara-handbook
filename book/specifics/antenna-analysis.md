@@ -120,10 +120,10 @@ $$
 As well as the Helmholtz equation for the electric and magnetic fields (note that these are for the _time-independent components_ of each field, unlike the wave equation, which is _time-dependent_):
 
 $$
-\begin{align*}
+\begin{align}
 \nabla^2 \mathbf{E}(\mathbf{r}) + k^2 \mathbf{E}(\mathbf{r}) = 0 \\
 \nabla^2 \mathbf{B}(\mathbf{r}) + k^2 \mathbf{B}(\mathbf{r}) = 0 
-\end{align*}
+\end{align}
 $$
 
 To perform finite element analysis, we must perform three general steps:

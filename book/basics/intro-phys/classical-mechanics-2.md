@@ -25,19 +25,19 @@ It is common to write $k = \dfrac{1}{4\pi \varepsilon_0}$ in equations involving
 The **vector form** of Coulomb's force law is found by taking the scalar form and adding a unit vector $\hat r_{12}$ pointing between the two objects. This, however, is not as simple as it may seem, because a force must be the action of _one_ object on _another_ object. Thus the force of charge $q_1$ acting on $q_2$, which is a vector, is _not_ the same vector as the force of charge $q_2$ acting on $q_1$ (in fact they are opposite in direction, by Newton's third law). Therefore, we must define two different forces, $\vec F_{12}$ for the force _exerted by_ charge $q_1$ on charge $q_2$, and $\vec F_{21}$ for the force _exerted by_ charge $q_2$ on charge $q_1$. They are written as follows:
 
 $$
-\begin{align*}
+\begin{align}
 \vec F_{12} = k\frac{q_1 q_2}{r^2} \hat r_{12} \\
 \vec F_{21} = k\frac{q_1 q_2}{r^2} \hat r_{21} \\
-\end{align*}
+\end{align}
 $$
 
 Here, $\hat r_{12}$ is the unit vector pointing from $q_1$ to $q_2$, and similarly, $\hat r_{21}$ is the unit vector pointing from $q_2$ to $q_1$:
 
 $$
-\begin{align*}
+\begin{align}
 \hat r_{12} = \dfrac{\vec r_2 - \vec r_1}{\|\vec r_2 - \vec r_1\|} \\
 \hat r_{21} = \dfrac{\vec r_1 - \vec r_2}{\|\vec r_1 - \vec r_2\|}
-\end{align*}
+\end{align}
 $$
 
 
@@ -48,10 +48,10 @@ A particularly nice quality about Coulomb's force law - and the whole of electri
 We recall that Coulomb's force law, like any force, is subject to Newton's second law, and thus results in a differential equation that can be solved to find the trajectories of each of the two charges. In the case of two charges $q_1, q_2$ interacting, the differential equations are:
 
 $$
-\begin{align*}
+\begin{align}
 \dfrac{d^2 \vec r_2}{dt^2} = k\frac{q_1 q_2}{|\vec r_2 - \vec r_1|^2} \hat r_{12} \\
 \dfrac{d^2 \vec r_1}{dt^2} = k\frac{q_1 q_2}{|\vec r_1 - \vec r_2|^2} \hat r_{21}
-\end{align*}
+\end{align}
 $$
 
 However, if there are more than two charges interacting, the forces between all the charges must be accounted for, meaning that the differential equations grow extremely long and become solvable only by computer. For this reason, while Coulomb's force law is sometimes useful, a **field formulation** is the far more preferred method of mathematically modelling the interactions of charges.
@@ -101,22 +101,22 @@ $$
 If we want to continue this process by considering a collection of ever-smaller charges, we can find the electric field of a _continuous distribution_ of charges by integration. To do so, we shrink the charges $Q_i$ to infinitesimal charges $dq$, then integrate along every point $\vec r' = (x', y', z')$ within the charge-containing region. The charge distribution can be assumed to be continuous as the charges shrink to very very small, so we may define a charge density function $\rho(\vec r')$, where $dq' = \rho(\vec r')\, dV'$ is the infinitesimal amount of charge contained in a tiny region of space $dV'$ within the charge-containing region. The electric field produced by the entire distribution of charges is then given by:
 
 $$
-\begin{align*}
+\begin{align}
 \vec E(\vec r) &= \int \dfrac{k\, dq'}{|\vec r - \vec r'|^2} \hat r' \\
 &= \int \dfrac{k\, dq'}{|\vec r - \vec r'|^2} \dfrac{\vec r - \vec r'}{|\vec r - \vec r'|} \\
 &= k\int \dfrac{\vec r - \vec r'}{|\vec r - \vec r'|^3} \rho(\vec r')\, dV' \\
-\end{align*}
+\end{align}
 $$
 
 Where $\hat r' = \dfrac{\vec r - \vec r'}{|\vec r - \vec r'|}$ is the unit vector pointing from a point $\vec r' = (x', y', z')$ within the charge-containing region to point $\vec r = (x, y, z)$. All the primes in the integral (e.g. $\vec r', \hat r', dV'$) indicate points _within_ the charge-containing region, as we integrate over every point within that region, whereas all the unprimed coordinates (e.g. $\vec r$) indicate a point in space (which can be outside the charge-containing region).  We may _also_ write this explicitly in Cartesian coordinates as follows:
 
 $$
-\begin{align*}
+\begin{align}
 \vec E(x, y, z) &= E_x \hat i + E_y \hat j + E_z \hat k \\
 E_x(x, y, z) &= k\int \dfrac{\rho(x', y', z')(x - x')]}{[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}} d x' dy' dz' \\
 E_y(x, y, z) &= k\int \dfrac{\rho(x', y', z')(y - y')]}{[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}} d x' dy' dz' \\
 E_z(x, y, z) &= k\int \dfrac{\rho(x', y', z')(z - z')]}{[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}} d x' dy' dz'
-\end{align*}
+\end{align}
 $$
 
 This is **the integral form of Coulomb's law** for the electric field, and does give the right expression for the electric field, at least when the electrostatic approximation holds. It is (understandably) rather tedious to solve and often can only be solved by computer.
@@ -132,11 +132,11 @@ $$
 Again, we may choose to work in component form by writing $\vec E = E_x \hat i + E_y \hat j + E_z \hat k$, for which we have:
 
 $$
-\begin{align*}
+\begin{align}
 E_x(x, y, z) &= \int \limits_\mathrm{line} k \dfrac{\lambda(x', y', z')(x - x')}{[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}} dr' \\
 E_y(x, y, z) &= \int \limits_\mathrm{line} k \dfrac{\lambda(x', y', z')(y - y')}{[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}} dr' \\
 E_x(x, y, z) &= \int \limits_\mathrm{line} k \dfrac{\lambda(x', y', z')(z - z')}{[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}} dr'
-\end{align*}
+\end{align}
 $$
 
 Note that $\lambda(x', y', z')$ describes the charge density _along a line of charge_, **not** at every point in space. It may be more *helpful* to think of $x', y', z'$ as the _parametric curve_ given by:
@@ -147,7 +147,7 @@ $$
 
 where $s$ is a parameter. Parametrization is _not_ needed for actually doing calculations in the integral; this is just a way of building intuition.
 
-Given its level of complexity, the component form of Coulomb's law for the electric field is only good for situations where the (possibly curved) line of charge is align* along one axis, or when doing computer-based calculations. It, however, illustrates several easy-to-miss aspects about Coulomb's law. First, all three components of the electric field are integrated over the _same_ region. This means that, for instance, if we consider a line of charge purely along the $x$-axis, then $E_x, E_y, E_z$ are **all integrated** over $\lambda(x')dx'$, even though they are components of the electric field along different directions. Second, the magnitude of the displacement vector is _the same_ regardless of whether we compute $E_x$, $E_y$, or $E_z$. This is why each of the integrals has the same $[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}$ term in the denomination, even though they are different components of the electric field. While we will now examine charge distributions that are not along a line (or curve), these two properties will still hold.
+Given its level of complexity, the component form of Coulomb's law for the electric field is only good for situations where the (possibly curved) line of charge is align along one axis, or when doing computer-based calculations. It, however, illustrates several easy-to-miss aspects about Coulomb's law. First, all three components of the electric field are integrated over the _same_ region. This means that, for instance, if we consider a line of charge purely along the $x$-axis, then $E_x, E_y, E_z$ are **all integrated** over $\lambda(x')dx'$, even though they are components of the electric field along different directions. Second, the magnitude of the displacement vector is _the same_ regardless of whether we compute $E_x$, $E_y$, or $E_z$. This is why each of the integrals has the same $[(x - x')^2 + (y - y')^2 + (z - z')^2]^{3/2}$ term in the denomination, even though they are different components of the electric field. While we will now examine charge distributions that are not along a line (or curve), these two properties will still hold.
 
 For surface charge distributions (e.g. plane of charge, disk of charge, etc.) we have $dq' = \sigma(\vec r') dA' = \sigma dx' dy'$ where $dA'$ is the surface element of the surface charge distribution to integrate over. Therefore, Coulomb's law becomes a surface integral over every patch of charge $dq'$ across every patch of surface $dA'$:
 
@@ -294,12 +294,12 @@ What about the magnetic fields and forces generated by permanent magnets like ba
 How do we _compute_ the magnetic field though? As with before, there are several different options. But first, let's cover an option that you perhaps would _think_ could work, but doesn't actually work. Perhaps you would think that since there is a Gauss's law for the _electric field_, there would also be one for the _magnetic field_. Indeed, there is actually one, but it is rather disappointing:
 
 $$
-\begin{align*}
+\begin{align}
 \begin{cases}
 \displaystyle \oint \mathbf{B} \cdot d\mathbf{A} = 0,& \text{(integral form)} \\
 \nabla \cdot \mathbf{B} = 0,& \text{(differential form)} \\
 \end{cases}
-\end{align*}
+\end{align}
 $$
 
 Which leaves much to be desired. The formal reason for _why_ Gauss's law for magnetic fields is this way, however, is important _conceptually_. Remember how we said that there are **no magnetic charges**. But the right-hand side of Gauss's law for electic fields is the total charge enclosed within a region of space. Since a magnetic charge is _not defined_, the right-hand side of Gauss's law for magnetic fields has to be zero - after all, there are no charges! 
@@ -315,11 +315,11 @@ $$
 In the continuous case, where we consider many, many moving charges that form a continuous current, Biot-Savart's law becomes an integral:
 
 $$
-\begin{align*}
+\begin{align}
 \vec B(\vec r) &= \dfrac{\mu_0}{4\pi}\int \dfrac{I\, \vec {d\ell} \times \hat r'}{|\vec r - \vec r'|^2} \\
 &= \dfrac{\mu_0}{4\pi} \int \dfrac{I\, \vec {d\ell}}{|\vec r - \vec r'|^2} \dfrac{\vec r - \vec r'}{|\vec r - \vec r'|} \\
 &= \dfrac{\mu_0}{4\pi}\int \dfrac{I \vec {d\ell} \times (\vec r - \vec r')}{|\vec r - \vec r'|^3}
-\end{align*}
+\end{align}
 $$
 
 Where $\vec{d\ell}$ is a current-carrying path segment (such as a segment of wire), $\vec r'$ is a point along the current-carrying path, $\vec r$ is the position vector, and $\mu_0$ is the magnetic constant. This integral's particular form means that Biot-Savart's law is a (vector) **line integral** over the current-carrying path (which is usually, though not always, a wire), as we integrate over every portion of that path.
@@ -364,12 +364,12 @@ $$
 These equations are also often appear in integral form, in which they are given as:
 
 $$
-\begin{align*}
+\begin{align}
 \oint \limits_\mathrm{surface} \mathbf{E} \cdot d\mathbf{A} &= 4\pi k Q_\mathrm{total}\\
 \oint \limits_\mathrm{surface} \mathbf{B} \cdot d\mathbf{A} &= 0 \\
 \oint \limits_\mathrm{loop} \mathbf{E} \cdot \vec{d\ell} &= -\frac{\partial}{\partial t} \int_\mathrm{surface} \mathbf{B} \cdot d\mathbf{A} \\
 \oint \limits_\mathrm{loop} \mathbf{B} \cdot \vec{d\ell} &= \mu_0 I + \frac{1}{c^2} \frac{\partial}{\partial t} \int_\mathrm{surface} \mathbf{E} \cdot d\mathbf{A}
-\end{align*}
+\end{align}
 $$
 
 The Maxwell equations show a surprising fact: oscillating electric fields can actually _induce_ magnetic fields, and oscillating magnetic fields can actually _induce_ electric fields. So rather than two separate phenomena, electricity and magnetism are actually interrelated phenomena, caused by the interplay of electric and magnetic fields. Thus, we often group electricity and magnetism together as **electromagnetism**, and speak of an _electromagnetic field_ as the combination of the electric and magnetic components of the field.
@@ -385,28 +385,28 @@ Solving the Maxwell equations is a topic so extensive that it is its own field. 
 The general process of this method is to first set boundary conditions such that the first two equations (Gauss's laws for the electric and magnetic fields) hold true. Then, we are left with the two remaining equations:
 
 $$
-\begin{align*}
+\begin{align}
 \nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t} \\
 \nabla \times \mathbf{B} &= \mu_0 \mathbf{J} + \frac{1}{c^2} \frac{\partial \mathbf{E}}{\partial t}
-\end{align*}
+\end{align}
 $$
 
 The top equation is called **Faraday's law**, and the bottom equation is called the **Maxwell-Ampère law**. Now, it turns out that by reworking the electric and magnetic potentials, we can substitute them in to find an _electromagnetic_ potential, assuming that:
 
 $$
-\begin{align*}
+\begin{align}
 \mathbf {E} &=-\mathbf {\nabla } V -{\frac {\partial \mathbf {A} }{\partial t}} \\
 \mathbf{B} &= \nabla \times \mathbf{A}
-\end{align*}
+\end{align}
 $$
 
 Then, if we impose something called the _Lorenz gauge condition_ (it's something we will cover more in the Expert's Guide), we can substitute the potentials into Maxwell's equations to get:
 
 $$
-\begin{align*}
+\begin{align}
 \nabla^2 \mathbf{A} -\dfrac{1}{c^2} \dfrac{\partial^2 V}{\partial t^2} = -\mu_0 \mathbf{J} \\
 \nabla^2 V -\dfrac{1}{c^2} \dfrac{\partial^2 V}{\partial t^2} = -4\pi k\rho
-\end{align*}
+\end{align}
 $$
 
 These equations are much easier (though by no means _easy_) to solve and are often used in advanced electromagnetic theory to solve for complicated field configurations. However, we won't go that far, at least for now. Rather, we'll explore _one_ simplified case of Maxwell's equations, and its profound consequences on the physical nature of light.
@@ -420,10 +420,10 @@ For more detailed information about Maxwell's equations, we recommend reading [A
 When only simulating electromagnetic waves radiating within space, and not the source currents or charges, Maxwell's equations can be simplified by setting $\rho = \mathbf{J} = 0$, resulting in two wave equations:
 
 $$
-\begin{align*}
+\begin{align}
 \frac{\partial^2 \mathbf{E}}{\partial t^2} &= c^2 \nabla^2 \mathbf{E} \\
 \frac{\partial^2 \mathbf{B}}{\partial t^2} &= c^2 \nabla^2 \mathbf{B}
-\end{align*}
+\end{align}
 $$
 
 Where $c^2 = \frac{1}{\mu_0 \varepsilon_0}$ and $c$ is the speed of light. These are called the _electromagnetic wave equations_ because their solutions are very similar to classical wave solutions to the generalized wave equation, such as solutions describing sound waves or the waves formed by a vibrating string. But these waves are special - their speed of propagation is the speed of light. That is to say, the electromagnetic wave equations **describe light**, and their solutions describe all forms of light, from visible light in all its colors to X-rays to gamma rays to the microwaves and radio waves that carry global communications and internet.

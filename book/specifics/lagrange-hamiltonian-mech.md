@@ -100,29 +100,29 @@ $$
 In a similar way, in the calculus of variations, we can write:
 
 $$
-\begin{align*}
+\begin{align}
 \mathcal{L}(f + \varepsilon \eta, f' + \varepsilon \eta', q) &= \mathcal{L}(f, f', q) + \dfrac{\partial \mathcal{L}}{\partial f}\eta\,\varepsilon + \dfrac{\partial \mathcal{L}}{\partial f'}\eta' \varepsilon \\
 &=\mathcal{L}(f, f', q) + \left(\dfrac{\partial \mathcal{L}}{\partial f}\eta\, + \dfrac{\partial \mathcal{L}}{\partial f'}\dfrac{d\eta}{dq}\right)\varepsilon
-\end{align*}
+\end{align}
 $$
 
 Now, by substitution, we can find $S(f + \varepsilon \eta, f' + \varepsilon \eta', q)$:
 
 $$
-\begin{align*}
+\begin{align}
 S(f + \varepsilon \eta, f' + \varepsilon \eta', q) &= \int_{q_1}^{q_2} \mathcal{L}(f + \varepsilon \eta, f' + \varepsilon \eta', q)\, dq \\
 &=\int_{q_1}^{q_2} \left[\mathcal{L}(f, f', q) + \left(\dfrac{\partial \mathcal{L}}{\partial f}\eta\, + \dfrac{\partial \mathcal{L}}{\partial f'}\dfrac{d\eta}{dq}\right)\varepsilon\right]d q
-\end{align*}
+\end{align}
 $$
 
 We may find the _change in $S$_, which we will call $\delta S$, by subtracting $S(f, f', q)$ from the left-hand side:
 
 $$
-\begin{align*}
+\begin{align}
 \delta S &= S(f + \varepsilon \eta, f' + \varepsilon \eta', q) - S(f, f', q) \\
 &=\int_{q_1}^{q_2} \left[\mathcal{L}(f, f', q) + \left(\dfrac{\partial \mathcal{L}}{\partial f}\eta\, + \dfrac{\partial \mathcal{L}}{\partial f'}\dfrac{d\eta}{dq}\right)\varepsilon\right]d q - \int_{q_1}^{q_2} \mathcal{L}(f, f', q)\, dq \\
 &= \int_{q_1}^{q_2}\left(\dfrac{\partial \mathcal{L}}{\partial f}\eta\, + \dfrac{\partial \mathcal{L}}{\partial f'}\dfrac{d\eta}{dq}\right)\varepsilon\,dt
-\end{align*}
+\end{align}
 $$
 
 In the limit as $\varepsilon \to 0$, we would expect that $\delta S = 0$, as the function that maximizes (or minimizes) $S$, again, is the function for which $S$ **does not change with respect to $f$**. In formal language, this is called the process of _varying_ $S$ by a _variation_ $\varepsilon$, and then demanding that $\displaystyle \lim_{\varepsilon \to 0} \delta S = 0$. This is why this form of calculus is called _the calculus of variations_ or _variational calculus_. By setting $\delta S = 0$ we have:
@@ -146,34 +146,34 @@ $$
 If we let $u = \dfrac{\partial \mathcal{L}}{\partial f'}\varepsilon$ and $dv = \dfrac{d\eta}{dq}$, then $v = \displaystyle \int \dfrac{d\eta}{dq} dq = \eta(q)$ and $du = \dfrac{d}{dq} \left(\dfrac{\partial \mathcal{L}}{\partial f'}\right)\varepsilon$. By substituting these in (we keep the first term there and don't evaluate, we only perform integration by parts on the second term) we have:
 
 $$
-\begin{align*}
+\begin{align}
 \underbrace{\int_{q_1}^{q_2} \dfrac{\partial \mathcal{L}}{\partial f} \eta\,\varepsilon\, dt}_\text{no need to evaluate} &+ \underbrace{\int_{q_1}^{q_2} \dfrac{\partial \mathcal{L}}{\partial f'}\dfrac{d\eta}{dq}\varepsilon\ dt}_\text{integrate by parts} \\
 &= \int_{q_1}^{q_2}\dfrac{\partial \mathcal{L}}{\partial f}\eta\, \varepsilon\, dt + 
 \underbrace{\left[\dfrac{\partial \mathcal{L}}{\partial f'} \eta\,\varepsilon\bigg|_{q_1}^{q_2} -
 \int_{q_1}^{q_2}\eta\dfrac{d}{dq} \left(\dfrac{\partial \mathcal{L}}{\partial f'}\right)\varepsilon \, dt\right]}_\text{result of integration by parts}
-\end{align*}
+\end{align}
 $$
 
 But recall from earlier that we defined $\eta(q)$ such that $\eta(q_2) = \eta(q_1) = 0$, meaning that the $\dfrac{\partial \mathcal{L}}{\partial f'} \eta\,\varepsilon\bigg|_{q_1}^{q_2}$ term goes to zero. Therfore, we are only left with:
 
 $$
-\begin{align*}
+\begin{align}
 \int_{q_1}^{q_2}\dfrac{\partial \mathcal{L}}{\partial f} \eta\,\varepsilon\, dt &+ 
 \cancel{\dfrac{\partial \mathcal{L}}{\partial f'} \eta\,\varepsilon\bigg|_{q_1}^{q_2}} -
 \int_{q_1}^{q_2}\eta\dfrac{d}{dq} \left(\dfrac{\partial \mathcal{L}}{\partial f'}\right)\varepsilon \, dt \\
 &= \int_{q_1}^{q_2}\dfrac{\partial \mathcal{L}}{\partial f}\eta\, \varepsilon\, dt - \int_{q_1}^{q_2}\eta\dfrac{d}{dq} \left(\dfrac{\partial \mathcal{L}}{\partial f'}\right)\varepsilon \, dt \\
 &= \int_{q_1}^{q_2}\left[\dfrac{\partial \mathcal{L}}{\partial f} \eta\,\varepsilon - \dfrac{d}{dq}\left(\dfrac{\partial \mathcal{L}}{\partial f'}\right)\eta\,\varepsilon\right] \, dt \\
-\end{align*}
+\end{align}
 $$
 
 Where in the last term we re-joined the sum of the integrals (which will make the next steps much easier). We know that the integral quantity we derived in the last step must be equal to zero, given that $\delta S = 0$ is our fundamental requirement for finding the stationary points (minima, maxima, etc.) of functionals. Therefore we have:
 
 $$
-\begin{align*}
+\begin{align}
 \int_{q_1}^{q_2}&\left[\dfrac{\partial \mathcal{L}}{\partial f} \eta\,\varepsilon\, - \dfrac{d}{dq}\left(\dfrac{\partial \mathcal{L}}{\partial f'}\right)\eta\,\varepsilon\right] \, dt \\
 &= \int_{q_1}^{q_2}\left[\dfrac{\partial \mathcal{L}}{\partial f}  - \dfrac{d}{dq}\left(\dfrac{\partial \mathcal{L}}{\partial f'}\right)\right] \eta\,\varepsilon\, \, dt \\
 &= 0
-\end{align*}
+\end{align}
 $$
 
 Where we factored the common terms out of the integral in the last step. But since our integral is zero, by the **fundamental lemma of the calculus of variations**, our integrand _must_ be zero as well, and resultingly our quantity in the squared brackets must _also_ be zero. That is:
@@ -205,22 +205,22 @@ $$
 We may now compute the derivatives (which is much-simplified by the fact that $\mathcal{L} = \sqrt{1 + y'^2}$ _does not depend on $y$_, but we must be careful to remember that $\dfrac{d}{dx} f(y') = f'(y')y''$ due to the chain rule):
 
 $$
-\begin{align*}
+\begin{align}
 \dfrac{\partial \mathcal{L}}{\partial y} &= 0 \\
 \dfrac{\partial \mathcal{L}}{\partial y'} &= \dfrac{1}{2} \dfrac{2y'}{\sqrt{1 + y'^2}} = \dfrac{y'}{\sqrt{1 + y'^2}} = y'(1 + y'^2)^{-1/2} \\
 \dfrac{d}{dx} \dfrac{\partial \mathcal{L}}{\partial y'^2}&= y''(1 + y'^2)^{-1/2} + \left(-\frac{1}{2}\right)(1 + y'^2)^{-3/2}(2y')y'' \\
 &=y''(1 + y'^2)^{-1/2} -y'(1 + y'^2)^{-3/2}y'' \\
 &= y''[(1 + y'^2)^{-1/2}  - (1 + y'^2)^{-3/2}]
-\end{align*}
+\end{align}
 $$
 
 Thus, substituting into the Euler-Lagrange equation, we have:
 
 $$
-\begin{align*}
+\begin{align}
 \dfrac{\partial \mathcal{L}}{\partial y}  - \dfrac{d}{dx}\left(\dfrac{\partial \mathcal{L}}{\partial y'}\right) &= -y''[(1 + y'^2)^{-1/2}  - (1 + y'^2)^{-3/2}] \\
 &=y''[(1 + y'^2)^{-3/2}-(1 + y'^2)^{-1/2}] \\ &=0
-\end{align*}
+\end{align}
 $$
 
 ```{note}
@@ -230,21 +230,21 @@ The differentiation is indeed quite a bit tedious, and we could've used computer
 While this may look very complicated, remember that the quantity in the square brackets is zero:
 
 $$
-\begin{align*}
+\begin{align}
 &y''[(1 + y'^2)^{-3/2}-(1 + y'^2)^{-1/2}] = 0 \\
 &\Rightarrow y''[(1 + y'^2)^{-3/2}-(1 + y'^2)^{-1/2}] = 0 \\
 &\Rightarrow y'' = 0
-\end{align*}
+\end{align}
 $$
 
  This becomes a differential equation that is straightforward to integrate:
 
 $$
-\begin{align*}
+\begin{align}
 &y'' = 0 \\ 
 &y' = \int y'' dx = \int 0 \, dx = b = \text{const.} \\
 &y = \int y' dx  = \int b  \, dx = m x + b
-\end{align*}
+\end{align}
 $$
 
 Where $m, b$ are constants. This is simply an equation of a straight line! By applying the calculus of variations, we have therefore shown that the _shortest path between two points $a, b$_ - in functional terms, the path that minimizes the arc length - is a **straight line**. It may seem to be an obvious result, but _proving it_ required quite a bit of calculus!
@@ -269,10 +269,10 @@ where $q_i$ stands in for the particular coordinate, so $q_i$ can be any one of 
 
 
 $$
-\begin{align*}
+\begin{align}
 K &= \sum_i K_i = K_1 + K_2 + K_3 + \dots + K_n \\
 U &= \sum_i U_i = U_1 + U_2 + U_3 + \dots + U_n
-\end{align*}
+\end{align}
 $$
 
 Note that the Euler-Lagrange equations apply primarily to closed systems, i.e. systems with no external force acting on them. If there is an external applied force on the system that does work $W$, then the Euler-Lagrange equations become:

@@ -404,10 +404,10 @@ plot_barchart()
 We also want to do a simulation with the same boundary conditions but using a transformed coordinates system and vector-valued. As findiff can only solve scalar PDEs, in practice this means that we are solving 2 separate PDEs with different boundary conditions, and then combining them to get a vector-valued function. We are still using the same value of $k$ and the same domain (of a unit square) as before. For the vector PDE, the coordinates in $(x, y)$ space are:
 
 $$
-\begin{align*}
+\begin{align}
 E_x(x, 0) = 2, E_x(x, 1) = 7, E_x(0, y) = 0.5, E_x(1, y) = \pi \\
 E_y(x, 0) = 2\pi, E_y(x, 1) = 3, E_y(0, y) = 12, E_y(1, y) = 1
-\end{align*}
+\end{align}
 $$
 
 What we want is to convert to $(u, v)$ coordinates where $u = e^x$ and $v = e^y$. To preserve the same physical results, we must ensure that $E(u, v) = E(x, y)$. which means re-expressing each of those boundary conditions in terms of functions $E_u(u, v)$ and $E_v(u, v)$. To do this we use the forward transforms $E(u, v)  = E(e^x, e^y)$. This means the function stays identical, and is simply expressed in different coordinates.
@@ -488,10 +488,10 @@ $$
 In addition, we will convert the boundary conditions respectively to:
 
 $$
-\begin{align*}
+\begin{align}
 \tilde E_u(u, 1) = 2, \tilde E_u(u, e) = 7, \tilde E_u(1, v) = 0.5, \tilde E_u(e, v) = \pi \\
 \tilde E_v(u, 1) = 2\pi, \tilde E_v(u, e) = 3, \tilde E_v(1, v) = 12, \tilde E_v(e, v) = 1
-\end{align*}
+\end{align}
 $$
 
 ```{code-cell} ipython3
@@ -669,10 +669,10 @@ validate_vector_uv()
 To evaluate the solution $(x, y)$ coordinates, we remap each of the points from $(u, v)$ space to $(x, y)$ space, that is, applying the inverse transforms $x(u) = \ln u$ and $y(v) = \ln v$ (again the prime here denotes transformation, it is not a derivative symbol. As the solution is numerical (and therefore discrete), we must interpolate it to find $\tilde{\mathbf{E}}(u, v)$ so that we can calculate the correct values according to the formula $\mathbf{E}(x, y) = \tilde{\mathbf{E}}(x(u), y(v))$. For this we use `scipy.optimize.curve_fit` with a cubic polynomial in the form $f(x, y) = ax^3 + by^3 + cx^2 y^2 + dx^2 + gy^2 + hxy + mx + nx + r$ on both components of $\mathbf{E}'$:
 
 $$
-\begin{align*}
+\begin{align}
 E_u(u, 1) = 2, E_u(u, e) = 7, E_u(1, v) = 0.5, E_u(e, v) = \pi \\
 E_v(u, 1) = 2\pi, E_v(u, e) = 3, E_v(1, v) = 12, E_v(e, v) = 1
-\end{align*}
+\end{align}
 $$
 
 ```{code-cell} ipython3
@@ -1079,10 +1079,10 @@ def plotE_xyspace(x=X, y=Y, E_x=E_x, E_y=E_y, desc=None, opacity=0.5):
 ```
 
 $$
-\begin{align*}
+\begin{align}
 E_u(u, 1) = 2, E_u(u, e) = 7, E_u(1, v) = 0.5, E_u(e, v) = \pi \\
 E_v(u, 1) = 2\pi, E_v(u, e) = 3, E_v(1, v) = 12, E_v(e, v) = 1
-\end{align*}
+\end{align}
 $$
 
 ```{code-cell} ipython3
@@ -1092,10 +1092,10 @@ plotE_xyspace()
 Compare these to the analytical boundary conditions:
 
 $$
-\begin{align*}
+\begin{align}
 E_x(x, 0) = 2, E_x(x, 1) = 7, E_x(0, y) = 0.5, E_x(1, y) = \pi \\
 E_y(x, 0) = 2\pi, E_y(x, 1) = 3, E_y(0, y) = 12, E_y(1, y) = 1
-\end{align*}
+\end{align}
 $$
 
 ```{code-cell} ipython3
@@ -1126,10 +1126,10 @@ plotE_uvspace(u=X, v=Y, Usol=E_x, Vsol=E_y, desc="")
 Which we may compare to our original boundary conditions, given by:
 
 $$
-\begin{align*}
+\begin{align}
 E_x(x, 0) = 2, E_x(x, 1) = 7, E_x(0, y) = 0.5, E_x(1, y) = \pi \\
 E_y(x, 0) = 2\pi, E_y(x, 1) = 3, E_y(0, y) = 12, E_y(1, y) = 1
-\end{align*}
+\end{align}
 $$
 
 Finally, we can calculate the magnitude of the field via $E(x, y) = \|\mathbf{E}(x, y)\|$. We can also validate this magnitude through the provided boundary conditions. For instance, $E(x, 0) = \sqrt{E_x(x, 0)^2 + E_y(x, 0)^2} = \sqrt{4 + 4\pi^2} = 2\sqrt{1 + \pi^2}$. The full set of the boundary conditions of the magnitude field $E$ are:

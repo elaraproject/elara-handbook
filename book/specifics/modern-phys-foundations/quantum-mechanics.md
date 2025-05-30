@@ -117,23 +117,23 @@ $$
 This is a plane wave that is a _particular solution_ to the Schrödinger equation, and we can indeed verify it is correct by substituting it back into the Schrödinger equation. First, we compute the derivatives:
 
 $$
-\begin{align*}
+\begin{align}
 \dfrac{\partial \Psi}{\partial t} &= \dfrac{\partial}{\partial t} e^{i(k x - \omega t)}  = -i \omega e^{i (k x - \omega t)} \\
 \dfrac{\partial \Psi}{\partial x} &= \dfrac{\partial}{\partial x} e^{i(k x- \omega t)} = i k e^{i(kx - \omega t)} \\
 \dfrac{\partial^2\Psi}{\partial x^2} &= \dfrac{\partial}{\partial x} \left(\dfrac{\partial \Psi}{\partial x}\right) = \dfrac{\partial}{\partial x} ik e^{i(kx - \omega t)} = -k^2 e^{i (k x - \omega t)} \\
-\end{align*}
+\end{align}
 $$
 
 Then, we plug these derivatives back into the Schrodinger equation:
 
 $$
-\begin{align*}
+\begin{align}
 i \hbar \frac{\partial \Psi}{\partial t} &= 
 -\frac{\hbar^2}{2m} \dfrac{\partial^2 \Psi}{\partial x^2} \Rightarrow \\
 i\hbar(-i\omega e^{i (k x - \omega t)}) &= -\dfrac{\hbar^2}{2m}(-k^2) e^{i (k x - \omega t)} \\
 \hbar \omega e^{i (kx - \omega t)} &= \dfrac{\hbar^2 k^2}{2m} e^{i(kx - \omega t)} \\
 \hbar\omega &= \dfrac{\hbar^2 k^2}{2m}
-\end{align*}
+\end{align}
 $$
 
 In which we find that the Schrödinger equation is indeed satisfied, as long as $\hbar \omega = \dfrac{\hbar^2 k^2}{2m}$. A Python-generated plot of a plane wave is shown below (the code is unfortunately rather lengthy):
@@ -240,11 +240,11 @@ $$
 Using the special case of photons, we can justify why $\omega$ must be the angular frequency. Recall that $E = hf$ expresses the energy carried by a single photon. But we also know that $E = \hbar \omega$ and $\hbar = h/2\pi$. Therefore, equating all our expressions together, we have:
 
 $$
-\begin{gather*}
+\begin{gather}
 E = hf   = \hbar \omega = \dfrac{h}{2\pi} \omega \\
 h f = \dfrac{h}{2\pi }\omega \\
 f = \dfrac{\omega}{2\pi} \Rightarrow  \omega = 2\pi f
-\end{gather*}
+\end{gather}
 $$
 
 And therefore we have shown that $\omega$ must be the angular frequency. Note that the formulas we found unintentionally while solving the Schrödinger equation, $p = \hbar k$ and $E = \hbar \omega$, show that there is a fundamental connection between **momentum and $k$** and similarly between **energy and $\omega$**. This is, in fact, a relationship that will hold even when the Schrödinger equation itself becomes inaccurate in certain physical scenarios.
@@ -258,13 +258,13 @@ $$
 But if we attempt to integrate our plane-wave solution $\Psi(x, t) = e^{i(kx - \omega t)}$ we will find that this condition is **not** satisfied:
 
 $$
-\begin{align*}
+\begin{align}
 \int_{-\infty}^\infty  |\Psi(x, t)^2 | dx &= 
 \int_{-\infty}^\infty  \Psi(x, t) \Psi^*(x, t)\, dx \\ 
 &= \int_{-\infty}^\infty e^{i(kx - \omega t)} e^{-i(kx - \omega t)} dx \\
 &= \int_{-\infty}^\infty d x  \\
 &= \infty
-\end{align*}
+\end{align}
 $$
 
 Therefore, the particle would have infinite probability of being somewhere in space - nonsensical! However, it turns out that there _is_ a way to make sense out of a plane-wave solution. If we instead take a _sum_ of plane waves of different wavelengths (and therefore a unique $k$ for each wave), then certain portions of each wave will cancel out with the others and certain portions will combine together - that is, the waves would interfere. Therefore, a solution in the form:
@@ -297,11 +297,11 @@ $$
 Recall that since the Schrödinger equation is separable, we may use the technique of the **separation of variables** to make it solvable. To do so, we first assume a solution in the form $\Psi(\mathbf{r}, t) = \psi(\mathbf{r}) T(t)$, where $\psi(\mathbf{r})$ is the purely-spatial component, and $T(t)$ is the purely-temporal (time) component. Then, we can take the derivatives to have:
 
 $$
-\begin{align*}
+\begin{align}
 \dfrac{\partial \Psi}{\partial t}&= \dfrac{\partial}{\partial t}\psi(\mathbf{r}) T(t) = \dfrac{dT}{dt} \psi(\mathbf{r}) \\
 \nabla \Psi &= \nabla [\psi(\mathbf{r}) T(t)] = T(t) \nabla \psi(\mathbf{r}) \\
 \nabla^2 \Psi &= \nabla(\nabla [\psi(\mathbf{r}) T(t)]) = T(t) \nabla^2 \psi(\mathbf{r}) \\
-\end{align*}
+\end{align}
 $$
 
 ```{note}
@@ -311,29 +311,29 @@ As $T(t)$ depends on only one variable ($t$) the partial derivative becomes an o
 Plugging these back into the Schrödinger equation we have:
 
 $$
-\begin{align*}
+\begin{align}
 i\hbar \dfrac{\partial}{\partial t} \Psi &= \left(-\dfrac{\hbar^2}{2m} \nabla^2 + V(\mathbf{r})\right) \Psi \\
 i\hbar \dfrac{dT}{dt}\psi(\mathbf{r})  &= -\dfrac{\hbar^2}{2m} T(t) \nabla^2 \psi + V(\mathbf{r})\psi(\mathbf{r}) T(t)
-\end{align*}
+\end{align}
 $$
 Dividing both sides by $\psi(\mathbf{r})T(t)$ we have:
 
 $$
-\begin{align*}
+\begin{align}
 \dfrac{1}{\psi(\mathbf{r})T(t)}i\hbar \dfrac{dT}{dt}\psi(\mathbf{r})  &= \dfrac{1}{\psi(\mathbf{r})T(t)} \left[-\dfrac{\hbar^2}{2m} T(t) \nabla^2 \psi + V(\mathbf{r})\psi(\mathbf{r}) T(t)\right] \\
 \dfrac{i\hbar}{T(t)} \dfrac{dT}{dt} &=\dfrac{1}{\psi(\mathbf{r})} \left[-\dfrac{\hbar^2}{2m}  \nabla^2 \psi + V(\mathbf{r})\psi(\mathbf{r}) \right] 
-\end{align*}
+\end{align}
 $$
 
 Remember that just as previously when we did separation of variables, the left and right-hand sides of the last equation are equal to a constant as two derivatives can only be equal in value if they are equal to a constant. We will call this constant $E$, and by dimensional analysis we can find that this is indeed equal to the _total energy_ of the particle (there is a more elegant argument for why we may interpret the separation constant $E$ as the energy, that we will cover later). Thus, we are able to simplify the Schrödinger equation into two simpler equations, one only depend on space and one only dependent on time:
 
 $$
-\begin{align*}
+\begin{align}
 \dfrac{i\hbar}{T(t)} \dfrac{dT}{dt} &=\dfrac{1}{\psi(\mathbf{r})} \left[-\dfrac{\hbar^2}{2m}  \nabla^2 \psi + V(\mathbf{r})\psi(\mathbf{r}) \right]  = E \\
 \dfrac{i\hbar}{T(t)} \dfrac{dT}{dt} &= E \quad \Rightarrow \quad i\hbar \dfrac{dT}{dt} = E\,T(t) \\
 \dfrac{1}{\psi(\mathbf{r})} &\left[-\dfrac{\hbar^2}{2m}  \nabla^2 \psi + V(\mathbf{r})\psi(\mathbf{r}) \right]  = E \\
 &\Rightarrow -\dfrac{\hbar^2}{2m}  \nabla^2 \psi + V(\mathbf{r})\psi(\mathbf{r}) = E \psi(\mathbf{r})
-\end{align*}
+\end{align}
 $$
 
 The differential equation in time, $i\hbar \dfrac{dT}{dt} = E\,T(t)$, is an equation that we are experienced in solving. Its solution is a complex exponential:
@@ -429,10 +429,10 @@ $$
 So, the eigenfunction-eigenvalue equations for kinetic energy and potential energy are given by:
 
 $$
-\begin{align*}
+\begin{align}
 \hat K \psi &= -\frac{\hbar^2}{2m} \frac{\partial^2 \psi}{\partial x^2} = K \psi \\
 \hat V \psi &= V(x) \psi
-\end{align*}
+\end{align}
 $$
 
 But what about _continuous distributions_ of momentum and energy, you may ask? Why does the potential energy operator, for instance, have a _function_ rather than a discrete eigenvalue. The answer is that these distributions still have discrete and quantized eigenvalues, just infinitely many of them.
@@ -440,10 +440,10 @@ But what about _continuous distributions_ of momentum and energy, you may ask? W
 Now, let us take another look at the kinetic energy and potential energy operators:
 
 $$
-\begin{align*}
+\begin{align}
 \hat K &= -\frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2} \\
 \hat V &= V(x)
-\end{align*}
+\end{align}
 $$
 
 But remember that the _total_ energy, which is represented by the Hamiltonian operator, is given by:
