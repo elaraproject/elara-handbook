@@ -1,27 +1,6 @@
----
-jupytext:
-  text_representation:
-    extension: .md
-    format_name: myst
-    format_version: 0.13
-    jupytext_version: 1.16.6
-kernelspec:
-  display_name: Python 3 (ipykernel)
-  language: python
-  name: python3
----
-
 # Tensor Calculus
 
 As we move into more advanced physics, vector calculus quickly becomes insufficient, and vector notation becomes incredibly inelegant and hard to work with. We need a new type of mathematical object to describe vector-like quantities in these theories - **tensors**. Fluid mechanics, advanced electrodynamics, and many numerical methods for partial differential equations *all* use tensors. General relativity is famously written in the language of differential geometry, known for its difficulty, and uses tensors near-exclusively. This is hopefully a gentler guide to tensors, one that preserves the essense of their mathematical beauty without baffling the mind.
-
-```{code-cell} ipython3
-import sympy as sp
-from sympy.plotting.plot import *
-import matplotlib.pyplot as plt
-import numpy as np
-sp.init_printing()
-```
 
 ## Invariants
 

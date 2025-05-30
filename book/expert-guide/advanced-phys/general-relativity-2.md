@@ -1,18 +1,4 @@
----
-jupytext:
-  text_representation:
-    extension: .md
-    format_name: myst
-    format_version: 0.13
-    jupytext_version: 1.16.6
-kernelspec:
-  display_name: Python 3 (ipykernel)
-  language: python
-  name: python3
----
-
 # General Relativity, Part 2
-
 
 Previously, we built up the idea of acceleration as being indistinguishable from gravitational force, and found the geodesic equation, which governs how objects move in curved spacetime. But to truly accurately describe relativity, we also need a mathematical description of what curvature in spacetime is. This will be what we'll explore in this section.
 
