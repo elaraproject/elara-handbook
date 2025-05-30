@@ -55,6 +55,11 @@ sphinx:
         \usepackage[font=small,labelfont=bf]{caption}
         % set default image size
         \setkeys{Gin}{width=.5\textwidth}
+        % default to centered figures
+        % see: https://tex.stackexchange.com/questions/23078/how-can-i-automatically-center-an-image
+        \makeatletter
+        \g@addto@macro\@floatboxreset\centering
+        \makeatother
   extra_extensions:
     # maybe eventually switch to sphinxcontrib.rsvgconverter?
     - "sphinxcontrib.inkscapeconverter"
