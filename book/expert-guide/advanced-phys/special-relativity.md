@@ -71,19 +71,12 @@ These sets of different measurements are related as follows:
 
 
 $$
-x' = x - vt
-$$
-
-$$
-y' = y
-$$
-
-$$
-z' = z
-$$
-
-$$
-t' = t
+\begin{align}
+x' &= x - vt \\
+y' &= y \\
+z' &= z \\
+t' &= t
+\end{align}
 $$
 
 
@@ -102,19 +95,12 @@ In the late 19th-century, physicists finally came up with one unified theory of 
 
 
 $$
-\nabla \cdot \vec E = \frac{\rho}{\epsilon_0}
-$$
-
-$$
-\nabla \times \vec E = -\frac{\partial \vec B}{\partial t}
-$$
-
-$$
-\nabla \cdot \vec B = 0
-$$
-
-$$
-\nabla \times \vec B = \mu_0 \vec J + \mu_0 \epsilon_0 \frac{\partial \vec E}{\partial t}
+\begin{align}
+\nabla \cdot \vec E &= \frac{\rho}{\epsilon_0} \\
+\nabla \times \vec E &= -\frac{\partial \vec B}{\partial t} \\
+\nabla \cdot \vec B &= 0 \\
+\nabla \times \vec B &= \mu_0 \vec J + \mu_0 \epsilon_0 \frac{\partial \vec E}{\partial t}
+\end{align}
 $$
 
 
@@ -212,11 +198,10 @@ To derive the Lorentz transformations, let's start with the Galilean transformat
 
 
 $$
-x' = x - vt
-$$
-
-$$
-x = x' + vt'
+\begin{align}
+x' &= x - vt \\
+x  &= x' + vt'
+\end{align}
 $$
 
 
@@ -224,11 +209,10 @@ To correct Galilean coordinate transformations, we intuitively need to multiply 
 
 
 $$
-x' = \gamma (x - vt)
-$$
-
-$$
-x = \gamma (x' + vt')
+\begin{align}
+x' &= \gamma (x - vt) \\
+x  &= \gamma (x' + vt')
+\end{align}
 $$
 
 
@@ -236,12 +220,10 @@ Now, we can multiply the left and right hand sides of the equation together, to 
 
 
 $$
-x' x = \gamma (x - vt) \gamma (x' + vt')
-$$
-
-
-$$
-x' x = \gamma^2 (xx' + xvt - x'vt - v^2  t t')
+\begin{align}
+x' x &= \gamma (x - vt) \gamma (x' + vt') \\
+x' x &= \gamma^2 (xx' + xvt - x'vt - v^2  t t')
+\end{align}
 $$
 
 
@@ -273,12 +255,10 @@ We can factor out the common factor of $tt'$, to get:
 
 
 $$
-\gamma^2 = \frac{c^2 tt'}{tt'(c^2 - v^2)}
-$$
-
-
-$$
-\gamma^2 = \frac{c^2}{(c^2 - v^2)}
+\begin{align}
+\gamma^2 &= \frac{c^2 tt'}{tt'(c^2 - v^2)} \\
+&= \frac{c^2}{(c^2 - v^2)}
+\end{align}
 $$
 
 
@@ -286,12 +266,10 @@ We can then simplify by dividing both the numerator and denominator by $c^2$, wh
 
 
 $$
-\gamma^2 = \frac{1}{1 - \frac{v^2}{c^2}}
-$$
-
-
-$$
-\gamma^2 = \frac{1}{1 - \left(\frac{v}{c}\right)^2}
+\begin{align}
+\gamma^2 &= \frac{1}{1 - \frac{v^2}{c^2}} \\
+&= \frac{1}{1 - \left(\frac{v}{c}\right)^2}
+\end{align}
 $$
 
 
@@ -307,11 +285,10 @@ We can use this to derive the Lorentz transformations for $x$, $y$, and $z$, but
 
 
 $$
-x' = \gamma(x - vt)
-$$
-
-$$
-x = \gamma (x' + vt')
+\begin{align}
+x' &= \gamma(x - vt) \\
+x  &= \gamma (x' + vt')
+\end{align}
 $$
 
 
@@ -375,19 +352,12 @@ So, we now have the complete set of **Lorentz transformations**, which obey the 
 
 
 $$
-t' = \gamma \left(t - \frac{vx}{c^2}\right)
-$$
-
-$$
-x' = \gamma (x - vt)
-$$
-
-$$
-y' = y
-$$
-
-$$
-z' = z
+\begin{align}
+t' &= \gamma \left(t - \frac{vx}{c^2}\right) \\
+x' &= \gamma (x - vt) \\
+y' &= y \\
+z' &= z
+\end{align}
 $$
 
 

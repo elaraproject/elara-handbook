@@ -158,7 +158,7 @@ $$
 
 
 ```{important}
-**Note:** Even though this looks like a fraction, and can be manipulated similar to fractions, the derivative in Leibniz's notation is **absolutely not** the same as a fraction!
+Note that even though this looks like a fraction, and can be manipulated similar to fractions, the derivative in Leibniz's notation is **absolutely not** the same as a fraction!
 ```
 
 
@@ -715,7 +715,7 @@ $$
 Intuitively, the definite integral gives the area underneath a curve. It does this by creating tiny rectangles under that curve:
 
 
-```{image} https://www.technologyuk.net/mathematics/integral-calculus/images/integral_calculus_0013.gif
+```{figure} https://www.technologyuk.net/mathematics/integral-calculus/images/integral_calculus_0013.gif
 :alt: Integral visualization as rectangles under a curve
 :width: 400px
 :align: center

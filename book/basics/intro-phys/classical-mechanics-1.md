@@ -706,7 +706,7 @@ def gravitational_potential(r, radius=1.5, G=1, M=0.5):
 	# slightly more complex than
 	# the formula to accomodate
 	# r < R where R is radius of body
-	return np.where(r > radius, -G*M/r, -G*M*(3*radius**2 - r**2)/(2*R**3))
+	return np.where(r > radius, -G*M/r, -G*M*(3*radius**2 - r**2)/(2*radius**3))
 
 def calc_div_grav():
     %matplotlib inline

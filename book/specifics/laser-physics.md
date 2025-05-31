@@ -53,7 +53,15 @@ We call this process _stimulated_ emission due to the fact that this entire proc
 
 After our conceptual review, let us reformulate what we know about light emission and absorption in a more rigorous, mathematical way. Again, we know from the quantum model of the hydrogen atom that electrons can have different states. As each state is an eigenstate of the Hamiltonian, different states (usually) have different energies. If an atom absorbs a photon, for instance, the atom can jump from its lower-energy state, which we write as $|1\rangle$, to a higher-energy upper state, which we write as $|2\rangle$. Meanwhile, an atom can also decay to its lower state by emitting a photon, with the difference in the energies $E_2 - E_1$ between the upper state and the lower state being the energy of this photon. While atoms, in general, have a multitude of states (and more than one upper state), this two-state approximation is good enough for a lot of theoretical analysis. A diagram of the two-state atomic system is shown below:
 
-![A graphic of an electron dropping energy by emitting a photon](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Spontaneousemission.svg/596px-Spontaneousemission.svg.png)
+![A graphic of an electron dropping energy by emitting a photon]()
+
+```{figure} https://upload.wikimedia.org/wikipedia/commons/c/ca/Spontaneousemission.svg
+:width: 300px
+:alt: A diagram of the emission of a photon carrying energy after an atom transitions to a lower-energy level
+:align: center
+
+An atomic system with two possible states ($|1\rangle$ and $|2\rangle$). A transition from $|2\rangle$ to $|1\rangle$ is accompanied by the emission of a photon with energy $E = E_2 - E_1$.
+```
 
 Whether the photon is emitted via stimulated emission or spontaneous emission, precisely _when_ the decay happens is random. We do know, however, that this process follows a probabilistic law, first derived by Einstein in 1916. Let us assume we are studying a certain group of atoms. Let $N_2(t)$ be the expected number of atoms in a higher energy state $|2\rangle$. Over time, these electrons will spontaneously decay to a lower energy state $|1\rangle$, such that $N_2(t)$ follows the differential equation:
 
@@ -73,7 +81,13 @@ For this, we need *stimulated emission*. First, we bring the atom to its upper s
 
 The wavelength used in optical pumping does not necessarily have to be the same wavelength that is emitted. The chief requirement is that the optical source used in optical pumping matches one of the absorption lines of the atom (or molecule, or molecular gas lasers). For instance, hydrogen absorbs (and correspondingly, also emits) wavelengths of 656 nm (red), 486 nm (cyan), 434 nm (blue), 410 nm (violet), and a variety of other wavelengths in the UV band, among others, as shown below:
 
-![A graphical representation of the absorption and emission spectrum of hydrogen; black lines indicate where the spectral lines (i.e. absorption and emission wavelengths) are](https://cdn.kastatic.org/ka-perseus-images/6eb47f45dd190c0e2b524f986228c8c9de1ba584.jpg)
+```{figure} https://cdn.kastatic.org/ka-perseus-images/6eb47f45dd190c0e2b524f986228c8c9de1ba584.jpg
+:alt: A graphical representation of the absorption and emission spectrum of hydrogen; black lines indicate where the spectral lines (i.e. absorption and emission wavelengths) are
+:width: 300px
+:align: center
+
+The spectrum of hydrogen, showing the wavelengths of light hydrogen absorbs and emits. Black lines, also called _spectral lines_, indicate atomic transitions.
+```
 
 But while these absorption lines at the most well-known, they are not its _only_ absorption lines, because, due to fine structure and hyperfine structure (the splitting of energy levels due to  complex quantum effects), other types of transitions are possible, including the 21 cm absorption line (and emission line) in the microwave spectrum.
 
@@ -91,9 +105,15 @@ $$
 \rho(\nu) = \frac{2h \nu^3}{c^3} \left(\exp \left(\frac{h\nu}{k_B T}\right)-1\right)^{-1}
 $$
 
-An annotated sketch showing the interrelationships between each of these mathematical relations is shown below:
+An annotated sketch showing the inter-relationships between each of these mathematical relations is shown below:
 
-![A graphic with N1(t) and N2(t) functions as well as the differential equation relating them annotated](./img/laser-equation-relationships.svg)
+```{figure} ./img/laser-equation-relationships.svg
+:alt: A graphic with N1(t) and N2(t) functions as well as the differential equation relating them annotated
+:align: center
+:width: 300px
+
+$N_1$ and $N_2$, the populations of the upper and lower energy levels, are related via a coupled system of differential equations.
+```
 
 As an example of how this works in practice, the He-Ne laser, a common type of laser operating in the visible spectrum, uses a mixture of helium and neon gas within an optical chamber. An electrical discharge is created in the chamber between the cathode (positive end) and anode (negative end), which acts as an energy source (laser pump source), causing the gas to become a plasma where the electrons are free to move around. The electrons randomly collide with the helium atoms, transferring energy and bringing the helium to an upper state. The helium atoms also collide with the neon atoms, bringing the neon atoms to an upper state and allowing the helium atoms to decay to a lower state. These atoms in upper states provide the conditions for stimulated emission to occur: when one atom decays to lower states and release a photon, another atom would release another photon by stimulated emission. A reflective mirror at one end of the chamber and a semi-transparent mirror at the end reflects the light back and forth, repeating this process over and over and amplifying the light by re-concentrating energy into the gain medium, ensuring that atoms are raised to the upper state, and continuing the cyle of stimulated emission. At a certain point, this cycle of continuous amplification through stimulated emission has progressed far enough that photons escape the optical cavity and begin to pass through the semi-transparent mirror, which is the laser beam we see.
 
@@ -156,9 +176,13 @@ Consider a two-state laser whose gain medium is pumped by an external electromag
 
 Specifically, we consider a specific type of transition called a [umbrella inversion](https://en.wikipedia.org/wiki/Pyramidal_inversion). This transition happens when the nitrogen atom in ammonia transitions from being at the "right" of the molecule to the "left". We can model this as a potential $V(x)$ with two minima, representing each of the two states:
 
-![A diagram showcasing the potential separating the two states of ammonia, with the second state being the rightward-facing nitrogen state, and the first state being the leftward-facing nitrogen state](https://chem.libretexts.org/@api/deki/files/186224/Screen_Shot_2019-05-13_at_1.39.25_PM.png)
+```{figure} https://chem.libretexts.org/@api/deki/files/186224/Screen_Shot_2019-05-13_at_1.39.25_PM.png
+:alt: A diagram showcasing the potential separating the two states of ammonia, with the second state being the rightward-facing nitrogen state, and the first state being the leftward-facing nitrogen state
+:width: 350px
+:align: center
 
-_Diagram courtesy of [LibreTexts](https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Quantum_Tutorials_(Rioux)/04%3A_Spectroscopy/4.04%3A_The_Ammonia_Inversion_and_the_Maser)_
+The two states of ammonia are stable equilibria of the potential energy, but the potential can be overcome and result in an atomic transition. Diagram courtesy of [LibreTexts](https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Quantum_Tutorials_(Rioux)/04%3A_Spectroscopy/4.04%3A_The_Ammonia_Inversion_and_the_Maser).
+```
 
 Such a system can occupy two states: the lower-energy state, which we will call $|1\rangle$ (represented in the above diagram with the ammonia molecule on the left), and the higher-energy state, which we will call $|2\rangle$ (represented by the ammonia molecule on the right). It is also common to refer to $|1\rangle$ as the **lower state** and $|2\rangle$ as the **upper state**, and we will adopt this naming convention for the rest of this chapter. The general state of the system, assuming that transitions are forbidden (and thus $c_1 = c_2 = \text{const.}$), is given by:
 
