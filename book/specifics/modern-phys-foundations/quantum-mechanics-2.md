@@ -153,7 +153,9 @@ $$
 \end{align}
 $$
 
-> Here, $E_k$ should technically be written $E_k \cdot I$, i.e. $E_k$ is a matrix with the energy eigenvalues along its diagonal and zero everywhere else.
+```{important}
+Here, $E_k$ is shorthand notation for $E_k \cdot I$, since it represents a matrix with the energy eigenvalues along its diagonal and zero everywhere else.
+```
 
 Where the last step comes from $\langle \psi_n | \hat H |\psi_n\rangle = E_n$ (the index does not matter at this point because we use only one index in the expression). Thus we find that:
 
@@ -248,7 +250,9 @@ Where $m_{\ce{C}}$ is the mass of the carbon atom and similarly $m_{\ce{O}}$ is 
 | $\|5\rangle \to \|0\rangle$  | 1499 nm       | Near-infrared  |
 | $\|6\rangle \to \|0\rangle$  | 1249 nm       | Near-infreared |
 
-> **Note:** all of these transitions are vibrational transitions, and they all occur in the _infrared spectrum_. This has great physical significance; it means that carbon dioxide (just like other greenhouse gases) is very good at absorbing and re-emitting infrared light, which is (one of) the mechanisms that leads to the greenhouse effect, which in turn drives climate change.
+```{note}
+All of these transitions are vibrational transitions, and they all occur in the _infrared spectrum_. This has great physical significance; it means that carbon dioxide (just like other greenhouse gases) is very good at absorbing and re-emitting infrared light, which is (one of) the mechanisms that leads to the greenhouse effect, which in turn drives climate change.
+```
 
 ### Example 2: hydrogen atom
 

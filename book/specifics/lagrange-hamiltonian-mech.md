@@ -88,7 +88,9 @@ $$
 
 Our next step is to find the _amount_ of change $\delta S$ between $S(f, f', q)$ and $S(f + \varepsilon \eta, f' + \varepsilon \eta', q)$. As a first step, we want to compute $\mathcal{L}(f + \varepsilon \eta, f' + \varepsilon \eta', q)$, as that will allow us to compute $S(f + \varepsilon \eta, f' + \varepsilon \eta', q)$, which we need in order to calculate $\delta S$.
 
-> We use $\delta S$ instead of $dS$ or $\partial S$ as (1) $\delta S$ is specifically for functionals and (2) the latter two symbols already have (multiple) reserved uses and we don't want to muddle up the notation and make the meanings unclear.
+```{note}
+We use $\delta S$ instead of $dS$ or $\partial S$ as (1) $\delta S$ is specifically for functionals and (2) the latter two symbols already have (multiple) reserved uses and we don't want to muddle up the notation and make the meanings unclear.
+```
 
 Recall how, in single-variable calculus, we can express a small shift $y(x + h)$ in a function $y(x)$  for some tiny number $h$ by:
 

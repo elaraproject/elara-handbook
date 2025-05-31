@@ -193,7 +193,9 @@ plt.legend()
 plt.show()
 ```
 
-> It does appear that the tropical ocean may contribute to the attenuation in a way that was not entirely expected, making it so that the Hawaii test location has a higher attenuation than the Bering Sea test location at most frequencies.
+```{note}
+It does appear that the tropical ocean may contribute to the attenuation in a way that was not entirely expected, making it so that the Hawaii test location has a higher attenuation than the Bering Sea test location at most frequencies.
+```
 
 We will now do the same analysis as previously, just for both the test locations:
 

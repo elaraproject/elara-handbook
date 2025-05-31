@@ -31,7 +31,9 @@ But there exists an _alternative_ means of light emission, known as **stimulated
 3. The atom then decays down to a lower-energy state, which has energy $E_1$.
 4. _Two_ identical photons are released in the process, each with energy $E_\text{photon} = E_2 - E_1 = \Delta E$ and thus wavelength $\lambda = hc/E_\text{photon}$
 
-> **Note:** Typically (but not always), the energy source is an applied electromagnetic field that supplies energy in the form of electromagnetic waves. In that case, then $\Delta E = hf$, where $f$ is the frequency of the electromagnetic waves. What this means is that you can use light as an energy source for a laser! In fact, you can use _another laser_ as an energy source for a laser!
+```{note}
+Typically (but not always), the energy source is an applied electromagnetic field that supplies energy in the form of electromagnetic waves. In that case, then $\Delta E = hf$, where $f$ is the frequency of the electromagnetic waves. What this means is that you can use light as an energy source for a laser! In fact, you can use _another laser_ as an energy source for a laser!
+```
 
 Crucially, stimulated emission is _different_ from spontaneous emission in the following ways:
 

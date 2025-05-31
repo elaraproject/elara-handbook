@@ -8,7 +8,9 @@ The answer is yes, and in fact, the study of the intersection of relativity and 
 
 Throughout our discussion of spontaneous and stimulated emission, we have discussed photons everywhere. But photons are not something that can be completely described using the Schrödinger equtaion. Photons must be described by **quantum electrodynamics**, the quantum theory of the electromagnetic field.
 
-> **Note:** We use Gaussian units instead of SI units for this section. Consult a conversions chart to convert Gaussian units to SI units.
+```{important}
+We use Gaussian units instead of SI units for this section. Consult a conversions chart to convert Gaussian units to SI units.
+```
 
 Remember that light is classically-described as a wave, which obeys the solution to the Maxwell equations of electromagnetism in free space:
 
@@ -54,7 +56,9 @@ $$
 
 Where $\mathbf{k}$ is the **wavevector**, which is directly related to the momentum of a wave as well as its wavelength by $|\mathbf{k}| = \dfrac{2\pi}{\lambda}$, and where $\mathbf{A}_\mathbf{k}(\mathbf{k})$ represents the polarization (directionality) and field strength of the wave, which are given respectively by the direction and the magnitude of $\mathbf{A}_\mathbf{k}(\mathbf{k})$. Here, $\mathbf{A}_\mathbf{k}^*$ represents the complex conjugate of $\mathbf{A}_\mathbf{k}(\mathbf{k})$. Those who are aware may recognize this as a Fourier expansion in terms of the normal modes; if that terminology is unfamiliar, don't worry about it. Importantly, the wavevector is related to the **angular frequency** by $\omega_\mathbf{k} = \mathbf{k} c$, which will be significant later.
 
-> **Note:** the series is significant, as pure plane waves in the form $e^{i\mathbf{k} \cdot \mathbf{r}}$, which are the simplest solutions to the PDEs, are mathematically consistent but physically impossible (they would need an infinite amount of energy to create). The sum over plane waves of different $\mathbf{k}$ and $\mathbf{A}_\mathbf{k}(\mathbf{k})$, however, produces a physical solution (as long as we just take the real part of the complex-valued waves).
+```{note}
+The series is significant, as pure plane waves in the form $e^{i\mathbf{k} \cdot \mathbf{r}}$, which are the simplest solutions to the PDEs, are mathematically consistent but physically impossible (they would need an infinite amount of energy to create). The sum over plane waves of different $\mathbf{k}$ and $\mathbf{A}_\mathbf{k}(\mathbf{k})$, however, produces a physical solution (as long as we just take the real part of the complex-valued waves).
+```
 
 ### The classical field theory of electromagnetism
 
@@ -67,7 +71,7 @@ $$
 \end{align}
 $$
 
-Note that we can also write this in terms of the **canonical momentum**. First, let us derive it by findind the derivative of the Lagrangian with respect to $\dfrac{\partial \mathbf{A}}{\partial t}$. This comes out to:
+We can also write this in terms of the **canonical momentum**. First, let us derive it by findind the derivative of the Lagrangian with respect to $\dfrac{\partial \mathbf{A}}{\partial t}$. This comes out to:
 
 $$
 \begin{align}
@@ -136,7 +140,9 @@ $$
 H = \int d^3 x \left[2\pi c^2 \mathbf{p}^2 + \dfrac{1}{8\pi} (\nabla \times \mathbf{A})^2\right]
 $$
 
-> **Note:** Further, the Coulomb gauge enforces the requirement that $\varphi = 0$ in our given conditions, so we could have done all of this without needing to do the math.
+```{note}
+Further, the Coulomb gauge enforces the requirement that $\varphi = 0$ in our given conditions, so we could have done all of this without needing to do the math.
+```
 
 This, together with the general solution we found for $\mathbf{A}(\mathbf{r}, t)$, lays the classical foundation for quantizing the electromagnetic field.
 

@@ -20,7 +20,9 @@ The Gaussian beam model predicts that smaller apertures lead to faster divergenc
 - Or you could build a *very large* aperture laser, which would have less-focused light at short distances from the aperture (and thus a very wide beam), but the beam spreads more slowly and remains focused at long distances
 - Or you could build something in between, something that maximizes the benefits and minimizes the drawbacks of very-small- and very-large-aperture lasers; this is the *optimal* laser aperture 
 
-> The word **collimated** is the more technical word for _focused_ and is the one that will be predominantly used going forwards.
+```{note}
+The word **collimated** is the more technical word for _focused_ and is the one that will be predominantly used going forwards.
+```
 
 ## Discussion on atmospheric attenuation
 
@@ -28,7 +30,9 @@ The key reason for space solar power capture is that the rotation of the Earth h
 
 ![A diagram showing how a satellite constellation continuous rotates to ensure there is always at least one satellite above every power station](./img/power-shuttling-elara-diagram.svg)
 
-> In addition, each satellite is planned to be equipped with multiple gimbal-mounted laser apertures that can be opened and closed on command, meaning that each satellite can transmit and track **multiple** ground stations within its field of view at once, which can eventually be up to dozens or perhaps even hundreds of ground stations located within proximity of every country on Earth.
+```{note}
+In addition, each satellite is planned to be equipped with multiple gimbal-mounted laser apertures that can be opened and closed on command, meaning that each satellite can transmit and track **multiple** ground stations within its field of view at once, which can eventually be up to dozens or perhaps even hundreds of ground stations located within proximity of every country on Earth.
+```
 
 Let us now return to the issue of atmospheric attenuation. We have set out a feasible wavelength range of 3.75-30 cm as the suitable frequencies at which space-to-ground power transmission can realistically occur. This range can be further subdivided into four named microwave bands, from longest to shortest wavelength:
 
@@ -39,7 +43,9 @@ Let us now return to the issue of atmospheric attenuation. We have set out a fea
 | C-band    | 4-8 GHz     | 3.75-7.5 cm            |
 | K-band    | 8-12 GHz    | 2.5-3.5 cm             |
 
-> **Note:** We set a cutoff at the K-band of 10 GHz (3 cm) as anything below would exceed 10% power loss due to atmospheric effects.
+```{note}
+We set a cutoff at the K-band of 10 GHz (3 cm) as anything below would exceed 10% power loss due to atmospheric effects.
+```
 
 In theory, using the higher end of the feasible wavelength range (that is, 15-30 cm) would lead to the minimal losses - in fact, essentially no losses. However, this runs into the unfortunate issue that as the divergence angle $\theta \propto \lambda$, these longer wavelengths cause the beam to diverge faster and become less focused, ultimately negating the advantages of their low atmospheric loss. Rather, it is a better choice to use the lower end of the feasible wavelength range (3.75 cm-7.5 cm). In fact, we will use the lowest of the wavelength range - that is, $\lambda = \unit{3.75 cm}$ - to minimize the beam spread.
 
@@ -47,7 +53,9 @@ In theory, using the higher end of the feasible wavelength range (that is, 15-30
 
 The ITU-R atmospheric attenuation model, from the International Telecommunications Union (Radiocommunication Sector), forms the basis of the previous statement that 1-10 GHz (3.75-30 cm) microwaves can pass through the atmosphere with less than 10% loss. In the next subchapter, we will perform the relevant calculations using the ITU-R attenuation model to *justify* this statement. But we will take this as fact for the moment.
 
-> **Note:** For the remainder of this section, we will always give calculations in terms of the _range_ of values within our target microwave range of 1-12 GHz, or provide an average value (in which we will state explicitly that it is an average).
+```{note}
+For the remainder of this section, we will always give calculations in terms of the _range_ of values within our target microwave range of 1-12 GHz, or provide an average value (in which we will state explicitly that it is an average).
+```
 
 ## Determination of ideal aperture
 
@@ -63,7 +71,9 @@ Over a straight-line distance $D$ along the axis of propagation, the deviation (
 
 ![A mathematical diagram of the spread of the Gaussian beam](./img/gaussian-beam-divergence-diagram.svg)
 
-> **Note:** To be completely accurate, $D$ should be written $D(t)$, as the distance between the power satellites and the receiver stations changes continuously as the satellites pass overhead. However, as $D$ is unaffected by any of the variables we consider, we can treat it as effectively constant. In addition, the deviation of $D$ from a straight line - Gaussian beams do not diverge at a constant rate - can be temporarily ignored due to the distances being so long that we may assume $\tan \theta \approx \theta$.
+```{note}
+To be completely accurate, $D$ should be written $D(t)$, as the distance between the power satellites and the receiver stations changes continuously as the satellites pass overhead. However, as $D$ is unaffected by any of the variables we consider, we can treat it as effectively constant. In addition, the deviation of $D$ from a straight line - Gaussian beams do not diverge at a constant rate - can be temporarily ignored due to the distances being so long that we may assume $\tan \theta \approx \theta$.
+```
 
 Given that we want a beam with minimal divergence - in fact, this would almost certainly be the most precise laser ever built - we can use the small-angle approximation $\tan \theta \approx \theta$ as $\theta$ _must_ be very small. Therefore, we have:
 
@@ -124,7 +134,9 @@ $$
 P_T = \dfrac{3\sqrt{3}}{2} s^2NI_\odot
 $$
 
-> Note: hexagonal mirrors have the advantage that adding more naturally preserves the shape of the parabolic reflector, unlike circular mirrors, which means that the solar collector can be expanded essentially indefinitely as more mirrors are launched into orbit (at least in theory).
+```{note}
+Hexagonal mirrors have the advantage that adding more naturally preserves the shape of the parabolic reflector, unlike circular mirrors, which means that the solar collector can be expanded essentially indefinitely as more mirrors are launched into orbit (at least in theory).
+```
 
 Where $I_\odot = \unit{1361 W/m^2}$ is the mean solar irradiance (the average intensity of sunlight at Earth orbit). To solve for the aperture width $A$ that would satisfy our power density limit, we can substitute in the expression for $B$ into the expression for $A_\mathrm{cs}$, resulting in a quadratic equation:
 
@@ -146,7 +158,9 @@ A \leq A_0,& A_0 = \sqrt{\dfrac{P_T}{I_0\pi}} - \sqrt{\dfrac{P_T}{I_0\pi}- \dfra
 \end{align}
 $$
 
-> Here we use the smaller of the two roots because the larger root is nonsensical (it approaches impossibly large numbers for large $P_T$)
+```{note}
+Here we use the smaller of the two roots because the larger root is nonsensical (it approaches impossibly large numbers for large $P_T$)
+```
 
 This, however, requires that $\dfrac{P_T}{I_0 \pi} \geq \dfrac{4D\lambda}{n\pi}$ to get a sensible answer for $A_0$. Thus the *minimum* total power required for a real solution is given by:
 
@@ -184,7 +198,9 @@ The below table lists the number of individual lasers required to attain the eff
 | 94.46 m                      | 5                                              | 15                                              | 90                                             | 357                                           | 992                                           |
 | 66.62 m                      | 3                                              | 8                                               | 45                                             | 178                                           | 494                                           |
 
-> For comparison, the largest current laser is the **National Ignition Facility** (NIF) laser for inertial confinement fusion reseach, which uses 192 lasers each of 40 cm aperture.
+```{note}
+For comparison, the largest current laser is the **National Ignition Facility** (NIF) laser for inertial confinement fusion reseach, which uses 192 lasers each of 40 cm aperture.
+```
 
 The numbers, certainly, are formidable, but they are not out of reach. The hexagonal mirrors can be launched in batches, slowly, over the course of decades, with the space swarm providing more and more power over time, until it reaches full power. While the mirror numbers may seem staggering, remember that these mirrors are in space and therefore need no active support, and they can be made extremely thin and lightweight; their only requirement is to be reflective. Additionally, they can be folded to a very small size, then expand once they reach orbit, meaning that with some creative folding they can be made to take up relatively little room aboard a rocket. The much bigger engineering challenge, at least on paper, are the individual lasers, considering their very large apertures, even just individually.
 
@@ -202,16 +218,15 @@ The composite solar mirror would "ride along" with the power satellites and be l
 | ------------------------- | ------------------- | ----------------------- | -------------------- |
 | 5-55 segments             | 3-5m                | 20-40 m                 | 428 kW - 1710 kW     |
 
-Each power satellite is anticipated to have a large number of small lasers, using beam-combining to achieve a greater effective aperture. We must unfortunately use shorter wavelengths as the much smaller effective apertures as compared to the designs we previously examined mean that the lasers diverge _far_ more quickly, even though we know that longer wavelengths are better at passing through the atmosphere without being affected by weather conditions. Below are some rough values for the projected power beam laser:
+Each power satellite is anticipated to have a large number of small lasers, using beam-combining to achieve a greater effective aperture. We must unfortunately use shorter wavelengths as the much smaller effective apertures as compared to the designs we previously examined mean that the lasers diverge _far_ more quickly, even though we know that longer wavelengths are better at passing through the atmosphere without being affected by weather conditions. Below are some rough values for the projected power beam laser[^1]:
 
 | Feed laser aperture | Wavelength | Number of beam-combined feed lasers | Effective aperture | Ground beam width | Ground power density                             | Received power |
 | ------------------- | ---------- | ----------------------------------- | ------------------ | ----------------- | ------------------------------------------------ | -------------- |
 | At least 25 cm      | 1-2 cm     | At least 200                        | >350 cm            | 133-266 km        | $\unit{7.67\mu W/m^2}$ to  $\unit{122.62 \mu W/m^2}$ | 0.6 - 9.6 mW   |
 
-> **Notes:** The received power values are assuming a 10-meter (diameter) ideal receiver antenna. In addition, the ground power density values are _not accounting for atmospheric attenuation_, which, at such short wavelengths, can mean losses up to 50% or more in heavy rain or stormy weather, even if losses are within 10% during clear skies. 
-
 On Earth, the receiver would also be rather small compared with our previous designs - we envision a 10-meter (diameter) receiver parabolic antenna, which is used to calculate the received power in the last column. In addition, the receiver antenna will not be a custom one; it will likely involve a temporary (or permanent) lease of a pre-existing telecommunications antenna. Of course, the larger the receiver, the better; however, the received power is likely to be rather weak, about 8 times as powerful as a household AA battery in theory, but perhaps only half as powerful in reality. Even in the best possible case (such as, for instance, if we hypothetically used NASA's 70m Deep Space Network antenna as the receiver), the received power would still be under half a watt, or at most, a few watts.
 
-So it should be emphasized that this is a _research testbed_ to test out the system design in a real-world environment, which must be undertaken before building any large-scale space swarms for practical energy generation. This means that we don't expect this testbed to actually produce any useful amount of energy, and while the mirrors will be re-used (recall that the hexagonal mirrors can be continuously extended with more segments), and the receiver antenna returned to its operator, the power satellite will be placed in a graveyard orbit after its useful lifetime. In some sense, it would be like a [Chicago Pile](https://en.wikipedia.org/wiki/Chicago_Pile-1) for Project Elara's space swarms - essentially, a proof-of-concept.
+So it should be emphasized that this is a _research testbed_ to test out the system design in a real-world environment, which must be undertaken before building any large-scale space swarms for practical energy generation. This means that we don't expect this testbed to actually produce any useful amount of energy[^2], and while the mirrors will be re-used (recall that the hexagonal mirrors can be continuously extended with more segments), and the receiver antenna returned to its operator, the power satellite will be placed in a graveyard orbit after its useful lifetime. In some sense, it would be like a [Chicago Pile](https://en.wikipedia.org/wiki/Chicago_Pile-1) for Project Elara's space swarms - essentially, a proof-of-concept.
 
-> Do note, however, that commercial satellites have even weaker signals, so weak that even the milliwatt power levels in the projected testbed are _orders of magnitude_ more powerful than nearly all satellites in similar orbits.
+[^1]: The received power values are assuming a 10-meter (diameter) ideal receiver antenna. In addition, the ground power density values are _not accounting for atmospheric attenuation_, which, at such short wavelengths, can mean losses up to 50% or more in heavy rain or stormy weather, even if losses are within 10% during clear skies.
+[^2]: Do note, however, that commercial satellites have even weaker signals, so weak that even the milliwatt power levels in the projected testbed are _orders of magnitude_ more powerful than nearly all satellites in similar orbits.
