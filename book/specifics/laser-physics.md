@@ -53,8 +53,6 @@ We call this process _stimulated_ emission due to the fact that this entire proc
 
 After our conceptual review, let us reformulate what we know about light emission and absorption in a more rigorous, mathematical way. Again, we know from the quantum model of the hydrogen atom that electrons can have different states. As each state is an eigenstate of the Hamiltonian, different states (usually) have different energies. If an atom absorbs a photon, for instance, the atom can jump from its lower-energy state, which we write as $|1\rangle$, to a higher-energy upper state, which we write as $|2\rangle$. Meanwhile, an atom can also decay to its lower state by emitting a photon, with the difference in the energies $E_2 - E_1$ between the upper state and the lower state being the energy of this photon. While atoms, in general, have a multitude of states (and more than one upper state), this two-state approximation is good enough for a lot of theoretical analysis. A diagram of the two-state atomic system is shown below:
 
-![A graphic of an electron dropping energy by emitting a photon]()
-
 ```{figure} https://upload.wikimedia.org/wikipedia/commons/c/ca/Spontaneousemission.svg
 :width: 300px
 :alt: A diagram of the emission of a photon carrying energy after an atom transitions to a lower-energy level
