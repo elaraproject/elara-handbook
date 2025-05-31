@@ -346,7 +346,7 @@ Implicitly differentiating, we have:
 
 $$
 \begin{align}
-v_x &= \frac{dx}{dt} = \ell \cos \theta \frac{d\theta}{dt \\
+v_x &= \frac{dx}{dt} = \ell \cos \theta \frac{d\theta}{dt} \\
 v_y &= \frac{dy}{dt} = \ell \sin \theta \frac{d\theta}{dt}
 \end{align}
 $$
