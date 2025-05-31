@@ -4,7 +4,9 @@
 This Charter is _provisional_ at the moment and will only come into force after ratification. In the meantime, changes _are_ likely to be made to the Charter.
 ```
 
-The members of Project Elara, endeavoring to create a more beautiful and just world, in which the entire human family may live together in peace and fellowship, institute this Charter among ourselves, to guide us in our pursuit of this mission, until such a time comes when it may come into force.
+# The Provisional Charter of Project Elara
+
+The members of Project Elara, dedicated to the mission of advancing peaceful space-based energy, institute this Charter among ourselves, to guide us in our pursuit of this mission, until such a time comes when it may come into force.
 
 1.1 All members of Project Elara (henceforth referred to simply as "the community") are free, equal, and have inviolable dignity. They have the responsibility to treat each other as equals and to act with conscience towards one another. There shall be no disparity in the treatment of any member in the community on any grounds. Any attempts to discriminate against any member of the community on the basis of identity, show favoritism, or deny equal protection under the Charter is unacceptable and will be subject to consequences. This article is **not to be removed, amended, or abridged for any reason**, and cannot be changed by a consensus or majority decision.
 
