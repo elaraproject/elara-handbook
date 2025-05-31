@@ -12,7 +12,13 @@ Before we start, a useful fact to keep in mind is that an antenna can generally 
 
 To begin our study of antenna theory, let us introduce some terminology that is commonly-used in antenna theory. First, we introduce the **solid angle**. Think of a flashlight - note how its light spreads out in a cone. The spread of that cone can be measured in terms of solid angles, just like the spread between two lines (or vectors) can be measured in terms of regular angles. The unit of solid angle used in electrical engineering is the **steradian**, and just like radians, it is a dimensionless quantity. A full hemisphere is $2\pi$ steradians, and a sphere (the steradian equivalent of 360 degrees but in 3D) is $4\pi$ steradians. A visual example of the steradian is shown here:
 
-![Steradians example, showing how it describes a cone-shaped field of view](https://upload.wikimedia.org/wikipedia/commons/9/9c/Angle_solide_coordonnees.svg)
+```{figure} https://upload.wikimedia.org/wikipedia/commons/9/9c/Angle_solide_coordonnees.svg
+:alt: Steradians example, showing how it describes a cone-shaped field of view
+:width: 300px
+:align: center
+
+A steradian describes a cone-shaped field of view, referred to as the _solid angle_.
+```
 
 We define the **radiation intensity** $U$ of electromagnetic waves as the power carried in the wave passing through a given solid angle. We can calculate $U$ from the magnitude of the Poynting vector $S$ via:
 
@@ -80,9 +86,9 @@ Here's a plot of the radiation pattern, courtesy of [Comprod](https://comprodcom
 
 ```{figure} https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Sidelobes_en.svg/768px-Sidelobes_en.svg.png
 :alt: A plot of the directional radiation pattern of a parabolic antenna
-:width: 600px
+:width: 300px
 
-Source: [Wikipedia](https://commons.wikimedia.org/wiki/File:Sidelobes_en.svg)
+A parabolic antenna has a specific pattern in the intensity (electromagnetic power density) of its radiation. Source: [Wikipedia](https://commons.wikimedia.org/wiki/File:Sidelobes_en.svg)
 ```
 
 The crucial parameter to successful power transfer is to maximize the gain in the direction of reception for the ground-based receiver station antennas. This involves two things:
