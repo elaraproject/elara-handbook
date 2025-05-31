@@ -31,7 +31,7 @@ latex:
 # No copyright (because public domain)
 sphinx:
   config:
-    latex_logo: logo_scaled.png
+    latex_logo: logo.png
     latex_engine: xelatex
     html_show_copyright: false
     # on print, show inline links as footnotes
