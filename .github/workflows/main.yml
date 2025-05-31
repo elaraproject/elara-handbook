@@ -113,6 +113,9 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ github.token }}
       run: |
+        # debug only
+        ls -a
+        ls -a book/
         pip install github-release-retry
         github-release-retry \
           --user elaraproject \
