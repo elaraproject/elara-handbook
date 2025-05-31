@@ -10,7 +10,7 @@ kernelspec:
   language: python
   name: python3
 mystnb:
-	number_source_lines: true
+  number_source_lines: true
 ---
 
 # Programming with Python
