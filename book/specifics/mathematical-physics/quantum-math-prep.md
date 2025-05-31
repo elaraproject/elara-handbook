@@ -51,11 +51,7 @@ The real and imaginary parts of the complex number $z$ are:
 
 
 $$
-\operatorname{Re} (z) = a
-$$
-
-$$
-\operatorname{Im} (z) = bi
+\operatorname{Re} (z) = a, \quad \operatorname{Im} (z) = bi
 $$
 
 

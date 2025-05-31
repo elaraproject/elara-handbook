@@ -14,7 +14,7 @@ To begin our study of antenna theory, let us introduce some terminology that is 
 
 ```{figure} https://upload.wikimedia.org/wikipedia/commons/9/9c/Angle_solide_coordonnees.svg
 :alt: Steradians example, showing how it describes a cone-shaped field of view
-:width: 300px
+:width: 200px
 :align: center
 
 A steradian describes a cone-shaped field of view, referred to as the _solid angle_.

@@ -568,10 +568,10 @@ The second measurement system is called radians, where one full circle is $2\pi$
 
 
 $$
-\begin{align}
-1 \mathrm{\ radian} &= 1^\circ \cdot \left(\frac{\pi}{180}\right) \\
-1^\circ &= 1 \mathrm{\ radian} \cdot \left(\frac{\pi}{180}\right)
-\end{align}
+\begin{gather}
+1 \mathrm{\ radian} = 1^\circ \cdot \left(\frac{\pi}{180}\right) \\
+1^\circ = 1 \mathrm{\ radian} \cdot \left(\frac{\pi}{180}\right)
+\end{gather}
 $$
 
 
@@ -823,7 +823,7 @@ where $b^y = x$. To remember this mapping between exponential functions, you can
 
 $$
 \begin{align}
-\ln x &= \log_e x
+\ln x &= \log_e x \\
 \log x &= \log_{10} x
 \end{align}
 $$

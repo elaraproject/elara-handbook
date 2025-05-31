@@ -36,7 +36,13 @@ plt.rcParams['mathtext.fontset'] = 'stix'
 
 We use the [Recommendation ITU-R P.618 model](https://www.itu.int/rec/R-REC-P.618/en) created by the International Telecommunications Union, as implemented by the [ITU-Rpy](https://itu-rpy.readthedocs.io/en/latest/index.html) library, to perform our calculations. To give a sense of the model, the following is a graph of atmospheric attenuation for an older version of the model (P.676):
 
-![](img/attenuation.svg)
+```{figure} img/attenuation.svg
+:alt: Attentuation over distance as a function of frequency, according to the ITU-R model
+:width: 600px
+:align: center
+
+Specific attentuation (attenuation per unit distance) across microwave frequencies from 1-1000 GHz.
+```
 
 ## Gaseous attenuation
 

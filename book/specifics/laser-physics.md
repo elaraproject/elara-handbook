@@ -1,3 +1,9 @@
+---
+mystnb:
+  render_image_options:
+    align: center
+---
+
 # Lasers and laser physics
 
 As we've covered previously, a key component in our proposed space swarm system is the maser (microwave laser) that transmits the captured energy of sunlight back to Earth. Designing a laser to meet the high demands of our use case is an immense engineering challenge, which we hope to accomplish with research breakthroughs and technological innovation. But before examining the specifics of state-of-the-art laser technology, let us first go over the essential theory behind how lasers work.

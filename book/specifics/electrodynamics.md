@@ -194,7 +194,13 @@ Where $\hat{\mathbf{n}}$ is the normal vector that points in the direction of pr
 
 Recall that the output of the function is the _magnitude_ of the wave, and in electrodynamics it is associated with the magnitude of the electromagnetic field at that point. In 1 dimension, this is the familiar sinusoidal wave; in 2 dimensions, this becomes a sinusoidally-rippling surface, see https://www.math3d.org/JdgRCZD3l. In 3 dimensions, it is a bit more difficult to visualize, but here is a volume (density) plot to serve as a visual:
 
-![Density plot](img/3d_plane_wave_volume.png)
+```{figure} img/3d_plane_wave_volume.png
+:alt: A 3D density plot of a plane wave. The plot indicates the electric field's magnitude oscillates sinusoidally.
+:width: 300px
+:align: center
+
+The magnitude of the electric field for a plane wave, which oscillates sinusoidally along the direction of propagation.
+```
 
 The intensity still varies sinusoidally, but the wavefronts are planar, as is expected. Note that plane waves are a mathematical idealization; true waves are only approximately planar and would spread out over long enough distances.
 
@@ -262,9 +268,15 @@ $$
 
 means that the magnetic fields and electric fields are perpendicular to each other. Here's a visual to make things more clear:
 
-![Electric and magnetic fields, shown perpendicular to each other](./img/plane-waves.svg)
+```{figure} ./img/plane-waves.svg
+:alt: A diagram of electric and magnetic fields, shown perpendicular to each other
+:align: center
+:width: 200px
 
-Note that this diagram is not entirely physically accurate; in reality, the electric and magnetic fields span every point in space, so imagine every point filled with electric and magnetic vectors. In addition, the plane waves span the entire domain too, here only slices (isosurfaces is the technical term) are shown. Also, plane waves can propagate in any direction, not just forwards along the $x$ axis, this is a simplified example. However, it is a diagram that is a good approximation for the physical reality.
+Electric and magnetic fields of a plane wave. Notice how the wavefronts are flat, and $\mathbf{E}$ and $\mathbf{B}$ are perpendicular to each other.
+```
+
+We should mention that this diagram is not entirely physically accurate; in reality, the electric and magnetic fields span every point in space, so imagine every point filled with electric and magnetic vectors. In addition, the plane waves span the entire domain too, here only slices (isosurfaces is the technical term) are shown. Also, plane waves can propagate in any direction, not just forwards along the $x$ axis, this is a simplified example. However, it is a diagram that is a good approximation for the physical reality.
 
 Electromagnetic waves, like all waves, deliver power and energy from one location to another. Electromagnetic power is given by the Poynting vector:
 

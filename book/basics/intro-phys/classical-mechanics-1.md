@@ -68,11 +68,10 @@ From the same definitions, velocity is the integral of acceleration, and positio
 
 
 $$
-v = \int a dt
-$$
-
-$$
-s = \int v dt
+\begin{align}
+v &= \int a dt
+s &= \int v dt
+\end{align}
 $$
 
 
@@ -91,19 +90,12 @@ The **kinematic equations** describe the motion of objects under constant accele
 
 
 $$
-v = v_0 + at
-$$
-
-$$
-\Delta s = \left(\frac{v + v_0}{2}\right)
-$$
-
-$$
-\Delta s = v_0 t + \frac{1}{2} at^2
-$$
-
-$$
-v^2 = (v_0)^2 + 2a \Delta x
+\begin{align}
+v &= v_0 + at \\
+\Delta s &= \left(\frac{v + v_0}{2}\right) \\
+\Delta s &= v_0 t + \frac{1}{2} at^2 \\
+v^2 &= (v_0)^2 + 2a \Delta x
+\end{align}
 $$
 
 
@@ -332,10 +324,9 @@ A more difficult example is with the following system, where $F_T$ is the tensio
 
 ```{image} https://upload.wikimedia.org/wikipedia/commons/c/cb/Atwood.svg
 :alt: Atwood's machine diagram
-:width: 400px
+:width: 100px
 :align: center
 ```
-
 
 Here, to draw a free-body diagram, we "unwrap" and stretch out the system, then draw 2 separate free-body diagrams for each sub-system:
 
@@ -399,12 +390,10 @@ We now have a simultaneous series of equations:
 
 
 $$
-F_T - m_1 g = m_1 a
-$$
-
-
-$$
+\begin{align}
+F_T - m_1 g = m_1 a \\
 m_2 g - F_T = m_2 a
+\end{align}
 $$
 
 
@@ -412,35 +401,16 @@ Solving them allows us to find the net acceleration of both systems:
 
 
 $$
-m_2 g - F_T = m_2 a
-$$
-
-$$
-m_2 g = F_T + m_2 a
-$$
-
-$$
-F_T = m_2 g - m_2 a
-$$
-
-$$
-F_T = m_1 a + m_1 g
-$$
-
-$$
-m_2 g - m_2 a = m_1 a + m_1 g
-$$
-
-$$
-m_2 g - m_1 g = m_1 a + m_2 a
-$$
-
-$$
-g(m_2 - m_1) = a(m_1 + m_2)
-$$
-
-$$
+\begin{gather}
+m_2 g - F_T = m_2 a \\
+m_2 g = F_T + m_2 a \\
+F_T = m_2 g - m_2 a \\
+F_T = m_1 a + m_1 g \\
+m_2 g - m_2 a = m_1 a + m_1 g \\
+m_2 g - m_1 g = m_1 a + m_2 a \\
+g(m_2 - m_1) = a(m_1 + m_2) \\
 a = \frac{g(m_2 - m_1)}{m_1 + m_2}
+\end{gather}
 $$
 
 
@@ -590,17 +560,11 @@ Using the conservation of energy, we know that $K_i = 0$ (as the object is throw
 
 
 $$
-U_i = K_f
-$$
-
-
-$$
-mgh = \frac{1}{2} m (v_f)^2
-$$
-
-
-$$
+\begin{gather}
+U_i = K_f \\
+mgh = \frac{1}{2} m (v_f)^2 \\
 h = \frac{1}{2} \frac{m(v_f)^2}{g}
+\end{gather}
 $$
 
 
@@ -694,6 +658,12 @@ def plot_gfield():
 ```
 
 ```{code-cell} ipython3
+---
+mystnb:
+  render_image_options:
+    width: 200px
+    align: center
+---
 plot_gfield()
 ```
 
@@ -736,7 +706,7 @@ def gravitational_potential(r, radius=1.5, G=1, M=0.5):
 	# slightly more complex than
 	# the formula to accomodate
 	# r < R where R is radius of body
-	return np.where(r > radius, -G*M/r, -((G*M)/(2*radius**3))*(3*radius**2 - r**2))
+	return np.where(r > radius, -G*M/r, -G*M*(3*radius**2 - r**2)/(2*R**3))
 
 def calc_div_grav():
     %matplotlib inline

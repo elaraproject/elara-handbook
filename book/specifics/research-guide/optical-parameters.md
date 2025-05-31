@@ -28,7 +28,14 @@ The word **collimated** is the more technical word for _focused_ and is the one 
 
 The key reason for space solar power capture is that the rotation of the Earth hinders solar power during the night-time, conditions such as rain and clouds often obscure visible light, and the atmosphere absorbs - in more technical terms, _attenuates_ - visible light passing through the atmosphere. The microwave portion of the visible spectrum avoids both of the latter issues. Microwave frequencies from 1 GHz-10GHz (equivalently, wavelengths between 3.75-30 cm) have no problem penetrating through the atmosphere, with under 10% loss even in rain and cloud conditions. As for the first issue, that of the Earth's rotation, a spacebound power satellite can continuously track a ground station as it orbits around the Earth. By using a satellite constellation, three power satellites are sufficient to cover nearly the entire Earth, and by continuously shuttling between the three power satellites, each receiver station on Earth will always have a power satellite overhead and is able to receive uninterrupted power. This last point requires some elaboration as it may be rather difficult to grasp from a textual description alone. Therefore, here is a diagram to explain it instead:
 
-![A diagram showing how a satellite constellation continuous rotates to ensure there is always at least one satellite above every power station](./img/power-shuttling-elara-diagram.svg)
+```{figure} ./img/power-shuttling-elara-diagram.svg
+:alt: A diagram showing how a satellite constellation continuous rotates to ensure there is always at least one satellite above every power station
+:width: 500px
+:align: center
+
+The satellite constellation ensures that there is always at least one satellite above every power station.
+```
+
 
 ```{note}
 In addition, each satellite is planned to be equipped with multiple gimbal-mounted laser apertures that can be opened and closed on command, meaning that each satellite can transmit and track **multiple** ground stations within its field of view at once, which can eventually be up to dozens or perhaps even hundreds of ground stations located within proximity of every country on Earth.
@@ -69,7 +76,13 @@ $$
 
 Over a straight-line distance $D$ along the axis of propagation, the deviation (spread) of the beam from the axis of projection would then be given by $D \tan \theta$. As this is the spread from just one side of the beam, adding up the spread of both sides as well as the original beam width gives the total beam size at the receiver of $B = A + 2 D \tan \theta$. Here is a graphical diagram of the derivation we have just completed:
 
-![A mathematical diagram of the spread of the Gaussian beam](./img/gaussian-beam-divergence-diagram.svg)
+```{figure} ./img/gaussian-beam-divergence-diagram.svg
+:alt: A mathematical diagram of the spread of the Gaussian beam
+:align: center
+:width: 500px
+
+The divergence of the Gaussian beam can be approximately-modelled as circular spot that grows in radius with distance.
+```
 
 ```{note}
 To be completely accurate, $D$ should be written $D(t)$, as the distance between the power satellites and the receiver stations changes continuously as the satellites pass overhead. However, as $D$ is unaffected by any of the variables we consider, we can treat it as effectively constant. In addition, the deviation of $D$ from a straight line - Gaussian beams do not diverge at a constant rate - can be temporarily ignored due to the distances being so long that we may assume $\tan \theta \approx \theta$.

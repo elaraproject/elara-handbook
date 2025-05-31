@@ -609,9 +609,11 @@ This horribly long and scary-looking equation is what gives tensors their reputa
 
 > "A tensor is anything that transforms like a tensor."
 
-
 ### Practical application: Newton's laws in Tensor Calculus
 
+```{note}
+This section along with its following two sections deal with increasingly-complex mathematics and physics. They are only meant to serve as illustrative examples for those curious. You are **not expected** to immediately get what they mean, and you don't need to understand them to be able to use tensors!
+```
 
 To rewrite Newton's laws of motion in tensor calculus is not difficult. For example, we can take $\vec F = m \vec a$ and rewrite with tensors as:
 
@@ -658,19 +660,12 @@ When using tensor calculus to express Maxwell's equations, the advantages of ten
 
 
 $$
-\nabla \cdot \vec E = \frac{\rho}{\epsilon_0}
-$$
-
-$$
-\nabla \times \vec E = -\frac{\partial \vec B}{\partial t}
-$$
-
-$$
-\nabla \times \vec B = 0
-$$
-
-$$
-\nabla \times \vec B = \mu_0 \vec J + \mu_0 \epsilon_0 \frac{\partial \vec E}{\partial t}
+\begin{align}
+\nabla \cdot \vec E &= \frac{\rho}{\epsilon_0} \\
+\nabla \times \vec E &= -\frac{\partial \vec B}{\partial t} \\
+\nabla \times \vec B &= 0 \\
+\nabla \times \vec B &= \mu_0 \vec J + \mu_0 \epsilon_0 \frac{\partial \vec E}{\partial t}
+\end{align}
 $$
 
 
@@ -694,11 +689,10 @@ This allows us to simplify Maxwell's 4 equations to just 2:
 
 
 $$
-A^\mu = \left(\frac{1}{c} \phi, \vec A\right)
-$$
-
-$$
-J^\mu = (c\rho, \vec J)
+\begin{align}
+A^\mu &= \left(\frac{1}{c} \phi, \vec A\right) \\
+J^\mu &= (c\rho, \vec J)
+\end{align}
 $$
 
 
@@ -710,35 +704,36 @@ F_{ij} = \frac{\partial A_j}{\partial x^i} - \frac{\partial A_i}{\partial x^j}
 $$
 
 
-Now, using the electromagnetic field tensor, we can rewrite Maxwell's equation using just 2 tensor equations, which, like any tensor equation, is coordinate-independent:
+Now, using the electromagnetic field tensor, we can rewrite Maxwell's equation using just 2 tensor equations, which, like any tensor equation, is coordinate-independent[^1]:
 
 
 $$
-\partial_{m} F_{i k}+\partial_{k} F_{m i}+\partial_{i} F_{k m}=0
-$$
-
-$$
+\begin{align}
+\partial_{m} F_{i k}+\partial_{k} F_{m i}+\partial_{i} F_{k m}=0 \\
 \partial_{i} F^{i k}=\mu_{0} J^k
+\end{align}
 $$
 
 
-[Derivation source](https://profoundphysics.com/are-maxwell-equations-relativistic/)
+### Practical application 3: Differential geometry in General Relativity
 
+Studying differential geometry as it applies to General Relativity starts with the basic Pythagorean theorem. The distance $\Delta s$ between any 2 points $(x_1, y_1)$ and $(x_2, y_2)$ in a 2D space can be found with the theorem:
 
-## Differential geometry in GR
+$$
+\Delta s^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2
+$$
 
+Defining $\Delta x = x_2 - x_1, \Delta y = y_2 - y_1$, we can rewrite this as:
 
-Studying differential geometry as it applies to General Relativity starts with the basic Pythagorean theorem. The distance between any 2 points in a 2D space can be found with the theorem:
+$$
+\Delta s^2 = \Delta x^2 + \Delta y^2
+$$
 
-
-```{image} https://homework.study.com/cimages/multimages/16/drawing242540949694109156314.jpg
-:alt: Differentials illustrated
-:width: 300px
-:align: center
+```{note}
+Here, we use the notation that $\Delta x^2 = (\Delta x)^2$ and $\Delta y^2 = (\Delta y)^2$.
 ```
 
-
-Thus, we can say that:
+Taking the limit as $\Delta x, \Delta y$ grows infinitesimally tiny, we can replace $\Delta s$ with $ds$, and $\Delta x, \Delta y$ become $dx, dy$. So the calculus version of Pythagoras's theorem is given by:
 
 
 $$
@@ -800,11 +795,10 @@ Also note that we often use the metric tensor for raising or lowering indices vi
 
 
 $$
-T_\beta = g_{\alpha \beta} T^\alpha
-$$
-
-$$
-T^\beta = g^{\alpha \beta} T_\alpha
+\begin{align}
+T_\beta &= g_{\alpha \beta} T^\alpha \\
+T^\beta &= g^{\alpha \beta} T_\alpha
+\end{align}
 $$
 
 
@@ -823,9 +817,11 @@ In spherical coordinates, $(r, \theta, \phi)$, we recall that spherical coordina
 
 
 $$
-x = r \sin \theta \cos \phi \\
-y = r \sin \theta \sin \phi \\
-z = r \cos \theta
+\begin{align}
+x &= r \sin \theta \cos \phi \\
+y &= r \sin \theta \sin \phi \\
+z &= r \cos \theta
+\end{align}
 $$
 
 
@@ -833,21 +829,14 @@ Thus, after evaluating the differentials using the total differential rule, we f
 
 
 $$
-dx
-= \frac{\partial x}{\partial r} dr + \frac{\partial x}{\partial \theta} d\theta + \frac{\partial x}{\partial \phi} d \phi \\
-= \sin \theta \cos \phi dr + r \cos \theta \cos \phi d\theta - r \sin \phi \sin \theta d\phi
-$$
-
-
-$$
-dy = \frac{\partial y}{\partial r} dr + \frac{\partial y}{\partial \theta} d\theta + \frac{\partial y}{\partial \phi} d \phi \\
-= \sin \phi \sin \theta dr + r \sin \theta \cos \theta d\theta + r \sin \theta \cos \phi d\phi
-$$
-
-
-$$
-dz = \frac{\partial z}{\partial r} dr + \frac{\partial z}{\partial \theta} d\theta \\
-= \cos \theta dr - r \sin \theta d \theta
+\begin{align}
+dx &= \frac{\partial x}{\partial r} dr + \frac{\partial x}{\partial \theta} d\theta + \frac{\partial x}{\partial \phi} d \phi \\
+&= \sin \theta \cos \phi dr + r \cos \theta \cos \phi d\theta - r \sin \phi \sin \theta d\phi \\
+dy &= \frac{\partial y}{\partial r} dr + \frac{\partial y}{\partial \theta} d\theta + \frac{\partial y}{\partial \phi} d \phi \\
+&= \sin \phi \sin \theta dr + r \sin \theta \cos \theta d\theta + r \sin \theta \cos \phi d\phi \\
+dz &= \frac{\partial z}{\partial r} dr + \frac{\partial z}{\partial \theta} d\theta \\
+&= \cos \theta dr - r \sin \theta d \theta
+\end{align}
 $$
 
 
@@ -892,3 +881,5 @@ $$
 
 
 After doing all of these calculations with tensors, why do we need to use them at all? It's because **tensor equations take the same form in any coordinate system**. This important fact will be crucial in working on a theory of general relativity.
+
+[^1]: A useful reference, from which this derivation was based, can be found at <https://profoundphysics.com/are-maxwell-equations-relativistic/>

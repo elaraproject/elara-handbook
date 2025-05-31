@@ -58,7 +58,7 @@ However, if there are more than two charges interacting, the forces between all 
 
 Recall that fields (in physics) denote quantities that are continuously spread out across all of space, such as the gravitational field and gravitational potential (potential field). The **electric field** is a vector field produced by a charge and extends throughout space. In the field formulation, instead of a charge directly exerting a force on other charges, it is the _electric field_ of the charge that exerts the force. Every other charge *also* produces an electric field that exerts a force on all the other charges except themselves. Each of these electric fields, that we've considered separate up to this point, are really just labels for parts of _one_ electric field that carries forces between _all_ charges. Every charge produces part of the electric field, and the electric field exerts a force on every charge, determining the trajectories of each charge. In words inspired by the physicist John Archibald Wheeler, we may surmize that: 
 
-> _Charges make the electric field change, the electric field makes charges move._
+> _"Charges make the electric field change, the electric field makes charges move."_
 
 While technically there is no distinction between the electric fields of different charges - they are all part of the same *singular electric field* - it is mathematically convenient to speak of electric fields specific to a single charged object. For instance the electric field *produced* by a single point charge $Q$ located at the origin is given by:
 
@@ -78,7 +78,12 @@ Be sure to remember that the $Q$ here is of the charge _creating_ the electric f
 
 Since the electric field is a vector field - more precisely, a force field - we can visualize it with vector plots. Using the example of our point charge, the electric field vectors extend outwards if the point charge is positive, and inwards if the point charge is negative:
 
-![](https://cdn.kastatic.org/ka-perseus-images/6db3d4851432e3cded684cd6748f779fea347f52.svg)
+```{figure} https://cdn.kastatic.org/ka-perseus-images/6db3d4851432e3cded684cd6748f779fea347f52.svg
+:align: center
+:width: 300px
+
+Electric fields of a positive point charge (shown left) and a negative point charge (shown right).
+```
 
 When the electric field is created by _two_ charges of opposite sign, we call it a dipole. There exist electric fields produced by more than two charges, right up to arrangements of uncountably many charges. In any case with more than one charge, we must superimpose (sum) the individual electric fields from each charge, resulting in an electric field formed by a _superposition_ of charges:
 
@@ -167,7 +172,13 @@ It is important to remember that in all cases of applying Coulomb's law, the int
 
 It is common to say that applying Coulomb's law is finding the electric field by _brute-force_, understandably, given its tediousness. But there is a more _elegant_ way of computing the electric field. Suppose we analyze an bounded region of space around an electric field. For instance, this could be the spherical region around a point charge, as shown in the figure below:
 
-![Spherical region around point charge](https://study.com/cimages/multimages/16/point_charge_example255946289342482603.png)
+```{figure} https://study.com/cimages/multimages/16/point_charge_example255946289342482603.png
+:alt: A diagram showing a spherical region around a point charge
+:width: 200px
+:align: center
+
+A spherical region around point charge of radius $r$.
+```
 
 We could model this spherical region as a sphere (unsurprisingly). Then the region would be defined by a sphere of radius $r$, which contains a total volume of:
 
@@ -189,9 +200,12 @@ $$
 
 We can illustrate the flux across the spherical boundary (the technical term is _Gaussian surface_) of our spherical region as follows:
 
+```{figure} https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6aVmAotCl6bOvJFZuqZRfEU2zzMGVNkQ-Sg
+:width: 150px
+:align: center
 
-![A spherical bounding surface](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6aVmAotCl6bOvJFZuqZRfEU2zzMGVNkQ-Sg&s)
-
+A Gaussian surface - an imaginary bounding surface surrounding a spherical region.
+```
 
 ```{note}
 The reason this is a dot product rather than normal multiplication is that the amount of electric field "passing" the boundary of our spherical region also depends the angle between the electric field and the surface. In this case, the electric field vectors are perfectly perpendicular to the surface, so it reduces to a normal dot product, but this is not _always_ the case.

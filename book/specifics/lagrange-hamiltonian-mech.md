@@ -298,7 +298,7 @@ Having examined the fundamental theory behind Lagrangian mechanics, we will now 
 
 ```{image} img/simple-oscillator.png
 :alt: Simple oscillator
-:width: 400px
+:width: 250px
 :align: center
 ```
 
@@ -307,11 +307,10 @@ For the single pendulum problem, we first find the equations $x(t)$ and $y(t)$ g
 
 
 $$
-x(t) = \ell \sin \theta (t)
-$$
-
-$$
-y(t) = -\ell \cos \theta (t)
+\begin{align}
+x(t) &= \ell \sin \theta (t) \\
+y(t) &= -\ell \cos \theta (t)
+\end{align}
 $$
 
 
@@ -335,12 +334,10 @@ To do this, we solve for $\frac{dx}{dt}$ and $\frac{dy}{dt}$. This takes a bit o
 
 
 $$
-\frac{dx}{dt} = \frac{dx}{d\theta} \frac{d\theta}{dt}
-$$
-
-
-$$
-\frac{dy}{dt} = \frac{dy}{d\theta} \frac{d\theta}{dt}
+\begin{align}
+\frac{dx}{dt} &= \frac{dx}{d\theta} \frac{d\theta}{dt} \\
+\frac{dy}{dt} &= \frac{dy}{d\theta} \frac{d\theta}{dt}
+\end{align}
 $$
 
 
@@ -348,11 +345,10 @@ Implicitly differentiating, we have:
 
 
 $$
-v_x = \frac{dx}{dt} = \ell \cos \theta \frac{d\theta}{dt}
-$$
-
-$$
-v_y = \frac{dy}{dt} = \ell \sin \theta \frac{d\theta}{dt}
+\begin{align}
+v_x &= \frac{dx}{dt} = \ell \cos \theta \frac{d\theta}{dt \\
+v_y &= \frac{dy}{dt} = \ell \sin \theta \frac{d\theta}{dt}
+\end{align}
 $$
 
 
@@ -451,11 +447,10 @@ We want to derive the orbit of Earth around the Sun. To do so, we again first de
 
 
 $$
-x(t) = r(t) \cos \theta(t)
-$$
-
-$$
-y(t) = r(t) \sin \theta(t)
+\begin{align}
+x(t) &= r(t) \cos \theta(t) \\
+y(t) &= r(t) \sin \theta(t)
+\end{align}
 $$
 
 
@@ -463,11 +458,10 @@ Differentiating both (and remembering to use the product rule), we find that:
 
 
 $$
-v_x(t) = \cos \theta(t) \frac{dr}{dt} - r(t) \sin \theta (t) \frac{d\theta}{dt}
-$$
-
-$$
-v_y(t) = \sin \theta(t) \frac{dr}{dt} + r(t) \cos \theta \frac{d\theta}{dt}
+\begin{align}
+v_x(t) &= \cos \theta(t) \frac{dr}{dt} - r(t) \sin \theta (t) \frac{d\theta}{dt} \\
+v_y(t) &= \sin \theta(t) \frac{dr}{dt} + r(t) \cos \theta \frac{d\theta}{dt}
+\end{align}
 $$
 
 
@@ -491,23 +485,20 @@ Applying the Euler-Lagrange equations to each coordinate, $r$ and $\theta$, pres
 
 
 $$
-\frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot r} - \frac{\partial \mathcal{L}}{\partial r} = 0
-$$
-
-$$
+\begin{gather}
+\frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot r} - \frac{\partial \mathcal{L}}{\partial r} = 0 \\
 \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot \theta} - \frac{\partial \mathcal{L}}{\partial \theta} = 0
+\end{gather}
 $$
 
 
-Solving both equations yields the equations of motion for the Earth:
-
-
-$$
-\frac{d^2 r}{dt^2} = r \left(\frac{d\theta}{dt}\right)^2 - \frac{GM}{r^2}
-$$
+Solving both equations yields the equations of motion for the Earth, we find that:
 
 $$
-\frac{d^2 \theta}{dt^2} = - \frac{2}{r} \frac{dr}{dt} \frac{d\theta}{dt} 
+\begin{align}
+\frac{d^2 r}{dt^2} &= r \left(\frac{d\theta}{dt}\right)^2 - \frac{GM}{r^2} \\
+&= - \frac{2}{r} \frac{dr}{dt} \frac{d\theta}{dt}
+\end{align}
 $$
 
 
@@ -581,11 +572,10 @@ Here, the notable difference is that we have a **system** as opposed to a single
 
 
 $$
-K = K_1 + K_2
-$$
-
-$$
-U = U_1 + U_2
+\begin{align}
+K &= K_1 + K_2 \\
+U &= U_1 + U_2
+\end{align}
 $$
 
 
@@ -596,11 +586,10 @@ We will first derive the kinetic energies, because they are harder :( As we know
 
 
 $$
-x_1(t) = \ell_1 \sin \theta_1 (t)
-$$
-
-$$
-y_1(t) = -\ell_1 \cos \theta_1 (t)
+\begin{align}
+x_1(t) &= \ell_1 \sin \theta_1 (t) \\
+y_1(t) &= -\ell_1 \cos \theta_1 (t)
+\end{align}
 $$
 
 
@@ -608,11 +597,10 @@ We figure these out from basic trigonometry and the fact that $y_1(t)$ is negati
 
 
 $$
-\frac{dx_1}{dt} = \ell_1 \cos \theta_1 (t) \frac{d\theta_1}{dt}
-$$
-
-$$
-\frac{dy_1}{dt} = \ell_1 \sin \theta_1 (t) \frac{d\theta_1}{dt}
+\begin{align}
+\frac{dx_1}{dt} &= \ell_1 \cos \theta_1 (t) \frac{d\theta_1}{dt} \\
+\frac{dy_1}{dt} &= \ell_1 \sin \theta_1 (t) \frac{d\theta_1}{dt}
+\end{align}
 $$
 
 
@@ -620,13 +608,11 @@ Using this, we can find $K_1$:
 
 
 $$
-K_1 = \frac{1}{2} m_1 \left(\dot x_1^2 + \dot y_1^2\right)
-$$
-
-
-$$
-K_1 = \frac{1}{2} m_1 \left[ \left(\ell_1 \cos \theta_1 (t) \frac{d\theta_1}{dt} \right)^2 + 
+\begin{align}
+K_1 = \frac{1}{2} m_1 \left(\dot x_1^2 + \dot y_1^2\right) \\
+&= \frac{1}{2} m_1 \left[ \left(\ell_1 \cos \theta_1 (t) \frac{d\theta_1}{dt} \right)^2 + 
 \left(\ell_1 \sin \theta_1 (t) \frac{d\theta_1}{dt}\right)^2 \right]
+\end{align}
 $$
 
 
@@ -642,11 +628,10 @@ Then, we write the position functions of the second pendulum:
 
 
 $$
-x_2 (t) = x_1(t) + \ell_2 \sin \theta_2 (t)
-$$
-
-$$
-y_2 (t) = y_1(t) + (- \ell_2 \cos \theta_2 (t))
+\begin{align}
+x_2 (t) &= x_1(t) + \ell_2 \sin \theta_2 (t) \\
+y_2 (t) &= y_1(t) + (- \ell_2 \cos \theta_2 (t))
+\end{align}
 $$
 
 
@@ -654,11 +639,10 @@ Here, we add the $x$ and $y$ displacement of the second pendulum with the $x$ an
 
 
 $$
-x_2 (t) = \ell_1 \sin \theta_1 (t) + \ell_2 \sin \theta_2 (t)
-$$
-
-$$
-y_2 (t) = - \ell_1 \cos \theta_1 (t) - \ell_2 \cos \theta_2 (t))
+\begin{align}
+x_2 (t) &= \ell_1 \sin \theta_1 (t) + \ell_2 \sin \theta_2 (t) \\
+y_2 (t) &= - \ell_1 \cos \theta_1 (t) - \ell_2 \cos \theta_2 (t))
+\end{align}
 $$
 
 
@@ -666,11 +650,10 @@ We compute their derivatives:
 
 
 $$
-\frac{dx_2}{dt} = \ell_1 \cos \theta_1 (t) \frac{d\theta_1}{dt} + \ell_2 \cos \theta_2(t) \frac{d\theta_2}{dt}
-$$
-
-$$
-\frac{dy_2}{dt} = \ell_1 \sin \theta_1(t) \frac{d\theta_1}{dt} + \ell_2 \sin \theta_2(t) \frac{d\theta_2}{dt}
+\begin{align}
+\frac{dx_2}{dt} &= \ell_1 \cos \theta_1 (t) \frac{d\theta_1}{dt} + \ell_2 \cos \theta_2(t) \frac{d\theta_2}{dt} \\
+\frac{dy_2}{dt} &= \ell_1 \sin \theta_1(t) \frac{d\theta_1}{dt} + \ell_2 \sin \theta_2(t) \frac{d\theta_2}{dt}
+\end{align}
 $$
 
 
@@ -720,12 +703,10 @@ We use a similar approach for the potential energies - we add the potential ener
 
 
 $$
-U = U_1 + U_2
-$$
-
-
-$$
-U = m_1 g (-\ell_1 \cos \theta_1 (t) ) + m_2 g (-\ell_1 \cos \theta_1(t) - \ell_2 \cos \theta_2(t))
+\begin{align}
+U &= U_1 + U_2 \\
+&= m_1 g (-\ell_1 \cos \theta_1 (t) ) + m_2 g (-\ell_1 \cos \theta_1(t) - \ell_2 \cos \theta_2(t))
+\end{align}
 $$
 
 
@@ -741,11 +722,10 @@ Using $\mathcal{L} = K - U$, we substitute into the two Euler-Lagrange equations
 
 
 $$
+\begin{align}
+\frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot \theta_1} - \frac{\partial \mathcal{L}}{\partial \theta_2} = 0 \\
 \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot \theta_1} - \frac{\partial \mathcal{L}}{\partial \theta_2} = 0
-$$
-
-$$
-\frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot \theta_1} - \frac{\partial \mathcal{L}}{\partial \theta_2} = 0
+\end{align}
 $$
 
 
@@ -753,23 +733,25 @@ With the Lagrangian:
 
 
 $$
-\mathcal{L} = \frac{1}{2} m_1 \ell_1^2 \left(\frac{d\theta}{dt}\right)^2 + \frac{1}{2} m_2 \left[
-\ell_1^2 \left(\frac{d\theta_1}{dt}\right)^2 + 2\ell_1 \ell_2 \frac{d\theta_1}{dt} \frac{d\theta_2}{dt} \cos (\theta_1 - \theta_2) + \ell_2^2 \left(\frac{d\theta_2}{dt}\right)^2
-\right]
-+ (m_1 + m_2) g \ell_1 \cos \theta_1(t) + m_2 g \ell_2 \cos \theta_2 (t)
+\begin{align}
+\mathcal{L} &= \frac{1}{2} m_1 \ell_1^2 \bigg(\frac{d\theta}{dt}\bigg)^2 + \frac{1}{2} m_2 \bigg[
+\ell_1^2 \bigg(\frac{d\theta_1}{dt}\bigg)^2 \\
+&\qquad+ 2\ell_1 \ell_2 \frac{d\theta_1}{dt} \frac{d\theta_2}{dt} \cos (\theta_1 - \theta_2) + \ell_2^2 \bigg(\frac{d\theta_2}{dt}\bigg)^2
+\bigg] \\
+&\qquad+ (m_1 + m_2) g \ell_1 \cos \theta_1(t) + m_2 g \ell_2 \cos \theta_2 (t)
+\end{align}
 $$
 
 
-To find the equations of motion ([source](https://diego.assencio.com/?index=1500c66ae7ab27bb0106467c68feebc6)):
+To find the equations of motion, which are given by ([source](https://diego.assencio.com/?index=1500c66ae7ab27bb0106467c68feebc6)):
 
 
 $$
-(m_1 + m_2) l_1 \ddot{\theta}_1 + m_2 l_2 \ddot{\theta}_2 \cos(\theta_1 - \theta_2) + m_2 l_2 \dot{\theta}_2^2\sin(\theta_1 - \theta_2) + (m_1 + m_2) g \sin\theta_1 = 0
-$$
-
-$$
+\begin{align}
+(m_1 + m_2) l_1 \ddot{\theta}_1 + m_2 l_2 \ddot{\theta}_2 \cos(\theta_1 - \theta_2) + m_2 l_2 \dot{\theta}_2^2\sin(\theta_1 - \theta_2) + (m_1 + m_2) g \sin\theta_1 = 0 \\
 l_2 \ddot{\theta}_2 + l_1 \ddot{\theta}_1 \cos(\theta_1 - \theta_2)
 - l_1 \dot{\theta}_1^2 \sin(\theta_1 - \theta_2)  + g \sin\theta_2 = 0
+\end{align}
 $$
 
 

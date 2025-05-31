@@ -719,6 +719,8 @@ Intuitively, the definite integral gives the area underneath a curve. It does th
 :alt: Integral visualization as rectangles under a curve
 :width: 400px
 :align: center
+
+The area under a curve can be approximated by summing the areas of tiny tiny rectangles under the curve.
 ```
 
 

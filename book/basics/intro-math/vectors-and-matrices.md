@@ -38,10 +38,12 @@ $$
 The basis vectors are then used to "construct" a vector like this: 
 
 
-```{image} https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/3D_Vector.svg/300px-3D_Vector.svg.png
+```{image} https://upload.wikimedia.org/wikipedia/commons/f/fd/3D_Vector.svg
 :alt: 3D vectors on the coordinate grid
 :width: 300px
 :align: center
+
+A vector as a superposition of Cartesian basis vectors. (source: [Wikipedia](https://commons.wikimedia.org/wiki/File:3D_Vector.svg))
 ```
 
 
