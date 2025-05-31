@@ -38,7 +38,7 @@ $$
 The basis vectors are then used to "construct" a vector like this: 
 
 
-```{image} https://upload.wikimedia.org/wikipedia/commons/f/fd/3D_Vector.svg
+```{figure} https://upload.wikimedia.org/wikipedia/commons/f/fd/3D_Vector.svg
 :alt: 3D vectors on the coordinate grid
 :width: 300px
 :align: center
