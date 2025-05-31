@@ -86,7 +86,6 @@ jobs:
         gs -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile=elara-handbook-final.pdf \
           -dBATCH cover.pdf elara-handbook.pdf
         echo "PDF build successful, uploading artifacts now"
-        # set release tag
 
     # Output build artifacts for debugging
     - uses: actions/upload-artifact@v4
@@ -110,15 +109,9 @@ jobs:
         path: ./book/_build/latex/elara-handbook-final.pdf
         compression-level: 0
 
-    - name: Set release tag
+    - name: Create release tag
       run: |
         RELEASE_TAG="v0.0.0-$(git rev-parse HEAD | cut -c 1-8)"
-        git tag $RELEASE_TAG
-
-    - name: Upload book PDF to Github releases
-      uses: softprops/action-gh-release@v2.2.2
-      with:
-        body: Automatically generated from book sources via Github Actions
-        prerelease: true
-        files: |
-          book/_build/latex/elara-handbook-final.pdf
+        git tag -a $RELEASE_TAG
+        git push origin $RELEASE_TAG
+          
