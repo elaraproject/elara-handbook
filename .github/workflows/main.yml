@@ -55,7 +55,7 @@ jobs:
                              texlive-xetex latexmk
         # Image tools
         sudo apt-get install libpng-dev libjpeg-dev \
-          libtiff-dev imagemagick inkscape
+          libtiff-dev imagemagick inkscape ghostscript
         # Extra fonts
         git clone https://github.com/adobe-fonts/source-code-pro.git source-code-pro
         sudo cp ./source-code-pro/OTF/*.otf /usr/share/fonts/truetype
@@ -79,8 +79,12 @@ jobs:
       run: |
         # build pdf (sphinx creates a makefile for us)
         cd ./book/_build/latex/
+        cp ../../cover.pdf .
         echo "Entered LaTeX folder, preparing to build PDF"
         make
+        # now append the cover to the book
+        gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=elara-handbook.pdf \
+          elara-handbook.pdf cover.pdf
         echo "PDF build successful, uploading artifacts now"
 
     # Output build artifacts for debugging
