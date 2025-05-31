@@ -113,6 +113,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ github.token }}
       run: |
+        cd book/_build/
+        ls -a
+        cd latex/
+        ls *.pdf
         pip install github-release-retry
         github-release-retry \
           --user elaraproject \
@@ -120,4 +124,4 @@ jobs:
           --tag_name v0.0.0-$(git rev-parse HEAD | cut -c 1-8) \
           --prerelease \
           --body_string "Automatically generated from book sources via Github Actions" \
-          ./book/_build/latex/elara-handbook-final.pdf
+          elara-handbook-final.pdf
