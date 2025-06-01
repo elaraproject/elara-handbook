@@ -116,6 +116,6 @@ jobs:
             "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
         RELEASE_TAG="v0.0.0-$(git rev-parse HEAD | cut -c 1-8)"
-        git tag -a $RELEASE_TAG
+        git tag -a $RELEASE_TAG -m "Automatic deployment $RELEASE_TAG"
         git push origin $RELEASE_TAG
           
