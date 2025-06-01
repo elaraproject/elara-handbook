@@ -1,14 +1,9 @@
-name: Release on Tag Push
+name: Make GitHub release on tag push
 
 on:
   push:
     tags:
       - 'v*' # Trigger on tags like v1.0.0, v2.1, etc.
-
-on: 
-  push: # trigger build only when push to main
-    branches:
-      - main
 
 permissions:
   id-token: write
@@ -17,6 +12,7 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
