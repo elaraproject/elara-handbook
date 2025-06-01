@@ -111,6 +111,10 @@ jobs:
 
     - name: Create release tag
       run: |
+        # Setup custom github actions user
+        git config --global user.email \
+            "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
         RELEASE_TAG="v0.0.0-$(git rev-parse HEAD | cut -c 1-8)"
         git tag -a $RELEASE_TAG
         git push origin $RELEASE_TAG
