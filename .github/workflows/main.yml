@@ -2,11 +2,13 @@
 # Note: lint with https://rhysd.github.io/actionlint/
 name: Publish JupyterBook to GitHub Pages
 
-on: 
-  push: # trigger build only when push to master
+# trigger build on push or on manual deploy
+on:
+  push:
     branches:
       - main
       - test-gh-actions # GH actions test branch
+  workflow_dispatch:
 
 permissions:
   id-token: write

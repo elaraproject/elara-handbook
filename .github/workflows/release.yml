@@ -1,9 +1,11 @@
 name: Make GitHub release on tag push
 
+# trigger build on push or on manual deploy
 on:
   push:
     tags:
       - 'v*' # Trigger on tags like v1.0.0, v2.1, etc.
+  workflow_dispatch:
 
 permissions:
   id-token: write
@@ -12,7 +14,7 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
