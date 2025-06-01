@@ -1,6 +1,8 @@
 # The Elara Handbook
 
 [![Publish JupyterBook to GitHub Pages](https://github.com/elaraproject/elara-handbook/actions/workflows/main.yml/badge.svg)](https://github.com/elaraproject/elara-handbook/actions/workflows/main.yml)
+[![Latest release](https://img.shields.io/github/release-date-pre/elaraproject/elara-handbook)](https://github.com/elaraproject/elara-handbook/releases/latest)
+[![License](https://img.shields.io/github/license/elaraproject/elara-handbook)](https://github.com/elaraproject/elara-handbook/blob/main/LICENSE)
 
 The Elara Handbook is Project Elara's open knowledge repository and documentation. Everything you'd ever need to learn, develop, or contribute to Project Elara can be found here!
 
