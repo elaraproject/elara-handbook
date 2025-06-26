@@ -19,7 +19,9 @@ Please let us know so that we can improve the Handbook! Just file a report at ou
 
 ## The newcomer's guide
 
-If you're new to the Project, we are very very glad to have you join us! Reading the Elara Handbook is the recommended way to quickly get up to speed with the Project. That said, we understand that reading technical documentation can easily be quite confusing, so we have organized the Handbook to be as easy as possible to get started, and to require **minimal prerequisite knowledge and background** to read.
+If you're new to the Project, we are very glad to have you join us! To get started, please read {doc}`basics/about/quickstart-guide`, which contains a complete, step-by-step guide on getting started with the Project.
+
+Once you've gotten started, reading the Elara Handbook is the recommended way to learn more about the science behind our work. That said, we understand that reading technical and scientific documentation can easily be quite confusing, so we have organized the Handbook to be as easy as possible to get started, and to require **minimal prerequisite knowledge and background** to read.
 
 First, if you are **unfamiliar with calculus, introductory physics, or computer programming (in at least one language)**, we highly recommend you to start from the first chapter, "The Basics". This has two main parts. The first part explains the Project, its mission, and its work. The second covers basic algebra, trigonometry, differential equations, vectors, matrices, and multivariable calculus. If you just need a refresher on one of these topics, it's completely okay to skip a section and move on to the next. After finishing "The Basics", we recommend that you continue on to the second chapter, "The Specifics". This covers the majority of the Project's research and development, as well as the technical prerequisites. While reading everything in this chapter will provide you with a thorough understanding on which to do research, we understand that is not for everyone, so read according to your interests and time.
 
@@ -68,6 +70,18 @@ Then you can start writing! We recommend using a markdown editor like [Obsidian]
 - Copy a template from the `templates/` folder in the repository root and copy it into one of the directories (e.g. `basics/`, `specifics/`, etc.)
 - Then rename it to a suitable name and add the filename to `_toc.yml` located in the repository root in the appropriate section
 - You can now start editing! Remember to commit and open a pull request on github (github provides automated tools for this on its website) so we can add in your changes!
+
+Elara Handbook can also be built as a standalone PDF. For this, you'll need to have [LaTeX](https://www.latex-project.org/) installed - we recommend using the [MikTex installer for LaTeX](https://miktex.org/) to install LaTeX - as well as the `make` utility installed (on most Linux OS's this should already be preinstalled, on macOS you need to install it with `xcode-select --install`, and on Windows follow the instructions at [Make for Windows](https://gnuwin32.sourceforge.net/packages/make.htm) or install it from [Cygwin](https://www.cygwin.com/)). To build the book PDF, make sure you're in the root directory of the repository, then simply run:
+
+```sh
+jupyter-book build book --builder latex
+```
+
+```{tip}
+If you choose to use the Obsidian markdown editor, just open the `book/` subfolder of this repository as a vault, and then you can edit it like any other Obsidian markdown vault. In addition, we highly recommend installing the [obsidian-latex](https://github.com/wei2912/obsidian-latex) plugin, as it provides support for custom LaTeX commands (such as `\unit` for typesetting physical units) that are not shipped with Obsidian by default. We have already set up a LaTeX snippets file that should load automatically upon installing the plugin, so you can get started as fast as possible.
+```
+
+### More developer information
 
 ```{note}
 For developers working **on Windows**, it is _highly recommended_ to configure Git to automatically handle line-endings via `git config --global core.autocrlf true` before editing anything. See [this article here](https://www.aleksandrhovhannisyan.com/blog/crlf-vs-lf-normalizing-line-endings-in-git/) which explains why it is necessary.
