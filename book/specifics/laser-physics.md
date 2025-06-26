@@ -450,19 +450,19 @@ $$
 \hat H = \hat H_0 + \hat H_1(t)
 $$
 
-Where $\hat H_0$ is the **time-independent Hamiltonian**, and $\hat H_1$ is the **perturbation Hamiltonian**, which is responsible for the time-dependent behavior of the system. Fermi's golden rule says that *to first-order*, the **probability of a transition per unit time** $\Gamma_{fi}$ from initial state $|i\rangle$ to final state $|f\rangle$ is given by:
+Where $\hat H_0$ is the **time-independent Hamiltonian**, and $\hat H_1$ is the **perturbation Hamiltonian**, which is responsible for the time-dependent behavior of the system. Fermi's golden rule says that *to first-order*, the probability of a transition per unit time $\Gamma_{fi}$ from initial state $|i\rangle$ to final state $|f\rangle$ is given by:
 
 $$
-\Gamma_{fi} = \dfrac{2\pi}{\hbar} |\mathcal{M}|^2 \rho(E_f)
+\Gamma_{fi} = \dfrac{2\pi}{\hbar} |\mathcal{M}_{fi}|^2 \rho(E_f)
 $$
 
-Where $\rho(E_f)$ is the **density of states** at energy $E_f$, which we'll explain in a little bit, and $\mathcal{M}$ is called the **matrix element** for the transition, which is given by:
+Where $\rho(E_f)$ is the **density of states** at energy $E_f$, which we'll explain in a little bit, and $\mathcal{M}_{fi}$ is called the **matrix element** for the transition, which is given by:
 
 $$
-\mathcal{M} = \langle f|\hat H_1|i\rangle
+\mathcal{M}_{fi} = \langle f|\hat H_1|i\rangle
 $$
 
-Fermi's golden rule is applicable to a broad range of multi-state quantum systems, from nuclear physics to scattering processes described in quantum field theory (for those interested, $\mathcal{M}$ becomes the first-order term of the S-matrix in QFT). The mean lifetime $\tau$ of the state $|f\rangle$ before a decay to state $|i\rangle$ can also be found from the transition rate $\Gamma_{fi}$ via:
+Fermi's golden rule is applicable to a broad range of multi-state quantum systems, from nuclear physics to scattering processes described in quantum field theory (for those interested, $\mathcal{M}_{fi}$ becomes the first-order term of the S-matrix in QFT). The mean lifetime $\tau$ of the state $|f\rangle$ before a decay to state $|i\rangle$ can also be found from the transition rate $\Gamma_{fi}$ via:
 
 $$
 \tau = \dfrac{1}{\Gamma_{fi}}
@@ -481,7 +481,9 @@ $$
 \end{align}
 $$
 
-This looks very similar to the laser rate equations for a two-level system! And indeed, that is correct! In our case of lasers, $\Gamma_{fi}$ is $A_{21}$, the Einstein A coefficient, and therefore $\tau = 1/\Gamma_{fi} = 1/A_{21}$ is the lifetime of the upper state. Our entire process of finding $c_1(t)$ and $c_2(t)$ and calculating the transition probability $P_{21}$ could have been avoided, had we used Fermi's golden rule directly. It is a _very_ powerful tool to use when doing calculations.
+This looks very similar to the laser rate equations for a two-level system! Indeed, that is _almost_ correct.
+
+In our case of lasers, $\Gamma_{fi}$ is $A_{21}$, the Einstein A coefficient, and therefore $\tau = 1/\Gamma_{fi} = 1/A_{21}$ is the lifetime of the upper state. Our entire process of finding $c_1(t)$ and $c_2(t)$ and calculating the transition probability $P_{21}$ could have been avoided, had we used Fermi's golden rule directly. It is a _very_ powerful tool to use when doing calculations.
 
 ### The characteristics of laser light
 
