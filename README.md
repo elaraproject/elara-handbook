@@ -1,5 +1,7 @@
 # The Elara Handbook
 
+> :warning: **IMPORTANT:** Project Elara has switched over to the open-source forge [Codeberg](https://codeberg.org/). The Project Elara repositories have been moved to [this Codeberg page](https://codeberg.org/elaraproject/). **This GitHub repository is no longer maintained**.
+
 [![Publish JupyterBook to GitHub Pages](https://github.com/elaraproject/elara-handbook/actions/workflows/main.yml/badge.svg)](https://github.com/elaraproject/elara-handbook/actions/workflows/main.yml)
 [![Latest release](https://img.shields.io/github/release-date-pre/elaraproject/elara-handbook)](https://github.com/elaraproject/elara-handbook/releases/latest)
 [![License](https://img.shields.io/github/license/elaraproject/elara-handbook)](https://github.com/elaraproject/elara-handbook/blob/main/LICENSE)
