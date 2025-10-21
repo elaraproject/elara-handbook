@@ -23,6 +23,7 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  announcement: "This is the old version of the Handbook and is no longer updated. See our <a href='https://handbook.elaraproject.org'>new Handbook here!</a>"
 
 latex:
   latex_documents:
